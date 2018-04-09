@@ -1,4 +1,5 @@
 import cv2
+import os
 
 FILE_NAME_PREFIX = 'P6810010'
 IMAGES_DIR = './res/photos'
@@ -37,3 +38,4 @@ class ImagesHandler:
                + FILE_NAME_DELIMITER \
                + str(defectNo).zfill(4) \
                + FILE_EXETENSION
+

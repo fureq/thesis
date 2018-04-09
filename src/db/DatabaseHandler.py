@@ -20,6 +20,7 @@ class DatabaseHandler:
         self.engine = create_engine(self.getDbSQLPath())
         self.engine.connect()
         self.defectsTable = tables.t_defects
+        self.defectsClassesTable = tables.t_defectclasses
         pass
 
     def getDbSQLPath(self):
@@ -54,3 +55,26 @@ class DatabaseHandler:
             self.defectsTable.c.defectno == defectNo
         ))
         return self.engine.execute(query).fetchone()
+
+    def getDefectClasses(self):
+        query = select([
+            self.defectsClassesTable.c.classid,
+            self.defectsClassesTable.c.name,
+        ])
+        return self.engine.execute(query)
+
+    def getDefectClassString(self, defectClass):
+        return (str(defectClass[0]) + '_' + str(defectClass[1])).replace(' ', '_')
+
+    def getDefectClassesString(self):
+        defectClassesStrings = []
+        for defectClass in self.getDefectClasses():
+            defectClassString = self.getDefectClassString(defectClass)
+            defectClassesStrings.append(defectClassString)
+        return defectClassesStrings
+
+    def getDefectClassesDictionary(self):
+        defectsDict = {}
+        for defectClass in self.getDefectClasses():
+            defectsDict[defectClass[0]] = defectClass[1]
+        return defectsDict
