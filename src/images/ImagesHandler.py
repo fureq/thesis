@@ -18,6 +18,10 @@ class ImagesHandler:
         cv2.waitKey(0)
         cv2.destroyAllWindows()
 
+    def saveImageToFile(self, img, dirpath, filename):
+        filepath = dirpath + '/' + filename + FILE_EXETENSION
+        cv2.imwrite(filepath, img)
+
     def getImageBasedOnDatabaseRecord(self, coilId, cameraId, defectNo):
         return cv2.imread(self.getFilePath(coilId, cameraId, defectNo), 0)
 
@@ -38,4 +42,3 @@ class ImagesHandler:
                + FILE_NAME_DELIMITER \
                + str(defectNo).zfill(4) \
                + FILE_EXETENSION
-

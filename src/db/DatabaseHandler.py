@@ -39,7 +39,8 @@ class DatabaseHandler:
         query = select([
             self.defectsTable.c.coilid,
             self.defectsTable.c.camerano,
-            self.defectsTable.c.defectno
+            self.defectsTable.c.defectno,
+            text('defects.class')
         ])
         return self.engine.execute(query)
 
@@ -63,18 +64,18 @@ class DatabaseHandler:
         ])
         return self.engine.execute(query)
 
-    def getDefectClassString(self, defectClass):
+    def getDefectString(self, defectClass):
         return (str(defectClass[0]) + '_' + str(defectClass[1])).replace(' ', '_')
 
     def getDefectClassesString(self):
         defectClassesStrings = []
         for defectClass in self.getDefectClasses():
-            defectClassString = self.getDefectClassString(defectClass)
+            defectClassString = self.getDefectString(defectClass)
             defectClassesStrings.append(defectClassString)
         return defectClassesStrings
 
-    def getDefectClassesDictionary(self):
+    def getDefectClassDefectStringDictionary(self):
         defectsDict = {}
         for defectClass in self.getDefectClasses():
-            defectsDict[defectClass[0]] = defectClass[1]
+            defectsDict[defectClass[0]] = self.getDefectString(defectClass)
         return defectsDict
