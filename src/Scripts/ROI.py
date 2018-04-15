@@ -2,8 +2,8 @@ import src.db.DatabaseHandler as DatabaseHandler
 import src.images.ImagesHandler as ImagesHandler
 import src.images.ImagesTransformator as ImagesTransformator
 
-COILD_ID = 675593
-DEFECT_NO = 14
+COILD_ID = 675602
+DEFECT_NO = 136
 CAMERA_NO = 12
 
 X0 = 0

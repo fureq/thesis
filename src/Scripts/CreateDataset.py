@@ -4,7 +4,8 @@ import src.images.ImagesHandler as ImagesHandler
 import src.images.ImagesTransformator as ImageTransformator
 
 IMAGES_PATH = './res/photos'
-DATASET_PATH = './res/dataset'
+DATASET_PATH = './res/dataset/'
+VALIDATION_PATH = './res/validation/'
 
 COIL_ID = 0
 CAMERA_ID = 1
@@ -17,9 +18,9 @@ Y0 = 2
 Y1 = 3
 
 
-def createDatasetFolder(defectClasses):
+def createClassFolders(defectClasses, dir):
     for defectClass in defectClasses:
-        path = DATASET_PATH + '/' + defectClass
+        path = dir + '/' + defectClass
         if not os.path.exists(path):
             print 'Creating ' + path
             os.makedirs(path)
@@ -72,7 +73,10 @@ def preprocessData(defects, defectsImgs, defectsCounter):
 def saveFilesToDataset(processedImages, defectClasses):
     i=0
     for img in processedImages:
-        path = DATASET_PATH + '/' + defectClasses[img[1]]
+        if i%10 == 0:
+            path = VALIDATION_PATH + '/' + defectClasses[img[1]]
+        else:
+            path = DATASET_PATH + '/' + defectClasses[img[1]]
         imgHandler.saveImageToFile(img[0], path, str(i))
         if i%1000==0:
             print 'Saved ' + str(i) + 'images'
@@ -93,7 +97,8 @@ print 'Getting defects, images and defects counter'
 defects, defectImgs, defectsCounter = getMatchedDefects()
 print str(defectsCounter) + ' successfully got'
 
-createDatasetFolder(defectClasses)
+createClassFolders(defectClasses, DATASET_PATH)
+createClassFolders(defectClasses, VALIDATION_PATH)
 processedImages = preprocessData(defects, defectImgs, defectsCounter)
 print '... all images successfully processed'
 

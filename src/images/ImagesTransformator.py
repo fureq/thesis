@@ -15,7 +15,7 @@ class ImagesTransformator:
 
     def createImageBasedOnROI(self, image, x0, x1, y0, y1):
         img = copy.copy(image)
-        return img[y0:y0+y1, x0:x0+x1]
+        return img[y0:y1, x0:x1]
 
     def standarizeImage(self, image):
         return cv2.resize(copy.copy(image), (int(self.WIDTH), int(self.HEIGHT)))
