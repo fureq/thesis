@@ -1,7 +1,11 @@
+from imutils import paths
+from keras.preprocessing.image import img_to_array
 import cv2
+import os
+import random
 
 FILE_NAME_PREFIX = 'P6810010'
-IMAGES_DIR = './res/photos'
+IMAGES_DIR = '/res/photos'
 DIR_DELIMITER = '/'
 FILE_NAME_DELIMITER = '_'
 FILE_EXETENSION = '.jpg'
@@ -41,3 +45,29 @@ class ImagesHandler:
                + FILE_NAME_DELIMITER \
                + str(defectNo).zfill(4) \
                + FILE_EXETENSION
+
+    def mapDirToNumber(self, path):
+        number = 0
+        numbderDirMap = {}
+        for dir in sorted(os.listdir(path)):
+            numbderDirMap[dir] = number
+            number += 1
+        return numbderDirMap
+
+    def getImagesAndLabelsInPath(self, path):
+        images = []
+        labels = []
+        imagePaths = sorted(list(paths.list_images(path)))
+        random.seed(42)
+        random.shuffle(imagePaths)
+        labelsMap = self.mapDirToNumber(path)
+
+        for imgPath in imagePaths:
+            image = cv2.imread(imgPath)
+            image = img_to_array(image)
+            images.append(image)
+
+            label = imgPath.split(os.path.sep)[-2]
+            labels.append(labelsMap[label])
+
+        return images, labels
