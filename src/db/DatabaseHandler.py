@@ -65,7 +65,7 @@ class DatabaseHandler:
         return self.engine.execute(query)
 
     def getDefectString(self, defectClass):
-        return (str(defectClass[0]) + '_' + str(defectClass[1])).replace(' ', '_')
+        return (str(defectClass[1])).replace(' ', '_')
 
     def getDefectClassesString(self):
         defectClassesStrings = []

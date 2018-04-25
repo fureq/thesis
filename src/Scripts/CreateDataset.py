@@ -90,7 +90,7 @@ imgTransformator = ImageTransformator.ImagesTransformator()
 print 'Handlers created'
 
 print 'Getting defect classes'
-defectClasses = dbHandler.getDefectClassesString()
+defectClasses = dbHandler.getDefecotClassesString()
 defectClassesDict = dbHandler.getDefectClassDefectStringDictionary()
 print 'Defect classes got'
 print 'Getting defects, images and defects counter'

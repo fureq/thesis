@@ -9,8 +9,8 @@ class ImagesTransformator:
     def __init__(self):
         config = ConfigParser.ConfigParser()
         config.read('./res/config.ini')
-        self.WIDTH = config.get(SECTION, 'width')
-        self.HEIGHT = config.get(SECTION, 'height')
+        self.WIDTH = int(config.get(SECTION, 'Width'))
+        self.HEIGHT = int(config.get(SECTION, 'Height'))
         pass
 
     def createImageBasedOnROI(self, image, x0, x1, y0, y1):
@@ -18,4 +18,4 @@ class ImagesTransformator:
         return img[y0:y1, x0:x1]
 
     def standarizeImage(self, image):
-        return cv2.resize(copy.copy(image), (int(self.WIDTH), int(self.HEIGHT)))
+        return cv2.resize(copy.copy(image), (self.WIDTH, self.HEIGHT))

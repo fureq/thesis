@@ -1,5 +1,4 @@
 import cv2
-import os
 
 FILE_NAME_PREFIX = 'P6810010'
 IMAGES_DIR = './res/photos'
