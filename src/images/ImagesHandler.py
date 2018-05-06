@@ -3,6 +3,7 @@ from keras.preprocessing.image import img_to_array
 import cv2
 import os
 import random
+# from sets import Set
 
 FILE_NAME_PREFIX = 'P6810010'
 IMAGES_DIR = '/res/photos'
@@ -57,6 +58,7 @@ class ImagesHandler:
     def getImagesAndLabelsInPath(self, path):
         images = []
         labels = []
+        classes = set()
         imagePaths = sorted(list(paths.list_images(path)))
         random.seed(42)
         random.shuffle(imagePaths)
@@ -69,5 +71,6 @@ class ImagesHandler:
 
             label = imgPath.split(os.path.sep)[-2]
             labels.append(labelsMap[label])
+            classes.add(label)
 
-        return images, labels
+        return images, labels, len(classes)

@@ -31,23 +31,21 @@ class NetworkModel:
         self.DENSE_DROPOUT_RATIO = float(config.get(SECTION, 'DenseDropoutRatio'))
         self.DENSE = int(config.get(SECTION, 'Dense'))
         self.CONV_KERNEL_SIZE = [
-            (int(config.get(SECTION, 'FirstConvKernelWidth'), int(config.get(SECTION, 'FirstConvKernelHeight')))),
-            (int(config.get(SECTION, 'SecondConvKernelWidth'), int(config.get(SECTION, 'SecondConvKernelHeight')))),
-            (int(config.get(SECTION, 'ThirdConvKernelWidth'), int(config.get(SECTION, 'ThirdConvKernelHeight')))),
+            (int(config.get(SECTION, 'FirstConvKernelWidth')), int(config.get(SECTION, 'FirstConvKernelHeight'))),
+            (int(config.get(SECTION, 'SecondConvKernelWidth')), int(config.get(SECTION, 'SecondConvKernelHeight'))),
+            (int(config.get(SECTION, 'ThirdConvKernelWidth')), int(config.get(SECTION, 'ThirdConvKernelHeight'))),
         ]
         self.MAX_POOLING_SIZE = [
-            (int(config.get(SECTION, 'FirstMaxPoolingWidth'), int(config.get(SECTION, 'FirstMaxPoolingHeight')))),
-            (int(config.get(SECTION, 'SecondMaxPoolingWidth'), int(config.get(SECTION, 'SecondMaxPoolingHeight')))),
-            (int(config.get(SECTION, 'ThirdMaxPoolingWidth'), int(config.get(SECTION, 'ThirdMaxPoolingHeight')))),
+            (int(config.get(SECTION, 'FirstMaxPoolingWidth')), int(config.get(SECTION, 'FirstMaxPoolingHeight'))),
+            (int(config.get(SECTION, 'SecondMaxPoolingWidth')), int(config.get(SECTION, 'SecondMaxPoolingHeight'))),
+            (int(config.get(SECTION, 'ThirdMaxPoolingWidth')), int(config.get(SECTION, 'ThirdMaxPoolingHeight'))),
         ]
 
     def build(self, width, height, depth, nClasses):
-        model = Sequential
+        model = Sequential()
         inputShape = (height, width, depth)
 
-        if K.image_data_format() == IMAGE_DATA_FORMAT:
-            inputShape = (depth, height, width)
-        model.add(Conv2D(self.CONV_FILTERS[FIRST], self.CONV_KERNEL_SIZE[FIRST], padding=self.PADDING, activation=self.ACTIVATION, inputShape=inputShape))
+        model.add(Conv2D(self.CONV_FILTERS[FIRST], self.CONV_KERNEL_SIZE[FIRST], padding=self.PADDING, activation=self.ACTIVATION, input_shape=inputShape))
         model.add(Conv2D(self.CONV_FILTERS[FIRST], self.CONV_KERNEL_SIZE[FIRST], padding=self.PADDING, activation=self.ACTIVATION))
         model.add(MaxPooling2D(pool_size=self.MAX_POOLING_SIZE[FIRST]))
         model.add(Dropout(self.DROPOUT_RATIO))
@@ -57,7 +55,7 @@ class NetworkModel:
         model.add(MaxPooling2D(pool_size=self.MAX_POOLING_SIZE[SECOND]))
         model.add(Dropout(self.DROPOUT_RATIO))
 
-        model.add(Conv2D(self.CONV_FILTERS[THIRD], self.CONV_KERNEL_SIZE[THIRD], self.PADDING, activation=self.ACTIVATION))
+        model.add(Conv2D(self.CONV_FILTERS[THIRD], self.CONV_KERNEL_SIZE[THIRD], padding=self.PADDING, activation=self.ACTIVATION))
         model.add(Conv2D(self.CONV_FILTERS[THIRD], self.CONV_KERNEL_SIZE[THIRD], activation=self.ACTIVATION))
         model.add(MaxPooling2D(pool_size=self.MAX_POOLING_SIZE[THIRD]))
         model.add(Dropout(self.DROPOUT_RATIO))
