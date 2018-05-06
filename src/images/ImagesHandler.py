@@ -3,7 +3,6 @@ from keras.preprocessing.image import img_to_array
 import cv2
 import os
 import random
-# from sets import Set
 
 FILE_NAME_PREFIX = 'P6810010'
 IMAGES_DIR = '/res/photos'

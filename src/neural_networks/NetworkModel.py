@@ -4,7 +4,6 @@ from keras.layers.convolutional import MaxPooling2D
 from keras.layers import Dropout
 from keras.layers.core import Flatten
 from keras.layers.core import Dense
-from keras import backend as K
 
 import ConfigParser
 
