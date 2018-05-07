@@ -1,35 +1,13 @@
-path:
-00675602/02/*
-coilid/camera/
-
-P6810010_00675602_02_srcimg_0008
-
-
-P6810010
-
-00675602 - coilid - table: coil
-
-02 - camera - table: cameras
-
-0008
-
-
-maintable - defects?
-
-
-//TODO: spojnosc bazy (ile obrazkow odpowiada faktycznym rekordom)
-
 Marcin Dulowski - osoba kontaktowa
 
 marcin.dulowski@arcelormittal.com
 
 
 //TODO:
-przygotowanie danych:
-80% - trenning
-20% - validacja
-
-
 utworzenie prawidlowego formatu: preprocessing_data
 
 
+1) podzielenie na klasy - 10 klas, najbardziej liczne i not classified
+2) Dodanie paddingu/embedded layers
+3)  Podejscie bez resize'a
+4) Analiza zbioru uczacego pod katem rozmiaru

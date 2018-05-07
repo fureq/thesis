@@ -45,7 +45,7 @@ class NetworkModel:
         inputShape = (height, width, depth)
 
         model.add(Conv2D(self.CONV_FILTERS[FIRST], self.CONV_KERNEL_SIZE[FIRST], padding=self.PADDING, activation=self.ACTIVATION, input_shape=inputShape))
-        model.add(Conv2D(self.CONV_FILTERS[FIRST], self.CONV_KERNEL_SIZE[FIRST], padding=self.PADDING, activation=self.ACTIVATION))
+        model.add(Conv2D(self.CONV_FILTERS[FIRST], self.CONV_KERNEL_SIZE[FIRST], activation=self.ACTIVATION))
         model.add(MaxPooling2D(pool_size=self.MAX_POOLING_SIZE[FIRST]))
         model.add(Dropout(self.DROPOUT_RATIO))
 
