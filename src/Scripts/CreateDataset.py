@@ -71,16 +71,16 @@ def preprocessData(defects, defectsImgs, defectsCounter):
 
 
 def saveFilesToDataset(processedImages, defectClasses):
-    i=0
+    i = 0
     for img in processedImages:
-        if i%10 == 0:
+        if i % 10 == 0:
             path = VALIDATION_PATH + '/' + defectClasses[img[1]]
         else:
             path = DATASET_PATH + '/' + defectClasses[img[1]]
         imgHandler.saveImageToFile(img[0], path, str(i))
-        if i%1000==0:
+        if i % 1000 == 0:
             print 'Saved ' + str(i) + 'images'
-        i+=1
+        i += 1
 
 
 print 'Creating handlers ...'
@@ -90,7 +90,7 @@ imgTransformator = ImageTransformator.ImagesTransformator()
 print 'Handlers created'
 
 print 'Getting defect classes'
-defectClasses = dbHandler.getDefecotClassesString()
+defectClasses = dbHandler.getDefectClassesString()
 defectClassesDict = dbHandler.getDefectClassDefectStringDictionary()
 print 'Defect classes got'
 print 'Getting defects, images and defects counter'
