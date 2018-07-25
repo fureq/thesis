@@ -4,7 +4,7 @@ import src.images.ImagesHandler as ImagesHandler
 import src.images.ImagesTransformator as ImageTransformator
 
 IMAGES_PATH = './res/photos'
-DATASET_PATH = './res/dataset/'
+DATASET_PATH = './res/dataset/all_classes'
 VALIDATION_PATH = './res/validation/'
 
 COIL_ID = 0
