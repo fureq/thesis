@@ -23,10 +23,12 @@ DEPTH = int(config.get('Image', 'Depth'))
 EPOCHS = int(config.get('Train', 'Epochs'))
 BATCH_SIZE = int(config.get('Train', 'BatchSize'))
 
-DATASET_PATH = './res/dataset/'
-OUTPUT_MODEL_PATH = './src/neural_networks/OutputModel.model'
-OUTPUT_MODEL_WEIGHTS = './src/neural_networks/ModelWeights.h5'
-OUTPUT_PLOT = './res/output/output1.png'
+APPROACH = '10_classes'
+
+DATASET_PATH = './res/dataset/' + APPROACH
+OUTPUT_MODEL_PATH = './src/neural_networks/' + APPROACH + '.model'
+OUTPUT_MODEL_WEIGHTS = './src/neural_networks/' + APPROACH + '.h5'
+OUTPUT_PLOT = './res/output/' + APPROACH + '.png'
 
 imagesHandler = ImagesHandler.ImagesHandler()
 
