@@ -5,7 +5,7 @@ import os
 import random
 
 FILE_NAME_PREFIX = 'P6810010'
-IMAGES_DIR = '/res/photos'
+IMAGES_DIR = './res/photos'
 DIR_DELIMITER = '/'
 FILE_NAME_DELIMITER = '_'
 FILE_EXETENSION = '.jpg'
@@ -26,7 +26,7 @@ class ImagesHandler:
         cv2.imwrite(filepath, img)
 
     def getImageBasedOnDatabaseRecord(self, coilId, cameraId, defectNo):
-        return cv2.imread(self.getFilePath(coilId, cameraId, defectNo), 0)
+        return cv2.imread(self.getFilePath(coilId, cameraId, defectNo))
 
     def getFilePath(self, coilId, cameraId, defectNo):
         return IMAGES_DIR \

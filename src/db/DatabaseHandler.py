@@ -71,7 +71,7 @@ class DatabaseHandler:
         defectClassesStrings = []
         for defectClass in self.getDefectClasses():
             defectClassString = self.getDefectString(defectClass)
-            defectClassesStrings.append(defectClassString)
+            defectClassesStrings.append([defectClassString, defectClass])
         return defectClassesStrings
 
     def getDefectClassDefectStringDictionary(self):

@@ -4,8 +4,9 @@ import src.images.ImagesHandler as ImagesHandler
 import src.images.ImagesTransformator as ImageTransformator
 
 IMAGES_PATH = './res/photos'
-DATASET_PATH = './res/dataset/all_classes'
-VALIDATION_PATH = './res/validation/'
+DATASET_PATH = './res/dataset/10_classes'
+VALIDATION_PATH = './res/validation/10_classes'
+CLASS_NUMBER = 10
 
 COIL_ID = 0
 CAMERA_ID = 1
@@ -18,9 +19,11 @@ Y0 = 2
 Y1 = 3
 
 
-def createClassFolders(defectClasses, dir):
-    for defectClass in defectClasses:
-        path = dir + '/' + defectClass
+def createClassFolders(defectClasses, dir, processedClasses):
+    for key, value in defectClasses.iteritems():
+        if key not in processedClasses:
+            continue
+        path = dir + '/' + value
         if not os.path.exists(path):
             print 'Creating ' + path
             os.makedirs(path)
@@ -42,6 +45,7 @@ def createImageParamsArray():
 def getMatchedDefects():
     matchedImgs = {}
     matchedRecords = {}
+    defectsCounterDict = {}
     counter = 0
     for defect in dbHandler.getDefectRecordsToGetFile():
         img = imgHandler.getImageBasedOnDatabaseRecord(defect[COIL_ID], defect[CAMERA_ID], defect[DEFECT_NO])
@@ -49,17 +53,28 @@ def getMatchedDefects():
             matchedImgs[counter] = img
             matchedRecords[counter] = defect
             counter += 1
+            if defect[DEFECT_CLASS] in defectsCounterDict:
+                defectsCounterDict[defect[DEFECT_CLASS]] = defectsCounterDict.get(defect[DEFECT_CLASS]) + 1
+            else:
+                defectsCounterDict[defect[DEFECT_CLASS]] = 1
             if counter % 1000 == 0:
                 print 'Got ' + str(counter) + ' records'
-    return matchedRecords, matchedImgs, counter
+    return matchedRecords, matchedImgs, counter, defectsCounterDict
 
 
-def preprocessData(defects, defectsImgs, defectsCounter):
+def preprocessData(defects, defectsImgs, defectsCounter, processedDefects):
     i = 0
+    skipped = 0
     processedImages = []
     print 'Start processing images...'
     while i < defectsCounter:
         defect = defects[i]
+        if skipped % 100 == 0:
+            print 'Skipped ' + str(skipped) + ' images'
+        if defect[DEFECT_CLASS] not in processedDefects:
+            skipped += 1
+            i += 1
+            continue
         roi = dbHandler.getROIOfRecord(defect[COIL_ID], defect[CAMERA_ID], defect[DEFECT_NO])
         defectImg = imgTransformator.createImageBasedOnROI(defectsImgs[i], roi[X0], roi[X1], roi[Y0], roi[Y1])
         defectImg = imgTransformator.standarizeImage(defectImg)
@@ -83,6 +98,18 @@ def saveFilesToDataset(processedImages, defectClasses):
         i += 1
 
 
+def getClassesSet(classesCounterDict):
+    classes = set()
+    i = 0
+    for key, value in sorted(classesCounterDict.iteritems(), key=lambda (k, v): (v, k), reverse=True):
+        print key, value
+        if i < CLASS_NUMBER:
+            classes.add(key)
+            i += 1
+        else:
+            return classes
+
+
 print 'Creating handlers ...'
 dbHandler = DatabaseHandler.DatabaseHandler()
 imgHandler = ImagesHandler.ImagesHandler()
@@ -90,18 +117,20 @@ imgTransformator = ImageTransformator.ImagesTransformator()
 print 'Handlers created'
 
 print 'Getting defect classes'
-defectClasses = dbHandler.getDefectClassesString()
 defectClassesDict = dbHandler.getDefectClassDefectStringDictionary()
 print 'Defect classes got'
 print 'Getting defects, images and defects counter'
-defects, defectImgs, defectsCounter = getMatchedDefects()
+defects, defectImgs, defectsCounter, defectsCounterDict = getMatchedDefects()
 print str(defectsCounter) + ' successfully got'
 
-createClassFolders(defectClasses, DATASET_PATH)
-createClassFolders(defectClasses, VALIDATION_PATH)
-processedImages = preprocessData(defects, defectImgs, defectsCounter)
-print '... all images successfully processed'
+processedClasses = getClassesSet(defectsCounterDict)
 
+createClassFolders(defectClassesDict, DATASET_PATH, processedClasses)
+createClassFolders(defectClassesDict, VALIDATION_PATH, processedClasses)
+# TODO: launch and test it
+processedImages = preprocessData(defects, defectImgs, defectsCounter, processedClasses)
+print '... all images successfully processed'
+#
 print 'Saving files to dataset...'
 saveFilesToDataset(processedImages, defectClassesDict)
 print 'Files successfully saved'
