@@ -4,9 +4,9 @@ import src.images.ImagesHandler as ImagesHandler
 import src.images.ImagesTransformator as ImageTransformator
 
 IMAGES_PATH = './res/photos'
-DATASET_PATH = './res/dataset/10_classes'
-VALIDATION_PATH = './res/validation/10_classes'
-CLASS_NUMBER = 10
+DATASET_PATH = './res/dataset/5_classes'
+VALIDATION_PATH = './res/validation/5_classes'
+CLASS_NUMBER = 5
 
 COIL_ID = 0
 CAMERA_ID = 1

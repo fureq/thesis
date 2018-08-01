@@ -23,7 +23,7 @@ DEPTH = int(config.get('Image', 'Depth'))
 EPOCHS = int(config.get('Train', 'Epochs'))
 BATCH_SIZE = int(config.get('Train', 'BatchSize'))
 
-APPROACH = '10_classes'
+APPROACH = '5_classes'
 
 DATASET_PATH = './res/dataset/' + APPROACH
 OUTPUT_MODEL_PATH = './src/neural_networks/' + APPROACH + '.model'
