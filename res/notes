@@ -11,3 +11,20 @@ utworzenie prawidlowego formatu: preprocessing_data
 2) Dodanie paddingu/embedded layers
 3)  Podejscie bez resize'a
 4) Analiza zbioru uczacego pod katem rozmiaru
+
+
+
+
+
+confussion matrix/tabela błędu - macierz błędu - porównanie i sprawdzenie czy problem jest z klasami, czy może pojedyncza klasa
+data augementetaion
+
+
+
+# TODO \/\/
+# optimizer - addelta - sprobowac
+# sgd z momentu
+# wiekszy model - wiecej warstw lub wiecej filtrow
+# fully connected convolutions - metodyka
+# mniejszy paramter DENSE - parametr w config ini
+# TODO /\/\

@@ -4,6 +4,7 @@ import cv2
 
 SECTION = 'Image'
 
+
 class ImagesTransformator:
 
     def __init__(self):
@@ -18,4 +19,7 @@ class ImagesTransformator:
         return img[y0:y1, x0:x1]
 
     def standarizeImage(self, image):
-        return cv2.resize(copy.copy(image), (self.WIDTH, self.HEIGHT))
+        return self.resize(copy.copy(image), (self.WIDTH, self.HEIGHT))
+
+    def resize(self, image, size):
+        return cv2.resize(image, size)

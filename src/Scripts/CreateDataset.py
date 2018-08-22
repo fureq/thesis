@@ -4,9 +4,9 @@ import src.images.ImagesHandler as ImagesHandler
 import src.images.ImagesTransformator as ImageTransformator
 
 IMAGES_PATH = './res/photos'
-DATASET_PATH = './res/dataset/5_classes'
-VALIDATION_PATH = './res/validation/5_classes'
-CLASS_NUMBER = 5
+DATASET_PATH = './res/dataset/no_normalization/5_classes'
+VALIDATION_PATH = './res/validation/no_normalization/5_classes'
+CLASS_NUMBER = 6
 
 COIL_ID = 0
 CAMERA_ID = 1
@@ -42,14 +42,27 @@ def createImageParamsArray():
     return result
 
 
-def getMatchedDefects():
+def getMatchedDefects(no_up_rescale=False, onyl_square=False):
     matchedImgs = {}
     matchedRecords = {}
     defectsCounterDict = {}
     counter = 0
+    skipped = 0
     for defect in dbHandler.getDefectRecordsToGetFile():
         img = imgHandler.getImageBasedOnDatabaseRecord(defect[COIL_ID], defect[CAMERA_ID], defect[DEFECT_NO])
         if img is not None:
+            if not no_up_rescale and not onyl_square:
+                size = dbHandler.getROIOfRecord(defect[COIL_ID], defect[CAMERA_ID], defect[DEFECT_NO])
+                x = size[X1] - size[X0]
+                y = size[Y1] - size[Y0]
+                if no_up_rescale:
+                    if x < 32 and y < 32:
+                        skipped += 1
+                        continue
+                if onyl_square:
+                    if x * 2 < y or y * 2 < x:
+                        skipped += 1
+                        continue
             matchedImgs[counter] = img
             matchedRecords[counter] = defect
             counter += 1
@@ -58,11 +71,11 @@ def getMatchedDefects():
             else:
                 defectsCounterDict[defect[DEFECT_CLASS]] = 1
             if counter % 1000 == 0:
-                print 'Got ' + str(counter) + ' records'
+                print 'Got ' + str(counter) + ' records and skipped ' + str(skipped)
     return matchedRecords, matchedImgs, counter, defectsCounterDict
 
 
-def preprocessData(defects, defectsImgs, defectsCounter, processedDefects):
+def preprocessData(defects, defectsImgs, defectsCounter, processedDefects, normalize=False):
     i = 0
     skipped = 0
     processedImages = []
@@ -75,9 +88,11 @@ def preprocessData(defects, defectsImgs, defectsCounter, processedDefects):
             skipped += 1
             i += 1
             continue
-        roi = dbHandler.getROIOfRecord(defect[COIL_ID], defect[CAMERA_ID], defect[DEFECT_NO])
-        defectImg = imgTransformator.createImageBasedOnROI(defectsImgs[i], roi[X0], roi[X1], roi[Y0], roi[Y1])
-        defectImg = imgTransformator.standarizeImage(defectImg)
+        defectImg = defectsImgs[i]
+        if normalize:
+            roi = dbHandler.getROIOfRecord(defect[COIL_ID], defect[CAMERA_ID], defect[DEFECT_NO])
+            defectImg = imgTransformator.createImageBasedOnROI(defectsImgs[i], roi[X0], roi[X1], roi[Y0], roi[Y1])
+            defectImg = imgTransformator.standarizeImage(defectImg)
         i += 1
         processedImages.append([defectImg, defect[DEFECT_CLASS]])
         if i % 100 == 0:
@@ -127,10 +142,9 @@ processedClasses = getClassesSet(defectsCounterDict)
 
 createClassFolders(defectClassesDict, DATASET_PATH, processedClasses)
 createClassFolders(defectClassesDict, VALIDATION_PATH, processedClasses)
-# TODO: launch and test it
 processedImages = preprocessData(defects, defectImgs, defectsCounter, processedClasses)
 print '... all images successfully processed'
-#
+
 print 'Saving files to dataset...'
 saveFilesToDataset(processedImages, defectClassesDict)
 print 'Files successfully saved'

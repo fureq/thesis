@@ -26,7 +26,10 @@ class ImagesHandler:
         cv2.imwrite(filepath, img)
 
     def getImageBasedOnDatabaseRecord(self, coilId, cameraId, defectNo):
-        return cv2.imread(self.getFilePath(coilId, cameraId, defectNo))
+        return self.openImage(self.getFilePath(coilId, cameraId, defectNo))
+
+    def openImage(self, path):
+        return cv2.imread(path)
 
     def getFilePath(self, coilId, cameraId, defectNo):
         return IMAGES_DIR \
@@ -54,7 +57,7 @@ class ImagesHandler:
             number += 1
         return numbderDirMap
 
-    def getImagesAndLabelsInPath(self, path):
+    def getImgesAndLabelsInPath(self, path):
         images = []
         labels = []
         classes = set()
@@ -62,9 +65,12 @@ class ImagesHandler:
         random.seed(42)
         random.shuffle(imagePaths)
         labelsMap = self.mapDirToNumber(path)
-
+        i = 1
         for imgPath in imagePaths:
+            i += 1
             image = cv2.imread(imgPath)
+            # if i % 2 != 0:
+            #     continue
             image = img_to_array(image)
             images.append(image)
 
