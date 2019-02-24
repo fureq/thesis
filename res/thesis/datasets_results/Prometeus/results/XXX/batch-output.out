@@ -1,0 +1,2298 @@
+----> Enqueuing command to execute: module load plgrid/libs/opencv/3.2.0
+----> Enqueuing command to execute: module load plgrid/tools/python/2.7.14
+----> Enqueuing command to execute: module load plgrid/libs/tensorflow-cpu/1.10.0-python-2.7
+----> Enqueuing command to execute: export LD_LIBRARY_PATH=$SCRATCH/cuda/lib64:$LD_LIBRARY_PATH
+----> Enqueuing command to execute: python2.7 -m pip install --user virtualenv
+----> Enqueuing command to execute: python2.7 -m virtualenv --system-site-packages /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env
+----> Enqueuing command to execute: source /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/activate
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install keras
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install scipy
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install numpy
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install scikit-learn
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install matplotlib
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install configparser
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install imutils
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install opencv-python-headless
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/python2.7 /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/TrainNetwork.py
+----> Executing enqueued commands: module load plgrid/libs/opencv/3.2.0 && module load plgrid/tools/python/2.7.14 && module load plgrid/libs/tensorflow-cpu/1.10.0-python-2.7 && export LD_LIBRARY_PATH=$SCRATCH/cuda/lib64:$LD_LIBRARY_PATH && python2.7 -m pip install --user virtualenv && python2.7 -m virtualenv --system-site-packages /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env && source /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/activate && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install keras && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install scipy && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install numpy && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install scikit-learn && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install matplotlib && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install configparser && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install imutils && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install opencv-python-headless && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/python2.7 /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/TrainNetwork.py
+ plgrid/libs/codecs/1.0 loaded.
+ plgrid/tools/yasm/1.3.0 loaded.
+ plgrid/tools/ffmpeg/3.2.2 loaded.
+ plgrid/libs/qt/5.4.1 loaded.
+ plgrid/libs/mkl/11.3.1 loaded.
+ plgrid/tools/gcc/4.9.2 loaded.
+ plgrid/tools/intel/15.0.2 loaded.
+ plgrid/tools/python/2.7.9 loaded.
+ plgrid/apps/cuda/7.5 loaded.
+ plgrid/libs/opencv/3.2.0 loaded.
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+plgrid/tools/intel/15.0.2:
+   This module is deprecated and it is going to be removed from the system
+   in near future. Please switch to a newer compiler, at least version
+   17.0.5.
+
+-------------------------------------------------------------------------------
+
+ plgrid/libs/qt/5.4.1 unloaded.
+ plgrid/libs/mkl/11.3.1 unloaded.
+ plgrid/tools/gcc/4.9.2 unloaded.
+ plgrid/tools/intel/15.0.2 unloaded.
+ plgrid/tools/python/2.7.9 unloaded.
+ plgrid/tools/gcc/6.4.0 loaded.
+ plgrid/tools/intel/18.0.0 loaded.
+ plgrid/libs/mkl/2018.0.0 loaded.
+*********WARNING*********
+    To use TensorFlow with GPU you need to have your own cuDNN 7 libraries
+    and add its path to variabele LD_LIBRARY_PATH:
+    export LD_LIBRARY_PATH=/path/to/cudnn/libraries:$LD_LIBRARY_PATH 
+ plgrid/tools/python/2.7.14 loaded.
+
+The following have been reloaded with a version change:
+  1) plgrid/libs/mkl/11.3.1 => plgrid/libs/mkl/2018.0.0
+  2) plgrid/tools/gcc/4.9.2 => plgrid/tools/gcc/6.4.0
+  3) plgrid/tools/intel/15.0.2 => plgrid/tools/intel/18.0.0
+  4) plgrid/tools/python/2.7.9 => plgrid/tools/python/2.7.14
+
+ plgrid/tools/impi/2018 loaded.
+ plgrid/libs/tensorflow-cpu/1.10.0-python-2.7 loaded.
+Requirement already satisfied: virtualenv in /net/software/local/python/2.7.14/lib/python2.7/site-packages (16.0.0)
+New python executable in /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/python2.7
+Not overwriting existing python script /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/python (you must use /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/python2.7)
+Installing setuptools, pip, wheel...done.
+Requirement already satisfied: keras in /net/software/local/python/2.7.14/lib/python2.7/site-packages (2.1.6)
+Requirement already satisfied: h5py in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from keras) (2.7.1)
+Requirement already satisfied: six>=1.9.0 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from keras) (1.11.0)
+Requirement already satisfied: pyyaml in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from keras) (3.12)
+Requirement already satisfied: numpy>=1.9.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages/numpy-1.14.0-py2.7-linux-x86_64.egg (from keras) (1.14.0)
+Requirement already satisfied: scipy>=0.14 in /net/software/local/python/2.7.14/lib/python2.7/site-packages/scipy-1.1.0-py2.7-linux-x86_64.egg (from keras) (1.1.0)
+Requirement already satisfied: scipy in /net/software/local/python/2.7.14/lib/python2.7/site-packages/scipy-1.1.0-py2.7-linux-x86_64.egg (1.1.0)
+Requirement already satisfied: numpy in /net/software/local/python/2.7.14/lib/python2.7/site-packages/numpy-1.14.0-py2.7-linux-x86_64.egg (1.14.0)
+Requirement already satisfied: scikit-learn in /net/software/local/python/2.7.14/lib/python2.7/site-packages (0.19.1)
+Requirement already satisfied: matplotlib in /net/software/local/python/2.7.14/lib/python2.7/site-packages (2.2.2)
+Requirement already satisfied: python-dateutil>=2.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (2.7.2)
+Requirement already satisfied: cycler>=0.10 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (0.10.0)
+Requirement already satisfied: subprocess32 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (3.2.7)
+Requirement already satisfied: pytz in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (2018.4)
+Requirement already satisfied: six>=1.10 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (1.11.0)
+Requirement already satisfied: backports.functools-lru-cache in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (1.5)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (2.2.0)
+Requirement already satisfied: numpy>=1.7.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages/numpy-1.14.0-py2.7-linux-x86_64.egg (from matplotlib) (1.14.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (1.0.1)
+Requirement already satisfied: setuptools in /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/lib/python2.7/site-packages (from kiwisolver>=1.0.1->matplotlib) (40.6.2)
+Requirement already satisfied: configparser in /net/software/local/python/2.7.14/lib/python2.7/site-packages (3.5.0)
+Requirement already satisfied: imutils in /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/lib/python2.7/site-packages (0.5.1)
+Requirement already satisfied: opencv-python-headless in /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/lib/python2.7/site-packages (3.4.3.18)
+Requirement already satisfied: numpy>=1.11.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages/numpy-1.14.0-py2.7-linux-x86_64.egg (from opencv-python-headless) (1.14.0)
+/net/software/local/python/2.7.14/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+2018-11-22 17:33:50.282948: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+printing images
+images printed
+del images and labels
+[INFO] compiling model...
+[INFO] training network...
+Epoch 1/100
+
+ 1/20 [>.............................] - ETA: 9:42 - loss: 1.6147 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 7:45 - loss: 2.3093 - acc: 0.2637
+ 3/20 [===>..........................] - ETA: 6:52 - loss: 2.7690 - acc: 0.3138
+ 4/20 [=====>........................] - ETA: 6:10 - loss: 2.5053 - acc: 0.2490
+ 5/20 [======>.......................] - ETA: 5:37 - loss: 2.4704 - acc: 0.2805
+ 6/20 [========>.....................] - ETA: 5:11 - loss: 2.3300 - acc: 0.2415
+ 7/20 [=========>....................] - ETA: 4:45 - loss: 2.2035 - acc: 0.2796
+ 8/20 [===========>..................] - ETA: 4:20 - loss: 2.1300 - acc: 0.3071
+ 9/20 [============>.................] - ETA: 3:57 - loss: 2.0631 - acc: 0.3207
+10/20 [==============>...............] - ETA: 3:33 - loss: 2.0020 - acc: 0.3383
+11/20 [===============>..............] - ETA: 3:10 - loss: 1.9202 - acc: 0.3524
+12/20 [=================>............] - ETA: 2:46 - loss: 1.8626 - acc: 0.3595
+13/20 [==================>...........] - ETA: 2:24 - loss: 1.8055 - acc: 0.3688
+14/20 [====================>.........] - ETA: 2:02 - loss: 1.7725 - acc: 0.3681
+15/20 [=====================>........] - ETA: 1:40 - loss: 1.7292 - acc: 0.3699
+16/20 [=======================>......] - ETA: 1:20 - loss: 1.6899 - acc: 0.3766
+17/20 [========================>.....] - ETA: 59s - loss: 1.6647 - acc: 0.3792 
+18/20 [==========================>...] - ETA: 39s - loss: 1.6396 - acc: 0.3822
+19/20 [===========================>..] - ETA: 19s - loss: 1.6063 - acc: 0.3886
+20/20 [==============================] - 435s 22s/step - loss: 1.5872 - acc: 0.3948 - val_loss: 1.2854 - val_acc: 0.4784
+Epoch 2/100
+
+ 1/20 [>.............................] - ETA: 6:30 - loss: 1.2753 - acc: 0.4961
+ 2/20 [==>...........................] - ETA: 6:03 - loss: 1.2930 - acc: 0.5020
+ 3/20 [===>..........................] - ETA: 5:47 - loss: 1.2460 - acc: 0.4818
+ 4/20 [=====>........................] - ETA: 5:25 - loss: 1.2011 - acc: 0.4590
+ 5/20 [======>.......................] - ETA: 5:04 - loss: 1.1914 - acc: 0.4570
+ 6/20 [========>.....................] - ETA: 4:44 - loss: 1.1740 - acc: 0.4596
+ 7/20 [=========>....................] - ETA: 4:25 - loss: 1.1585 - acc: 0.4688
+ 8/20 [===========>..................] - ETA: 4:05 - loss: 1.1582 - acc: 0.4692
+ 9/20 [============>.................] - ETA: 3:45 - loss: 1.1489 - acc: 0.4727
+10/20 [==============>...............] - ETA: 3:25 - loss: 1.1446 - acc: 0.4723
+11/20 [===============>..............] - ETA: 3:02 - loss: 1.1465 - acc: 0.4673
+12/20 [=================>............] - ETA: 2:41 - loss: 1.1396 - acc: 0.4678
+13/20 [==================>...........] - ETA: 2:18 - loss: 1.1390 - acc: 0.4681
+14/20 [====================>.........] - ETA: 1:57 - loss: 1.1351 - acc: 0.4690
+15/20 [=====================>........] - ETA: 1:36 - loss: 1.1288 - acc: 0.4703
+16/20 [=======================>......] - ETA: 1:17 - loss: 1.1231 - acc: 0.4753
+17/20 [========================>.....] - ETA: 57s - loss: 1.1177 - acc: 0.4769 
+18/20 [==========================>...] - ETA: 38s - loss: 1.1141 - acc: 0.4773
+19/20 [===========================>..] - ETA: 18s - loss: 1.1140 - acc: 0.4787
+20/20 [==============================] - 425s 21s/step - loss: 1.2666 - acc: 0.4563 - val_loss: 1.1036 - val_acc: 0.4784
+Epoch 3/100
+
+ 1/20 [>.............................] - ETA: 5:36 - loss: 1.0938 - acc: 0.4727
+ 2/20 [==>...........................] - ETA: 5:46 - loss: 1.1150 - acc: 0.4805
+ 3/20 [===>..........................] - ETA: 5:33 - loss: 1.1103 - acc: 0.4857
+ 4/20 [=====>........................] - ETA: 5:14 - loss: 1.1205 - acc: 0.4844
+ 5/20 [======>.......................] - ETA: 4:55 - loss: 1.1156 - acc: 0.4875
+ 6/20 [========>.....................] - ETA: 4:38 - loss: 1.1126 - acc: 0.4948
+ 7/20 [=========>....................] - ETA: 4:19 - loss: 1.1114 - acc: 0.4972
+ 8/20 [===========>..................] - ETA: 3:59 - loss: 1.1036 - acc: 0.5005
+ 9/20 [============>.................] - ETA: 3:39 - loss: 1.0962 - acc: 0.5013
+10/20 [==============>...............] - ETA: 3:21 - loss: 1.0961 - acc: 0.4996
+11/20 [===============>..............] - ETA: 3:01 - loss: 1.4061 - acc: 0.4592
+12/20 [=================>............] - ETA: 2:41 - loss: 1.3773 - acc: 0.4606
+13/20 [==================>...........] - ETA: 2:20 - loss: 1.3511 - acc: 0.4645
+14/20 [====================>.........] - ETA: 1:59 - loss: 1.3340 - acc: 0.4608
+15/20 [=====================>........] - ETA: 1:38 - loss: 1.3206 - acc: 0.4577
+16/20 [=======================>......] - ETA: 1:17 - loss: 1.3030 - acc: 0.4594
+17/20 [========================>.....] - ETA: 57s - loss: 1.2928 - acc: 0.4604 
+18/20 [==========================>...] - ETA: 38s - loss: 1.2846 - acc: 0.4630
+19/20 [===========================>..] - ETA: 18s - loss: 1.2717 - acc: 0.4658
+20/20 [==============================] - 426s 21s/step - loss: 1.2611 - acc: 0.4664 - val_loss: 1.0794 - val_acc: 0.4863
+Epoch 4/100
+
+ 1/20 [>.............................] - ETA: 5:19 - loss: 1.0224 - acc: 0.4219
+ 2/20 [==>...........................] - ETA: 5:19 - loss: 1.0478 - acc: 0.4043
+ 3/20 [===>..........................] - ETA: 5:18 - loss: 1.0543 - acc: 0.4323
+ 4/20 [=====>........................] - ETA: 5:05 - loss: 1.0526 - acc: 0.4551
+ 5/20 [======>.......................] - ETA: 4:48 - loss: 1.0594 - acc: 0.4633
+ 6/20 [========>.....................] - ETA: 4:35 - loss: 1.0696 - acc: 0.4629
+ 7/20 [=========>....................] - ETA: 4:17 - loss: 1.1325 - acc: 0.4648
+ 8/20 [===========>..................] - ETA: 3:58 - loss: 1.1524 - acc: 0.4697
+ 9/20 [============>.................] - ETA: 3:39 - loss: 1.1505 - acc: 0.4674
+10/20 [==============>...............] - ETA: 3:21 - loss: 1.1388 - acc: 0.4625
+11/20 [===============>..............] - ETA: 3:01 - loss: 1.1273 - acc: 0.4695
+12/20 [=================>............] - ETA: 2:41 - loss: 1.1170 - acc: 0.4788
+13/20 [==================>...........] - ETA: 2:21 - loss: 1.1152 - acc: 0.4805
+14/20 [====================>.........] - ETA: 2:00 - loss: 1.1142 - acc: 0.4796
+15/20 [=====================>........] - ETA: 1:39 - loss: 1.1120 - acc: 0.4781
+16/20 [=======================>......] - ETA: 1:18 - loss: 1.1088 - acc: 0.4746
+17/20 [========================>.....] - ETA: 58s - loss: 1.1004 - acc: 0.4770 
+18/20 [==========================>...] - ETA: 38s - loss: 1.0968 - acc: 0.4775
+19/20 [===========================>..] - ETA: 19s - loss: 1.0900 - acc: 0.4780
+20/20 [==============================] - 431s 22s/step - loss: 1.0905 - acc: 0.4801 - val_loss: 1.0936 - val_acc: 0.4863
+Epoch 5/100
+
+ 1/20 [>.............................] - ETA: 5:32 - loss: 1.1458 - acc: 0.4219
+ 2/20 [==>...........................] - ETA: 5:15 - loss: 1.1369 - acc: 0.4082
+ 3/20 [===>..........................] - ETA: 4:55 - loss: 1.1130 - acc: 0.4349
+ 4/20 [=====>........................] - ETA: 4:49 - loss: 1.1190 - acc: 0.4570
+ 5/20 [======>.......................] - ETA: 4:38 - loss: 1.1034 - acc: 0.4656
+ 6/20 [========>.....................] - ETA: 4:25 - loss: 1.0948 - acc: 0.4694
+ 7/20 [=========>....................] - ETA: 4:21 - loss: 1.0863 - acc: 0.4727
+ 8/20 [===========>..................] - ETA: 4:02 - loss: 1.0940 - acc: 0.4746
+ 9/20 [============>.................] - ETA: 3:41 - loss: 1.0964 - acc: 0.4792
+10/20 [==============>...............] - ETA: 3:21 - loss: 1.0920 - acc: 0.4785
+11/20 [===============>..............] - ETA: 3:01 - loss: 1.0922 - acc: 0.4709
+12/20 [=================>............] - ETA: 2:40 - loss: 1.0877 - acc: 0.4736
+13/20 [==================>...........] - ETA: 2:20 - loss: 2.2099 - acc: 0.4393
+14/20 [====================>.........] - ETA: 2:00 - loss: 2.1333 - acc: 0.4439
+15/20 [=====================>........] - ETA: 1:39 - loss: 2.0595 - acc: 0.4464
+16/20 [=======================>......] - ETA: 1:19 - loss: 2.0144 - acc: 0.4429
+17/20 [========================>.....] - ETA: 59s - loss: 2.8070 - acc: 0.4192 
+18/20 [==========================>...] - ETA: 39s - loss: 3.5220 - acc: 0.3974
+19/20 [===========================>..] - ETA: 19s - loss: 4.1684 - acc: 0.3775
+20/20 [==============================] - 434s 22s/step - loss: 4.7414 - acc: 0.3602 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 6/100
+
+ 1/20 [>.............................] - ETA: 5:12 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 5:02 - loss: 15.8348 - acc: 0.0176
+ 3/20 [===>..........................] - ETA: 4:49 - loss: 15.8453 - acc: 0.0169
+ 4/20 [=====>........................] - ETA: 4:36 - loss: 15.7876 - acc: 0.0205
+ 5/20 [======>.......................] - ETA: 4:27 - loss: 15.7907 - acc: 0.0203
+ 6/20 [========>.....................] - ETA: 4:15 - loss: 15.7403 - acc: 0.0234
+ 7/20 [=========>....................] - ETA: 4:02 - loss: 15.7313 - acc: 0.0240
+ 8/20 [===========>..................] - ETA: 3:47 - loss: 15.7325 - acc: 0.0239
+ 9/20 [============>.................] - ETA: 3:31 - loss: 15.7613 - acc: 0.0221
+10/20 [==============>...............] - ETA: 3:13 - loss: 15.7529 - acc: 0.0227
+11/20 [===============>..............] - ETA: 2:54 - loss: 15.7575 - acc: 0.0224
+12/20 [=================>............] - ETA: 2:35 - loss: 15.7613 - acc: 0.0221
+13/20 [==================>...........] - ETA: 2:16 - loss: 15.7549 - acc: 0.0225
+14/20 [====================>.........] - ETA: 1:57 - loss: 15.7493 - acc: 0.0229
+15/20 [=====================>........] - ETA: 1:38 - loss: 15.7328 - acc: 0.0239
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7490 - acc: 0.0229
+17/20 [========================>.....] - ETA: 58s - loss: 15.7411 - acc: 0.0234 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7410 - acc: 0.0234
+19/20 [===========================>..] - ETA: 19s - loss: 15.7344 - acc: 0.0238
+20/20 [==============================] - 428s 21s/step - loss: 15.7221 - acc: 0.0246 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 7/100
+
+ 1/20 [>.............................] - ETA: 5:52 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 5:24 - loss: 15.7089 - acc: 0.0254
+ 3/20 [===>..........................] - ETA: 5:01 - loss: 15.7613 - acc: 0.0221
+ 4/20 [=====>........................] - ETA: 4:45 - loss: 15.8190 - acc: 0.0186
+ 5/20 [======>.......................] - ETA: 4:25 - loss: 15.8033 - acc: 0.0195
+ 6/20 [========>.....................] - ETA: 4:12 - loss: 15.8033 - acc: 0.0195
+ 7/20 [=========>....................] - ETA: 3:58 - loss: 15.7583 - acc: 0.0223
+ 8/20 [===========>..................] - ETA: 3:42 - loss: 15.7718 - acc: 0.0215
+ 9/20 [============>.................] - ETA: 3:25 - loss: 15.7613 - acc: 0.0221
+10/20 [==============>...............] - ETA: 3:09 - loss: 15.7277 - acc: 0.0242
+11/20 [===============>..............] - ETA: 2:51 - loss: 15.7346 - acc: 0.0238
+12/20 [=================>............] - ETA: 2:33 - loss: 15.7141 - acc: 0.0251
+13/20 [==================>...........] - ETA: 2:14 - loss: 15.7113 - acc: 0.0252
+14/20 [====================>.........] - ETA: 1:56 - loss: 15.7178 - acc: 0.0248
+15/20 [=====================>........] - ETA: 1:37 - loss: 15.7235 - acc: 0.0245
+16/20 [=======================>......] - ETA: 1:17 - loss: 15.7207 - acc: 0.0247
+17/20 [========================>.....] - ETA: 58s - loss: 15.7144 - acc: 0.0250 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7298 - acc: 0.0241
+19/20 [===========================>..] - ETA: 19s - loss: 15.7337 - acc: 0.0238
+20/20 [==============================] - 430s 21s/step - loss: 15.7372 - acc: 0.0236 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 8/100
+
+ 1/20 [>.............................] - ETA: 5:28 - loss: 15.7752 - acc: 0.0213
+ 2/20 [==>...........................] - ETA: 5:15 - loss: 15.7892 - acc: 0.0204
+ 3/20 [===>..........................] - ETA: 5:01 - loss: 15.7729 - acc: 0.0214
+ 4/20 [=====>........................] - ETA: 4:41 - loss: 15.8277 - acc: 0.0180
+ 5/20 [======>.......................] - ETA: 4:26 - loss: 15.7977 - acc: 0.0199
+ 6/20 [========>.....................] - ETA: 4:08 - loss: 15.8196 - acc: 0.0185
+ 7/20 [=========>....................] - ETA: 3:54 - loss: 15.7723 - acc: 0.0215
+ 8/20 [===========>..................] - ETA: 3:41 - loss: 15.7526 - acc: 0.0227
+ 9/20 [============>.................] - ETA: 3:24 - loss: 15.7232 - acc: 0.0245
+10/20 [==============>...............] - ETA: 3:07 - loss: 15.7312 - acc: 0.0240
+11/20 [===============>..............] - ETA: 2:50 - loss: 15.7263 - acc: 0.0243
+12/20 [=================>............] - ETA: 2:32 - loss: 15.7275 - acc: 0.0242
+13/20 [==================>...........] - ETA: 2:14 - loss: 15.7430 - acc: 0.0233
+14/20 [====================>.........] - ETA: 1:56 - loss: 15.7293 - acc: 0.0241
+15/20 [=====================>........] - ETA: 1:37 - loss: 15.7259 - acc: 0.0243
+16/20 [=======================>......] - ETA: 1:17 - loss: 15.7307 - acc: 0.0240
+17/20 [========================>.....] - ETA: 58s - loss: 15.7276 - acc: 0.0242 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7248 - acc: 0.0244
+19/20 [===========================>..] - ETA: 19s - loss: 15.7256 - acc: 0.0244
+20/20 [==============================] - 432s 22s/step - loss: 15.7421 - acc: 0.0233 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 9/100
+
+ 1/20 [>.............................] - ETA: 5:37 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 5:09 - loss: 15.6948 - acc: 0.0263
+ 3/20 [===>..........................] - ETA: 4:51 - loss: 15.7310 - acc: 0.0240
+ 4/20 [=====>........................] - ETA: 4:31 - loss: 15.7648 - acc: 0.0219
+ 5/20 [======>.......................] - ETA: 4:14 - loss: 15.8103 - acc: 0.0191
+ 6/20 [========>.....................] - ETA: 3:55 - loss: 15.7881 - acc: 0.0205
+ 7/20 [=========>....................] - ETA: 3:40 - loss: 15.7453 - acc: 0.0231
+ 8/20 [===========>..................] - ETA: 3:28 - loss: 15.7368 - acc: 0.0237
+ 9/20 [============>.................] - ETA: 3:14 - loss: 15.7442 - acc: 0.0232
+10/20 [==============>...............] - ETA: 2:59 - loss: 15.7627 - acc: 0.0220
+11/20 [===============>..............] - ETA: 2:43 - loss: 15.7607 - acc: 0.0222
+12/20 [=================>............] - ETA: 2:26 - loss: 15.7695 - acc: 0.0216
+13/20 [==================>...........] - ETA: 2:08 - loss: 15.7672 - acc: 0.0218
+14/20 [====================>.........] - ETA: 1:51 - loss: 15.7653 - acc: 0.0219
+15/20 [=====================>........] - ETA: 1:33 - loss: 15.7477 - acc: 0.0230
+16/20 [=======================>......] - ETA: 1:15 - loss: 15.7393 - acc: 0.0235
+17/20 [========================>.....] - ETA: 56s - loss: 15.7320 - acc: 0.0240 
+18/20 [==========================>...] - ETA: 37s - loss: 15.7255 - acc: 0.0244
+19/20 [===========================>..] - ETA: 18s - loss: 15.7229 - acc: 0.0245
+20/20 [==============================] - 421s 21s/step - loss: 15.7207 - acc: 0.0247 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 10/100
+
+ 1/20 [>.............................] - ETA: 5:29 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:09 - loss: 15.8033 - acc: 0.0195
+ 3/20 [===>..........................] - ETA: 4:46 - loss: 15.8453 - acc: 0.0169
+ 4/20 [=====>........................] - ETA: 4:29 - loss: 15.8190 - acc: 0.0186
+ 5/20 [======>.......................] - ETA: 4:12 - loss: 15.7403 - acc: 0.0234
+ 6/20 [========>.....................] - ETA: 3:56 - loss: 15.6984 - acc: 0.0260
+ 7/20 [=========>....................] - ETA: 3:39 - loss: 15.7133 - acc: 0.0251
+ 8/20 [===========>..................] - ETA: 3:23 - loss: 15.7561 - acc: 0.0225
+ 9/20 [============>.................] - ETA: 3:17 - loss: 15.7543 - acc: 0.0226
+10/20 [==============>...............] - ETA: 3:01 - loss: 15.7403 - acc: 0.0234
+11/20 [===============>..............] - ETA: 2:45 - loss: 15.7518 - acc: 0.0227
+12/20 [=================>............] - ETA: 2:28 - loss: 15.7613 - acc: 0.0221
+13/20 [==================>...........] - ETA: 2:10 - loss: 15.7500 - acc: 0.0228
+14/20 [====================>.........] - ETA: 1:52 - loss: 15.7403 - acc: 0.0234
+15/20 [=====================>........] - ETA: 1:34 - loss: 15.7529 - acc: 0.0227
+16/20 [=======================>......] - ETA: 1:15 - loss: 15.7482 - acc: 0.0229
+17/20 [========================>.....] - ETA: 57s - loss: 15.7440 - acc: 0.0232 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7473 - acc: 0.0230
+19/20 [===========================>..] - ETA: 19s - loss: 15.7503 - acc: 0.0228
+20/20 [==============================] - 427s 21s/step - loss: 15.7592 - acc: 0.0223 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 11/100
+
+ 1/20 [>.............................] - ETA: 5:33 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:06 - loss: 15.7718 - acc: 0.0215
+ 3/20 [===>..........................] - ETA: 4:55 - loss: 15.7823 - acc: 0.0208
+ 4/20 [=====>........................] - ETA: 4:38 - loss: 15.7089 - acc: 0.0254
+ 5/20 [======>.......................] - ETA: 4:22 - loss: 15.7655 - acc: 0.0219
+ 6/20 [========>.....................] - ETA: 4:04 - loss: 15.7823 - acc: 0.0208
+ 7/20 [=========>....................] - ETA: 3:48 - loss: 15.7673 - acc: 0.0218
+ 8/20 [===========>..................] - ETA: 3:29 - loss: 15.7639 - acc: 0.0220
+ 9/20 [============>.................] - ETA: 3:10 - loss: 15.7195 - acc: 0.0247
+10/20 [==============>...............] - ETA: 2:56 - loss: 15.6901 - acc: 0.0266
+11/20 [===============>..............] - ETA: 2:41 - loss: 15.6946 - acc: 0.0263
+12/20 [=================>............] - ETA: 2:24 - loss: 15.7037 - acc: 0.0257
+13/20 [==================>...........] - ETA: 2:07 - loss: 15.7092 - acc: 0.0254
+14/20 [====================>.........] - ETA: 1:50 - loss: 15.7204 - acc: 0.0247
+15/20 [=====================>........] - ETA: 1:32 - loss: 15.7175 - acc: 0.0249
+16/20 [=======================>......] - ETA: 1:14 - loss: 15.7150 - acc: 0.0250
+17/20 [========================>.....] - ETA: 56s - loss: 15.7165 - acc: 0.0249 
+18/20 [==========================>...] - ETA: 37s - loss: 15.7178 - acc: 0.0248
+19/20 [===========================>..] - ETA: 19s - loss: 15.7058 - acc: 0.0256
+20/20 [==============================] - 429s 21s/step - loss: 15.7076 - acc: 0.0255 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 12/100
+
+ 1/20 [>.............................] - ETA: 5:34 - loss: 15.4885 - acc: 0.0391
+ 2/20 [==>...........................] - ETA: 5:17 - loss: 15.6144 - acc: 0.0312
+ 3/20 [===>..........................] - ETA: 5:01 - loss: 15.6564 - acc: 0.0286
+ 4/20 [=====>........................] - ETA: 4:43 - loss: 15.6616 - acc: 0.0283
+ 5/20 [======>.......................] - ETA: 4:28 - loss: 15.7151 - acc: 0.0250
+ 6/20 [========>.....................] - ETA: 4:10 - loss: 15.7193 - acc: 0.0247
+ 7/20 [=========>....................] - ETA: 3:54 - loss: 15.6954 - acc: 0.0262
+ 8/20 [===========>..................] - ETA: 3:36 - loss: 15.6931 - acc: 0.0264
+ 9/20 [============>.................] - ETA: 3:17 - loss: 15.7193 - acc: 0.0247
+10/20 [==============>...............] - ETA: 2:59 - loss: 15.7151 - acc: 0.0250
+11/20 [===============>..............] - ETA: 2:44 - loss: 15.7346 - acc: 0.0238
+12/20 [=================>............] - ETA: 2:28 - loss: 15.7351 - acc: 0.0238
+13/20 [==================>...........] - ETA: 2:10 - loss: 15.7355 - acc: 0.0237
+14/20 [====================>.........] - ETA: 1:52 - loss: 15.7538 - acc: 0.0226
+15/20 [=====================>........] - ETA: 1:34 - loss: 15.7445 - acc: 0.0232
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7521 - acc: 0.0227
+17/20 [========================>.....] - ETA: 57s - loss: 15.7514 - acc: 0.0227 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7438 - acc: 0.0232
+19/20 [===========================>..] - ETA: 19s - loss: 15.7238 - acc: 0.0245
+20/20 [==============================] - 434s 22s/step - loss: 15.7089 - acc: 0.0254 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 13/100
+
+ 1/20 [>.............................] - ETA: 6:25 - loss: 16.0551 - acc: 0.0039
+ 2/20 [==>...........................] - ETA: 5:53 - loss: 15.8977 - acc: 0.0137
+ 3/20 [===>..........................] - ETA: 6:01 - loss: 15.8033 - acc: 0.0195
+ 4/20 [=====>........................] - ETA: 5:26 - loss: 15.8663 - acc: 0.0156
+ 5/20 [======>.......................] - ETA: 4:59 - loss: 15.8159 - acc: 0.0187
+ 6/20 [========>.....................] - ETA: 4:32 - loss: 15.8091 - acc: 0.0192
+ 7/20 [=========>....................] - ETA: 4:08 - loss: 15.7903 - acc: 0.0203
+ 8/20 [===========>..................] - ETA: 3:46 - loss: 15.7762 - acc: 0.0212
+ 9/20 [============>.................] - ETA: 3:25 - loss: 15.7722 - acc: 0.0215
+10/20 [==============>...............] - ETA: 3:06 - loss: 15.7690 - acc: 0.0217
+11/20 [===============>..............] - ETA: 2:47 - loss: 15.7778 - acc: 0.0211
+12/20 [=================>............] - ETA: 2:29 - loss: 15.7695 - acc: 0.0216
+13/20 [==================>...........] - ETA: 2:12 - loss: 15.7769 - acc: 0.0212
+14/20 [====================>.........] - ETA: 1:54 - loss: 15.7788 - acc: 0.0211
+15/20 [=====================>........] - ETA: 1:35 - loss: 15.7846 - acc: 0.0207
+16/20 [=======================>......] - ETA: 1:17 - loss: 15.7740 - acc: 0.0213
+17/20 [========================>.....] - ETA: 58s - loss: 15.7646 - acc: 0.0219 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7633 - acc: 0.0220
+19/20 [===========================>..] - ETA: 19s - loss: 15.7620 - acc: 0.0221
+20/20 [==============================] - 441s 22s/step - loss: 15.7641 - acc: 0.0220 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 14/100
+
+ 1/20 [>.............................] - ETA: 5:53 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 5:44 - loss: 15.6948 - acc: 0.0263
+ 3/20 [===>..........................] - ETA: 6:13 - loss: 15.7519 - acc: 0.0227
+ 4/20 [=====>........................] - ETA: 5:33 - loss: 15.7648 - acc: 0.0219
+ 5/20 [======>.......................] - ETA: 5:01 - loss: 15.7473 - acc: 0.0230
+ 6/20 [========>.....................] - ETA: 4:35 - loss: 15.7461 - acc: 0.0231
+ 7/20 [=========>....................] - ETA: 4:14 - loss: 15.7723 - acc: 0.0215
+ 8/20 [===========>..................] - ETA: 3:51 - loss: 15.7683 - acc: 0.0217
+ 9/20 [============>.................] - ETA: 3:30 - loss: 15.7582 - acc: 0.0223
+10/20 [==============>...............] - ETA: 3:09 - loss: 15.7501 - acc: 0.0228
+11/20 [===============>..............] - ETA: 2:48 - loss: 15.7435 - acc: 0.0232
+12/20 [=================>............] - ETA: 2:29 - loss: 15.7222 - acc: 0.0246
+13/20 [==================>...........] - ETA: 2:11 - loss: 15.7140 - acc: 0.0251
+14/20 [====================>.........] - ETA: 1:53 - loss: 15.7068 - acc: 0.0255
+15/20 [=====================>........] - ETA: 1:34 - loss: 15.7217 - acc: 0.0246
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7307 - acc: 0.0240
+17/20 [========================>.....] - ETA: 57s - loss: 15.7202 - acc: 0.0247 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7178 - acc: 0.0248
+19/20 [===========================>..] - ETA: 19s - loss: 15.7190 - acc: 0.0248
+20/20 [==============================] - 438s 22s/step - loss: 15.7074 - acc: 0.0255 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 15/100
+
+ 1/20 [>.............................] - ETA: 5:57 - loss: 15.7403 - acc: 0.0234
+ 2/20 [==>...........................] - ETA: 5:39 - loss: 15.7718 - acc: 0.0215
+ 3/20 [===>..........................] - ETA: 5:17 - loss: 15.6815 - acc: 0.0271
+ 4/20 [=====>........................] - ETA: 4:52 - loss: 15.6962 - acc: 0.0262
+ 5/20 [======>.......................] - ETA: 4:40 - loss: 15.6798 - acc: 0.0272
+ 6/20 [========>.....................] - ETA: 4:19 - loss: 15.7109 - acc: 0.0253
+ 7/20 [=========>....................] - ETA: 3:59 - loss: 15.6971 - acc: 0.0261
+ 8/20 [===========>..................] - ETA: 3:40 - loss: 15.7104 - acc: 0.0253
+ 9/20 [============>.................] - ETA: 3:29 - loss: 15.6717 - acc: 0.0277
+10/20 [==============>...............] - ETA: 3:09 - loss: 15.7038 - acc: 0.0257
+11/20 [===============>..............] - ETA: 2:49 - loss: 15.7300 - acc: 0.0241
+12/20 [=================>............] - ETA: 2:29 - loss: 15.7519 - acc: 0.0227
+13/20 [==================>...........] - ETA: 2:10 - loss: 15.7316 - acc: 0.0240
+14/20 [====================>.........] - ETA: 1:52 - loss: 15.7457 - acc: 0.0231
+15/20 [=====================>........] - ETA: 1:34 - loss: 15.7370 - acc: 0.0236
+16/20 [=======================>......] - ETA: 1:15 - loss: 15.7450 - acc: 0.0231
+17/20 [========================>.....] - ETA: 56s - loss: 15.7468 - acc: 0.0230 
+18/20 [==========================>...] - ETA: 37s - loss: 15.7465 - acc: 0.0231
+19/20 [===========================>..] - ETA: 19s - loss: 15.7528 - acc: 0.0227
+20/20 [==============================] - 437s 22s/step - loss: 15.7553 - acc: 0.0225 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 16/100
+
+ 1/20 [>.............................] - ETA: 6:17 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:56 - loss: 15.7403 - acc: 0.0234
+ 3/20 [===>..........................] - ETA: 5:39 - loss: 15.7823 - acc: 0.0208
+ 4/20 [=====>........................] - ETA: 5:15 - loss: 15.8033 - acc: 0.0195
+ 5/20 [======>.......................] - ETA: 4:49 - loss: 15.7403 - acc: 0.0234
+ 6/20 [========>.....................] - ETA: 4:25 - loss: 15.7508 - acc: 0.0228
+ 7/20 [=========>....................] - ETA: 4:24 - loss: 15.7493 - acc: 0.0229
+ 8/20 [===========>..................] - ETA: 3:59 - loss: 15.7246 - acc: 0.0244
+ 9/20 [============>.................] - ETA: 3:36 - loss: 15.7263 - acc: 0.0243
+10/20 [==============>...............] - ETA: 3:15 - loss: 15.7340 - acc: 0.0238
+11/20 [===============>..............] - ETA: 2:53 - loss: 15.7346 - acc: 0.0238
+12/20 [=================>............] - ETA: 2:32 - loss: 15.7403 - acc: 0.0234
+13/20 [==================>...........] - ETA: 2:12 - loss: 15.7210 - acc: 0.0246
+14/20 [====================>.........] - ETA: 1:52 - loss: 15.7133 - acc: 0.0251
+15/20 [=====================>........] - ETA: 1:34 - loss: 15.7110 - acc: 0.0253
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.6970 - acc: 0.0261
+17/20 [========================>.....] - ETA: 57s - loss: 15.6922 - acc: 0.0264 
+18/20 [==========================>...] - ETA: 38s - loss: 15.6914 - acc: 0.0265
+19/20 [===========================>..] - ETA: 19s - loss: 15.6973 - acc: 0.0261
+20/20 [==============================] - 442s 22s/step - loss: 15.7057 - acc: 0.0256 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 17/100
+
+ 1/20 [>.............................] - ETA: 6:29 - loss: 15.5514 - acc: 0.0352
+ 2/20 [==>...........................] - ETA: 6:04 - loss: 15.7403 - acc: 0.0234
+ 3/20 [===>..........................] - ETA: 5:37 - loss: 15.6984 - acc: 0.0260
+ 4/20 [=====>........................] - ETA: 5:18 - loss: 15.7089 - acc: 0.0254
+ 5/20 [======>.......................] - ETA: 4:59 - loss: 15.6648 - acc: 0.0281
+ 6/20 [========>.....................] - ETA: 4:35 - loss: 15.6984 - acc: 0.0260
+ 7/20 [=========>....................] - ETA: 4:15 - loss: 15.7133 - acc: 0.0251
+ 8/20 [===========>..................] - ETA: 3:53 - loss: 15.7246 - acc: 0.0244
+ 9/20 [============>.................] - ETA: 3:29 - loss: 15.7302 - acc: 0.0241
+10/20 [==============>...............] - ETA: 3:09 - loss: 15.7501 - acc: 0.0228
+11/20 [===============>..............] - ETA: 2:50 - loss: 15.7492 - acc: 0.0229
+12/20 [=================>............] - ETA: 2:30 - loss: 15.7485 - acc: 0.0229
+13/20 [==================>...........] - ETA: 2:10 - loss: 15.7527 - acc: 0.0227
+14/20 [====================>.........] - ETA: 1:51 - loss: 15.7383 - acc: 0.0236
+15/20 [=====================>........] - ETA: 1:32 - loss: 15.7343 - acc: 0.0238
+16/20 [=======================>......] - ETA: 1:14 - loss: 15.7425 - acc: 0.0233
+17/20 [========================>.....] - ETA: 56s - loss: 15.7387 - acc: 0.0235 
+18/20 [==========================>...] - ETA: 37s - loss: 15.7423 - acc: 0.0233
+19/20 [===========================>..] - ETA: 18s - loss: 15.7355 - acc: 0.0237
+20/20 [==============================] - 437s 22s/step - loss: 15.7263 - acc: 0.0243 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 18/100
+
+ 1/20 [>.............................] - ETA: 6:08 - loss: 15.7403 - acc: 0.0234
+ 2/20 [==>...........................] - ETA: 6:11 - loss: 15.7718 - acc: 0.0215
+ 3/20 [===>..........................] - ETA: 5:46 - loss: 15.8453 - acc: 0.0169
+ 4/20 [=====>........................] - ETA: 5:21 - loss: 15.8190 - acc: 0.0186
+ 5/20 [======>.......................] - ETA: 5:03 - loss: 15.8159 - acc: 0.0187
+ 6/20 [========>.....................] - ETA: 4:41 - loss: 15.8348 - acc: 0.0176
+ 7/20 [=========>....................] - ETA: 4:16 - loss: 15.8123 - acc: 0.0190
+ 8/20 [===========>..................] - ETA: 3:53 - loss: 15.8033 - acc: 0.0195
+ 9/20 [============>.................] - ETA: 3:31 - loss: 15.8103 - acc: 0.0191
+10/20 [==============>...............] - ETA: 3:12 - loss: 15.7844 - acc: 0.0207
+11/20 [===============>..............] - ETA: 2:51 - loss: 15.7804 - acc: 0.0210
+12/20 [=================>............] - ETA: 2:31 - loss: 15.7666 - acc: 0.0218
+13/20 [==================>...........] - ETA: 2:11 - loss: 15.7645 - acc: 0.0219
+14/20 [====================>.........] - ETA: 1:52 - loss: 15.7628 - acc: 0.0220
+15/20 [=====================>........] - ETA: 1:33 - loss: 15.7487 - acc: 0.0229
+16/20 [=======================>......] - ETA: 1:14 - loss: 15.7443 - acc: 0.0232
+17/20 [========================>.....] - ETA: 55s - loss: 15.7461 - acc: 0.0231 
+18/20 [==========================>...] - ETA: 37s - loss: 15.7563 - acc: 0.0224
+19/20 [===========================>..] - ETA: 18s - loss: 15.7455 - acc: 0.0231
+20/20 [==============================] - 437s 22s/step - loss: 15.7452 - acc: 0.0231 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 19/100
+
+ 1/20 [>.............................] - ETA: 6:13 - loss: 15.9922 - acc: 0.0078
+ 2/20 [==>...........................] - ETA: 5:50 - loss: 15.8033 - acc: 0.0195
+ 3/20 [===>..........................] - ETA: 5:33 - loss: 15.8243 - acc: 0.0182
+ 4/20 [=====>........................] - ETA: 5:16 - loss: 15.7718 - acc: 0.0215
+ 5/20 [======>.......................] - ETA: 4:54 - loss: 15.7403 - acc: 0.0234
+ 6/20 [========>.....................] - ETA: 4:34 - loss: 15.6984 - acc: 0.0260
+ 7/20 [=========>....................] - ETA: 4:14 - loss: 15.7403 - acc: 0.0234
+ 8/20 [===========>..................] - ETA: 3:52 - loss: 15.7403 - acc: 0.0234
+ 9/20 [============>.................] - ETA: 3:31 - loss: 15.7473 - acc: 0.0230
+10/20 [==============>...............] - ETA: 3:10 - loss: 15.7340 - acc: 0.0238
+11/20 [===============>..............] - ETA: 2:49 - loss: 15.7518 - acc: 0.0227
+12/20 [=================>............] - ETA: 2:29 - loss: 15.7423 - acc: 0.0233
+13/20 [==================>...........] - ETA: 2:11 - loss: 15.7615 - acc: 0.0221
+14/20 [====================>.........] - ETA: 1:51 - loss: 15.7465 - acc: 0.0231
+15/20 [=====================>........] - ETA: 1:32 - loss: 15.7461 - acc: 0.0231
+16/20 [=======================>......] - ETA: 1:13 - loss: 15.7379 - acc: 0.0236
+17/20 [========================>.....] - ETA: 55s - loss: 15.7232 - acc: 0.0245 
+18/20 [==========================>...] - ETA: 37s - loss: 15.7277 - acc: 0.0242
+19/20 [===========================>..] - ETA: 18s - loss: 15.7283 - acc: 0.0242
+20/20 [==============================] - 437s 22s/step - loss: 15.7258 - acc: 0.0243 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 20/100
+
+ 1/20 [>.............................] - ETA: 5:52 - loss: 15.7403 - acc: 0.0234
+ 2/20 [==>...........................] - ETA: 5:37 - loss: 15.8348 - acc: 0.0176
+ 3/20 [===>..........................] - ETA: 5:22 - loss: 15.7823 - acc: 0.0208
+ 4/20 [=====>........................] - ETA: 5:10 - loss: 15.7089 - acc: 0.0254
+ 5/20 [======>.......................] - ETA: 4:54 - loss: 15.7403 - acc: 0.0234
+ 6/20 [========>.....................] - ETA: 4:36 - loss: 15.7928 - acc: 0.0202
+ 7/20 [=========>....................] - ETA: 4:17 - loss: 15.7943 - acc: 0.0201
+ 8/20 [===========>..................] - ETA: 3:57 - loss: 15.7490 - acc: 0.0229
+ 9/20 [============>.................] - ETA: 3:35 - loss: 15.7271 - acc: 0.0243
+10/20 [==============>...............] - ETA: 3:14 - loss: 15.6906 - acc: 0.0265
+11/20 [===============>..............] - ETA: 2:54 - loss: 15.6837 - acc: 0.0270
+12/20 [=================>............] - ETA: 2:33 - loss: 15.6884 - acc: 0.0267
+13/20 [==================>...........] - ETA: 2:14 - loss: 15.6973 - acc: 0.0261
+14/20 [====================>.........] - ETA: 1:55 - loss: 15.7048 - acc: 0.0256
+15/20 [=====================>........] - ETA: 1:35 - loss: 15.7240 - acc: 0.0245
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7171 - acc: 0.0249
+17/20 [========================>.....] - ETA: 56s - loss: 15.7222 - acc: 0.0246 
+18/20 [==========================>...] - ETA: 37s - loss: 15.7337 - acc: 0.0238
+19/20 [===========================>..] - ETA: 19s - loss: 15.7307 - acc: 0.0240
+20/20 [==============================] - 444s 22s/step - loss: 15.7187 - acc: 0.0248 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 21/100
+
+ 1/20 [>.............................] - ETA: 6:02 - loss: 16.0551 - acc: 0.0039
+ 2/20 [==>...........................] - ETA: 5:47 - loss: 15.8663 - acc: 0.0156
+ 3/20 [===>..........................] - ETA: 5:30 - loss: 15.8453 - acc: 0.0169
+ 4/20 [=====>........................] - ETA: 5:06 - loss: 15.8190 - acc: 0.0186
+ 5/20 [======>.......................] - ETA: 4:46 - loss: 15.8033 - acc: 0.0195
+ 6/20 [========>.....................] - ETA: 4:28 - loss: 15.7928 - acc: 0.0202
+ 7/20 [=========>....................] - ETA: 4:09 - loss: 15.7763 - acc: 0.0212
+ 8/20 [===========>..................] - ETA: 3:50 - loss: 15.7797 - acc: 0.0210
+ 9/20 [============>.................] - ETA: 3:30 - loss: 15.7683 - acc: 0.0217
+10/20 [==============>...............] - ETA: 3:09 - loss: 15.7592 - acc: 0.0223
+11/20 [===============>..............] - ETA: 2:49 - loss: 15.7632 - acc: 0.0220
+12/20 [=================>............] - ETA: 2:30 - loss: 15.7508 - acc: 0.0228
+13/20 [==================>...........] - ETA: 2:11 - loss: 15.7403 - acc: 0.0234
+14/20 [====================>.........] - ETA: 1:51 - loss: 15.7403 - acc: 0.0234
+15/20 [=====================>........] - ETA: 1:32 - loss: 15.7381 - acc: 0.0236
+16/20 [=======================>......] - ETA: 1:13 - loss: 15.7500 - acc: 0.0228
+17/20 [========================>.....] - ETA: 55s - loss: 15.7421 - acc: 0.0233 
+18/20 [==========================>...] - ETA: 36s - loss: 15.7385 - acc: 0.0236
+19/20 [===========================>..] - ETA: 18s - loss: 15.7452 - acc: 0.0231
+20/20 [==============================] - 432s 22s/step - loss: 15.7418 - acc: 0.0233 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 22/100
+
+ 1/20 [>.............................] - ETA: 6:35 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 6:13 - loss: 15.5514 - acc: 0.0352
+ 3/20 [===>..........................] - ETA: 5:46 - loss: 15.5934 - acc: 0.0326
+ 4/20 [=====>........................] - ETA: 5:22 - loss: 15.6144 - acc: 0.0312
+ 5/20 [======>.......................] - ETA: 4:58 - loss: 15.6270 - acc: 0.0305
+ 6/20 [========>.....................] - ETA: 4:39 - loss: 15.6669 - acc: 0.0280
+ 7/20 [=========>....................] - ETA: 4:19 - loss: 15.6504 - acc: 0.0290
+ 8/20 [===========>..................] - ETA: 3:57 - loss: 15.6695 - acc: 0.0278
+ 9/20 [============>.................] - ETA: 3:37 - loss: 15.6844 - acc: 0.0269
+10/20 [==============>...............] - ETA: 3:17 - loss: 15.6837 - acc: 0.0270
+11/20 [===============>..............] - ETA: 2:56 - loss: 15.6716 - acc: 0.0277
+12/20 [=================>............] - ETA: 2:35 - loss: 15.6931 - acc: 0.0264
+13/20 [==================>...........] - ETA: 2:14 - loss: 15.7100 - acc: 0.0253
+14/20 [====================>.........] - ETA: 1:54 - loss: 15.7346 - acc: 0.0238
+15/20 [=====================>........] - ETA: 1:35 - loss: 15.7308 - acc: 0.0240
+16/20 [=======================>......] - ETA: 1:15 - loss: 15.7235 - acc: 0.0245
+17/20 [========================>.....] - ETA: 56s - loss: 15.7319 - acc: 0.0240 
+18/20 [==========================>...] - ETA: 37s - loss: 15.7289 - acc: 0.0241
+19/20 [===========================>..] - ETA: 18s - loss: 15.7295 - acc: 0.0241
+20/20 [==============================] - 423s 21s/step - loss: 15.7363 - acc: 0.0237 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 23/100
+
+ 1/20 [>.............................] - ETA: 6:38 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 6:15 - loss: 15.7403 - acc: 0.0234
+ 3/20 [===>..........................] - ETA: 5:57 - loss: 15.6564 - acc: 0.0286
+ 4/20 [=====>........................] - ETA: 5:34 - loss: 15.6459 - acc: 0.0293
+ 5/20 [======>.......................] - ETA: 5:07 - loss: 15.6992 - acc: 0.0260
+ 6/20 [========>.....................] - ETA: 4:48 - loss: 15.7060 - acc: 0.0256
+ 7/20 [=========>....................] - ETA: 4:27 - loss: 15.7019 - acc: 0.0258
+ 8/20 [===========>..................] - ETA: 4:07 - loss: 15.7304 - acc: 0.0241
+ 9/20 [============>.................] - ETA: 3:46 - loss: 15.7035 - acc: 0.0257
+10/20 [==============>...............] - ETA: 3:25 - loss: 15.6694 - acc: 0.0278
+11/20 [===============>..............] - ETA: 3:03 - loss: 15.6816 - acc: 0.0271
+12/20 [=================>............] - ETA: 2:41 - loss: 15.6812 - acc: 0.0271
+13/20 [==================>...........] - ETA: 2:20 - loss: 15.6954 - acc: 0.0262
+14/20 [====================>.........] - ETA: 1:59 - loss: 15.6987 - acc: 0.0260
+15/20 [=====================>........] - ETA: 1:38 - loss: 15.7182 - acc: 0.0248
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7157 - acc: 0.0250
+17/20 [========================>.....] - ETA: 58s - loss: 15.7245 - acc: 0.0244 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7184 - acc: 0.0248
+19/20 [===========================>..] - ETA: 19s - loss: 15.7229 - acc: 0.0245
+20/20 [==============================] - 435s 22s/step - loss: 15.7269 - acc: 0.0243 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 24/100
+
+ 1/20 [>.............................] - ETA: 5:47 - loss: 15.7403 - acc: 0.0234
+ 2/20 [==>...........................] - ETA: 5:54 - loss: 15.7089 - acc: 0.0254
+ 3/20 [===>..........................] - ETA: 5:38 - loss: 15.7823 - acc: 0.0208
+ 4/20 [=====>........................] - ETA: 5:24 - loss: 15.8190 - acc: 0.0186
+ 5/20 [======>.......................] - ETA: 5:07 - loss: 15.7907 - acc: 0.0203
+ 6/20 [========>.....................] - ETA: 4:49 - loss: 15.7718 - acc: 0.0215
+ 7/20 [=========>....................] - ETA: 4:27 - loss: 15.7763 - acc: 0.0212
+ 8/20 [===========>..................] - ETA: 4:07 - loss: 15.7876 - acc: 0.0205
+ 9/20 [============>.................] - ETA: 3:46 - loss: 15.7543 - acc: 0.0226
+10/20 [==============>...............] - ETA: 3:26 - loss: 15.7592 - acc: 0.0223
+11/20 [===============>..............] - ETA: 3:05 - loss: 15.7403 - acc: 0.0234
+12/20 [=================>............] - ETA: 2:43 - loss: 15.7246 - acc: 0.0244
+13/20 [==================>...........] - ETA: 2:22 - loss: 15.7549 - acc: 0.0225
+14/20 [====================>.........] - ETA: 2:01 - loss: 15.7538 - acc: 0.0226
+15/20 [=====================>........] - ETA: 1:40 - loss: 15.7487 - acc: 0.0229
+16/20 [=======================>......] - ETA: 1:19 - loss: 15.7364 - acc: 0.0237
+17/20 [========================>.....] - ETA: 59s - loss: 15.7366 - acc: 0.0237 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7403 - acc: 0.0234
+19/20 [===========================>..] - ETA: 19s - loss: 15.7370 - acc: 0.0236
+20/20 [==============================] - 437s 22s/step - loss: 15.7403 - acc: 0.0234 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 25/100
+
+ 1/20 [>.............................] - ETA: 5:50 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:20 - loss: 15.8207 - acc: 0.0185
+ 3/20 [===>..........................] - ETA: 5:16 - loss: 15.6470 - acc: 0.0292
+ 4/20 [=====>........................] - ETA: 5:06 - loss: 15.7018 - acc: 0.0258
+ 5/20 [======>.......................] - ETA: 4:54 - loss: 15.6969 - acc: 0.0261
+ 6/20 [========>.....................] - ETA: 4:36 - loss: 15.7252 - acc: 0.0244
+ 7/20 [=========>....................] - ETA: 4:18 - loss: 15.7543 - acc: 0.0226
+ 8/20 [===========>..................] - ETA: 3:58 - loss: 15.7483 - acc: 0.0229
+ 9/20 [============>.................] - ETA: 3:39 - loss: 15.7405 - acc: 0.0234
+10/20 [==============>...............] - ETA: 3:21 - loss: 15.7530 - acc: 0.0226
+11/20 [===============>..............] - ETA: 3:01 - loss: 15.7576 - acc: 0.0224
+12/20 [=================>............] - ETA: 2:41 - loss: 15.7404 - acc: 0.0234
+13/20 [==================>...........] - ETA: 2:21 - loss: 15.7598 - acc: 0.0222
+14/20 [====================>.........] - ETA: 2:00 - loss: 15.7584 - acc: 0.0223
+15/20 [=====================>........] - ETA: 1:39 - loss: 15.7530 - acc: 0.0227
+16/20 [=======================>......] - ETA: 1:19 - loss: 15.7325 - acc: 0.0239
+17/20 [========================>.....] - ETA: 59s - loss: 15.7293 - acc: 0.0241 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7194 - acc: 0.0247
+19/20 [===========================>..] - ETA: 19s - loss: 15.7238 - acc: 0.0245
+20/20 [==============================] - 438s 22s/step - loss: 15.7152 - acc: 0.0250 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 26/100
+
+ 1/20 [>.............................] - ETA: 5:33 - loss: 15.7403 - acc: 0.0234
+ 2/20 [==>...........................] - ETA: 5:09 - loss: 15.7718 - acc: 0.0215
+ 3/20 [===>..........................] - ETA: 4:59 - loss: 15.7403 - acc: 0.0234
+ 4/20 [=====>........................] - ETA: 4:54 - loss: 15.7403 - acc: 0.0234
+ 5/20 [======>.......................] - ETA: 4:41 - loss: 15.7151 - acc: 0.0250
+ 6/20 [========>.....................] - ETA: 4:27 - loss: 15.7193 - acc: 0.0247
+ 7/20 [=========>....................] - ETA: 4:12 - loss: 15.6774 - acc: 0.0273
+ 8/20 [===========>..................] - ETA: 3:54 - loss: 15.6931 - acc: 0.0264
+ 9/20 [============>.................] - ETA: 3:35 - loss: 15.7327 - acc: 0.0239
+10/20 [==============>...............] - ETA: 3:16 - loss: 15.7398 - acc: 0.0235
+11/20 [===============>..............] - ETA: 2:58 - loss: 15.7513 - acc: 0.0228
+12/20 [=================>............] - ETA: 2:39 - loss: 15.7661 - acc: 0.0218
+13/20 [==================>...........] - ETA: 2:19 - loss: 15.7593 - acc: 0.0223
+14/20 [====================>.........] - ETA: 1:59 - loss: 15.7624 - acc: 0.0221
+15/20 [=====================>........] - ETA: 1:39 - loss: 15.7819 - acc: 0.0209
+16/20 [=======================>......] - ETA: 1:19 - loss: 15.7675 - acc: 0.0218
+17/20 [========================>.....] - ETA: 59s - loss: 15.7511 - acc: 0.0228 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7470 - acc: 0.0230
+19/20 [===========================>..] - ETA: 19s - loss: 15.7400 - acc: 0.0235
+20/20 [==============================] - 439s 22s/step - loss: 15.7400 - acc: 0.0235 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 27/100
+
+ 1/20 [>.............................] - ETA: 5:33 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 5:26 - loss: 15.7718 - acc: 0.0215
+ 3/20 [===>..........................] - ETA: 5:10 - loss: 15.7193 - acc: 0.0247
+ 4/20 [=====>........................] - ETA: 4:53 - loss: 15.7089 - acc: 0.0254
+ 5/20 [======>.......................] - ETA: 4:40 - loss: 15.7026 - acc: 0.0258
+ 6/20 [========>.....................] - ETA: 4:27 - loss: 15.7403 - acc: 0.0234
+ 7/20 [=========>....................] - ETA: 4:11 - loss: 15.6864 - acc: 0.0268
+ 8/20 [===========>..................] - ETA: 3:54 - loss: 15.6852 - acc: 0.0269
+ 9/20 [============>.................] - ETA: 3:36 - loss: 15.6914 - acc: 0.0265
+10/20 [==============>...............] - ETA: 3:18 - loss: 15.7151 - acc: 0.0250
+11/20 [===============>..............] - ETA: 2:58 - loss: 15.7232 - acc: 0.0245
+12/20 [=================>............] - ETA: 2:39 - loss: 15.7193 - acc: 0.0247
+13/20 [==================>...........] - ETA: 2:19 - loss: 15.6920 - acc: 0.0264
+14/20 [====================>.........] - ETA: 1:59 - loss: 15.6999 - acc: 0.0259
+15/20 [=====================>........] - ETA: 1:39 - loss: 15.6900 - acc: 0.0266
+16/20 [=======================>......] - ETA: 1:19 - loss: 15.7089 - acc: 0.0254
+17/20 [========================>.....] - ETA: 59s - loss: 15.7145 - acc: 0.0250 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7089 - acc: 0.0254
+19/20 [===========================>..] - ETA: 19s - loss: 15.7106 - acc: 0.0253
+20/20 [==============================] - 439s 22s/step - loss: 15.7153 - acc: 0.0250 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 28/100
+
+ 1/20 [>.............................] - ETA: 5:24 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:10 - loss: 15.8348 - acc: 0.0176
+ 3/20 [===>..........................] - ETA: 4:54 - loss: 15.8033 - acc: 0.0195
+ 4/20 [=====>........................] - ETA: 4:36 - loss: 15.8190 - acc: 0.0186
+ 5/20 [======>.......................] - ETA: 4:18 - loss: 15.8033 - acc: 0.0195
+ 6/20 [========>.....................] - ETA: 4:10 - loss: 15.7508 - acc: 0.0228
+ 7/20 [=========>....................] - ETA: 3:57 - loss: 15.7493 - acc: 0.0229
+ 8/20 [===========>..................] - ETA: 3:44 - loss: 15.7246 - acc: 0.0244
+ 9/20 [============>.................] - ETA: 3:28 - loss: 15.7193 - acc: 0.0247
+10/20 [==============>...............] - ETA: 3:10 - loss: 15.7340 - acc: 0.0238
+11/20 [===============>..............] - ETA: 2:53 - loss: 15.7346 - acc: 0.0238
+12/20 [=================>............] - ETA: 2:36 - loss: 15.7298 - acc: 0.0241
+13/20 [==================>...........] - ETA: 2:17 - loss: 15.7258 - acc: 0.0243
+14/20 [====================>.........] - ETA: 1:58 - loss: 15.7358 - acc: 0.0237
+15/20 [=====================>........] - ETA: 1:38 - loss: 15.7487 - acc: 0.0229
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7443 - acc: 0.0232
+17/20 [========================>.....] - ETA: 59s - loss: 15.7329 - acc: 0.0239 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7368 - acc: 0.0237
+19/20 [===========================>..] - ETA: 19s - loss: 15.7304 - acc: 0.0241
+20/20 [==============================] - 436s 22s/step - loss: 15.7372 - acc: 0.0236 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 29/100
+
+ 1/20 [>.............................] - ETA: 5:21 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 5:16 - loss: 15.8348 - acc: 0.0176
+ 3/20 [===>..........................] - ETA: 4:54 - loss: 15.8149 - acc: 0.0188
+ 4/20 [=====>........................] - ETA: 4:38 - loss: 15.7648 - acc: 0.0219
+ 5/20 [======>.......................] - ETA: 4:24 - loss: 15.7977 - acc: 0.0199
+ 6/20 [========>.....................] - ETA: 4:06 - loss: 15.7461 - acc: 0.0231
+ 7/20 [=========>....................] - ETA: 3:55 - loss: 15.7273 - acc: 0.0242
+ 8/20 [===========>..................] - ETA: 3:40 - loss: 15.7132 - acc: 0.0251
+ 9/20 [============>.................] - ETA: 3:25 - loss: 15.7372 - acc: 0.0236
+10/20 [==============>...............] - ETA: 3:09 - loss: 15.7501 - acc: 0.0228
+11/20 [===============>..............] - ETA: 2:51 - loss: 15.7378 - acc: 0.0236
+12/20 [=================>............] - ETA: 2:33 - loss: 15.7327 - acc: 0.0239
+13/20 [==================>...........] - ETA: 2:15 - loss: 15.7479 - acc: 0.0230
+14/20 [====================>.........] - ETA: 1:56 - loss: 15.7473 - acc: 0.0230
+15/20 [=====================>........] - ETA: 1:37 - loss: 15.7552 - acc: 0.0225
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7307 - acc: 0.0240
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7387 - acc: 0.0235
+18/20 [==========================>...] - ETA: 40s - loss: 15.7458 - acc: 0.0231 
+19/20 [===========================>..] - ETA: 19s - loss: 15.7389 - acc: 0.0235
+20/20 [==============================] - 446s 22s/step - loss: 15.7326 - acc: 0.0239 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 30/100
+
+ 1/20 [>.............................] - ETA: 5:51 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 5:19 - loss: 15.7403 - acc: 0.0234
+ 3/20 [===>..........................] - ETA: 5:01 - loss: 15.6774 - acc: 0.0273
+ 4/20 [=====>........................] - ETA: 4:37 - loss: 15.6504 - acc: 0.0290
+ 5/20 [======>.......................] - ETA: 4:19 - loss: 15.6936 - acc: 0.0263
+ 6/20 [========>.....................] - ETA: 4:07 - loss: 15.7223 - acc: 0.0246
+ 7/20 [=========>....................] - ETA: 3:49 - loss: 15.7339 - acc: 0.0238
+ 8/20 [===========>..................] - ETA: 3:36 - loss: 15.7190 - acc: 0.0248
+ 9/20 [============>.................] - ETA: 3:21 - loss: 15.7283 - acc: 0.0242
+10/20 [==============>...............] - ETA: 3:05 - loss: 15.7358 - acc: 0.0237
+11/20 [===============>..............] - ETA: 2:49 - loss: 15.7420 - acc: 0.0233
+12/20 [=================>............] - ETA: 2:31 - loss: 15.7366 - acc: 0.0237
+13/20 [==================>...........] - ETA: 2:13 - loss: 15.7127 - acc: 0.0252
+14/20 [====================>.........] - ETA: 1:55 - loss: 15.6921 - acc: 0.0264
+15/20 [=====================>........] - ETA: 1:37 - loss: 15.6912 - acc: 0.0265
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.6982 - acc: 0.0261
+17/20 [========================>.....] - ETA: 58s - loss: 15.7006 - acc: 0.0259 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7098 - acc: 0.0253
+19/20 [===========================>..] - ETA: 19s - loss: 15.7148 - acc: 0.0250
+20/20 [==============================] - 436s 22s/step - loss: 15.7192 - acc: 0.0247 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 31/100
+
+ 1/20 [>.............................] - ETA: 5:25 - loss: 15.9292 - acc: 0.0117
+ 2/20 [==>...........................] - ETA: 5:12 - loss: 15.8348 - acc: 0.0176
+ 3/20 [===>..........................] - ETA: 5:01 - loss: 15.8033 - acc: 0.0195
+ 4/20 [=====>........................] - ETA: 4:46 - loss: 15.7246 - acc: 0.0244
+ 5/20 [======>.......................] - ETA: 4:29 - loss: 15.7151 - acc: 0.0250
+ 6/20 [========>.....................] - ETA: 4:11 - loss: 15.7298 - acc: 0.0241
+ 7/20 [=========>....................] - ETA: 3:54 - loss: 15.7403 - acc: 0.0234
+ 8/20 [===========>..................] - ETA: 3:37 - loss: 15.7325 - acc: 0.0239
+ 9/20 [============>.................] - ETA: 3:20 - loss: 15.7448 - acc: 0.0232
+10/20 [==============>...............] - ETA: 3:03 - loss: 15.7381 - acc: 0.0236
+11/20 [===============>..............] - ETA: 2:47 - loss: 15.7383 - acc: 0.0236
+12/20 [=================>............] - ETA: 2:30 - loss: 15.7332 - acc: 0.0239
+13/20 [==================>...........] - ETA: 2:12 - loss: 15.7434 - acc: 0.0232
+14/20 [====================>.........] - ETA: 1:54 - loss: 15.7297 - acc: 0.0241
+15/20 [=====================>........] - ETA: 1:35 - loss: 15.7472 - acc: 0.0230
+16/20 [=======================>......] - ETA: 1:17 - loss: 15.7271 - acc: 0.0243
+17/20 [========================>.....] - ETA: 58s - loss: 15.7390 - acc: 0.0235 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7461 - acc: 0.0231
+19/20 [===========================>..] - ETA: 19s - loss: 15.7440 - acc: 0.0232
+20/20 [==============================] - 436s 22s/step - loss: 15.7344 - acc: 0.0238 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 32/100
+
+ 1/20 [>.............................] - ETA: 5:44 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:28 - loss: 15.8348 - acc: 0.0176
+ 3/20 [===>..........................] - ETA: 5:06 - loss: 15.6774 - acc: 0.0273
+ 4/20 [=====>........................] - ETA: 4:50 - loss: 15.6774 - acc: 0.0273
+ 5/20 [======>.......................] - ETA: 4:33 - loss: 15.7026 - acc: 0.0258
+ 6/20 [========>.....................] - ETA: 4:17 - loss: 15.7403 - acc: 0.0234
+ 7/20 [=========>....................] - ETA: 3:57 - loss: 15.7403 - acc: 0.0234
+ 8/20 [===========>..................] - ETA: 3:38 - loss: 15.7325 - acc: 0.0239
+ 9/20 [============>.................] - ETA: 3:19 - loss: 15.7473 - acc: 0.0230
+10/20 [==============>...............] - ETA: 3:04 - loss: 15.7340 - acc: 0.0238
+11/20 [===============>..............] - ETA: 2:47 - loss: 15.7117 - acc: 0.0252
+12/20 [=================>............] - ETA: 2:30 - loss: 15.6879 - acc: 0.0267
+13/20 [==================>...........] - ETA: 2:12 - loss: 15.6967 - acc: 0.0261
+14/20 [====================>.........] - ETA: 1:54 - loss: 15.6954 - acc: 0.0262
+15/20 [=====================>........] - ETA: 1:35 - loss: 15.7068 - acc: 0.0255
+16/20 [=======================>......] - ETA: 1:17 - loss: 15.7049 - acc: 0.0256
+17/20 [========================>.....] - ETA: 58s - loss: 15.7181 - acc: 0.0248 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7289 - acc: 0.0241
+19/20 [===========================>..] - ETA: 19s - loss: 15.7229 - acc: 0.0245
+20/20 [==============================] - 438s 22s/step - loss: 15.7269 - acc: 0.0243 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 33/100
+
+ 1/20 [>.............................] - ETA: 5:38 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 5:24 - loss: 15.7403 - acc: 0.0234
+ 3/20 [===>..........................] - ETA: 5:03 - loss: 15.8033 - acc: 0.0195
+ 4/20 [=====>........................] - ETA: 4:44 - loss: 15.6931 - acc: 0.0264
+ 5/20 [======>.......................] - ETA: 4:26 - loss: 15.7026 - acc: 0.0258
+ 6/20 [========>.....................] - ETA: 4:08 - loss: 15.7089 - acc: 0.0254
+ 7/20 [=========>....................] - ETA: 3:49 - loss: 15.7313 - acc: 0.0240
+ 8/20 [===========>..................] - ETA: 3:34 - loss: 15.7561 - acc: 0.0225
+ 9/20 [============>.................] - ETA: 3:15 - loss: 15.7683 - acc: 0.0217
+10/20 [==============>...............] - ETA: 2:59 - loss: 15.7529 - acc: 0.0227
+11/20 [===============>..............] - ETA: 2:43 - loss: 15.7403 - acc: 0.0234
+12/20 [=================>............] - ETA: 2:26 - loss: 15.7456 - acc: 0.0231
+13/20 [==================>...........] - ETA: 2:10 - loss: 15.7549 - acc: 0.0225
+14/20 [====================>.........] - ETA: 1:52 - loss: 15.7514 - acc: 0.0228
+15/20 [=====================>........] - ETA: 1:34 - loss: 15.7381 - acc: 0.0236
+16/20 [=======================>......] - ETA: 1:15 - loss: 15.7422 - acc: 0.0233
+17/20 [========================>.....] - ETA: 57s - loss: 15.7421 - acc: 0.0233 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7524 - acc: 0.0227
+19/20 [===========================>..] - ETA: 19s - loss: 15.7419 - acc: 0.0233
+20/20 [==============================] - 437s 22s/step - loss: 15.7355 - acc: 0.0237 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 34/100
+
+ 1/20 [>.............................] - ETA: 6:17 - loss: 15.7403 - acc: 0.0234
+ 2/20 [==>...........................] - ETA: 5:38 - loss: 15.7403 - acc: 0.0234
+ 3/20 [===>..........................] - ETA: 5:14 - loss: 15.8033 - acc: 0.0195
+ 4/20 [=====>........................] - ETA: 4:57 - loss: 15.7876 - acc: 0.0205
+ 5/20 [======>.......................] - ETA: 4:36 - loss: 15.7907 - acc: 0.0203
+ 6/20 [========>.....................] - ETA: 4:16 - loss: 15.7823 - acc: 0.0208
+ 7/20 [=========>....................] - ETA: 3:58 - loss: 15.7943 - acc: 0.0201
+ 8/20 [===========>..................] - ETA: 3:39 - loss: 15.8033 - acc: 0.0195
+ 9/20 [============>.................] - ETA: 3:20 - loss: 15.7893 - acc: 0.0204
+10/20 [==============>...............] - ETA: 3:01 - loss: 15.7592 - acc: 0.0223
+11/20 [===============>..............] - ETA: 2:43 - loss: 15.7575 - acc: 0.0224
+12/20 [=================>............] - ETA: 2:27 - loss: 15.7298 - acc: 0.0241
+13/20 [==================>...........] - ETA: 2:11 - loss: 15.7113 - acc: 0.0252
+14/20 [====================>.........] - ETA: 1:53 - loss: 15.7089 - acc: 0.0254
+15/20 [=====================>........] - ETA: 1:34 - loss: 15.7026 - acc: 0.0258
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7089 - acc: 0.0254
+17/20 [========================>.....] - ETA: 57s - loss: 15.7107 - acc: 0.0253 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7089 - acc: 0.0254
+19/20 [===========================>..] - ETA: 19s - loss: 15.7039 - acc: 0.0257
+20/20 [==============================] - 439s 22s/step - loss: 15.7026 - acc: 0.0258 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 35/100
+
+ 1/20 [>.............................] - ETA: 6:20 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 5:56 - loss: 15.6774 - acc: 0.0273
+ 3/20 [===>..........................] - ETA: 5:34 - loss: 15.6144 - acc: 0.0312
+ 4/20 [=====>........................] - ETA: 5:04 - loss: 15.6375 - acc: 0.0298
+ 5/20 [======>.......................] - ETA: 4:43 - loss: 15.7210 - acc: 0.0246
+ 6/20 [========>.....................] - ETA: 4:22 - loss: 15.7557 - acc: 0.0225
+ 7/20 [=========>....................] - ETA: 4:04 - loss: 15.7535 - acc: 0.0226
+ 8/20 [===========>..................] - ETA: 3:43 - loss: 15.7519 - acc: 0.0227
+ 9/20 [============>.................] - ETA: 3:23 - loss: 15.7366 - acc: 0.0237
+10/20 [==============>...............] - ETA: 3:05 - loss: 15.7621 - acc: 0.0221
+11/20 [===============>..............] - ETA: 2:46 - loss: 15.7487 - acc: 0.0229
+12/20 [=================>............] - ETA: 2:27 - loss: 15.7690 - acc: 0.0217
+13/20 [==================>...........] - ETA: 2:10 - loss: 15.7716 - acc: 0.0215
+14/20 [====================>.........] - ETA: 1:52 - loss: 15.7784 - acc: 0.0211
+15/20 [=====================>........] - ETA: 1:34 - loss: 15.7759 - acc: 0.0212
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7776 - acc: 0.0211
+17/20 [========================>.....] - ETA: 57s - loss: 15.7865 - acc: 0.0206 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7804 - acc: 0.0209
+19/20 [===========================>..] - ETA: 19s - loss: 15.7750 - acc: 0.0213
+20/20 [==============================] - 439s 22s/step - loss: 15.7764 - acc: 0.0212 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 36/100
+
+ 1/20 [>.............................] - ETA: 6:48 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 6:29 - loss: 15.8663 - acc: 0.0156
+ 3/20 [===>..........................] - ETA: 5:56 - loss: 15.9082 - acc: 0.0130
+ 4/20 [=====>........................] - ETA: 5:22 - loss: 15.8977 - acc: 0.0137
+ 5/20 [======>.......................] - ETA: 5:00 - loss: 15.8537 - acc: 0.0164
+ 6/20 [========>.....................] - ETA: 4:34 - loss: 15.7928 - acc: 0.0202
+ 7/20 [=========>....................] - ETA: 4:14 - loss: 15.7853 - acc: 0.0206
+ 8/20 [===========>..................] - ETA: 3:52 - loss: 15.8112 - acc: 0.0190
+ 9/20 [============>.................] - ETA: 3:30 - loss: 15.7963 - acc: 0.0200
+10/20 [==============>...............] - ETA: 3:08 - loss: 15.7668 - acc: 0.0218
+11/20 [===============>..............] - ETA: 2:57 - loss: 15.7300 - acc: 0.0241
+12/20 [=================>............] - ETA: 2:36 - loss: 15.7361 - acc: 0.0237
+13/20 [==================>...........] - ETA: 2:16 - loss: 15.7316 - acc: 0.0240
+14/20 [====================>.........] - ETA: 1:57 - loss: 15.7007 - acc: 0.0259
+15/20 [=====================>........] - ETA: 1:38 - loss: 15.7160 - acc: 0.0249
+16/20 [=======================>......] - ETA: 1:19 - loss: 15.7175 - acc: 0.0249
+17/20 [========================>.....] - ETA: 59s - loss: 15.7088 - acc: 0.0254 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7105 - acc: 0.0253
+19/20 [===========================>..] - ETA: 19s - loss: 15.7187 - acc: 0.0248
+20/20 [==============================] - 452s 23s/step - loss: 15.7293 - acc: 0.0241 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 37/100
+
+ 1/20 [>.............................] - ETA: 6:09 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 5:58 - loss: 15.6774 - acc: 0.0273
+ 3/20 [===>..........................] - ETA: 5:39 - loss: 15.7193 - acc: 0.0247
+ 4/20 [=====>........................] - ETA: 5:22 - loss: 15.6616 - acc: 0.0283
+ 5/20 [======>.......................] - ETA: 5:01 - loss: 15.6900 - acc: 0.0266
+ 6/20 [========>.....................] - ETA: 4:40 - loss: 15.7193 - acc: 0.0247
+ 7/20 [=========>....................] - ETA: 4:15 - loss: 15.6684 - acc: 0.0279
+ 8/20 [===========>..................] - ETA: 3:53 - loss: 15.6931 - acc: 0.0264
+ 9/20 [============>.................] - ETA: 3:32 - loss: 15.7054 - acc: 0.0256
+10/20 [==============>...............] - ETA: 3:12 - loss: 15.6900 - acc: 0.0266
+11/20 [===============>..............] - ETA: 2:52 - loss: 15.6716 - acc: 0.0277
+12/20 [=================>............] - ETA: 2:32 - loss: 15.6931 - acc: 0.0264
+13/20 [==================>...........] - ETA: 2:13 - loss: 15.7016 - acc: 0.0258
+14/20 [====================>.........] - ETA: 1:54 - loss: 15.7178 - acc: 0.0248
+15/20 [=====================>........] - ETA: 1:35 - loss: 15.7026 - acc: 0.0258
+16/20 [=======================>......] - ETA: 1:17 - loss: 15.7089 - acc: 0.0254
+17/20 [========================>.....] - ETA: 58s - loss: 15.7144 - acc: 0.0250 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7124 - acc: 0.0252
+19/20 [===========================>..] - ETA: 19s - loss: 15.7105 - acc: 0.0253
+20/20 [==============================] - 448s 22s/step - loss: 15.7183 - acc: 0.0248 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 38/100
+
+ 1/20 [>.............................] - ETA: 5:58 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 5:48 - loss: 15.8033 - acc: 0.0195
+ 3/20 [===>..........................] - ETA: 5:28 - loss: 15.7403 - acc: 0.0234
+ 4/20 [=====>........................] - ETA: 5:16 - loss: 15.7561 - acc: 0.0225
+ 5/20 [======>.......................] - ETA: 4:53 - loss: 15.7462 - acc: 0.0231
+ 6/20 [========>.....................] - ETA: 4:32 - loss: 15.7557 - acc: 0.0225
+ 7/20 [=========>....................] - ETA: 4:09 - loss: 15.7715 - acc: 0.0215
+ 8/20 [===========>..................] - ETA: 3:49 - loss: 15.7676 - acc: 0.0217
+ 9/20 [============>.................] - ETA: 3:29 - loss: 15.7856 - acc: 0.0206
+10/20 [==============>...............] - ETA: 3:09 - loss: 15.7621 - acc: 0.0221
+11/20 [===============>..............] - ETA: 2:50 - loss: 15.7773 - acc: 0.0211
+12/20 [=================>............] - ETA: 2:32 - loss: 15.7638 - acc: 0.0220
+13/20 [==================>...........] - ETA: 2:12 - loss: 15.7571 - acc: 0.0224
+14/20 [====================>.........] - ETA: 1:53 - loss: 15.7514 - acc: 0.0228
+15/20 [=====================>........] - ETA: 1:34 - loss: 15.7339 - acc: 0.0238
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7185 - acc: 0.0248
+17/20 [========================>.....] - ETA: 57s - loss: 15.7013 - acc: 0.0259 
+18/20 [==========================>...] - ETA: 38s - loss: 15.6930 - acc: 0.0264
+19/20 [===========================>..] - ETA: 19s - loss: 15.6922 - acc: 0.0264
+20/20 [==============================] - 441s 22s/step - loss: 15.7040 - acc: 0.0257 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 39/100
+
+ 1/20 [>.............................] - ETA: 6:08 - loss: 15.9123 - acc: 0.0128
+ 2/20 [==>...........................] - ETA: 5:57 - loss: 15.8263 - acc: 0.0181
+ 3/20 [===>..........................] - ETA: 5:36 - loss: 15.8396 - acc: 0.0173
+ 4/20 [=====>........................] - ETA: 5:19 - loss: 15.7046 - acc: 0.0257
+ 5/20 [======>.......................] - ETA: 4:59 - loss: 15.7370 - acc: 0.0236
+ 6/20 [========>.....................] - ETA: 4:41 - loss: 15.7375 - acc: 0.0236
+ 7/20 [=========>....................] - ETA: 4:19 - loss: 15.7739 - acc: 0.0214
+ 8/20 [===========>..................] - ETA: 3:58 - loss: 15.7854 - acc: 0.0206
+ 9/20 [============>.................] - ETA: 3:35 - loss: 15.7385 - acc: 0.0236
+10/20 [==============>...............] - ETA: 3:14 - loss: 15.7449 - acc: 0.0232
+11/20 [===============>..............] - ETA: 2:54 - loss: 15.7274 - acc: 0.0242
+12/20 [=================>............] - ETA: 2:34 - loss: 15.7494 - acc: 0.0229
+13/20 [==================>...........] - ETA: 2:14 - loss: 15.7681 - acc: 0.0217
+14/20 [====================>.........] - ETA: 1:54 - loss: 15.7706 - acc: 0.0216
+15/20 [=====================>........] - ETA: 1:35 - loss: 15.7602 - acc: 0.0222
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7511 - acc: 0.0228
+17/20 [========================>.....] - ETA: 57s - loss: 15.7505 - acc: 0.0228 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7429 - acc: 0.0233
+19/20 [===========================>..] - ETA: 19s - loss: 15.7328 - acc: 0.0239
+20/20 [==============================] - 448s 22s/step - loss: 15.7363 - acc: 0.0237 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 40/100
+
+ 1/20 [>.............................] - ETA: 6:26 - loss: 15.5514 - acc: 0.0352
+ 2/20 [==>...........................] - ETA: 5:57 - loss: 15.7403 - acc: 0.0234
+ 3/20 [===>..........................] - ETA: 5:31 - loss: 15.7977 - acc: 0.0199
+ 4/20 [=====>........................] - ETA: 5:16 - loss: 15.7676 - acc: 0.0217
+ 5/20 [======>.......................] - ETA: 5:00 - loss: 15.6614 - acc: 0.0283
+ 6/20 [========>.....................] - ETA: 4:42 - loss: 15.6641 - acc: 0.0282
+ 7/20 [=========>....................] - ETA: 4:20 - loss: 15.7199 - acc: 0.0247
+ 8/20 [===========>..................] - ETA: 3:56 - loss: 15.7146 - acc: 0.0250
+ 9/20 [============>.................] - ETA: 3:35 - loss: 15.7175 - acc: 0.0249
+10/20 [==============>...............] - ETA: 3:14 - loss: 15.7198 - acc: 0.0247
+11/20 [===============>..............] - ETA: 2:52 - loss: 15.7331 - acc: 0.0239
+12/20 [=================>............] - ETA: 2:33 - loss: 15.7494 - acc: 0.0229
+13/20 [==================>...........] - ETA: 2:14 - loss: 15.7439 - acc: 0.0232
+14/20 [====================>.........] - ETA: 1:54 - loss: 15.7391 - acc: 0.0235
+15/20 [=====================>........] - ETA: 1:35 - loss: 15.7476 - acc: 0.0230
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7590 - acc: 0.0223
+17/20 [========================>.....] - ETA: 57s - loss: 15.7542 - acc: 0.0226 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7429 - acc: 0.0233
+19/20 [===========================>..] - ETA: 19s - loss: 15.7593 - acc: 0.0223
+20/20 [==============================] - 444s 22s/step - loss: 15.7583 - acc: 0.0223 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 41/100
+
+ 1/20 [>.............................] - ETA: 6:24 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 6:04 - loss: 15.6459 - acc: 0.0293
+ 3/20 [===>..........................] - ETA: 5:37 - loss: 15.6564 - acc: 0.0286
+ 4/20 [=====>........................] - ETA: 5:18 - loss: 15.6302 - acc: 0.0303
+ 5/20 [======>.......................] - ETA: 5:02 - loss: 15.6522 - acc: 0.0289
+ 6/20 [========>.....................] - ETA: 4:42 - loss: 15.6459 - acc: 0.0293
+ 7/20 [=========>....................] - ETA: 4:22 - loss: 15.6504 - acc: 0.0290
+ 8/20 [===========>..................] - ETA: 4:01 - loss: 15.6459 - acc: 0.0293
+ 9/20 [============>.................] - ETA: 3:39 - loss: 15.6564 - acc: 0.0286
+10/20 [==============>...............] - ETA: 3:17 - loss: 15.6648 - acc: 0.0281
+11/20 [===============>..............] - ETA: 2:57 - loss: 15.6831 - acc: 0.0270
+12/20 [=================>............] - ETA: 2:36 - loss: 15.6826 - acc: 0.0270
+13/20 [==================>...........] - ETA: 2:16 - loss: 15.6967 - acc: 0.0261
+14/20 [====================>.........] - ETA: 1:56 - loss: 15.7044 - acc: 0.0257
+15/20 [=====================>........] - ETA: 1:36 - loss: 15.7151 - acc: 0.0250
+16/20 [=======================>......] - ETA: 1:17 - loss: 15.7128 - acc: 0.0251
+17/20 [========================>.....] - ETA: 57s - loss: 15.7070 - acc: 0.0255 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7158 - acc: 0.0250
+19/20 [===========================>..] - ETA: 19s - loss: 15.7118 - acc: 0.0252
+20/20 [==============================] - 445s 22s/step - loss: 15.7195 - acc: 0.0247 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 42/100
+
+ 1/20 [>.............................] - ETA: 6:14 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 6:01 - loss: 15.8033 - acc: 0.0195
+ 3/20 [===>..........................] - ETA: 5:34 - loss: 15.8453 - acc: 0.0169
+ 4/20 [=====>........................] - ETA: 5:12 - loss: 15.8033 - acc: 0.0195
+ 5/20 [======>.......................] - ETA: 4:49 - loss: 15.8114 - acc: 0.0190
+ 6/20 [========>.....................] - ETA: 4:28 - loss: 15.7786 - acc: 0.0211
+ 7/20 [=========>....................] - ETA: 4:09 - loss: 15.7281 - acc: 0.0242
+ 8/20 [===========>..................] - ETA: 3:49 - loss: 15.7139 - acc: 0.0251
+ 9/20 [============>.................] - ETA: 3:30 - loss: 15.7378 - acc: 0.0236
+10/20 [==============>...............] - ETA: 3:10 - loss: 15.7066 - acc: 0.0255
+11/20 [===============>..............] - ETA: 2:50 - loss: 15.7211 - acc: 0.0246
+12/20 [=================>............] - ETA: 2:31 - loss: 15.7227 - acc: 0.0245
+13/20 [==================>...........] - ETA: 2:12 - loss: 15.7241 - acc: 0.0244
+14/20 [====================>.........] - ETA: 1:52 - loss: 15.7117 - acc: 0.0252
+15/20 [=====================>........] - ETA: 1:33 - loss: 15.7262 - acc: 0.0243
+16/20 [=======================>......] - ETA: 1:14 - loss: 15.7271 - acc: 0.0243
+17/20 [========================>.....] - ETA: 56s - loss: 15.7316 - acc: 0.0240 
+18/20 [==========================>...] - ETA: 37s - loss: 15.7251 - acc: 0.0244
+19/20 [===========================>..] - ETA: 18s - loss: 15.7259 - acc: 0.0243
+20/20 [==============================] - 437s 22s/step - loss: 15.7234 - acc: 0.0245 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 43/100
+
+ 1/20 [>.............................] - ETA: 6:37 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 6:07 - loss: 15.6459 - acc: 0.0293
+ 3/20 [===>..........................] - ETA: 5:42 - loss: 15.6774 - acc: 0.0273
+ 4/20 [=====>........................] - ETA: 5:22 - loss: 15.6302 - acc: 0.0303
+ 5/20 [======>.......................] - ETA: 5:00 - loss: 15.6900 - acc: 0.0266
+ 6/20 [========>.....................] - ETA: 4:34 - loss: 15.6927 - acc: 0.0264
+ 7/20 [=========>....................] - ETA: 4:17 - loss: 15.7175 - acc: 0.0249
+ 8/20 [===========>..................] - ETA: 3:57 - loss: 15.6968 - acc: 0.0261
+ 9/20 [============>.................] - ETA: 3:37 - loss: 15.7086 - acc: 0.0254
+10/20 [==============>...............] - ETA: 3:18 - loss: 15.7055 - acc: 0.0256
+11/20 [===============>..............] - ETA: 2:57 - loss: 15.7086 - acc: 0.0254
+12/20 [=================>............] - ETA: 2:36 - loss: 15.7060 - acc: 0.0256
+13/20 [==================>...........] - ETA: 2:16 - loss: 15.7184 - acc: 0.0248
+14/20 [====================>.........] - ETA: 1:57 - loss: 15.7199 - acc: 0.0247
+15/20 [=====================>........] - ETA: 1:37 - loss: 15.7171 - acc: 0.0249
+16/20 [=======================>......] - ETA: 1:17 - loss: 15.7185 - acc: 0.0248
+17/20 [========================>.....] - ETA: 57s - loss: 15.7161 - acc: 0.0249 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7140 - acc: 0.0251
+19/20 [===========================>..] - ETA: 19s - loss: 15.7187 - acc: 0.0248
+20/20 [==============================] - 429s 21s/step - loss: 15.7229 - acc: 0.0245 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 44/100
+
+ 1/20 [>.............................] - ETA: 7:01 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 6:24 - loss: 15.7089 - acc: 0.0254
+ 3/20 [===>..........................] - ETA: 5:59 - loss: 15.7613 - acc: 0.0221
+ 4/20 [=====>........................] - ETA: 5:35 - loss: 15.7561 - acc: 0.0225
+ 5/20 [======>.......................] - ETA: 5:12 - loss: 15.7655 - acc: 0.0219
+ 6/20 [========>.....................] - ETA: 4:51 - loss: 15.7718 - acc: 0.0215
+ 7/20 [=========>....................] - ETA: 4:29 - loss: 15.7853 - acc: 0.0206
+ 8/20 [===========>..................] - ETA: 4:09 - loss: 15.8033 - acc: 0.0195
+ 9/20 [============>.................] - ETA: 3:49 - loss: 15.7963 - acc: 0.0200
+10/20 [==============>...............] - ETA: 3:29 - loss: 15.7655 - acc: 0.0219
+11/20 [===============>..............] - ETA: 3:07 - loss: 15.7575 - acc: 0.0224
+12/20 [=================>............] - ETA: 2:44 - loss: 15.7298 - acc: 0.0241
+13/20 [==================>...........] - ETA: 2:22 - loss: 15.7258 - acc: 0.0243
+14/20 [====================>.........] - ETA: 2:00 - loss: 15.7268 - acc: 0.0243
+15/20 [=====================>........] - ETA: 1:39 - loss: 15.7277 - acc: 0.0242
+16/20 [=======================>......] - ETA: 1:19 - loss: 15.7049 - acc: 0.0256
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7070 - acc: 0.0255
+18/20 [==========================>...] - ETA: 39s - loss: 15.7108 - acc: 0.0253 
+19/20 [===========================>..] - ETA: 19s - loss: 15.7123 - acc: 0.0252
+20/20 [==============================] - 442s 22s/step - loss: 15.7200 - acc: 0.0247 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 45/100
+
+ 1/20 [>.............................] - ETA: 5:53 - loss: 15.9922 - acc: 0.0078
+ 2/20 [==>...........................] - ETA: 6:14 - loss: 15.8977 - acc: 0.0137
+ 3/20 [===>..........................] - ETA: 5:48 - loss: 15.8243 - acc: 0.0182
+ 4/20 [=====>........................] - ETA: 5:30 - loss: 15.8033 - acc: 0.0195
+ 5/20 [======>.......................] - ETA: 5:10 - loss: 15.7781 - acc: 0.0211
+ 6/20 [========>.....................] - ETA: 4:50 - loss: 15.7403 - acc: 0.0234
+ 7/20 [=========>....................] - ETA: 4:30 - loss: 15.7493 - acc: 0.0229
+ 8/20 [===========>..................] - ETA: 4:11 - loss: 15.7718 - acc: 0.0215
+ 9/20 [============>.................] - ETA: 3:49 - loss: 15.7683 - acc: 0.0217
+10/20 [==============>...............] - ETA: 3:28 - loss: 15.7340 - acc: 0.0238
+11/20 [===============>..............] - ETA: 3:05 - loss: 15.7378 - acc: 0.0236
+12/20 [=================>............] - ETA: 2:43 - loss: 15.7170 - acc: 0.0249
+13/20 [==================>...........] - ETA: 2:21 - loss: 15.7285 - acc: 0.0242
+14/20 [====================>.........] - ETA: 2:00 - loss: 15.7383 - acc: 0.0236
+15/20 [=====================>........] - ETA: 1:40 - loss: 15.7301 - acc: 0.0241
+16/20 [=======================>......] - ETA: 1:20 - loss: 15.7307 - acc: 0.0240
+17/20 [========================>.....] - ETA: 59s - loss: 15.7165 - acc: 0.0249 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7388 - acc: 0.0235
+19/20 [===========================>..] - ETA: 19s - loss: 15.7389 - acc: 0.0235
+20/20 [==============================] - 440s 22s/step - loss: 15.7452 - acc: 0.0231 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 46/100
+
+ 1/20 [>.............................] - ETA: 5:23 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 5:22 - loss: 15.6774 - acc: 0.0273
+ 3/20 [===>..........................] - ETA: 5:23 - loss: 15.7403 - acc: 0.0234
+ 4/20 [=====>........................] - ETA: 5:12 - loss: 15.7403 - acc: 0.0234
+ 5/20 [======>.......................] - ETA: 4:54 - loss: 15.7529 - acc: 0.0227
+ 6/20 [========>.....................] - ETA: 4:36 - loss: 15.7403 - acc: 0.0234
+ 7/20 [=========>....................] - ETA: 4:21 - loss: 15.7403 - acc: 0.0234
+ 8/20 [===========>..................] - ETA: 4:00 - loss: 15.7018 - acc: 0.0258
+ 9/20 [============>.................] - ETA: 3:41 - loss: 15.7131 - acc: 0.0251
+10/20 [==============>...............] - ETA: 3:21 - loss: 15.7221 - acc: 0.0246
+11/20 [===============>..............] - ETA: 3:00 - loss: 15.7180 - acc: 0.0248
+12/20 [=================>............] - ETA: 2:40 - loss: 15.6937 - acc: 0.0263
+13/20 [==================>...........] - ETA: 2:20 - loss: 15.7069 - acc: 0.0255
+14/20 [====================>.........] - ETA: 1:59 - loss: 15.7003 - acc: 0.0259
+15/20 [=====================>........] - ETA: 1:39 - loss: 15.6904 - acc: 0.0265
+16/20 [=======================>......] - ETA: 1:19 - loss: 15.7014 - acc: 0.0259
+17/20 [========================>.....] - ETA: 59s - loss: 15.7037 - acc: 0.0257 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7232 - acc: 0.0245
+19/20 [===========================>..] - ETA: 19s - loss: 15.7208 - acc: 0.0246
+20/20 [==============================] - 439s 22s/step - loss: 15.7313 - acc: 0.0240 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 47/100
+
+ 1/20 [>.............................] - ETA: 5:34 - loss: 15.4885 - acc: 0.0391
+ 2/20 [==>...........................] - ETA: 5:32 - loss: 15.6144 - acc: 0.0312
+ 3/20 [===>..........................] - ETA: 5:11 - loss: 15.6564 - acc: 0.0286
+ 4/20 [=====>........................] - ETA: 5:06 - loss: 15.7246 - acc: 0.0244
+ 5/20 [======>.......................] - ETA: 4:51 - loss: 15.7026 - acc: 0.0258
+ 6/20 [========>.....................] - ETA: 4:35 - loss: 15.6879 - acc: 0.0267
+ 7/20 [=========>....................] - ETA: 4:18 - loss: 15.7133 - acc: 0.0251
+ 8/20 [===========>..................] - ETA: 4:01 - loss: 15.7403 - acc: 0.0234
+ 9/20 [============>.................] - ETA: 3:42 - loss: 15.7473 - acc: 0.0230
+10/20 [==============>...............] - ETA: 3:23 - loss: 15.7466 - acc: 0.0230
+11/20 [===============>..............] - ETA: 3:02 - loss: 15.7232 - acc: 0.0245
+12/20 [=================>............] - ETA: 2:43 - loss: 15.7141 - acc: 0.0251
+13/20 [==================>...........] - ETA: 2:21 - loss: 15.7258 - acc: 0.0243
+14/20 [====================>.........] - ETA: 2:01 - loss: 15.7313 - acc: 0.0240
+15/20 [=====================>........] - ETA: 1:40 - loss: 15.7277 - acc: 0.0242
+16/20 [=======================>......] - ETA: 1:19 - loss: 15.7178 - acc: 0.0248
+17/20 [========================>.....] - ETA: 59s - loss: 15.6969 - acc: 0.0261 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7098 - acc: 0.0253
+19/20 [===========================>..] - ETA: 19s - loss: 15.7181 - acc: 0.0248
+20/20 [==============================] - 440s 22s/step - loss: 15.7318 - acc: 0.0240 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 48/100
+
+ 1/20 [>.............................] - ETA: 5:39 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 5:18 - loss: 15.6774 - acc: 0.0273
+ 3/20 [===>..........................] - ETA: 5:08 - loss: 15.6984 - acc: 0.0260
+ 4/20 [=====>........................] - ETA: 4:49 - loss: 15.7089 - acc: 0.0254
+ 5/20 [======>.......................] - ETA: 5:01 - loss: 15.7151 - acc: 0.0250
+ 6/20 [========>.....................] - ETA: 4:47 - loss: 15.7508 - acc: 0.0228
+ 7/20 [=========>....................] - ETA: 4:27 - loss: 15.7583 - acc: 0.0223
+ 8/20 [===========>..................] - ETA: 4:09 - loss: 15.7325 - acc: 0.0239
+ 9/20 [============>.................] - ETA: 3:49 - loss: 15.7333 - acc: 0.0239
+10/20 [==============>...............] - ETA: 3:28 - loss: 15.7529 - acc: 0.0227
+11/20 [===============>..............] - ETA: 3:07 - loss: 15.7518 - acc: 0.0227
+12/20 [=================>............] - ETA: 2:47 - loss: 15.7351 - acc: 0.0238
+13/20 [==================>...........] - ETA: 2:26 - loss: 15.7306 - acc: 0.0240
+14/20 [====================>.........] - ETA: 2:04 - loss: 15.7044 - acc: 0.0257
+15/20 [=====================>........] - ETA: 1:43 - loss: 15.7151 - acc: 0.0250
+16/20 [=======================>......] - ETA: 1:22 - loss: 15.7246 - acc: 0.0244
+17/20 [========================>.....] - ETA: 1:01 - loss: 15.7255 - acc: 0.0244
+18/20 [==========================>...] - ETA: 40s - loss: 15.7283 - acc: 0.0242 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7322 - acc: 0.0239
+20/20 [==============================] - 448s 22s/step - loss: 15.7358 - acc: 0.0237 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 49/100
+
+ 1/20 [>.............................] - ETA: 5:50 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 5:37 - loss: 15.7089 - acc: 0.0254
+ 3/20 [===>..........................] - ETA: 5:18 - loss: 15.7193 - acc: 0.0247
+ 4/20 [=====>........................] - ETA: 5:01 - loss: 15.6931 - acc: 0.0264
+ 5/20 [======>.......................] - ETA: 4:39 - loss: 15.7277 - acc: 0.0242
+ 6/20 [========>.....................] - ETA: 4:26 - loss: 15.6984 - acc: 0.0260
+ 7/20 [=========>....................] - ETA: 4:11 - loss: 15.6864 - acc: 0.0268
+ 8/20 [===========>..................] - ETA: 3:54 - loss: 15.6931 - acc: 0.0264
+ 9/20 [============>.................] - ETA: 3:37 - loss: 15.6914 - acc: 0.0265
+10/20 [==============>...............] - ETA: 3:19 - loss: 15.6900 - acc: 0.0266
+11/20 [===============>..............] - ETA: 3:00 - loss: 15.7003 - acc: 0.0259
+12/20 [=================>............] - ETA: 2:40 - loss: 15.7065 - acc: 0.0255
+13/20 [==================>...........] - ETA: 2:21 - loss: 15.7140 - acc: 0.0251
+14/20 [====================>.........] - ETA: 2:01 - loss: 15.7068 - acc: 0.0255
+15/20 [=====================>........] - ETA: 1:41 - loss: 15.7091 - acc: 0.0254
+16/20 [=======================>......] - ETA: 1:21 - loss: 15.7071 - acc: 0.0255
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.6979 - acc: 0.0261
+18/20 [==========================>...] - ETA: 40s - loss: 15.7003 - acc: 0.0259 
+19/20 [===========================>..] - ETA: 19s - loss: 15.7123 - acc: 0.0252
+20/20 [==============================] - 446s 22s/step - loss: 15.7074 - acc: 0.0255 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 50/100
+
+ 1/20 [>.............................] - ETA: 5:29 - loss: 15.5514 - acc: 0.0352
+ 2/20 [==>...........................] - ETA: 5:21 - loss: 15.7089 - acc: 0.0254
+ 3/20 [===>..........................] - ETA: 5:11 - loss: 15.7823 - acc: 0.0208
+ 4/20 [=====>........................] - ETA: 4:51 - loss: 15.7876 - acc: 0.0205
+ 5/20 [======>.......................] - ETA: 4:31 - loss: 15.7781 - acc: 0.0211
+ 6/20 [========>.....................] - ETA: 4:15 - loss: 15.7928 - acc: 0.0202
+ 7/20 [=========>....................] - ETA: 4:22 - loss: 15.7673 - acc: 0.0218
+ 8/20 [===========>..................] - ETA: 4:04 - loss: 15.7561 - acc: 0.0225
+ 9/20 [============>.................] - ETA: 3:45 - loss: 15.7473 - acc: 0.0230
+10/20 [==============>...............] - ETA: 3:24 - loss: 15.7592 - acc: 0.0223
+11/20 [===============>..............] - ETA: 3:04 - loss: 15.7575 - acc: 0.0224
+12/20 [=================>............] - ETA: 2:43 - loss: 15.7647 - acc: 0.0219
+13/20 [==================>...........] - ETA: 2:23 - loss: 15.7677 - acc: 0.0217
+14/20 [====================>.........] - ETA: 2:03 - loss: 15.7567 - acc: 0.0224
+15/20 [=====================>........] - ETA: 1:43 - loss: 15.7472 - acc: 0.0230
+16/20 [=======================>......] - ETA: 1:22 - loss: 15.7547 - acc: 0.0225
+17/20 [========================>.....] - ETA: 1:01 - loss: 15.7390 - acc: 0.0235
+18/20 [==========================>...] - ETA: 40s - loss: 15.7391 - acc: 0.0235 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7391 - acc: 0.0235
+20/20 [==============================] - 455s 23s/step - loss: 15.7392 - acc: 0.0235 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 51/100
+
+ 1/20 [>.............................] - ETA: 5:23 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:17 - loss: 15.7089 - acc: 0.0254
+ 3/20 [===>..........................] - ETA: 5:03 - loss: 15.6984 - acc: 0.0260
+ 4/20 [=====>........................] - ETA: 4:48 - loss: 15.7089 - acc: 0.0254
+ 5/20 [======>.......................] - ETA: 4:31 - loss: 15.7403 - acc: 0.0234
+ 6/20 [========>.....................] - ETA: 4:12 - loss: 15.7403 - acc: 0.0234
+ 7/20 [=========>....................] - ETA: 3:53 - loss: 15.7583 - acc: 0.0223
+ 8/20 [===========>..................] - ETA: 3:38 - loss: 15.7403 - acc: 0.0234
+ 9/20 [============>.................] - ETA: 3:23 - loss: 15.7473 - acc: 0.0230
+10/20 [==============>...............] - ETA: 3:06 - loss: 15.7340 - acc: 0.0238
+11/20 [===============>..............] - ETA: 2:49 - loss: 15.7232 - acc: 0.0245
+12/20 [=================>............] - ETA: 2:32 - loss: 15.7193 - acc: 0.0247
+13/20 [==================>...........] - ETA: 2:14 - loss: 15.7258 - acc: 0.0243
+14/20 [====================>.........] - ETA: 1:55 - loss: 15.7223 - acc: 0.0246
+15/20 [=====================>........] - ETA: 1:37 - loss: 15.7151 - acc: 0.0250
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7207 - acc: 0.0247
+17/20 [========================>.....] - ETA: 58s - loss: 15.7158 - acc: 0.0250 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7172 - acc: 0.0249
+19/20 [===========================>..] - ETA: 19s - loss: 15.7184 - acc: 0.0248
+20/20 [==============================] - 442s 22s/step - loss: 15.7132 - acc: 0.0251 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 52/100
+
+ 1/20 [>.............................] - ETA: 5:35 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:24 - loss: 15.6774 - acc: 0.0273
+ 3/20 [===>..........................] - ETA: 5:08 - loss: 15.7193 - acc: 0.0247
+ 4/20 [=====>........................] - ETA: 4:52 - loss: 15.7246 - acc: 0.0244
+ 5/20 [======>.......................] - ETA: 4:36 - loss: 15.7529 - acc: 0.0227
+ 6/20 [========>.....................] - ETA: 4:17 - loss: 15.7508 - acc: 0.0228
+ 7/20 [=========>....................] - ETA: 4:00 - loss: 15.7403 - acc: 0.0234
+ 8/20 [===========>..................] - ETA: 3:41 - loss: 15.7561 - acc: 0.0225
+ 9/20 [============>.................] - ETA: 3:26 - loss: 15.7753 - acc: 0.0213
+10/20 [==============>...............] - ETA: 3:09 - loss: 15.7781 - acc: 0.0211
+11/20 [===============>..............] - ETA: 2:52 - loss: 15.7747 - acc: 0.0213
+12/20 [=================>............] - ETA: 2:35 - loss: 15.7456 - acc: 0.0231
+13/20 [==================>...........] - ETA: 2:16 - loss: 15.7355 - acc: 0.0237
+14/20 [====================>.........] - ETA: 1:57 - loss: 15.7089 - acc: 0.0254
+15/20 [=====================>........] - ETA: 1:38 - loss: 15.7319 - acc: 0.0240
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7207 - acc: 0.0247
+17/20 [========================>.....] - ETA: 59s - loss: 15.7366 - acc: 0.0237 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7438 - acc: 0.0232
+19/20 [===========================>..] - ETA: 19s - loss: 15.7602 - acc: 0.0222
+20/20 [==============================] - 441s 22s/step - loss: 15.7498 - acc: 0.0229 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 53/100
+
+ 1/20 [>.............................] - ETA: 5:47 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 5:21 - loss: 15.5829 - acc: 0.0332
+ 3/20 [===>..........................] - ETA: 5:11 - loss: 15.6774 - acc: 0.0273
+ 4/20 [=====>........................] - ETA: 4:45 - loss: 15.7190 - acc: 0.0248
+ 5/20 [======>.......................] - ETA: 4:30 - loss: 15.7232 - acc: 0.0245
+ 6/20 [========>.....................] - ETA: 4:13 - loss: 15.7366 - acc: 0.0237
+ 7/20 [=========>....................] - ETA: 3:56 - loss: 15.7191 - acc: 0.0248
+ 8/20 [===========>..................] - ETA: 3:39 - loss: 15.7454 - acc: 0.0231
+ 9/20 [============>.................] - ETA: 3:22 - loss: 15.7308 - acc: 0.0240
+10/20 [==============>...............] - ETA: 3:06 - loss: 15.7318 - acc: 0.0240
+11/20 [===============>..............] - ETA: 2:50 - loss: 15.7383 - acc: 0.0236
+12/20 [=================>............] - ETA: 2:32 - loss: 15.7280 - acc: 0.0242
+13/20 [==================>...........] - ETA: 2:14 - loss: 15.7338 - acc: 0.0238
+14/20 [====================>.........] - ETA: 1:55 - loss: 15.7387 - acc: 0.0235
+15/20 [=====================>........] - ETA: 1:37 - loss: 15.7430 - acc: 0.0233
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7468 - acc: 0.0230
+17/20 [========================>.....] - ETA: 58s - loss: 15.7612 - acc: 0.0221 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7426 - acc: 0.0233
+19/20 [===========================>..] - ETA: 19s - loss: 15.7325 - acc: 0.0239
+20/20 [==============================] - 444s 22s/step - loss: 15.7329 - acc: 0.0239 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 54/100
+
+ 1/20 [>.............................] - ETA: 6:05 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:34 - loss: 15.6144 - acc: 0.0312
+ 3/20 [===>..........................] - ETA: 5:13 - loss: 15.6774 - acc: 0.0273
+ 4/20 [=====>........................] - ETA: 4:51 - loss: 15.7246 - acc: 0.0244
+ 5/20 [======>.......................] - ETA: 4:37 - loss: 15.6522 - acc: 0.0289
+ 6/20 [========>.....................] - ETA: 4:19 - loss: 15.6459 - acc: 0.0293
+ 7/20 [=========>....................] - ETA: 3:57 - loss: 15.6448 - acc: 0.0294
+ 8/20 [===========>..................] - ETA: 3:40 - loss: 15.6882 - acc: 0.0267
+ 9/20 [============>.................] - ETA: 3:21 - loss: 15.6940 - acc: 0.0263
+10/20 [==============>...............] - ETA: 3:03 - loss: 15.7175 - acc: 0.0249
+11/20 [===============>..............] - ETA: 2:48 - loss: 15.7253 - acc: 0.0244
+12/20 [=================>............] - ETA: 2:30 - loss: 15.7266 - acc: 0.0243
+13/20 [==================>...........] - ETA: 2:12 - loss: 15.7325 - acc: 0.0239
+14/20 [====================>.........] - ETA: 1:54 - loss: 15.7420 - acc: 0.0233
+15/20 [=====================>........] - ETA: 1:35 - loss: 15.7545 - acc: 0.0226
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7536 - acc: 0.0226
+17/20 [========================>.....] - ETA: 57s - loss: 15.7491 - acc: 0.0229 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7451 - acc: 0.0231
+19/20 [===========================>..] - ETA: 19s - loss: 15.7482 - acc: 0.0229
+20/20 [==============================] - 436s 22s/step - loss: 15.7461 - acc: 0.0231 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 55/100
+
+ 1/20 [>.............................] - ETA: 6:15 - loss: 15.5514 - acc: 0.0352
+ 2/20 [==>...........................] - ETA: 5:41 - loss: 15.6144 - acc: 0.0312
+ 3/20 [===>..........................] - ETA: 5:13 - loss: 15.5934 - acc: 0.0326
+ 4/20 [=====>........................] - ETA: 4:54 - loss: 15.5987 - acc: 0.0322
+ 5/20 [======>.......................] - ETA: 4:37 - loss: 15.5640 - acc: 0.0344
+ 6/20 [========>.....................] - ETA: 4:19 - loss: 15.6249 - acc: 0.0306
+ 7/20 [=========>....................] - ETA: 4:00 - loss: 15.6774 - acc: 0.0273
+ 8/20 [===========>..................] - ETA: 3:44 - loss: 15.7089 - acc: 0.0254
+ 9/20 [============>.................] - ETA: 3:24 - loss: 15.6774 - acc: 0.0273
+10/20 [==============>...............] - ETA: 3:06 - loss: 15.6837 - acc: 0.0270
+11/20 [===============>..............] - ETA: 2:47 - loss: 15.6831 - acc: 0.0270
+12/20 [=================>............] - ETA: 2:30 - loss: 15.6984 - acc: 0.0260
+13/20 [==================>...........] - ETA: 2:12 - loss: 15.7064 - acc: 0.0255
+14/20 [====================>.........] - ETA: 1:54 - loss: 15.7044 - acc: 0.0257
+15/20 [=====================>........] - ETA: 1:36 - loss: 15.7068 - acc: 0.0255
+16/20 [=======================>......] - ETA: 1:17 - loss: 15.7167 - acc: 0.0249
+17/20 [========================>.....] - ETA: 58s - loss: 15.7107 - acc: 0.0253 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7158 - acc: 0.0250
+19/20 [===========================>..] - ETA: 19s - loss: 15.7105 - acc: 0.0253
+20/20 [==============================] - 445s 22s/step - loss: 15.7057 - acc: 0.0256 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 56/100
+
+ 1/20 [>.............................] - ETA: 6:18 - loss: 15.5514 - acc: 0.0352
+ 2/20 [==>...........................] - ETA: 5:39 - loss: 15.7319 - acc: 0.0240
+ 3/20 [===>..........................] - ETA: 5:13 - loss: 15.7137 - acc: 0.0251
+ 4/20 [=====>........................] - ETA: 4:52 - loss: 15.7204 - acc: 0.0247
+ 5/20 [======>.......................] - ETA: 4:31 - loss: 15.7621 - acc: 0.0221
+ 6/20 [========>.....................] - ETA: 4:14 - loss: 15.7900 - acc: 0.0204
+ 7/20 [=========>....................] - ETA: 3:58 - loss: 15.7919 - acc: 0.0202
+ 8/20 [===========>..................] - ETA: 3:39 - loss: 15.7933 - acc: 0.0202
+ 9/20 [============>.................] - ETA: 3:20 - loss: 15.7804 - acc: 0.0209
+10/20 [==============>...............] - ETA: 3:04 - loss: 15.7827 - acc: 0.0208
+11/20 [===============>..............] - ETA: 2:46 - loss: 15.7789 - acc: 0.0210
+12/20 [=================>............] - ETA: 2:28 - loss: 15.7599 - acc: 0.0222
+13/20 [==================>...........] - ETA: 2:10 - loss: 15.7390 - acc: 0.0235
+14/20 [====================>.........] - ETA: 1:53 - loss: 15.7481 - acc: 0.0230
+15/20 [=====================>........] - ETA: 1:35 - loss: 15.7476 - acc: 0.0230
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7550 - acc: 0.0225
+17/20 [========================>.....] - ETA: 57s - loss: 15.7653 - acc: 0.0219 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7744 - acc: 0.0213
+19/20 [===========================>..] - ETA: 19s - loss: 15.7593 - acc: 0.0223
+20/20 [==============================] - 439s 22s/step - loss: 15.7498 - acc: 0.0228 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 57/100
+
+ 1/20 [>.............................] - ETA: 6:12 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 5:51 - loss: 15.7718 - acc: 0.0215
+ 3/20 [===>..........................] - ETA: 5:42 - loss: 15.7403 - acc: 0.0234
+ 4/20 [=====>........................] - ETA: 5:14 - loss: 15.7718 - acc: 0.0215
+ 5/20 [======>.......................] - ETA: 4:50 - loss: 15.7151 - acc: 0.0250
+ 6/20 [========>.....................] - ETA: 4:28 - loss: 15.6669 - acc: 0.0280
+ 7/20 [=========>....................] - ETA: 4:07 - loss: 15.6864 - acc: 0.0268
+ 8/20 [===========>..................] - ETA: 3:49 - loss: 15.7010 - acc: 0.0259
+ 9/20 [============>.................] - ETA: 3:29 - loss: 15.7193 - acc: 0.0247
+10/20 [==============>...............] - ETA: 3:09 - loss: 15.7151 - acc: 0.0250
+11/20 [===============>..............] - ETA: 2:49 - loss: 15.7174 - acc: 0.0249
+12/20 [=================>............] - ETA: 2:30 - loss: 15.6931 - acc: 0.0264
+13/20 [==================>...........] - ETA: 2:11 - loss: 15.7016 - acc: 0.0258
+14/20 [====================>.........] - ETA: 1:53 - loss: 15.7089 - acc: 0.0254
+15/20 [=====================>........] - ETA: 1:35 - loss: 15.7110 - acc: 0.0253
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7089 - acc: 0.0254
+17/20 [========================>.....] - ETA: 57s - loss: 15.7144 - acc: 0.0250 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7228 - acc: 0.0245
+19/20 [===========================>..] - ETA: 19s - loss: 15.7072 - acc: 0.0255
+20/20 [==============================] - 447s 22s/step - loss: 15.7026 - acc: 0.0258 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 58/100
+
+ 1/20 [>.............................] - ETA: 5:28 - loss: 15.8438 - acc: 0.0170
+ 2/20 [==>...........................] - ETA: 5:33 - loss: 15.7291 - acc: 0.0241
+ 3/20 [===>..........................] - ETA: 5:18 - loss: 15.6909 - acc: 0.0265
+ 4/20 [=====>........................] - ETA: 5:07 - loss: 15.7662 - acc: 0.0218
+ 5/20 [======>.......................] - ETA: 4:48 - loss: 15.7610 - acc: 0.0222
+ 6/20 [========>.....................] - ETA: 4:26 - loss: 15.7576 - acc: 0.0224
+ 7/20 [=========>....................] - ETA: 4:06 - loss: 15.7551 - acc: 0.0225
+ 8/20 [===========>..................] - ETA: 3:47 - loss: 15.7690 - acc: 0.0217
+ 9/20 [============>.................] - ETA: 3:27 - loss: 15.7658 - acc: 0.0219
+10/20 [==============>...............] - ETA: 3:10 - loss: 15.7570 - acc: 0.0224
+11/20 [===============>..............] - ETA: 2:51 - loss: 15.7555 - acc: 0.0225
+12/20 [=================>............] - ETA: 2:31 - loss: 15.7647 - acc: 0.0219
+13/20 [==================>...........] - ETA: 2:12 - loss: 15.7580 - acc: 0.0223
+14/20 [====================>.........] - ETA: 1:53 - loss: 15.7432 - acc: 0.0233
+15/20 [=====================>........] - ETA: 1:35 - loss: 15.7472 - acc: 0.0230
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7507 - acc: 0.0228
+17/20 [========================>.....] - ETA: 58s - loss: 15.7316 - acc: 0.0240 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7251 - acc: 0.0244
+19/20 [===========================>..] - ETA: 19s - loss: 15.7349 - acc: 0.0238
+20/20 [==============================] - 448s 22s/step - loss: 15.7320 - acc: 0.0240 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 59/100
+
+ 1/20 [>.............................] - ETA: 6:18 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 5:47 - loss: 15.8348 - acc: 0.0176
+ 3/20 [===>..........................] - ETA: 5:32 - loss: 15.8243 - acc: 0.0182
+ 4/20 [=====>........................] - ETA: 5:11 - loss: 15.8348 - acc: 0.0176
+ 5/20 [======>.......................] - ETA: 4:52 - loss: 15.7655 - acc: 0.0219
+ 6/20 [========>.....................] - ETA: 4:30 - loss: 15.7928 - acc: 0.0202
+ 7/20 [=========>....................] - ETA: 4:10 - loss: 15.7943 - acc: 0.0201
+ 8/20 [===========>..................] - ETA: 3:50 - loss: 15.7639 - acc: 0.0220
+ 9/20 [============>.................] - ETA: 3:31 - loss: 15.7753 - acc: 0.0213
+10/20 [==============>...............] - ETA: 3:11 - loss: 15.7655 - acc: 0.0219
+11/20 [===============>..............] - ETA: 2:52 - loss: 15.7518 - acc: 0.0227
+12/20 [=================>............] - ETA: 2:32 - loss: 15.7666 - acc: 0.0218
+13/20 [==================>...........] - ETA: 2:13 - loss: 15.7597 - acc: 0.0222
+14/20 [====================>.........] - ETA: 1:53 - loss: 15.7493 - acc: 0.0229
+15/20 [=====================>........] - ETA: 1:34 - loss: 15.7445 - acc: 0.0232
+16/20 [=======================>......] - ETA: 1:16 - loss: 15.7443 - acc: 0.0232
+17/20 [========================>.....] - ETA: 57s - loss: 15.7403 - acc: 0.0234 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7473 - acc: 0.0230
+19/20 [===========================>..] - ETA: 19s - loss: 15.7569 - acc: 0.0224
+20/20 [==============================] - 449s 22s/step - loss: 15.7305 - acc: 0.0240 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 60/100
+
+ 1/20 [>.............................] - ETA: 6:18 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 6:00 - loss: 15.5514 - acc: 0.0352
+ 3/20 [===>..........................] - ETA: 6:00 - loss: 15.5934 - acc: 0.0326
+ 4/20 [=====>........................] - ETA: 5:31 - loss: 15.6931 - acc: 0.0264
+ 5/20 [======>.......................] - ETA: 5:07 - loss: 15.7403 - acc: 0.0234
+ 6/20 [========>.....................] - ETA: 4:47 - loss: 15.7508 - acc: 0.0228
+ 7/20 [=========>....................] - ETA: 4:24 - loss: 15.7763 - acc: 0.0212
+ 8/20 [===========>..................] - ETA: 4:02 - loss: 15.7561 - acc: 0.0225
+ 9/20 [============>.................] - ETA: 3:42 - loss: 15.7543 - acc: 0.0226
+10/20 [==============>...............] - ETA: 3:20 - loss: 15.7718 - acc: 0.0215
+11/20 [===============>..............] - ETA: 3:00 - loss: 15.7632 - acc: 0.0220
+12/20 [=================>............] - ETA: 2:39 - loss: 15.7403 - acc: 0.0234
+13/20 [==================>...........] - ETA: 2:19 - loss: 15.7549 - acc: 0.0225
+14/20 [====================>.........] - ETA: 1:58 - loss: 15.7583 - acc: 0.0223
+15/20 [=====================>........] - ETA: 1:38 - loss: 15.7529 - acc: 0.0227
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7403 - acc: 0.0234
+17/20 [========================>.....] - ETA: 59s - loss: 15.7403 - acc: 0.0234 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7298 - acc: 0.0241
+19/20 [===========================>..] - ETA: 19s - loss: 15.7436 - acc: 0.0232
+20/20 [==============================] - 460s 23s/step - loss: 15.7214 - acc: 0.0246 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 61/100
+
+ 1/20 [>.............................] - ETA: 6:35 - loss: 15.7403 - acc: 0.0234
+ 2/20 [==>...........................] - ETA: 6:14 - loss: 15.7718 - acc: 0.0215
+ 3/20 [===>..........................] - ETA: 5:47 - loss: 15.7403 - acc: 0.0234
+ 4/20 [=====>........................] - ETA: 5:24 - loss: 15.8348 - acc: 0.0176
+ 5/20 [======>.......................] - ETA: 5:03 - loss: 15.7655 - acc: 0.0219
+ 6/20 [========>.....................] - ETA: 4:41 - loss: 15.7508 - acc: 0.0228
+ 7/20 [=========>....................] - ETA: 4:21 - loss: 15.7493 - acc: 0.0229
+ 8/20 [===========>..................] - ETA: 4:00 - loss: 15.7639 - acc: 0.0220
+ 9/20 [============>.................] - ETA: 3:40 - loss: 15.7683 - acc: 0.0217
+10/20 [==============>...............] - ETA: 3:20 - loss: 15.7592 - acc: 0.0223
+11/20 [===============>..............] - ETA: 2:59 - loss: 15.7403 - acc: 0.0234
+12/20 [=================>............] - ETA: 2:39 - loss: 15.7351 - acc: 0.0238
+13/20 [==================>...........] - ETA: 2:18 - loss: 15.7355 - acc: 0.0237
+14/20 [====================>.........] - ETA: 1:58 - loss: 15.7583 - acc: 0.0223
+15/20 [=====================>........] - ETA: 1:38 - loss: 15.7529 - acc: 0.0227
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7639 - acc: 0.0220
+17/20 [========================>.....] - ETA: 58s - loss: 15.7663 - acc: 0.0218 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7508 - acc: 0.0228
+19/20 [===========================>..] - ETA: 19s - loss: 15.7304 - acc: 0.0241
+20/20 [==============================] - 458s 23s/step - loss: 15.7340 - acc: 0.0238 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 62/100
+
+ 1/20 [>.............................] - ETA: 6:20 - loss: 15.9292 - acc: 0.0117
+ 2/20 [==>...........................] - ETA: 6:07 - loss: 15.7718 - acc: 0.0215
+ 3/20 [===>..........................] - ETA: 5:43 - loss: 15.6774 - acc: 0.0273
+ 4/20 [=====>........................] - ETA: 5:23 - loss: 15.6774 - acc: 0.0273
+ 5/20 [======>.......................] - ETA: 5:00 - loss: 15.7026 - acc: 0.0258
+ 6/20 [========>.....................] - ETA: 4:36 - loss: 15.6689 - acc: 0.0279
+ 7/20 [=========>....................] - ETA: 4:18 - loss: 15.6791 - acc: 0.0272
+ 8/20 [===========>..................] - ETA: 3:58 - loss: 15.6553 - acc: 0.0287
+ 9/20 [============>.................] - ETA: 3:37 - loss: 15.6787 - acc: 0.0273
+10/20 [==============>...............] - ETA: 3:16 - loss: 15.7038 - acc: 0.0257
+11/20 [===============>..............] - ETA: 2:55 - loss: 15.6957 - acc: 0.0262
+12/20 [=================>............] - ETA: 2:35 - loss: 15.7151 - acc: 0.0250
+13/20 [==================>...........] - ETA: 2:16 - loss: 15.7171 - acc: 0.0249
+14/20 [====================>.........] - ETA: 1:56 - loss: 15.7007 - acc: 0.0259
+15/20 [=====================>........] - ETA: 1:36 - loss: 15.7160 - acc: 0.0249
+16/20 [=======================>......] - ETA: 1:17 - loss: 15.7214 - acc: 0.0246
+17/20 [========================>.....] - ETA: 58s - loss: 15.7262 - acc: 0.0243 
+18/20 [==========================>...] - ETA: 38s - loss: 15.7340 - acc: 0.0238
+19/20 [===========================>..] - ETA: 19s - loss: 15.7443 - acc: 0.0232
+20/20 [==============================] - 451s 23s/step - loss: 15.7536 - acc: 0.0226 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 63/100
+
+ 1/20 [>.............................] - ETA: 6:26 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 6:06 - loss: 15.5514 - acc: 0.0352
+ 3/20 [===>..........................] - ETA: 5:49 - loss: 15.5305 - acc: 0.0365
+ 4/20 [=====>........................] - ETA: 5:24 - loss: 15.5672 - acc: 0.0342
+ 5/20 [======>.......................] - ETA: 5:04 - loss: 15.5892 - acc: 0.0328
+ 6/20 [========>.....................] - ETA: 4:43 - loss: 15.6039 - acc: 0.0319
+ 7/20 [=========>....................] - ETA: 4:24 - loss: 15.6504 - acc: 0.0290
+ 8/20 [===========>..................] - ETA: 4:04 - loss: 15.6695 - acc: 0.0278
+ 9/20 [============>.................] - ETA: 3:43 - loss: 15.6914 - acc: 0.0265
+10/20 [==============>...............] - ETA: 3:21 - loss: 15.7089 - acc: 0.0254
+11/20 [===============>..............] - ETA: 3:00 - loss: 15.7060 - acc: 0.0256
+12/20 [=================>............] - ETA: 2:39 - loss: 15.7246 - acc: 0.0244
+13/20 [==================>...........] - ETA: 2:18 - loss: 15.7258 - acc: 0.0243
+14/20 [====================>.........] - ETA: 1:58 - loss: 15.7178 - acc: 0.0248
+15/20 [=====================>........] - ETA: 1:38 - loss: 15.7235 - acc: 0.0245
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7167 - acc: 0.0249
+17/20 [========================>.....] - ETA: 58s - loss: 15.7218 - acc: 0.0246 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7228 - acc: 0.0245
+19/20 [===========================>..] - ETA: 19s - loss: 15.7072 - acc: 0.0255
+20/20 [==============================] - 457s 23s/step - loss: 15.7208 - acc: 0.0246 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 64/100
+
+ 1/20 [>.............................] - ETA: 6:28 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 6:09 - loss: 15.7718 - acc: 0.0215
+ 3/20 [===>..........................] - ETA: 5:49 - loss: 15.7823 - acc: 0.0208
+ 4/20 [=====>........................] - ETA: 5:22 - loss: 15.7876 - acc: 0.0205
+ 5/20 [======>.......................] - ETA: 5:00 - loss: 15.7781 - acc: 0.0211
+ 6/20 [========>.....................] - ETA: 4:40 - loss: 15.7718 - acc: 0.0215
+ 7/20 [=========>....................] - ETA: 4:20 - loss: 15.7763 - acc: 0.0212
+ 8/20 [===========>..................] - ETA: 4:00 - loss: 15.7246 - acc: 0.0244
+ 9/20 [============>.................] - ETA: 3:40 - loss: 15.7333 - acc: 0.0239
+10/20 [==============>...............] - ETA: 3:19 - loss: 15.7277 - acc: 0.0242
+11/20 [===============>..............] - ETA: 2:59 - loss: 15.7117 - acc: 0.0252
+12/20 [=================>............] - ETA: 2:39 - loss: 15.7141 - acc: 0.0251
+13/20 [==================>...........] - ETA: 2:19 - loss: 15.6967 - acc: 0.0261
+14/20 [====================>.........] - ETA: 1:59 - loss: 15.6954 - acc: 0.0262
+15/20 [=====================>........] - ETA: 1:38 - loss: 15.6900 - acc: 0.0266
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7081 - acc: 0.0254
+17/20 [========================>.....] - ETA: 58s - loss: 15.7063 - acc: 0.0255 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7187 - acc: 0.0248
+19/20 [===========================>..] - ETA: 19s - loss: 15.7199 - acc: 0.0247
+20/20 [==============================] - 440s 22s/step - loss: 15.7366 - acc: 0.0237 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 65/100
+
+ 1/20 [>.............................] - ETA: 6:29 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 6:14 - loss: 15.6774 - acc: 0.0273
+ 3/20 [===>..........................] - ETA: 5:57 - loss: 15.8033 - acc: 0.0195
+ 4/20 [=====>........................] - ETA: 5:36 - loss: 15.7403 - acc: 0.0234
+ 5/20 [======>.......................] - ETA: 5:15 - loss: 15.7655 - acc: 0.0219
+ 6/20 [========>.....................] - ETA: 4:53 - loss: 15.7718 - acc: 0.0215
+ 7/20 [=========>....................] - ETA: 4:32 - loss: 15.7583 - acc: 0.0223
+ 8/20 [===========>..................] - ETA: 4:12 - loss: 15.7639 - acc: 0.0220
+ 9/20 [============>.................] - ETA: 3:49 - loss: 15.7543 - acc: 0.0226
+10/20 [==============>...............] - ETA: 3:28 - loss: 15.7592 - acc: 0.0223
+11/20 [===============>..............] - ETA: 3:07 - loss: 15.7461 - acc: 0.0231
+12/20 [=================>............] - ETA: 2:44 - loss: 15.7141 - acc: 0.0251
+13/20 [==================>...........] - ETA: 2:23 - loss: 15.7293 - acc: 0.0241
+14/20 [====================>.........] - ETA: 2:01 - loss: 15.7301 - acc: 0.0241
+15/20 [=====================>........] - ETA: 1:43 - loss: 15.7476 - acc: 0.0230
+16/20 [=======================>......] - ETA: 1:21 - loss: 15.7590 - acc: 0.0223
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7542 - acc: 0.0226
+18/20 [==========================>...] - ETA: 40s - loss: 15.7464 - acc: 0.0231 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7428 - acc: 0.0233
+20/20 [==============================] - 450s 22s/step - loss: 15.7395 - acc: 0.0235 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 66/100
+
+ 1/20 [>.............................] - ETA: 5:52 - loss: 15.5514 - acc: 0.0352
+ 2/20 [==>...........................] - ETA: 5:57 - loss: 15.5829 - acc: 0.0332
+ 3/20 [===>..........................] - ETA: 5:51 - loss: 15.6144 - acc: 0.0312
+ 4/20 [=====>........................] - ETA: 5:32 - loss: 15.6931 - acc: 0.0264
+ 5/20 [======>.......................] - ETA: 5:12 - loss: 15.7026 - acc: 0.0258
+ 6/20 [========>.....................] - ETA: 4:51 - loss: 15.7298 - acc: 0.0241
+ 7/20 [=========>....................] - ETA: 4:33 - loss: 15.7583 - acc: 0.0223
+ 8/20 [===========>..................] - ETA: 4:13 - loss: 15.7561 - acc: 0.0225
+ 9/20 [============>.................] - ETA: 3:53 - loss: 15.7543 - acc: 0.0226
+10/20 [==============>...............] - ETA: 3:30 - loss: 15.7466 - acc: 0.0230
+11/20 [===============>..............] - ETA: 3:08 - loss: 15.7575 - acc: 0.0224
+12/20 [=================>............] - ETA: 2:46 - loss: 15.7403 - acc: 0.0234
+13/20 [==================>...........] - ETA: 2:24 - loss: 15.7306 - acc: 0.0240
+14/20 [====================>.........] - ETA: 2:02 - loss: 15.7387 - acc: 0.0235
+15/20 [=====================>........] - ETA: 1:41 - loss: 15.7430 - acc: 0.0233
+16/20 [=======================>......] - ETA: 1:21 - loss: 15.7507 - acc: 0.0228
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7538 - acc: 0.0226
+18/20 [==========================>...] - ETA: 40s - loss: 15.7391 - acc: 0.0235 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7391 - acc: 0.0235
+20/20 [==============================] - 449s 22s/step - loss: 15.7297 - acc: 0.0241 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 67/100
+
+ 1/20 [>.............................] - ETA: 6:17 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:51 - loss: 15.5514 - acc: 0.0352
+ 3/20 [===>..........................] - ETA: 6:02 - loss: 15.6354 - acc: 0.0299
+ 4/20 [=====>........................] - ETA: 5:39 - loss: 15.6931 - acc: 0.0264
+ 5/20 [======>.......................] - ETA: 5:20 - loss: 15.6900 - acc: 0.0266
+ 6/20 [========>.....................] - ETA: 4:55 - loss: 15.6927 - acc: 0.0264
+ 7/20 [=========>....................] - ETA: 4:35 - loss: 15.7085 - acc: 0.0254
+ 8/20 [===========>..................] - ETA: 4:16 - loss: 15.7282 - acc: 0.0242
+ 9/20 [============>.................] - ETA: 3:54 - loss: 15.7226 - acc: 0.0245
+10/20 [==============>...............] - ETA: 3:34 - loss: 15.7433 - acc: 0.0233
+11/20 [===============>..............] - ETA: 3:14 - loss: 15.7258 - acc: 0.0243
+12/20 [=================>............] - ETA: 2:52 - loss: 15.7323 - acc: 0.0239
+13/20 [==================>...........] - ETA: 2:29 - loss: 15.7232 - acc: 0.0245
+14/20 [====================>.........] - ETA: 2:07 - loss: 15.7379 - acc: 0.0236
+15/20 [=====================>........] - ETA: 1:45 - loss: 15.7423 - acc: 0.0233
+16/20 [=======================>......] - ETA: 1:23 - loss: 15.7382 - acc: 0.0236
+17/20 [========================>.....] - ETA: 1:02 - loss: 15.7309 - acc: 0.0240
+18/20 [==========================>...] - ETA: 41s - loss: 15.7210 - acc: 0.0246 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7253 - acc: 0.0244
+20/20 [==============================] - 460s 23s/step - loss: 15.7198 - acc: 0.0247 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 68/100
+
+ 1/20 [>.............................] - ETA: 5:42 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 5:33 - loss: 15.6774 - acc: 0.0273
+ 3/20 [===>..........................] - ETA: 5:17 - loss: 15.6774 - acc: 0.0273
+ 4/20 [=====>........................] - ETA: 5:08 - loss: 15.7089 - acc: 0.0254
+ 5/20 [======>.......................] - ETA: 4:51 - loss: 15.7026 - acc: 0.0258
+ 6/20 [========>.....................] - ETA: 4:34 - loss: 15.6804 - acc: 0.0272
+ 7/20 [=========>....................] - ETA: 4:17 - loss: 15.6979 - acc: 0.0261
+ 8/20 [===========>..................] - ETA: 4:00 - loss: 15.7111 - acc: 0.0253
+ 9/20 [============>.................] - ETA: 3:41 - loss: 15.6934 - acc: 0.0264
+10/20 [==============>...............] - ETA: 3:23 - loss: 15.6918 - acc: 0.0265
+11/20 [===============>..............] - ETA: 3:03 - loss: 15.7019 - acc: 0.0258
+12/20 [=================>............] - ETA: 2:44 - loss: 15.7208 - acc: 0.0246
+13/20 [==================>...........] - ETA: 2:23 - loss: 15.7175 - acc: 0.0249
+14/20 [====================>.........] - ETA: 2:02 - loss: 15.7281 - acc: 0.0242
+15/20 [=====================>........] - ETA: 1:41 - loss: 15.7289 - acc: 0.0241
+16/20 [=======================>......] - ETA: 1:21 - loss: 15.7296 - acc: 0.0241
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7266 - acc: 0.0243
+18/20 [==========================>...] - ETA: 40s - loss: 15.7203 - acc: 0.0247 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7214 - acc: 0.0246
+20/20 [==============================] - 451s 23s/step - loss: 15.7192 - acc: 0.0247 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 69/100
+
+ 1/20 [>.............................] - ETA: 5:55 - loss: 15.7403 - acc: 0.0234
+ 2/20 [==>...........................] - ETA: 5:44 - loss: 15.8033 - acc: 0.0195
+ 3/20 [===>..........................] - ETA: 5:32 - loss: 15.7613 - acc: 0.0221
+ 4/20 [=====>........................] - ETA: 5:12 - loss: 15.7561 - acc: 0.0225
+ 5/20 [======>.......................] - ETA: 5:00 - loss: 15.7529 - acc: 0.0227
+ 6/20 [========>.....................] - ETA: 4:41 - loss: 15.7298 - acc: 0.0241
+ 7/20 [=========>....................] - ETA: 4:26 - loss: 15.7403 - acc: 0.0234
+ 8/20 [===========>..................] - ETA: 4:04 - loss: 15.6932 - acc: 0.0264
+ 9/20 [============>.................] - ETA: 3:46 - loss: 15.6635 - acc: 0.0282
+10/20 [==============>...............] - ETA: 3:27 - loss: 15.6964 - acc: 0.0262
+11/20 [===============>..............] - ETA: 3:07 - loss: 15.7233 - acc: 0.0245
+12/20 [=================>............] - ETA: 2:47 - loss: 15.6932 - acc: 0.0264
+13/20 [==================>...........] - ETA: 2:26 - loss: 15.7114 - acc: 0.0252
+14/20 [====================>.........] - ETA: 2:05 - loss: 15.7134 - acc: 0.0251
+15/20 [=====================>........] - ETA: 1:45 - loss: 15.7236 - acc: 0.0245
+16/20 [=======================>......] - ETA: 1:24 - loss: 15.7325 - acc: 0.0239
+17/20 [========================>.....] - ETA: 1:02 - loss: 15.7219 - acc: 0.0246
+18/20 [==========================>...] - ETA: 41s - loss: 15.7299 - acc: 0.0241 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7304 - acc: 0.0241
+20/20 [==============================] - 463s 23s/step - loss: 15.7216 - acc: 0.0246 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 70/100
+
+ 1/20 [>.............................] - ETA: 5:53 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 5:37 - loss: 15.6459 - acc: 0.0293
+ 3/20 [===>..........................] - ETA: 5:19 - loss: 15.7403 - acc: 0.0234
+ 4/20 [=====>........................] - ETA: 4:58 - loss: 15.7718 - acc: 0.0215
+ 5/20 [======>.......................] - ETA: 4:38 - loss: 15.7277 - acc: 0.0242
+ 6/20 [========>.....................] - ETA: 4:25 - loss: 15.7718 - acc: 0.0215
+ 7/20 [=========>....................] - ETA: 4:10 - loss: 15.7943 - acc: 0.0201
+ 8/20 [===========>..................] - ETA: 3:52 - loss: 15.7833 - acc: 0.0208
+ 9/20 [============>.................] - ETA: 3:35 - loss: 15.7716 - acc: 0.0215
+10/20 [==============>...............] - ETA: 3:17 - loss: 15.7873 - acc: 0.0205
+11/20 [===============>..............] - ETA: 2:58 - loss: 15.7659 - acc: 0.0219
+12/20 [=================>............] - ETA: 2:39 - loss: 15.7638 - acc: 0.0220
+13/20 [==================>...........] - ETA: 2:20 - loss: 15.7765 - acc: 0.0212
+14/20 [====================>.........] - ETA: 2:00 - loss: 15.7739 - acc: 0.0214
+15/20 [=====================>........] - ETA: 1:41 - loss: 15.7759 - acc: 0.0212
+16/20 [=======================>......] - ETA: 1:20 - loss: 15.7697 - acc: 0.0216
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7569 - acc: 0.0224
+18/20 [==========================>...] - ETA: 40s - loss: 15.7490 - acc: 0.0229 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7485 - acc: 0.0229
+20/20 [==============================] - 450s 23s/step - loss: 15.7544 - acc: 0.0226 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 71/100
+
+ 1/20 [>.............................] - ETA: 5:52 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 5:36 - loss: 15.7089 - acc: 0.0254
+ 3/20 [===>..........................] - ETA: 5:22 - loss: 15.7613 - acc: 0.0221
+ 4/20 [=====>........................] - ETA: 5:03 - loss: 15.7561 - acc: 0.0225
+ 5/20 [======>.......................] - ETA: 4:45 - loss: 15.7026 - acc: 0.0258
+ 6/20 [========>.....................] - ETA: 4:28 - loss: 15.7089 - acc: 0.0254
+ 7/20 [=========>....................] - ETA: 4:13 - loss: 15.6954 - acc: 0.0262
+ 8/20 [===========>..................] - ETA: 3:54 - loss: 15.7053 - acc: 0.0256
+ 9/20 [============>.................] - ETA: 3:35 - loss: 15.6742 - acc: 0.0275
+10/20 [==============>...............] - ETA: 3:17 - loss: 15.6809 - acc: 0.0271
+11/20 [===============>..............] - ETA: 2:59 - loss: 15.7092 - acc: 0.0254
+12/20 [=================>............] - ETA: 2:40 - loss: 15.7118 - acc: 0.0252
+13/20 [==================>...........] - ETA: 2:21 - loss: 15.7236 - acc: 0.0245
+14/20 [====================>.........] - ETA: 2:01 - loss: 15.7113 - acc: 0.0252
+15/20 [=====================>........] - ETA: 1:41 - loss: 15.6881 - acc: 0.0267
+16/20 [=======================>......] - ETA: 1:21 - loss: 15.6992 - acc: 0.0260
+17/20 [========================>.....] - ETA: 1:01 - loss: 15.7016 - acc: 0.0258
+18/20 [==========================>...] - ETA: 40s - loss: 15.7178 - acc: 0.0248 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7123 - acc: 0.0252
+20/20 [==============================] - 455s 23s/step - loss: 15.7169 - acc: 0.0249 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 72/100
+
+ 1/20 [>.............................] - ETA: 6:16 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 5:43 - loss: 15.7089 - acc: 0.0254
+ 3/20 [===>..........................] - ETA: 6:12 - loss: 15.7193 - acc: 0.0247
+ 4/20 [=====>........................] - ETA: 5:35 - loss: 15.7561 - acc: 0.0225
+ 5/20 [======>.......................] - ETA: 5:10 - loss: 15.7529 - acc: 0.0227
+ 6/20 [========>.....................] - ETA: 4:47 - loss: 15.7193 - acc: 0.0247
+ 7/20 [=========>....................] - ETA: 4:27 - loss: 15.7583 - acc: 0.0223
+ 8/20 [===========>..................] - ETA: 4:08 - loss: 15.7325 - acc: 0.0239
+ 9/20 [============>.................] - ETA: 3:48 - loss: 15.7333 - acc: 0.0239
+10/20 [==============>...............] - ETA: 3:28 - loss: 15.7340 - acc: 0.0238
+11/20 [===============>..............] - ETA: 3:09 - loss: 15.7461 - acc: 0.0231
+12/20 [=================>............] - ETA: 2:48 - loss: 15.7456 - acc: 0.0231
+13/20 [==================>...........] - ETA: 2:26 - loss: 15.7452 - acc: 0.0231
+14/20 [====================>.........] - ETA: 2:05 - loss: 15.7522 - acc: 0.0227
+15/20 [=====================>........] - ETA: 1:44 - loss: 15.7388 - acc: 0.0235
+16/20 [=======================>......] - ETA: 1:23 - loss: 15.7389 - acc: 0.0235
+17/20 [========================>.....] - ETA: 1:02 - loss: 15.7427 - acc: 0.0233
+18/20 [==========================>...] - ETA: 41s - loss: 15.7356 - acc: 0.0237 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7425 - acc: 0.0233
+20/20 [==============================] - 465s 23s/step - loss: 15.7360 - acc: 0.0237 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 73/100
+
+ 1/20 [>.............................] - ETA: 5:44 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 5:33 - loss: 15.8663 - acc: 0.0156
+ 3/20 [===>..........................] - ETA: 5:14 - loss: 15.8033 - acc: 0.0195
+ 4/20 [=====>........................] - ETA: 4:55 - loss: 15.8190 - acc: 0.0186
+ 5/20 [======>.......................] - ETA: 4:39 - loss: 15.8285 - acc: 0.0180
+ 6/20 [========>.....................] - ETA: 4:21 - loss: 15.8033 - acc: 0.0195
+ 7/20 [=========>....................] - ETA: 4:04 - loss: 15.7853 - acc: 0.0206
+ 8/20 [===========>..................] - ETA: 3:45 - loss: 15.7561 - acc: 0.0225
+ 9/20 [============>.................] - ETA: 3:29 - loss: 15.7193 - acc: 0.0247
+10/20 [==============>...............] - ETA: 3:12 - loss: 15.7089 - acc: 0.0254
+11/20 [===============>..............] - ETA: 2:55 - loss: 15.7060 - acc: 0.0256
+12/20 [=================>............] - ETA: 2:37 - loss: 15.7089 - acc: 0.0254
+13/20 [==================>...........] - ETA: 2:18 - loss: 15.7210 - acc: 0.0246
+14/20 [====================>.........] - ETA: 1:59 - loss: 15.7268 - acc: 0.0243
+15/20 [=====================>........] - ETA: 1:40 - loss: 15.7319 - acc: 0.0240
+16/20 [=======================>......] - ETA: 1:20 - loss: 15.7128 - acc: 0.0251
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7144 - acc: 0.0250
+18/20 [==========================>...] - ETA: 40s - loss: 15.7158 - acc: 0.0250 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7238 - acc: 0.0245
+20/20 [==============================] - 455s 23s/step - loss: 15.7183 - acc: 0.0248 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 74/100
+
+ 1/20 [>.............................] - ETA: 5:51 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:36 - loss: 15.9607 - acc: 0.0098
+ 3/20 [===>..........................] - ETA: 5:25 - loss: 15.9502 - acc: 0.0104
+ 4/20 [=====>........................] - ETA: 5:00 - loss: 15.9236 - acc: 0.0121
+ 5/20 [======>.......................] - ETA: 4:44 - loss: 15.8240 - acc: 0.0182
+ 6/20 [========>.....................] - ETA: 4:27 - loss: 15.8310 - acc: 0.0178
+ 7/20 [=========>....................] - ETA: 4:07 - loss: 15.8271 - acc: 0.0181
+ 8/20 [===========>..................] - ETA: 3:50 - loss: 15.7690 - acc: 0.0217
+ 9/20 [============>.................] - ETA: 3:30 - loss: 15.7518 - acc: 0.0227
+10/20 [==============>...............] - ETA: 3:14 - loss: 15.7444 - acc: 0.0232
+11/20 [===============>..............] - ETA: 2:56 - loss: 15.7497 - acc: 0.0229
+12/20 [=================>............] - ETA: 2:38 - loss: 15.7332 - acc: 0.0239
+13/20 [==================>...........] - ETA: 2:19 - loss: 15.7386 - acc: 0.0235
+14/20 [====================>.........] - ETA: 1:59 - loss: 15.7461 - acc: 0.0231
+15/20 [=====================>........] - ETA: 1:40 - loss: 15.7541 - acc: 0.0226
+16/20 [=======================>......] - ETA: 1:20 - loss: 15.7533 - acc: 0.0226
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7488 - acc: 0.0229
+18/20 [==========================>...] - ETA: 40s - loss: 15.7413 - acc: 0.0234 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7413 - acc: 0.0234
+20/20 [==============================] - 455s 23s/step - loss: 15.7475 - acc: 0.0230 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 75/100
+
+ 1/20 [>.............................] - ETA: 6:15 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 5:35 - loss: 15.7403 - acc: 0.0234
+ 3/20 [===>..........................] - ETA: 5:21 - loss: 15.7613 - acc: 0.0221
+ 4/20 [=====>........................] - ETA: 5:04 - loss: 15.7089 - acc: 0.0254
+ 5/20 [======>.......................] - ETA: 4:42 - loss: 15.7151 - acc: 0.0250
+ 6/20 [========>.....................] - ETA: 4:26 - loss: 15.6774 - acc: 0.0273
+ 7/20 [=========>....................] - ETA: 4:27 - loss: 15.7044 - acc: 0.0257
+ 8/20 [===========>..................] - ETA: 4:04 - loss: 15.6774 - acc: 0.0273
+ 9/20 [============>.................] - ETA: 3:42 - loss: 15.6704 - acc: 0.0278
+10/20 [==============>...............] - ETA: 3:20 - loss: 15.6963 - acc: 0.0262
+11/20 [===============>..............] - ETA: 3:01 - loss: 15.7117 - acc: 0.0252
+12/20 [=================>............] - ETA: 2:42 - loss: 15.6984 - acc: 0.0260
+13/20 [==================>...........] - ETA: 2:23 - loss: 15.7113 - acc: 0.0252
+14/20 [====================>.........] - ETA: 2:03 - loss: 15.7133 - acc: 0.0251
+15/20 [=====================>........] - ETA: 1:44 - loss: 15.7068 - acc: 0.0255
+16/20 [=======================>......] - ETA: 1:23 - loss: 15.7049 - acc: 0.0256
+17/20 [========================>.....] - ETA: 1:02 - loss: 15.7181 - acc: 0.0248
+18/20 [==========================>...] - ETA: 41s - loss: 15.7263 - acc: 0.0243 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7271 - acc: 0.0243
+20/20 [==============================] - 468s 23s/step - loss: 15.7214 - acc: 0.0246 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 76/100
+
+ 1/20 [>.............................] - ETA: 6:45 - loss: 15.9292 - acc: 0.0117
+ 2/20 [==>...........................] - ETA: 6:03 - loss: 15.9292 - acc: 0.0117
+ 3/20 [===>..........................] - ETA: 5:34 - loss: 15.8663 - acc: 0.0156
+ 4/20 [=====>........................] - ETA: 5:15 - loss: 15.8033 - acc: 0.0195
+ 5/20 [======>.......................] - ETA: 4:55 - loss: 15.7277 - acc: 0.0242
+ 6/20 [========>.....................] - ETA: 4:35 - loss: 15.7089 - acc: 0.0254
+ 7/20 [=========>....................] - ETA: 4:14 - loss: 15.7313 - acc: 0.0240
+ 8/20 [===========>..................] - ETA: 3:54 - loss: 15.7561 - acc: 0.0225
+ 9/20 [============>.................] - ETA: 3:35 - loss: 15.7333 - acc: 0.0239
+10/20 [==============>...............] - ETA: 3:15 - loss: 15.7151 - acc: 0.0250
+11/20 [===============>..............] - ETA: 2:53 - loss: 15.7268 - acc: 0.0243
+12/20 [=================>............] - ETA: 2:36 - loss: 15.7280 - acc: 0.0242
+13/20 [==================>...........] - ETA: 2:17 - loss: 15.7434 - acc: 0.0232
+14/20 [====================>.........] - ETA: 1:58 - loss: 15.7432 - acc: 0.0233
+15/20 [=====================>........] - ETA: 1:39 - loss: 15.7430 - acc: 0.0233
+16/20 [=======================>......] - ETA: 1:20 - loss: 15.7468 - acc: 0.0230
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7427 - acc: 0.0233
+18/20 [==========================>...] - ETA: 40s - loss: 15.7251 - acc: 0.0244 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7027 - acc: 0.0258
+20/20 [==============================] - 460s 23s/step - loss: 15.6983 - acc: 0.0260 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 77/100
+
+ 1/20 [>.............................] - ETA: 6:29 - loss: 15.7403 - acc: 0.0234
+ 2/20 [==>...........................] - ETA: 6:03 - loss: 15.8033 - acc: 0.0195
+ 3/20 [===>..........................] - ETA: 6:08 - loss: 15.7403 - acc: 0.0234
+ 4/20 [=====>........................] - ETA: 5:38 - loss: 15.7876 - acc: 0.0205
+ 5/20 [======>.......................] - ETA: 5:12 - loss: 15.7907 - acc: 0.0203
+ 6/20 [========>.....................] - ETA: 4:45 - loss: 15.8138 - acc: 0.0189
+ 7/20 [=========>....................] - ETA: 4:22 - loss: 15.7763 - acc: 0.0212
+ 8/20 [===========>..................] - ETA: 4:00 - loss: 15.7876 - acc: 0.0205
+ 9/20 [============>.................] - ETA: 3:39 - loss: 15.7823 - acc: 0.0208
+10/20 [==============>...............] - ETA: 3:19 - loss: 15.7655 - acc: 0.0219
+11/20 [===============>..............] - ETA: 2:59 - loss: 15.7804 - acc: 0.0210
+12/20 [=================>............] - ETA: 2:37 - loss: 15.7857 - acc: 0.0206
+13/20 [==================>...........] - ETA: 2:18 - loss: 15.7773 - acc: 0.0211
+14/20 [====================>.........] - ETA: 1:59 - loss: 15.7522 - acc: 0.0227
+15/20 [=====================>........] - ETA: 1:40 - loss: 15.7514 - acc: 0.0227
+16/20 [=======================>......] - ETA: 1:20 - loss: 15.7625 - acc: 0.0221
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7760 - acc: 0.0212
+18/20 [==========================>...] - ETA: 40s - loss: 15.7671 - acc: 0.0218 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7690 - acc: 0.0217
+20/20 [==============================] - 459s 23s/step - loss: 15.7581 - acc: 0.0223 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 78/100
+
+ 1/20 [>.............................] - ETA: 6:22 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 6:04 - loss: 15.7089 - acc: 0.0254
+ 3/20 [===>..........................] - ETA: 5:49 - loss: 15.7403 - acc: 0.0234
+ 4/20 [=====>........................] - ETA: 5:22 - loss: 15.6616 - acc: 0.0283
+ 5/20 [======>.......................] - ETA: 4:57 - loss: 15.6900 - acc: 0.0266
+ 6/20 [========>.....................] - ETA: 4:35 - loss: 15.6984 - acc: 0.0260
+ 7/20 [=========>....................] - ETA: 4:12 - loss: 15.7133 - acc: 0.0251
+ 8/20 [===========>..................] - ETA: 3:53 - loss: 15.7167 - acc: 0.0249
+ 9/20 [============>.................] - ETA: 3:33 - loss: 15.7054 - acc: 0.0256
+10/20 [==============>...............] - ETA: 3:13 - loss: 15.7277 - acc: 0.0242
+11/20 [===============>..............] - ETA: 2:54 - loss: 15.7289 - acc: 0.0241
+12/20 [=================>............] - ETA: 2:33 - loss: 15.7213 - acc: 0.0246
+13/20 [==================>...........] - ETA: 2:13 - loss: 15.7179 - acc: 0.0248
+14/20 [====================>.........] - ETA: 1:55 - loss: 15.7330 - acc: 0.0239
+15/20 [=====================>........] - ETA: 1:37 - loss: 15.7251 - acc: 0.0244
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7143 - acc: 0.0251
+17/20 [========================>.....] - ETA: 58s - loss: 15.7219 - acc: 0.0246 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7299 - acc: 0.0241
+19/20 [===========================>..] - ETA: 19s - loss: 15.7338 - acc: 0.0238
+20/20 [==============================] - 450s 23s/step - loss: 15.7309 - acc: 0.0240 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 79/100
+
+ 1/20 [>.............................] - ETA: 6:29 - loss: 15.7403 - acc: 0.0234
+ 2/20 [==>...........................] - ETA: 6:08 - loss: 15.6774 - acc: 0.0273
+ 3/20 [===>..........................] - ETA: 5:51 - loss: 15.7193 - acc: 0.0247
+ 4/20 [=====>........................] - ETA: 5:29 - loss: 15.8033 - acc: 0.0195
+ 5/20 [======>.......................] - ETA: 5:00 - loss: 15.8159 - acc: 0.0187
+ 6/20 [========>.....................] - ETA: 4:38 - loss: 15.8138 - acc: 0.0189
+ 7/20 [=========>....................] - ETA: 4:16 - loss: 15.8033 - acc: 0.0195
+ 8/20 [===========>..................] - ETA: 3:54 - loss: 15.7639 - acc: 0.0220
+ 9/20 [============>.................] - ETA: 3:33 - loss: 15.7263 - acc: 0.0243
+10/20 [==============>...............] - ETA: 3:14 - loss: 15.7340 - acc: 0.0238
+11/20 [===============>..............] - ETA: 2:53 - loss: 15.7403 - acc: 0.0234
+12/20 [=================>............] - ETA: 2:34 - loss: 15.7298 - acc: 0.0241
+13/20 [==================>...........] - ETA: 2:15 - loss: 15.7500 - acc: 0.0228
+14/20 [====================>.........] - ETA: 1:55 - loss: 15.7313 - acc: 0.0240
+15/20 [=====================>........] - ETA: 1:37 - loss: 15.7319 - acc: 0.0240
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7443 - acc: 0.0232
+17/20 [========================>.....] - ETA: 58s - loss: 15.7366 - acc: 0.0237 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7228 - acc: 0.0245
+19/20 [===========================>..] - ETA: 19s - loss: 15.7337 - acc: 0.0238
+20/20 [==============================] - 449s 22s/step - loss: 15.7392 - acc: 0.0235 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 80/100
+
+ 1/20 [>.............................] - ETA: 6:24 - loss: 15.4885 - acc: 0.0391
+ 2/20 [==>...........................] - ETA: 6:01 - loss: 15.6459 - acc: 0.0293
+ 3/20 [===>..........................] - ETA: 5:45 - loss: 15.7613 - acc: 0.0221
+ 4/20 [=====>........................] - ETA: 5:25 - loss: 15.7561 - acc: 0.0225
+ 5/20 [======>.......................] - ETA: 5:05 - loss: 15.7529 - acc: 0.0227
+ 6/20 [========>.....................] - ETA: 4:41 - loss: 15.7508 - acc: 0.0228
+ 7/20 [=========>....................] - ETA: 4:19 - loss: 15.7133 - acc: 0.0251
+ 8/20 [===========>..................] - ETA: 3:59 - loss: 15.7089 - acc: 0.0254
+ 9/20 [============>.................] - ETA: 3:39 - loss: 15.7124 - acc: 0.0252
+10/20 [==============>...............] - ETA: 3:18 - loss: 15.7214 - acc: 0.0246
+11/20 [===============>..............] - ETA: 2:57 - loss: 15.7289 - acc: 0.0241
+12/20 [=================>............] - ETA: 2:36 - loss: 15.7508 - acc: 0.0228
+13/20 [==================>...........] - ETA: 2:17 - loss: 15.7403 - acc: 0.0234
+14/20 [====================>.........] - ETA: 1:56 - loss: 15.7313 - acc: 0.0240
+15/20 [=====================>........] - ETA: 1:37 - loss: 15.7235 - acc: 0.0245
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7207 - acc: 0.0247
+17/20 [========================>.....] - ETA: 59s - loss: 15.7181 - acc: 0.0248 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7228 - acc: 0.0245
+19/20 [===========================>..] - ETA: 19s - loss: 15.7238 - acc: 0.0245
+20/20 [==============================] - 454s 23s/step - loss: 15.7246 - acc: 0.0244 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 81/100
+
+ 1/20 [>.............................] - ETA: 6:28 - loss: 15.5514 - acc: 0.0352
+ 2/20 [==>...........................] - ETA: 5:54 - loss: 15.7662 - acc: 0.0218
+ 3/20 [===>..........................] - ETA: 5:37 - loss: 15.7156 - acc: 0.0250
+ 4/20 [=====>........................] - ETA: 5:19 - loss: 15.6903 - acc: 0.0265
+ 5/20 [======>.......................] - ETA: 5:02 - loss: 15.7381 - acc: 0.0236
+ 6/20 [========>.....................] - ETA: 4:43 - loss: 15.7594 - acc: 0.0223
+ 7/20 [=========>....................] - ETA: 4:20 - loss: 15.7207 - acc: 0.0247
+ 8/20 [===========>..................] - ETA: 3:59 - loss: 15.7153 - acc: 0.0250
+ 9/20 [============>.................] - ETA: 3:36 - loss: 15.7181 - acc: 0.0248
+10/20 [==============>...............] - ETA: 3:17 - loss: 15.7518 - acc: 0.0227
+11/20 [===============>..............] - ETA: 2:57 - loss: 15.7565 - acc: 0.0224
+12/20 [=================>............] - ETA: 2:37 - loss: 15.7394 - acc: 0.0235
+13/20 [==================>...........] - ETA: 2:17 - loss: 15.7395 - acc: 0.0235
+14/20 [====================>.........] - ETA: 1:57 - loss: 15.7440 - acc: 0.0232
+15/20 [=====================>........] - ETA: 1:37 - loss: 15.7312 - acc: 0.0240
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7239 - acc: 0.0245
+17/20 [========================>.....] - ETA: 58s - loss: 15.7286 - acc: 0.0242 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7187 - acc: 0.0248
+19/20 [===========================>..] - ETA: 19s - loss: 15.7298 - acc: 0.0241
+20/20 [==============================] - 452s 23s/step - loss: 15.7115 - acc: 0.0252 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 82/100
+
+ 1/20 [>.............................] - ETA: 6:24 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 6:16 - loss: 15.8348 - acc: 0.0176
+ 3/20 [===>..........................] - ETA: 5:52 - loss: 15.8453 - acc: 0.0169
+ 4/20 [=====>........................] - ETA: 5:30 - loss: 15.8505 - acc: 0.0166
+ 5/20 [======>.......................] - ETA: 5:05 - loss: 15.8537 - acc: 0.0164
+ 6/20 [========>.....................] - ETA: 4:44 - loss: 15.8767 - acc: 0.0150
+ 7/20 [=========>....................] - ETA: 4:24 - loss: 15.8573 - acc: 0.0162
+ 8/20 [===========>..................] - ETA: 4:02 - loss: 15.8112 - acc: 0.0190
+ 9/20 [============>.................] - ETA: 3:41 - loss: 15.7963 - acc: 0.0200
+10/20 [==============>...............] - ETA: 3:20 - loss: 15.8159 - acc: 0.0187
+11/20 [===============>..............] - ETA: 3:00 - loss: 15.8262 - acc: 0.0181
+12/20 [=================>............] - ETA: 2:39 - loss: 15.8033 - acc: 0.0195
+13/20 [==================>...........] - ETA: 2:18 - loss: 15.8033 - acc: 0.0195
+14/20 [====================>.........] - ETA: 1:58 - loss: 15.7943 - acc: 0.0201
+15/20 [=====================>........] - ETA: 1:38 - loss: 15.7781 - acc: 0.0211
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7718 - acc: 0.0215
+17/20 [========================>.....] - ETA: 58s - loss: 15.7403 - acc: 0.0234 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7473 - acc: 0.0230
+19/20 [===========================>..] - ETA: 19s - loss: 15.7602 - acc: 0.0222
+20/20 [==============================] - 454s 23s/step - loss: 15.7529 - acc: 0.0227 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 83/100
+
+ 1/20 [>.............................] - ETA: 6:18 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 6:08 - loss: 15.6144 - acc: 0.0312
+ 3/20 [===>..........................] - ETA: 5:45 - loss: 15.6564 - acc: 0.0286
+ 4/20 [=====>........................] - ETA: 5:25 - loss: 15.7403 - acc: 0.0234
+ 5/20 [======>.......................] - ETA: 5:00 - loss: 15.6924 - acc: 0.0264
+ 6/20 [========>.....................] - ETA: 4:39 - loss: 15.7214 - acc: 0.0246
+ 7/20 [=========>....................] - ETA: 4:21 - loss: 15.7601 - acc: 0.0222
+ 8/20 [===========>..................] - ETA: 4:03 - loss: 15.7812 - acc: 0.0209
+ 9/20 [============>.................] - ETA: 3:44 - loss: 15.7417 - acc: 0.0234
+10/20 [==============>...............] - ETA: 3:23 - loss: 15.7416 - acc: 0.0234
+11/20 [===============>..............] - ETA: 3:02 - loss: 15.7186 - acc: 0.0248
+12/20 [=================>............] - ETA: 2:41 - loss: 15.7151 - acc: 0.0250
+13/20 [==================>...........] - ETA: 2:20 - loss: 15.7122 - acc: 0.0252
+14/20 [====================>.........] - ETA: 2:00 - loss: 15.7142 - acc: 0.0251
+15/20 [=====================>........] - ETA: 1:39 - loss: 15.7076 - acc: 0.0255
+16/20 [=======================>......] - ETA: 1:19 - loss: 15.7214 - acc: 0.0246
+17/20 [========================>.....] - ETA: 59s - loss: 15.7225 - acc: 0.0245 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7165 - acc: 0.0249
+19/20 [===========================>..] - ETA: 19s - loss: 15.7211 - acc: 0.0246
+20/20 [==============================] - 463s 23s/step - loss: 15.7158 - acc: 0.0250 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 84/100
+
+ 1/20 [>.............................] - ETA: 6:06 - loss: 15.7403 - acc: 0.0234
+ 2/20 [==>...........................] - ETA: 6:03 - loss: 15.7718 - acc: 0.0215
+ 3/20 [===>..........................] - ETA: 5:40 - loss: 15.8243 - acc: 0.0182
+ 4/20 [=====>........................] - ETA: 5:21 - loss: 15.8033 - acc: 0.0195
+ 5/20 [======>.......................] - ETA: 5:02 - loss: 15.8033 - acc: 0.0195
+ 6/20 [========>.....................] - ETA: 4:45 - loss: 15.8243 - acc: 0.0182
+ 7/20 [=========>....................] - ETA: 4:24 - loss: 15.8123 - acc: 0.0190
+ 8/20 [===========>..................] - ETA: 4:04 - loss: 15.7718 - acc: 0.0215
+ 9/20 [============>.................] - ETA: 3:42 - loss: 15.7798 - acc: 0.0210
+10/20 [==============>...............] - ETA: 3:20 - loss: 15.8010 - acc: 0.0197
+11/20 [===============>..............] - ETA: 3:00 - loss: 15.7612 - acc: 0.0221
+12/20 [=================>............] - ETA: 2:39 - loss: 15.7647 - acc: 0.0219
+13/20 [==================>...........] - ETA: 2:18 - loss: 15.7628 - acc: 0.0220
+14/20 [====================>.........] - ETA: 1:58 - loss: 15.7792 - acc: 0.0210
+15/20 [=====================>........] - ETA: 1:38 - loss: 15.7724 - acc: 0.0214
+16/20 [=======================>......] - ETA: 1:18 - loss: 15.7665 - acc: 0.0218
+17/20 [========================>.....] - ETA: 59s - loss: 15.7649 - acc: 0.0219 
+18/20 [==========================>...] - ETA: 39s - loss: 15.7636 - acc: 0.0220
+19/20 [===========================>..] - ETA: 19s - loss: 15.7524 - acc: 0.0227
+20/20 [==============================] - 461s 23s/step - loss: 15.7360 - acc: 0.0237 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 85/100
+
+ 1/20 [>.............................] - ETA: 6:06 - loss: 15.8438 - acc: 0.0170
+ 2/20 [==>...........................] - ETA: 6:12 - loss: 15.7920 - acc: 0.0202
+ 3/20 [===>..........................] - ETA: 5:56 - loss: 15.7748 - acc: 0.0213
+ 4/20 [=====>........................] - ETA: 5:35 - loss: 15.7190 - acc: 0.0248
+ 5/20 [======>.......................] - ETA: 5:12 - loss: 15.7484 - acc: 0.0229
+ 6/20 [========>.....................] - ETA: 4:50 - loss: 15.7471 - acc: 0.0230
+ 7/20 [=========>....................] - ETA: 4:27 - loss: 15.7461 - acc: 0.0231
+ 8/20 [===========>..................] - ETA: 4:05 - loss: 15.6824 - acc: 0.0270
+ 9/20 [============>.................] - ETA: 3:45 - loss: 15.6959 - acc: 0.0262
+10/20 [==============>...............] - ETA: 3:25 - loss: 15.7003 - acc: 0.0259
+11/20 [===============>..............] - ETA: 3:06 - loss: 15.6982 - acc: 0.0261
+12/20 [=================>............] - ETA: 2:44 - loss: 15.7122 - acc: 0.0252
+13/20 [==================>...........] - ETA: 2:22 - loss: 15.7241 - acc: 0.0244
+14/20 [====================>.........] - ETA: 2:01 - loss: 15.7162 - acc: 0.0249
+15/20 [=====================>........] - ETA: 1:41 - loss: 15.7136 - acc: 0.0251
+16/20 [=======================>......] - ETA: 1:20 - loss: 15.7271 - acc: 0.0243
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7205 - acc: 0.0247
+18/20 [==========================>...] - ETA: 40s - loss: 15.7251 - acc: 0.0244 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7325 - acc: 0.0239
+20/20 [==============================] - 454s 23s/step - loss: 15.7360 - acc: 0.0237 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 86/100
+
+ 1/20 [>.............................] - ETA: 6:55 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 6:40 - loss: 15.6459 - acc: 0.0293
+ 3/20 [===>..........................] - ETA: 6:15 - loss: 15.6564 - acc: 0.0286
+ 4/20 [=====>........................] - ETA: 5:50 - loss: 15.6931 - acc: 0.0264
+ 5/20 [======>.......................] - ETA: 5:27 - loss: 15.7151 - acc: 0.0250
+ 6/20 [========>.....................] - ETA: 5:05 - loss: 15.6984 - acc: 0.0260
+ 7/20 [=========>....................] - ETA: 4:43 - loss: 15.6864 - acc: 0.0268
+ 8/20 [===========>..................] - ETA: 4:21 - loss: 15.7010 - acc: 0.0259
+ 9/20 [============>.................] - ETA: 3:59 - loss: 15.7124 - acc: 0.0252
+10/20 [==============>...............] - ETA: 3:35 - loss: 15.7089 - acc: 0.0254
+11/20 [===============>..............] - ETA: 3:12 - loss: 15.7117 - acc: 0.0252
+12/20 [=================>............] - ETA: 2:49 - loss: 15.7246 - acc: 0.0244
+13/20 [==================>...........] - ETA: 2:26 - loss: 15.7161 - acc: 0.0249
+14/20 [====================>.........] - ETA: 2:04 - loss: 15.7056 - acc: 0.0256
+15/20 [=====================>........] - ETA: 1:42 - loss: 15.6954 - acc: 0.0262
+16/20 [=======================>......] - ETA: 1:21 - loss: 15.7178 - acc: 0.0248
+17/20 [========================>.....] - ETA: 1:01 - loss: 15.7303 - acc: 0.0241
+18/20 [==========================>...] - ETA: 40s - loss: 15.7308 - acc: 0.0240 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7214 - acc: 0.0246
+20/20 [==============================] - 453s 23s/step - loss: 15.7255 - acc: 0.0244 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 87/100
+
+ 1/20 [>.............................] - ETA: 5:57 - loss: 15.5514 - acc: 0.0352
+ 2/20 [==>...........................] - ETA: 6:01 - loss: 15.7089 - acc: 0.0254
+ 3/20 [===>..........................] - ETA: 5:46 - loss: 15.7193 - acc: 0.0247
+ 4/20 [=====>........................] - ETA: 5:27 - loss: 15.6931 - acc: 0.0264
+ 5/20 [======>.......................] - ETA: 5:07 - loss: 15.6774 - acc: 0.0273
+ 6/20 [========>.....................] - ETA: 4:50 - loss: 15.7193 - acc: 0.0247
+ 7/20 [=========>....................] - ETA: 4:30 - loss: 15.7583 - acc: 0.0223
+ 8/20 [===========>..................] - ETA: 4:11 - loss: 15.7561 - acc: 0.0225
+ 9/20 [============>.................] - ETA: 3:51 - loss: 15.7613 - acc: 0.0221
+10/20 [==============>...............] - ETA: 3:30 - loss: 15.7718 - acc: 0.0215
+11/20 [===============>..............] - ETA: 3:08 - loss: 15.7346 - acc: 0.0238
+12/20 [=================>............] - ETA: 2:46 - loss: 15.7456 - acc: 0.0231
+13/20 [==================>...........] - ETA: 2:24 - loss: 15.7306 - acc: 0.0240
+14/20 [====================>.........] - ETA: 2:03 - loss: 15.7313 - acc: 0.0240
+15/20 [=====================>........] - ETA: 1:42 - loss: 15.7151 - acc: 0.0250
+16/20 [=======================>......] - ETA: 1:21 - loss: 15.7207 - acc: 0.0247
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7255 - acc: 0.0244
+18/20 [==========================>...] - ETA: 40s - loss: 15.7298 - acc: 0.0241 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7304 - acc: 0.0241
+20/20 [==============================] - 453s 23s/step - loss: 15.7360 - acc: 0.0237 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 88/100
+
+ 1/20 [>.............................] - ETA: 6:31 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 5:57 - loss: 15.6774 - acc: 0.0273
+ 3/20 [===>..........................] - ETA: 5:47 - loss: 15.6774 - acc: 0.0273
+ 4/20 [=====>........................] - ETA: 5:32 - loss: 15.7246 - acc: 0.0244
+ 5/20 [======>.......................] - ETA: 5:17 - loss: 15.6774 - acc: 0.0273
+ 6/20 [========>.....................] - ETA: 4:57 - loss: 15.7089 - acc: 0.0254
+ 7/20 [=========>....................] - ETA: 4:36 - loss: 15.7223 - acc: 0.0246
+ 8/20 [===========>..................] - ETA: 4:16 - loss: 15.7010 - acc: 0.0259
+ 9/20 [============>.................] - ETA: 3:56 - loss: 15.6984 - acc: 0.0260
+10/20 [==============>...............] - ETA: 3:33 - loss: 15.7129 - acc: 0.0251
+11/20 [===============>..............] - ETA: 3:11 - loss: 15.6982 - acc: 0.0261
+12/20 [=================>............] - ETA: 2:49 - loss: 15.7070 - acc: 0.0255
+13/20 [==================>...........] - ETA: 2:28 - loss: 15.7144 - acc: 0.0250
+14/20 [====================>.........] - ETA: 2:06 - loss: 15.7072 - acc: 0.0255
+15/20 [=====================>........] - ETA: 1:44 - loss: 15.7011 - acc: 0.0259
+16/20 [=======================>......] - ETA: 1:22 - loss: 15.7074 - acc: 0.0255
+17/20 [========================>.....] - ETA: 1:01 - loss: 15.6983 - acc: 0.0260
+18/20 [==========================>...] - ETA: 40s - loss: 15.6936 - acc: 0.0263 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7060 - acc: 0.0256
+20/20 [==============================] - 458s 23s/step - loss: 15.7140 - acc: 0.0251 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 89/100
+
+ 1/20 [>.............................] - ETA: 6:16 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:50 - loss: 15.8663 - acc: 0.0156
+ 3/20 [===>..........................] - ETA: 5:24 - loss: 15.8243 - acc: 0.0182
+ 4/20 [=====>........................] - ETA: 5:20 - loss: 15.7718 - acc: 0.0215
+ 5/20 [======>.......................] - ETA: 5:05 - loss: 15.7403 - acc: 0.0234
+ 6/20 [========>.....................] - ETA: 4:47 - loss: 15.7193 - acc: 0.0247
+ 7/20 [=========>....................] - ETA: 4:29 - loss: 15.7223 - acc: 0.0246
+ 8/20 [===========>..................] - ETA: 4:10 - loss: 15.7482 - acc: 0.0229
+ 9/20 [============>.................] - ETA: 3:47 - loss: 15.7436 - acc: 0.0232
+10/20 [==============>...............] - ETA: 3:28 - loss: 15.7433 - acc: 0.0233
+11/20 [===============>..............] - ETA: 3:07 - loss: 15.7430 - acc: 0.0233
+12/20 [=================>............] - ETA: 2:46 - loss: 15.7165 - acc: 0.0249
+13/20 [==================>...........] - ETA: 2:25 - loss: 15.7135 - acc: 0.0251
+14/20 [====================>.........] - ETA: 2:05 - loss: 15.7244 - acc: 0.0244
+15/20 [=====================>........] - ETA: 1:43 - loss: 15.7297 - acc: 0.0241
+16/20 [=======================>......] - ETA: 1:22 - loss: 15.7067 - acc: 0.0255
+17/20 [========================>.....] - ETA: 1:01 - loss: 15.7050 - acc: 0.0256
+18/20 [==========================>...] - ETA: 40s - loss: 15.7175 - acc: 0.0249 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7220 - acc: 0.0246
+20/20 [==============================] - 454s 23s/step - loss: 15.7324 - acc: 0.0239 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 90/100
+
+ 1/20 [>.............................] - ETA: 5:50 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 5:35 - loss: 15.8033 - acc: 0.0195
+ 3/20 [===>..........................] - ETA: 5:27 - loss: 15.8453 - acc: 0.0169
+ 4/20 [=====>........................] - ETA: 5:09 - loss: 15.8348 - acc: 0.0176
+ 5/20 [======>.......................] - ETA: 4:56 - loss: 15.7529 - acc: 0.0227
+ 6/20 [========>.....................] - ETA: 4:39 - loss: 15.7928 - acc: 0.0202
+ 7/20 [=========>....................] - ETA: 4:22 - loss: 15.7853 - acc: 0.0206
+ 8/20 [===========>..................] - ETA: 4:06 - loss: 15.7954 - acc: 0.0200
+ 9/20 [============>.................] - ETA: 3:45 - loss: 15.7474 - acc: 0.0230
+10/20 [==============>...............] - ETA: 3:25 - loss: 15.7278 - acc: 0.0242
+11/20 [===============>..............] - ETA: 3:05 - loss: 15.7347 - acc: 0.0238
+12/20 [=================>............] - ETA: 2:46 - loss: 15.7299 - acc: 0.0241
+13/20 [==================>...........] - ETA: 2:25 - loss: 15.7162 - acc: 0.0249
+14/20 [====================>.........] - ETA: 2:05 - loss: 15.7224 - acc: 0.0245
+15/20 [=====================>........] - ETA: 1:43 - loss: 15.7278 - acc: 0.0242
+16/20 [=======================>......] - ETA: 1:22 - loss: 15.7207 - acc: 0.0247
+17/20 [========================>.....] - ETA: 1:01 - loss: 15.7145 - acc: 0.0250
+18/20 [==========================>...] - ETA: 40s - loss: 15.7089 - acc: 0.0254 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7073 - acc: 0.0255
+20/20 [==============================] - 456s 23s/step - loss: 15.7153 - acc: 0.0250 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 91/100
+
+ 1/20 [>.............................] - ETA: 5:56 - loss: 15.8663 - acc: 0.0156
+ 2/20 [==>...........................] - ETA: 5:40 - loss: 15.8663 - acc: 0.0156
+ 3/20 [===>..........................] - ETA: 5:16 - loss: 15.8663 - acc: 0.0156
+ 4/20 [=====>........................] - ETA: 4:56 - loss: 15.8190 - acc: 0.0186
+ 5/20 [======>.......................] - ETA: 4:41 - loss: 15.8159 - acc: 0.0187
+ 6/20 [========>.....................] - ETA: 4:28 - loss: 15.7928 - acc: 0.0202
+ 7/20 [=========>....................] - ETA: 4:13 - loss: 15.7763 - acc: 0.0212
+ 8/20 [===========>..................] - ETA: 3:57 - loss: 15.7797 - acc: 0.0210
+ 9/20 [============>.................] - ETA: 3:39 - loss: 15.7893 - acc: 0.0204
+10/20 [==============>...............] - ETA: 3:21 - loss: 15.7781 - acc: 0.0211
+11/20 [===============>..............] - ETA: 3:02 - loss: 15.7804 - acc: 0.0210
+12/20 [=================>............] - ETA: 2:43 - loss: 15.7928 - acc: 0.0202
+13/20 [==================>...........] - ETA: 2:24 - loss: 15.7597 - acc: 0.0222
+14/20 [====================>.........] - ETA: 2:03 - loss: 15.7403 - acc: 0.0234
+15/20 [=====================>........] - ETA: 1:42 - loss: 15.7198 - acc: 0.0247
+16/20 [=======================>......] - ETA: 1:21 - loss: 15.7132 - acc: 0.0251
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.7259 - acc: 0.0243
+18/20 [==========================>...] - ETA: 40s - loss: 15.7302 - acc: 0.0241 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7274 - acc: 0.0242
+20/20 [==============================] - 455s 23s/step - loss: 15.7250 - acc: 0.0244 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 92/100
+
+ 1/20 [>.............................] - ETA: 6:08 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 5:54 - loss: 15.8663 - acc: 0.0156
+ 3/20 [===>..........................] - ETA: 5:45 - loss: 15.7823 - acc: 0.0208
+ 4/20 [=====>........................] - ETA: 5:20 - loss: 15.8190 - acc: 0.0186
+ 5/20 [======>.......................] - ETA: 5:16 - loss: 15.8159 - acc: 0.0187
+ 6/20 [========>.....................] - ETA: 4:49 - loss: 15.8033 - acc: 0.0195
+ 7/20 [=========>....................] - ETA: 4:29 - loss: 15.7943 - acc: 0.0201
+ 8/20 [===========>..................] - ETA: 4:09 - loss: 15.7876 - acc: 0.0205
+ 9/20 [============>.................] - ETA: 3:50 - loss: 15.7893 - acc: 0.0204
+10/20 [==============>...............] - ETA: 3:29 - loss: 15.8033 - acc: 0.0195
+11/20 [===============>..............] - ETA: 3:09 - loss: 15.7690 - acc: 0.0217
+12/20 [=================>............] - ETA: 2:48 - loss: 15.7666 - acc: 0.0218
+13/20 [==================>...........] - ETA: 2:28 - loss: 15.7549 - acc: 0.0225
+14/20 [====================>.........] - ETA: 2:07 - loss: 15.7538 - acc: 0.0226
+15/20 [=====================>........] - ETA: 1:46 - loss: 15.7361 - acc: 0.0237
+16/20 [=======================>......] - ETA: 1:25 - loss: 15.7246 - acc: 0.0244
+17/20 [========================>.....] - ETA: 1:03 - loss: 15.7316 - acc: 0.0240
+18/20 [==========================>...] - ETA: 42s - loss: 15.7251 - acc: 0.0244 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7226 - acc: 0.0245
+20/20 [==============================] - 469s 23s/step - loss: 15.7234 - acc: 0.0245 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 93/100
+
+ 1/20 [>.............................] - ETA: 5:48 - loss: 16.1181 - acc: 0.0000e+00
+ 2/20 [==>...........................] - ETA: 5:44 - loss: 15.9922 - acc: 0.0078    
+ 3/20 [===>..........................] - ETA: 5:21 - loss: 15.9082 - acc: 0.0130
+ 4/20 [=====>........................] - ETA: 5:01 - loss: 15.8977 - acc: 0.0137
+ 5/20 [======>.......................] - ETA: 4:44 - loss: 15.8663 - acc: 0.0156
+ 6/20 [========>.....................] - ETA: 4:22 - loss: 15.8243 - acc: 0.0182
+ 7/20 [=========>....................] - ETA: 4:05 - loss: 15.8303 - acc: 0.0179
+ 8/20 [===========>..................] - ETA: 3:52 - loss: 15.8033 - acc: 0.0195
+ 9/20 [============>.................] - ETA: 3:35 - loss: 15.7893 - acc: 0.0204
+10/20 [==============>...............] - ETA: 3:18 - loss: 15.8033 - acc: 0.0195
+11/20 [===============>..............] - ETA: 2:59 - loss: 15.8147 - acc: 0.0188
+12/20 [=================>............] - ETA: 2:40 - loss: 15.8033 - acc: 0.0195
+13/20 [==================>...........] - ETA: 2:24 - loss: 15.8033 - acc: 0.0195
+14/20 [====================>.........] - ETA: 2:05 - loss: 15.8033 - acc: 0.0195
+15/20 [=====================>........] - ETA: 1:44 - loss: 15.8117 - acc: 0.0190
+16/20 [=======================>......] - ETA: 1:23 - loss: 15.8033 - acc: 0.0195
+17/20 [========================>.....] - ETA: 1:02 - loss: 15.8097 - acc: 0.0191
+18/20 [==========================>...] - ETA: 41s - loss: 15.7884 - acc: 0.0205 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7792 - acc: 0.0210
+20/20 [==============================] - 471s 24s/step - loss: 15.7898 - acc: 0.0204 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 94/100
+
+ 1/20 [>.............................] - ETA: 6:18 - loss: 15.3626 - acc: 0.0469
+ 2/20 [==>...........................] - ETA: 6:04 - loss: 15.6459 - acc: 0.0293
+ 3/20 [===>..........................] - ETA: 5:37 - loss: 15.7613 - acc: 0.0221
+ 4/20 [=====>........................] - ETA: 5:21 - loss: 15.7561 - acc: 0.0225
+ 5/20 [======>.......................] - ETA: 4:58 - loss: 15.6900 - acc: 0.0266
+ 6/20 [========>.....................] - ETA: 4:38 - loss: 15.6774 - acc: 0.0273
+ 7/20 [=========>....................] - ETA: 4:17 - loss: 15.6504 - acc: 0.0290
+ 8/20 [===========>..................] - ETA: 3:56 - loss: 15.6538 - acc: 0.0288
+ 9/20 [============>.................] - ETA: 3:39 - loss: 15.6634 - acc: 0.0282
+10/20 [==============>...............] - ETA: 3:22 - loss: 15.6648 - acc: 0.0281
+11/20 [===============>..............] - ETA: 3:03 - loss: 15.6488 - acc: 0.0291
+12/20 [=================>............] - ETA: 2:43 - loss: 15.6669 - acc: 0.0280
+13/20 [==================>...........] - ETA: 2:23 - loss: 15.6774 - acc: 0.0273
+14/20 [====================>.........] - ETA: 2:03 - loss: 15.6954 - acc: 0.0262
+15/20 [=====================>........] - ETA: 1:43 - loss: 15.6816 - acc: 0.0271
+16/20 [=======================>......] - ETA: 1:23 - loss: 15.6931 - acc: 0.0264
+17/20 [========================>.....] - ETA: 1:02 - loss: 15.6774 - acc: 0.0273
+18/20 [==========================>...] - ETA: 41s - loss: 15.6809 - acc: 0.0271 
+19/20 [===========================>..] - ETA: 20s - loss: 15.6807 - acc: 0.0271
+20/20 [==============================] - 466s 23s/step - loss: 15.6868 - acc: 0.0268 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 95/100
+
+ 1/20 [>.............................] - ETA: 6:13 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 5:55 - loss: 15.6774 - acc: 0.0273
+ 3/20 [===>..........................] - ETA: 5:37 - loss: 15.6354 - acc: 0.0299
+ 4/20 [=====>........................] - ETA: 5:17 - loss: 15.7246 - acc: 0.0244
+ 5/20 [======>.......................] - ETA: 4:56 - loss: 15.7277 - acc: 0.0242
+ 6/20 [========>.....................] - ETA: 4:35 - loss: 15.7089 - acc: 0.0254
+ 7/20 [=========>....................] - ETA: 4:16 - loss: 15.7493 - acc: 0.0229
+ 8/20 [===========>..................] - ETA: 3:58 - loss: 15.7639 - acc: 0.0220
+ 9/20 [============>.................] - ETA: 3:35 - loss: 15.7576 - acc: 0.0224
+10/20 [==============>...............] - ETA: 3:18 - loss: 15.7558 - acc: 0.0225
+11/20 [===============>..............] - ETA: 3:00 - loss: 15.7659 - acc: 0.0219
+12/20 [=================>............] - ETA: 2:42 - loss: 15.7533 - acc: 0.0226
+13/20 [==================>...........] - ETA: 2:23 - loss: 15.7523 - acc: 0.0227
+14/20 [====================>.........] - ETA: 2:03 - loss: 15.7694 - acc: 0.0216
+15/20 [=====================>........] - ETA: 1:43 - loss: 15.7801 - acc: 0.0210
+16/20 [=======================>......] - ETA: 1:22 - loss: 15.7697 - acc: 0.0216
+17/20 [========================>.....] - ETA: 1:02 - loss: 15.7643 - acc: 0.0220
+18/20 [==========================>...] - ETA: 41s - loss: 15.7664 - acc: 0.0218 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7584 - acc: 0.0223
+20/20 [==============================] - 470s 23s/step - loss: 15.7544 - acc: 0.0226 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 96/100
+
+ 1/20 [>.............................] - ETA: 6:05 - loss: 15.9292 - acc: 0.0117
+ 2/20 [==>...........................] - ETA: 5:34 - loss: 15.8348 - acc: 0.0176
+ 3/20 [===>..........................] - ETA: 5:23 - loss: 15.7613 - acc: 0.0221
+ 4/20 [=====>........................] - ETA: 5:03 - loss: 15.7403 - acc: 0.0234
+ 5/20 [======>.......................] - ETA: 4:42 - loss: 15.7336 - acc: 0.0239
+ 6/20 [========>.....................] - ETA: 4:25 - loss: 15.7242 - acc: 0.0244
+ 7/20 [=========>....................] - ETA: 4:07 - loss: 15.6995 - acc: 0.0260
+ 8/20 [===========>..................] - ETA: 3:50 - loss: 15.6810 - acc: 0.0271
+ 9/20 [============>.................] - ETA: 3:30 - loss: 15.7086 - acc: 0.0254
+10/20 [==============>...............] - ETA: 3:12 - loss: 15.7244 - acc: 0.0244
+11/20 [===============>..............] - ETA: 2:55 - loss: 15.7086 - acc: 0.0254
+12/20 [=================>............] - ETA: 2:38 - loss: 15.7270 - acc: 0.0243
+13/20 [==================>...........] - ETA: 2:19 - loss: 15.7329 - acc: 0.0239
+14/20 [====================>.........] - ETA: 2:00 - loss: 15.7514 - acc: 0.0228
+15/20 [=====================>........] - ETA: 1:41 - loss: 15.7633 - acc: 0.0220
+16/20 [=======================>......] - ETA: 1:21 - loss: 15.7697 - acc: 0.0216
+17/20 [========================>.....] - ETA: 1:01 - loss: 15.7421 - acc: 0.0233
+18/20 [==========================>...] - ETA: 41s - loss: 15.7315 - acc: 0.0240 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7319 - acc: 0.0240
+20/20 [==============================] - 464s 23s/step - loss: 15.7387 - acc: 0.0235 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 97/100
+
+ 1/20 [>.............................] - ETA: 6:35 - loss: 15.6144 - acc: 0.0312
+ 2/20 [==>...........................] - ETA: 5:59 - loss: 15.5514 - acc: 0.0352
+ 3/20 [===>..........................] - ETA: 5:24 - loss: 15.6489 - acc: 0.0291
+ 4/20 [=====>........................] - ETA: 5:07 - loss: 15.6403 - acc: 0.0296
+ 5/20 [======>.......................] - ETA: 4:51 - loss: 15.5847 - acc: 0.0331
+ 6/20 [========>.....................] - ETA: 4:33 - loss: 15.6212 - acc: 0.0308
+ 7/20 [=========>....................] - ETA: 4:14 - loss: 15.6472 - acc: 0.0292
+ 8/20 [===========>..................] - ETA: 3:55 - loss: 15.6588 - acc: 0.0285
+ 9/20 [============>.................] - ETA: 3:35 - loss: 15.6679 - acc: 0.0279
+10/20 [==============>...............] - ETA: 3:16 - loss: 15.6814 - acc: 0.0271
+11/20 [===============>..............] - ETA: 2:56 - loss: 15.6868 - acc: 0.0268
+12/20 [=================>............] - ETA: 2:38 - loss: 15.6965 - acc: 0.0262
+13/20 [==================>...........] - ETA: 2:19 - loss: 15.6853 - acc: 0.0269
+14/20 [====================>.........] - ETA: 2:00 - loss: 15.6848 - acc: 0.0269
+15/20 [=====================>........] - ETA: 1:40 - loss: 15.6843 - acc: 0.0269
+16/20 [=======================>......] - ETA: 1:20 - loss: 15.6838 - acc: 0.0269
+17/20 [========================>.....] - ETA: 1:00 - loss: 15.6835 - acc: 0.0270
+18/20 [==========================>...] - ETA: 40s - loss: 15.6901 - acc: 0.0266 
+19/20 [===========================>..] - ETA: 20s - loss: 15.6961 - acc: 0.0262
+20/20 [==============================] - 465s 23s/step - loss: 15.7046 - acc: 0.0257 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 98/100
+
+ 1/20 [>.............................] - ETA: 6:52 - loss: 15.8033 - acc: 0.0195
+ 2/20 [==>...........................] - ETA: 6:09 - loss: 15.6863 - acc: 0.0268
+ 3/20 [===>..........................] - ETA: 5:47 - loss: 15.7043 - acc: 0.0257
+ 4/20 [=====>........................] - ETA: 5:22 - loss: 15.7291 - acc: 0.0241
+ 5/20 [======>.......................] - ETA: 5:01 - loss: 15.7313 - acc: 0.0240
+ 6/20 [========>.....................] - ETA: 4:44 - loss: 15.7118 - acc: 0.0252
+ 7/20 [=========>....................] - ETA: 4:23 - loss: 15.7249 - acc: 0.0244
+ 8/20 [===========>..................] - ETA: 4:03 - loss: 15.7190 - acc: 0.0248
+ 9/20 [============>.................] - ETA: 3:42 - loss: 15.7213 - acc: 0.0246
+10/20 [==============>...............] - ETA: 3:22 - loss: 15.7358 - acc: 0.0237
+11/20 [===============>..............] - ETA: 3:01 - loss: 15.7191 - acc: 0.0248
+12/20 [=================>............] - ETA: 2:41 - loss: 15.7208 - acc: 0.0246
+13/20 [==================>...........] - ETA: 2:22 - loss: 15.7369 - acc: 0.0237
+14/20 [====================>.........] - ETA: 2:02 - loss: 15.7506 - acc: 0.0228
+15/20 [=====================>........] - ETA: 1:43 - loss: 15.7583 - acc: 0.0223
+16/20 [=======================>......] - ETA: 1:23 - loss: 15.7651 - acc: 0.0219
+17/20 [========================>.....] - ETA: 1:02 - loss: 15.7673 - acc: 0.0218
+18/20 [==========================>...] - ETA: 41s - loss: 15.7728 - acc: 0.0214 
+19/20 [===========================>..] - ETA: 21s - loss: 15.7578 - acc: 0.0224
+20/20 [==============================] - 474s 24s/step - loss: 15.7476 - acc: 0.0230 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 99/100
+
+ 1/20 [>.............................] - ETA: 6:42 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 6:18 - loss: 15.6774 - acc: 0.0273
+ 3/20 [===>..........................] - ETA: 5:59 - loss: 15.5934 - acc: 0.0326
+ 4/20 [=====>........................] - ETA: 5:31 - loss: 15.6144 - acc: 0.0312
+ 5/20 [======>.......................] - ETA: 5:07 - loss: 15.6270 - acc: 0.0305
+ 6/20 [========>.....................] - ETA: 4:39 - loss: 15.6631 - acc: 0.0282
+ 7/20 [=========>....................] - ETA: 4:17 - loss: 15.6832 - acc: 0.0270
+ 8/20 [===========>..................] - ETA: 3:59 - loss: 15.6903 - acc: 0.0265
+ 9/20 [============>.................] - ETA: 3:38 - loss: 15.6819 - acc: 0.0271
+10/20 [==============>...............] - ETA: 3:18 - loss: 15.6940 - acc: 0.0263
+11/20 [===============>..............] - ETA: 2:58 - loss: 15.6810 - acc: 0.0271
+12/20 [=================>............] - ETA: 2:38 - loss: 15.6912 - acc: 0.0265
+13/20 [==================>...........] - ETA: 2:18 - loss: 15.7047 - acc: 0.0256
+14/20 [====================>.........] - ETA: 2:00 - loss: 15.7117 - acc: 0.0252
+15/20 [=====================>........] - ETA: 1:40 - loss: 15.7053 - acc: 0.0256
+16/20 [=======================>......] - ETA: 1:21 - loss: 15.7074 - acc: 0.0255
+17/20 [========================>.....] - ETA: 1:01 - loss: 15.7131 - acc: 0.0251
+18/20 [==========================>...] - ETA: 40s - loss: 15.7165 - acc: 0.0249 
+19/20 [===========================>..] - ETA: 20s - loss: 15.7211 - acc: 0.0246
+20/20 [==============================] - 468s 23s/step - loss: 15.7126 - acc: 0.0252 - val_loss: 15.7298 - val_acc: 0.0241
+Epoch 100/100
+
+ 1/20 [>.............................] - ETA: 6:55 - loss: 15.6774 - acc: 0.0273
+ 2/20 [==>...........................] - ETA: 6:28 - loss: 15.7403 - acc: 0.0234
+ 3/20 [===>..........................] - ETA: 5:59 - loss: 15.7613 - acc: 0.0221
+ 4/20 [=====>........................] - ETA: 5:40 - loss: 15.7718 - acc: 0.0215
+ 5/20 [======>.......................] - ETA: 5:18 - loss: 15.7781 - acc: 0.0211
+ 6/20 [========>.....................] - ETA: 4:52 - loss: 15.7403 - acc: 0.0234
+ 7/20 [=========>....................] - ETA: 4:39 - loss: 15.7583 - acc: 0.0223
+ 8/20 [===========>..................] - ETA: 4:16 - loss: 15.7482 - acc: 0.0229
+ 9/20 [============>.................] - ETA: 3:54 - loss: 15.7473 - acc: 0.0230
+10/20 [==============>...............] - ETA: 3:31 - loss: 15.7466 - acc: 0.0230
+11/20 [===============>..............] - ETA: 3:09 - loss: 15.7632 - acc: 0.0220
+12/20 [=================>............] - ETA: 2:48 - loss: 15.7666 - acc: 0.0218
+13/20 [==================>...........] - ETA: 2:26 - loss: 15.7500 - acc: 0.0228
+14/20 [====================>.........] - ETA: 2:04 - loss: 15.7538 - acc: 0.0226
+15/20 [=====================>........] - ETA: 1:44 - loss: 15.7361 - acc: 0.0237
+16/20 [=======================>......] - ETA: 1:23 - loss: 15.7386 - acc: 0.0235
+17/20 [========================>.....] - ETA: 1:02 - loss: 15.7313 - acc: 0.0240
+18/20 [==========================>...] - ETA: 42s - loss: 15.7353 - acc: 0.0238 
+19/20 [===========================>..] - ETA: 21s - loss: 15.7223 - acc: 0.0246
+20/20 [==============================] - 480s 24s/step - loss: 15.7043 - acc: 0.0257 - val_loss: 15.7298 - val_acc: 0.0241
+[INFO] serializing network...

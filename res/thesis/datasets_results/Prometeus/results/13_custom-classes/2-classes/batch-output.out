@@ -1,0 +1,91 @@
+----> Enqueuing command to execute: module load plgrid/libs/opencv/3.2.0
+----> Enqueuing command to execute: module load plgrid/tools/python/2.7.14
+----> Enqueuing command to execute: module load plgrid/libs/tensorflow-cpu/1.10.0-python-2.7
+----> Enqueuing command to execute: export LD_LIBRARY_PATH=$SCRATCH/cuda/lib64:$LD_LIBRARY_PATH
+----> Enqueuing command to execute: python2.7 -m pip install --user virtualenv
+----> Enqueuing command to execute: python2.7 -m virtualenv --system-site-packages /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env
+----> Enqueuing command to execute: source /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/activate
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install keras
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install scipy
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install numpy
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install scikit-learn
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install matplotlib
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install configparser
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install imutils
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install opencv-python-headless
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/python2.7 /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/TrainNetwork.py
+----> Executing enqueued commands: module load plgrid/libs/opencv/3.2.0 && module load plgrid/tools/python/2.7.14 && module load plgrid/libs/tensorflow-cpu/1.10.0-python-2.7 && export LD_LIBRARY_PATH=$SCRATCH/cuda/lib64:$LD_LIBRARY_PATH && python2.7 -m pip install --user virtualenv && python2.7 -m virtualenv --system-site-packages /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env && source /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/activate && /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install keras && /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install scipy && /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install numpy && /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install scikit-learn && /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install matplotlib && /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install configparser && /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install imutils && /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/pip install opencv-python-headless && /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/python2.7 /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/TrainNetwork.py
+ plgrid/libs/codecs/1.0 loaded.
+ plgrid/tools/yasm/1.3.0 loaded.
+ plgrid/tools/ffmpeg/3.2.2 loaded.
+ plgrid/libs/qt/5.4.1 loaded.
+ plgrid/libs/mkl/11.3.1 loaded.
+ plgrid/tools/gcc/4.9.2 loaded.
+ plgrid/tools/intel/15.0.2 loaded.
+ plgrid/tools/python/2.7.9 loaded.
+ plgrid/apps/cuda/7.5 loaded.
+ plgrid/libs/opencv/3.2.0 loaded.
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+plgrid/tools/intel/15.0.2:
+   This module is deprecated and it is going to be removed from the system
+   in near future. Please switch to a newer compiler, at least version
+   17.0.5.
+
+-------------------------------------------------------------------------------
+
+ plgrid/libs/qt/5.4.1 unloaded.
+ plgrid/libs/mkl/11.3.1 unloaded.
+ plgrid/tools/gcc/4.9.2 unloaded.
+ plgrid/tools/intel/15.0.2 unloaded.
+ plgrid/tools/python/2.7.9 unloaded.
+ plgrid/tools/gcc/6.4.0 loaded.
+ plgrid/tools/intel/18.0.0 loaded.
+ plgrid/libs/mkl/2018.0.0 loaded.
+*********WARNING*********
+    To use TensorFlow with GPU you need to have your own cuDNN 7 libraries
+    and add its path to variabele LD_LIBRARY_PATH:
+    export LD_LIBRARY_PATH=/path/to/cudnn/libraries:$LD_LIBRARY_PATH 
+ plgrid/tools/python/2.7.14 loaded.
+
+The following have been reloaded with a version change:
+  1) plgrid/libs/mkl/11.3.1 => plgrid/libs/mkl/2018.0.0
+  2) plgrid/tools/gcc/4.9.2 => plgrid/tools/gcc/6.4.0
+  3) plgrid/tools/intel/15.0.2 => plgrid/tools/intel/18.0.0
+  4) plgrid/tools/python/2.7.9 => plgrid/tools/python/2.7.14
+
+ plgrid/tools/impi/2018 loaded.
+ plgrid/libs/tensorflow-cpu/1.10.0-python-2.7 loaded.
+Requirement already satisfied: virtualenv in /net/software/local/python/2.7.14/lib/python2.7/site-packages (16.0.0)
+New python executable in /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/python2.7
+Not overwriting existing python script /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/python (you must use /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/bin/python2.7)
+Installing setuptools, pip, wheel...done.
+Requirement already satisfied: keras in /net/software/local/python/2.7.14/lib/python2.7/site-packages (2.1.6)
+Requirement already satisfied: pyyaml in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from keras) (3.12)
+Requirement already satisfied: six>=1.9.0 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from keras) (1.11.0)
+Requirement already satisfied: numpy>=1.9.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages/numpy-1.14.0-py2.7-linux-x86_64.egg (from keras) (1.14.0)
+Requirement already satisfied: h5py in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from keras) (2.7.1)
+Requirement already satisfied: scipy>=0.14 in /net/software/local/python/2.7.14/lib/python2.7/site-packages/scipy-1.1.0-py2.7-linux-x86_64.egg (from keras) (1.1.0)
+Requirement already satisfied: scipy in /net/software/local/python/2.7.14/lib/python2.7/site-packages/scipy-1.1.0-py2.7-linux-x86_64.egg (1.1.0)
+Requirement already satisfied: numpy in /net/software/local/python/2.7.14/lib/python2.7/site-packages/numpy-1.14.0-py2.7-linux-x86_64.egg (1.14.0)
+Requirement already satisfied: scikit-learn in /net/software/local/python/2.7.14/lib/python2.7/site-packages (0.19.1)
+Requirement already satisfied: matplotlib in /net/software/local/python/2.7.14/lib/python2.7/site-packages (2.2.2)
+Requirement already satisfied: python-dateutil>=2.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (2.7.2)
+Requirement already satisfied: cycler>=0.10 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (0.10.0)
+Requirement already satisfied: subprocess32 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (3.2.7)
+Requirement already satisfied: pytz in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (2018.4)
+Requirement already satisfied: six>=1.10 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (1.11.0)
+Requirement already satisfied: backports.functools-lru-cache in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (1.5)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (2.2.0)
+Requirement already satisfied: numpy>=1.7.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages/numpy-1.14.0-py2.7-linux-x86_64.egg (from matplotlib) (1.14.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (1.0.1)
+Requirement already satisfied: setuptools in /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/lib/python2.7/site-packages (from kiwisolver>=1.0.1->matplotlib) (40.6.2)
+Requirement already satisfied: configparser in /net/software/local/python/2.7.14/lib/python2.7/site-packages (3.5.0)
+Requirement already satisfied: imutils in /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/lib/python2.7/site-packages (0.5.1)
+Requirement already satisfied: opencv-python-headless in /net/scratch/people/plgsfurman/5_layers_2/plgrid-slurm-gpu/simulation/env/lib/python2.7/site-packages (3.4.3.18)
+Requirement already satisfied: numpy>=1.11.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages/numpy-1.14.0-py2.7-linux-x86_64.egg (from opencv-python-headless) (1.14.0)
+/net/software/local/python/2.7.14/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.

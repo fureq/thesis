@@ -1,0 +1,2098 @@
+----> Enqueuing command to execute: module load plgrid/libs/opencv/3.2.0
+----> Enqueuing command to execute: module load plgrid/tools/python/2.7.14
+----> Enqueuing command to execute: module load plgrid/libs/tensorflow-cpu/1.10.0-python-2.7
+----> Enqueuing command to execute: export LD_LIBRARY_PATH=$SCRATCH/cuda/lib64:$LD_LIBRARY_PATH
+----> Enqueuing command to execute: python2.7 -m pip install --user virtualenv
+----> Enqueuing command to execute: python2.7 -m virtualenv --system-site-packages /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env
+----> Enqueuing command to execute: source /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/activate
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install keras
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install scipy
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install numpy
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install scikit-learn
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install matplotlib
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install configparser
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install imutils
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install opencv-python-headless
+----> Enqueuing command to execute: /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/python2.7 /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/TrainNetwork.py
+----> Executing enqueued commands: module load plgrid/libs/opencv/3.2.0 && module load plgrid/tools/python/2.7.14 && module load plgrid/libs/tensorflow-cpu/1.10.0-python-2.7 && export LD_LIBRARY_PATH=$SCRATCH/cuda/lib64:$LD_LIBRARY_PATH && python2.7 -m pip install --user virtualenv && python2.7 -m virtualenv --system-site-packages /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env && source /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/activate && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install keras && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install scipy && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install numpy && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install scikit-learn && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install matplotlib && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install configparser && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install imutils && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/pip install opencv-python-headless && /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/python2.7 /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/TrainNetwork.py
+ plgrid/libs/codecs/1.0 loaded.
+ plgrid/tools/yasm/1.3.0 loaded.
+ plgrid/tools/ffmpeg/3.2.2 loaded.
+ plgrid/libs/qt/5.4.1 loaded.
+ plgrid/libs/mkl/11.3.1 loaded.
+ plgrid/tools/gcc/4.9.2 loaded.
+ plgrid/tools/intel/15.0.2 loaded.
+ plgrid/tools/python/2.7.9 loaded.
+ plgrid/apps/cuda/7.5 loaded.
+ plgrid/libs/opencv/3.2.0 loaded.
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+plgrid/tools/intel/15.0.2:
+   This module is deprecated and it is going to be removed from the system
+   in near future. Please switch to a newer compiler, at least version
+   17.0.5.
+
+-------------------------------------------------------------------------------
+
+ plgrid/libs/qt/5.4.1 unloaded.
+ plgrid/libs/mkl/11.3.1 unloaded.
+ plgrid/tools/gcc/4.9.2 unloaded.
+ plgrid/tools/intel/15.0.2 unloaded.
+ plgrid/tools/python/2.7.9 unloaded.
+ plgrid/tools/gcc/6.4.0 loaded.
+ plgrid/tools/intel/18.0.0 loaded.
+ plgrid/libs/mkl/2018.0.0 loaded.
+*********WARNING*********
+    To use TensorFlow with GPU you need to have your own cuDNN 7 libraries
+    and add its path to variabele LD_LIBRARY_PATH:
+    export LD_LIBRARY_PATH=/path/to/cudnn/libraries:$LD_LIBRARY_PATH 
+ plgrid/tools/python/2.7.14 loaded.
+
+The following have been reloaded with a version change:
+  1) plgrid/libs/mkl/11.3.1 => plgrid/libs/mkl/2018.0.0
+  2) plgrid/tools/gcc/4.9.2 => plgrid/tools/gcc/6.4.0
+  3) plgrid/tools/intel/15.0.2 => plgrid/tools/intel/18.0.0
+  4) plgrid/tools/python/2.7.9 => plgrid/tools/python/2.7.14
+
+ plgrid/tools/impi/2018 loaded.
+ plgrid/libs/tensorflow-cpu/1.10.0-python-2.7 loaded.
+Requirement already satisfied: virtualenv in /net/software/local/python/2.7.14/lib/python2.7/site-packages (16.0.0)
+New python executable in /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/python2.7
+Not overwriting existing python script /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/python (you must use /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/bin/python2.7)
+Installing setuptools, pip, wheel...done.
+Requirement already satisfied: keras in /net/software/local/python/2.7.14/lib/python2.7/site-packages (2.1.6)
+Requirement already satisfied: pyyaml in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from keras) (3.12)
+Requirement already satisfied: six>=1.9.0 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from keras) (1.11.0)
+Requirement already satisfied: numpy>=1.9.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages/numpy-1.14.0-py2.7-linux-x86_64.egg (from keras) (1.14.0)
+Requirement already satisfied: h5py in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from keras) (2.7.1)
+Requirement already satisfied: scipy>=0.14 in /net/software/local/python/2.7.14/lib/python2.7/site-packages/scipy-1.1.0-py2.7-linux-x86_64.egg (from keras) (1.1.0)
+Requirement already satisfied: scipy in /net/software/local/python/2.7.14/lib/python2.7/site-packages/scipy-1.1.0-py2.7-linux-x86_64.egg (1.1.0)
+Requirement already satisfied: numpy in /net/software/local/python/2.7.14/lib/python2.7/site-packages/numpy-1.14.0-py2.7-linux-x86_64.egg (1.14.0)
+Requirement already satisfied: scikit-learn in /net/software/local/python/2.7.14/lib/python2.7/site-packages (0.19.1)
+Requirement already satisfied: matplotlib in /net/software/local/python/2.7.14/lib/python2.7/site-packages (2.2.2)
+Requirement already satisfied: python-dateutil>=2.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (2.7.2)
+Requirement already satisfied: cycler>=0.10 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (0.10.0)
+Requirement already satisfied: subprocess32 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (3.2.7)
+Requirement already satisfied: pytz in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (2018.4)
+Requirement already satisfied: six>=1.10 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (1.11.0)
+Requirement already satisfied: backports.functools-lru-cache in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (1.5)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (2.2.0)
+Requirement already satisfied: numpy>=1.7.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages/numpy-1.14.0-py2.7-linux-x86_64.egg (from matplotlib) (1.14.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages (from matplotlib) (1.0.1)
+Requirement already satisfied: setuptools in /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/lib/python2.7/site-packages (from kiwisolver>=1.0.1->matplotlib) (40.6.2)
+Requirement already satisfied: configparser in /net/software/local/python/2.7.14/lib/python2.7/site-packages (3.5.0)
+Requirement already satisfied: imutils in /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/lib/python2.7/site-packages (0.5.1)
+Requirement already satisfied: opencv-python-headless in /net/scratch/people/plgsfurman/custom_filtered/plgrid-slurm-gpu/simulation/env/lib/python2.7/site-packages (3.4.3.18)
+Requirement already satisfied: numpy>=1.11.1 in /net/software/local/python/2.7.14/lib/python2.7/site-packages/numpy-1.14.0-py2.7-linux-x86_64.egg (from opencv-python-headless) (1.14.0)
+/net/software/local/python/2.7.14/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+2018-11-26 20:33:18.522059: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+printing images
+images printed
+del images and labels
+[INFO] compiling model...
+[INFO] training network...
+Epoch 1/100
+
+ 1/18 [>.............................] - ETA: 8:19 - loss: 0.6940 - acc: 0.3984
+ 2/18 [==>...........................] - ETA: 6:38 - loss: 3.8414 - acc: 0.4824
+ 3/18 [====>.........................] - ETA: 5:53 - loss: 4.9954 - acc: 0.5039
+ 4/18 [=====>........................] - ETA: 5:18 - loss: 5.5724 - acc: 0.5146
+ 5/18 [=======>......................] - ETA: 4:51 - loss: 5.9187 - acc: 0.5211
+ 6/18 [=========>....................] - ETA: 4:26 - loss: 6.2229 - acc: 0.5208
+ 7/18 [==========>...................] - ETA: 4:04 - loss: 6.4762 - acc: 0.5184
+ 8/18 [============>.................] - ETA: 3:40 - loss: 6.5718 - acc: 0.5225
+ 9/18 [==============>...............] - ETA: 3:09 - loss: 6.5783 - acc: 0.5298
+10/18 [===============>..............] - ETA: 2:44 - loss: 6.6382 - acc: 0.5323
+11/18 [=================>............] - ETA: 2:22 - loss: 6.6014 - acc: 0.5397
+12/18 [===================>..........] - ETA: 2:00 - loss: 6.6494 - acc: 0.5409
+13/18 [====================>.........] - ETA: 1:39 - loss: 6.7288 - acc: 0.5396
+14/18 [======================>.......] - ETA: 1:18 - loss: 6.8013 - acc: 0.5381
+15/18 [========================>.....] - ETA: 58s - loss: 6.8474 - acc: 0.5379 
+16/18 [=========================>....] - ETA: 38s - loss: 6.8365 - acc: 0.5409
+17/18 [===========================>..] - ETA: 19s - loss: 6.8010 - acc: 0.5452
+18/18 [==============================] - 384s 21s/step - loss: 6.8502 - acc: 0.5439 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 2/100
+
+ 1/18 [>.............................] - ETA: 5:49 - loss: 7.4924 - acc: 0.5352
+ 2/18 [==>...........................] - ETA: 5:22 - loss: 7.1146 - acc: 0.5586
+ 3/18 [====>.........................] - ETA: 4:24 - loss: 7.1437 - acc: 0.5568
+ 4/18 [=====>........................] - ETA: 4:16 - loss: 7.0577 - acc: 0.5621
+ 5/18 [=======>......................] - ETA: 4:00 - loss: 7.1950 - acc: 0.5536
+ 6/18 [=========>....................] - ETA: 3:46 - loss: 7.1501 - acc: 0.5564
+ 7/18 [==========>...................] - ETA: 3:28 - loss: 7.2260 - acc: 0.5517
+ 8/18 [============>.................] - ETA: 3:12 - loss: 7.1806 - acc: 0.5545
+ 9/18 [==============>...............] - ETA: 2:54 - loss: 7.2292 - acc: 0.5515
+10/18 [===============>..............] - ETA: 2:37 - loss: 7.2556 - acc: 0.5499
+11/18 [=================>............] - ETA: 2:16 - loss: 7.3114 - acc: 0.5464
+12/18 [===================>..........] - ETA: 1:55 - loss: 7.3423 - acc: 0.5445
+13/18 [====================>.........] - ETA: 1:35 - loss: 7.2860 - acc: 0.5480
+14/18 [======================>.......] - ETA: 1:16 - loss: 7.2423 - acc: 0.5507
+15/18 [========================>.....] - ETA: 56s - loss: 7.2380 - acc: 0.5509 
+16/18 [=========================>....] - ETA: 37s - loss: 7.2460 - acc: 0.5504
+17/18 [===========================>..] - ETA: 18s - loss: 7.2716 - acc: 0.5489
+18/18 [==============================] - 375s 21s/step - loss: 7.2525 - acc: 0.5500 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 3/100
+
+ 1/18 [>.............................] - ETA: 4:54 - loss: 6.4850 - acc: 0.5977
+ 2/18 [==>...........................] - ETA: 5:00 - loss: 6.8628 - acc: 0.5742
+ 3/18 [====>.........................] - ETA: 4:49 - loss: 7.1146 - acc: 0.5586
+ 4/18 [=====>........................] - ETA: 4:35 - loss: 7.0989 - acc: 0.5596
+ 5/18 [=======>......................] - ETA: 4:15 - loss: 7.1650 - acc: 0.5555
+ 6/18 [=========>....................] - ETA: 3:56 - loss: 7.0307 - acc: 0.5638
+ 7/18 [==========>...................] - ETA: 3:37 - loss: 7.1146 - acc: 0.5586
+ 8/18 [============>.................] - ETA: 3:18 - loss: 7.0359 - acc: 0.5635
+ 9/18 [==============>...............] - ETA: 2:58 - loss: 7.0727 - acc: 0.5612
+10/18 [===============>..............] - ETA: 2:39 - loss: 7.1335 - acc: 0.5574
+11/18 [=================>............] - ETA: 2:20 - loss: 7.1432 - acc: 0.5568
+12/18 [===================>..........] - ETA: 1:55 - loss: 7.1957 - acc: 0.5536
+13/18 [====================>.........] - ETA: 1:35 - loss: 7.1992 - acc: 0.5533
+14/18 [======================>.......] - ETA: 1:16 - loss: 7.1752 - acc: 0.5548
+15/18 [========================>.....] - ETA: 56s - loss: 7.2131 - acc: 0.5525 
+16/18 [=========================>....] - ETA: 37s - loss: 7.2306 - acc: 0.5514
+17/18 [===========================>..] - ETA: 18s - loss: 7.2349 - acc: 0.5511
+18/18 [==============================] - 377s 21s/step - loss: 7.2204 - acc: 0.5520 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 4/100
+
+ 1/18 [>.............................] - ETA: 4:55 - loss: 6.7998 - acc: 0.5781
+ 2/18 [==>...........................] - ETA: 4:41 - loss: 6.4850 - acc: 0.5977
+ 3/18 [====>.........................] - ETA: 4:37 - loss: 6.9257 - acc: 0.5703
+ 4/18 [=====>........................] - ETA: 3:56 - loss: 7.1662 - acc: 0.5554
+ 5/18 [=======>......................] - ETA: 3:48 - loss: 7.3196 - acc: 0.5459
+ 6/18 [=========>....................] - ETA: 3:35 - loss: 7.2435 - acc: 0.5506
+ 7/18 [==========>...................] - ETA: 3:20 - loss: 7.2251 - acc: 0.5517
+ 8/18 [============>.................] - ETA: 3:05 - loss: 7.2978 - acc: 0.5472
+ 9/18 [==============>...............] - ETA: 2:48 - loss: 7.3264 - acc: 0.5455
+10/18 [===============>..............] - ETA: 2:31 - loss: 7.2801 - acc: 0.5483
+11/18 [=================>............] - ETA: 2:12 - loss: 7.2936 - acc: 0.5475
+12/18 [===================>..........] - ETA: 1:55 - loss: 7.2577 - acc: 0.5497
+13/18 [====================>.........] - ETA: 1:35 - loss: 7.2419 - acc: 0.5507
+14/18 [======================>.......] - ETA: 1:16 - loss: 7.2328 - acc: 0.5513
+15/18 [========================>.....] - ETA: 56s - loss: 7.2333 - acc: 0.5512 
+16/18 [=========================>....] - ETA: 37s - loss: 7.2692 - acc: 0.5490
+17/18 [===========================>..] - ETA: 18s - loss: 7.2564 - acc: 0.5498
+18/18 [==============================] - 377s 21s/step - loss: 7.2477 - acc: 0.5503 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 5/100
+
+ 1/18 [>.............................] - ETA: 4:53 - loss: 6.5480 - acc: 0.5938
+ 2/18 [==>...........................] - ETA: 4:48 - loss: 6.5480 - acc: 0.5938
+ 3/18 [====>.........................] - ETA: 4:30 - loss: 6.6949 - acc: 0.5846
+ 4/18 [=====>........................] - ETA: 4:19 - loss: 6.8470 - acc: 0.5752
+ 5/18 [=======>......................] - ETA: 4:06 - loss: 6.9509 - acc: 0.5687
+ 6/18 [=========>....................] - ETA: 3:50 - loss: 6.9467 - acc: 0.5690
+ 7/18 [==========>...................] - ETA: 3:33 - loss: 6.9347 - acc: 0.5698
+ 8/18 [============>.................] - ETA: 3:14 - loss: 6.9336 - acc: 0.5698
+ 9/18 [==============>...............] - ETA: 2:55 - loss: 7.0167 - acc: 0.5647
+10/18 [===============>..............] - ETA: 2:29 - loss: 6.9895 - acc: 0.5664
+11/18 [=================>............] - ETA: 2:11 - loss: 6.9779 - acc: 0.5671
+12/18 [===================>..........] - ETA: 1:53 - loss: 7.0418 - acc: 0.5631
+13/18 [====================>.........] - ETA: 1:34 - loss: 7.0765 - acc: 0.5610
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.0792 - acc: 0.5608
+15/18 [========================>.....] - ETA: 56s - loss: 7.0983 - acc: 0.5596 
+16/18 [=========================>....] - ETA: 37s - loss: 7.0718 - acc: 0.5612
+17/18 [===========================>..] - ETA: 18s - loss: 7.0521 - acc: 0.5625
+18/18 [==============================] - 376s 21s/step - loss: 7.0805 - acc: 0.5607 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 6/100
+
+ 1/18 [>.............................] - ETA: 4:33 - loss: 6.6109 - acc: 0.5898
+ 2/18 [==>...........................] - ETA: 4:17 - loss: 7.0202 - acc: 0.5645
+ 3/18 [====>.........................] - ETA: 4:02 - loss: 7.1566 - acc: 0.5560
+ 4/18 [=====>........................] - ETA: 3:47 - loss: 7.2563 - acc: 0.5498
+ 5/18 [=======>......................] - ETA: 3:39 - loss: 7.3035 - acc: 0.5469
+ 6/18 [=========>....................] - ETA: 3:29 - loss: 7.1881 - acc: 0.5540
+ 7/18 [==========>...................] - ETA: 3:03 - loss: 7.2390 - acc: 0.5509
+ 8/18 [============>.................] - ETA: 2:50 - loss: 7.2235 - acc: 0.5518
+ 9/18 [==============>...............] - ETA: 2:36 - loss: 7.2953 - acc: 0.5474
+10/18 [===============>..............] - ETA: 2:20 - loss: 7.3402 - acc: 0.5446
+11/18 [=================>............] - ETA: 2:04 - loss: 7.3140 - acc: 0.5462
+12/18 [===================>..........] - ETA: 1:48 - loss: 7.2659 - acc: 0.5492
+13/18 [====================>.........] - ETA: 1:30 - loss: 7.3317 - acc: 0.5451
+14/18 [======================>.......] - ETA: 1:13 - loss: 7.3477 - acc: 0.5441
+15/18 [========================>.....] - ETA: 55s - loss: 7.3532 - acc: 0.5438 
+16/18 [=========================>....] - ETA: 36s - loss: 7.3225 - acc: 0.5457
+17/18 [===========================>..] - ETA: 18s - loss: 7.2770 - acc: 0.5485
+18/18 [==============================] - 369s 21s/step - loss: 7.2711 - acc: 0.5489 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 7/100
+
+ 1/18 [>.............................] - ETA: 5:00 - loss: 7.3665 - acc: 0.5430
+ 2/18 [==>...........................] - ETA: 4:38 - loss: 7.6183 - acc: 0.5273
+ 3/18 [====>.........................] - ETA: 4:18 - loss: 7.5134 - acc: 0.5339
+ 4/18 [=====>........................] - ETA: 4:03 - loss: 7.3980 - acc: 0.5410
+ 5/18 [=======>......................] - ETA: 3:48 - loss: 7.2154 - acc: 0.5523
+ 6/18 [=========>....................] - ETA: 3:36 - loss: 7.0936 - acc: 0.5599
+ 7/18 [==========>...................] - ETA: 3:22 - loss: 7.0787 - acc: 0.5608
+ 8/18 [============>.................] - ETA: 3:07 - loss: 7.0989 - acc: 0.5596
+ 9/18 [==============>...............] - ETA: 2:41 - loss: 7.1738 - acc: 0.5549
+10/18 [===============>..............] - ETA: 2:26 - loss: 7.0923 - acc: 0.5600
+11/18 [=================>............] - ETA: 2:10 - loss: 7.0886 - acc: 0.5602
+12/18 [===================>..........] - ETA: 1:53 - loss: 7.1328 - acc: 0.5575
+13/18 [====================>.........] - ETA: 1:34 - loss: 7.0975 - acc: 0.5597
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.0897 - acc: 0.5601
+15/18 [========================>.....] - ETA: 57s - loss: 7.1124 - acc: 0.5587 
+16/18 [=========================>....] - ETA: 37s - loss: 7.1164 - acc: 0.5585
+17/18 [===========================>..] - ETA: 18s - loss: 7.1571 - acc: 0.5560
+18/18 [==============================] - 381s 21s/step - loss: 7.1644 - acc: 0.5555 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 8/100
+
+ 1/18 [>.............................] - ETA: 5:15 - loss: 7.4924 - acc: 0.5352
+ 2/18 [==>...........................] - ETA: 5:01 - loss: 7.5239 - acc: 0.5332
+ 3/18 [====>.........................] - ETA: 4:37 - loss: 7.3245 - acc: 0.5456
+ 4/18 [=====>........................] - ETA: 4:14 - loss: 7.4767 - acc: 0.5361
+ 5/18 [=======>......................] - ETA: 3:55 - loss: 7.4168 - acc: 0.5398
+ 6/18 [=========>....................] - ETA: 3:38 - loss: 7.3560 - acc: 0.5436
+ 7/18 [==========>...................] - ETA: 3:24 - loss: 7.2316 - acc: 0.5513
+ 8/18 [============>.................] - ETA: 3:08 - loss: 7.1068 - acc: 0.5591
+ 9/18 [==============>...............] - ETA: 2:52 - loss: 7.0727 - acc: 0.5612
+10/18 [===============>..............] - ETA: 2:35 - loss: 7.0643 - acc: 0.5617
+11/18 [=================>............] - ETA: 2:18 - loss: 7.0746 - acc: 0.5611
+12/18 [===================>..........] - ETA: 1:59 - loss: 7.1304 - acc: 0.5576
+13/18 [====================>.........] - ETA: 1:39 - loss: 7.1631 - acc: 0.5556
+14/18 [======================>.......] - ETA: 1:19 - loss: 7.1911 - acc: 0.5539
+15/18 [========================>.....] - ETA: 1:00 - loss: 7.1860 - acc: 0.5542
+16/18 [=========================>....] - ETA: 39s - loss: 7.1815 - acc: 0.5544 
+17/18 [===========================>..] - ETA: 19s - loss: 7.1998 - acc: 0.5533
+18/18 [==============================] - 397s 22s/step - loss: 7.1916 - acc: 0.5538 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 9/100
+
+ 1/18 [>.............................] - ETA: 5:05 - loss: 7.9331 - acc: 0.5078
+ 2/18 [==>...........................] - ETA: 4:48 - loss: 7.8072 - acc: 0.5156
+ 3/18 [====>.........................] - ETA: 4:23 - loss: 7.5134 - acc: 0.5339
+ 4/18 [=====>........................] - ETA: 4:08 - loss: 7.1461 - acc: 0.5566
+ 5/18 [=======>......................] - ETA: 3:47 - loss: 7.1776 - acc: 0.5547
+ 6/18 [=========>....................] - ETA: 3:31 - loss: 7.2091 - acc: 0.5527
+ 7/18 [==========>...................] - ETA: 3:15 - loss: 7.2136 - acc: 0.5525
+ 8/18 [============>.................] - ETA: 2:50 - loss: 7.2692 - acc: 0.5490
+ 9/18 [==============>...............] - ETA: 2:39 - loss: 7.0982 - acc: 0.5596
+10/18 [===============>..............] - ETA: 2:24 - loss: 7.1124 - acc: 0.5587
+11/18 [=================>............] - ETA: 2:08 - loss: 7.0325 - acc: 0.5637
+12/18 [===================>..........] - ETA: 1:51 - loss: 7.0288 - acc: 0.5639
+13/18 [====================>.........] - ETA: 1:30 - loss: 7.0773 - acc: 0.5609
+14/18 [======================>.......] - ETA: 1:12 - loss: 7.0979 - acc: 0.5596
+15/18 [========================>.....] - ETA: 55s - loss: 7.1158 - acc: 0.5585 
+16/18 [=========================>....] - ETA: 37s - loss: 7.1040 - acc: 0.5593
+17/18 [===========================>..] - ETA: 18s - loss: 7.1157 - acc: 0.5585
+18/18 [==============================] - 376s 21s/step - loss: 7.1141 - acc: 0.5586 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 10/100
+
+ 1/18 [>.............................] - ETA: 4:37 - loss: 7.2406 - acc: 0.5508
+ 2/18 [==>...........................] - ETA: 4:26 - loss: 7.2406 - acc: 0.5508
+ 3/18 [====>.........................] - ETA: 4:09 - loss: 7.4294 - acc: 0.5391
+ 4/18 [=====>........................] - ETA: 3:57 - loss: 7.4294 - acc: 0.5391
+ 5/18 [=======>......................] - ETA: 3:41 - loss: 7.3917 - acc: 0.5414
+ 6/18 [=========>....................] - ETA: 3:27 - loss: 7.3035 - acc: 0.5469
+ 7/18 [==========>...................] - ETA: 3:08 - loss: 7.3575 - acc: 0.5435
+ 8/18 [============>.................] - ETA: 2:51 - loss: 7.4137 - acc: 0.5400
+ 9/18 [==============>...............] - ETA: 2:37 - loss: 7.4504 - acc: 0.5378
+10/18 [===============>..............] - ETA: 2:22 - loss: 7.4168 - acc: 0.5398
+11/18 [=================>............] - ETA: 2:06 - loss: 7.4008 - acc: 0.5408
+12/18 [===================>..........] - ETA: 1:50 - loss: 7.4347 - acc: 0.5387
+13/18 [====================>.........] - ETA: 1:32 - loss: 7.4294 - acc: 0.5391
+14/18 [======================>.......] - ETA: 1:14 - loss: 7.3890 - acc: 0.5416
+15/18 [========================>.....] - ETA: 55s - loss: 7.3833 - acc: 0.5419 
+16/18 [=========================>....] - ETA: 37s - loss: 7.3389 - acc: 0.5447
+17/18 [===========================>..] - ETA: 18s - loss: 7.3405 - acc: 0.5446
+18/18 [==============================] - 381s 21s/step - loss: 7.3070 - acc: 0.5467 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 11/100
+
+ 1/18 [>.............................] - ETA: 4:37 - loss: 7.6813 - acc: 0.5234
+ 2/18 [==>...........................] - ETA: 4:34 - loss: 7.3350 - acc: 0.5449
+ 3/18 [====>.........................] - ETA: 4:12 - loss: 7.0097 - acc: 0.5651
+ 4/18 [=====>........................] - ETA: 3:58 - loss: 7.1146 - acc: 0.5586
+ 5/18 [=======>......................] - ETA: 3:39 - loss: 7.0391 - acc: 0.5633
+ 6/18 [=========>....................] - ETA: 3:22 - loss: 7.1671 - acc: 0.5553
+ 7/18 [==========>...................] - ETA: 3:06 - loss: 7.2046 - acc: 0.5530
+ 8/18 [============>.................] - ETA: 2:42 - loss: 7.1471 - acc: 0.5566
+ 9/18 [==============>...............] - ETA: 2:27 - loss: 7.2834 - acc: 0.5481
+10/18 [===============>..............] - ETA: 2:13 - loss: 7.2098 - acc: 0.5527
+11/18 [=================>............] - ETA: 1:58 - loss: 7.1611 - acc: 0.5557
+12/18 [===================>..........] - ETA: 1:42 - loss: 7.1205 - acc: 0.5582
+13/18 [====================>.........] - ETA: 1:26 - loss: 7.1443 - acc: 0.5568
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.1287 - acc: 0.5577
+15/18 [========================>.....] - ETA: 53s - loss: 7.1151 - acc: 0.5586 
+16/18 [=========================>....] - ETA: 35s - loss: 7.1112 - acc: 0.5588
+17/18 [===========================>..] - ETA: 18s - loss: 7.1558 - acc: 0.5560
+18/18 [==============================] - 371s 21s/step - loss: 7.1856 - acc: 0.5542 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 12/100
+
+ 1/18 [>.............................] - ETA: 5:07 - loss: 6.6739 - acc: 0.5859
+ 2/18 [==>...........................] - ETA: 4:40 - loss: 7.3035 - acc: 0.5469
+ 3/18 [====>.........................] - ETA: 4:26 - loss: 7.0097 - acc: 0.5651
+ 4/18 [=====>........................] - ETA: 4:04 - loss: 6.9730 - acc: 0.5674
+ 5/18 [=======>......................] - ETA: 3:46 - loss: 7.0265 - acc: 0.5641
+ 6/18 [=========>....................] - ETA: 3:29 - loss: 6.9992 - acc: 0.5658
+ 7/18 [==========>...................] - ETA: 3:01 - loss: 7.1261 - acc: 0.5579
+ 8/18 [============>.................] - ETA: 2:47 - loss: 7.2506 - acc: 0.5502
+ 9/18 [==============>...............] - ETA: 2:32 - loss: 7.2495 - acc: 0.5502
+10/18 [===============>..............] - ETA: 2:15 - loss: 7.2675 - acc: 0.5491
+11/18 [=================>............] - ETA: 2:00 - loss: 7.2593 - acc: 0.5496
+12/18 [===================>..........] - ETA: 1:44 - loss: 7.2840 - acc: 0.5481
+13/18 [====================>.........] - ETA: 1:28 - loss: 7.1983 - acc: 0.5534
+14/18 [======================>.......] - ETA: 1:11 - loss: 7.1519 - acc: 0.5563
+15/18 [========================>.....] - ETA: 54s - loss: 7.1704 - acc: 0.5551 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1157 - acc: 0.5585
+17/18 [===========================>..] - ETA: 18s - loss: 7.1342 - acc: 0.5574
+18/18 [==============================] - 375s 21s/step - loss: 7.1391 - acc: 0.5571 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 13/100
+
+ 1/18 [>.............................] - ETA: 3:23 - loss: 8.0019 - acc: 0.5035
+ 2/18 [==>...........................] - ETA: 3:47 - loss: 7.4953 - acc: 0.5350
+ 3/18 [====>.........................] - ETA: 3:44 - loss: 7.6832 - acc: 0.5233
+ 4/18 [=====>........................] - ETA: 3:41 - loss: 7.5726 - acc: 0.5302
+ 5/18 [=======>......................] - ETA: 3:26 - loss: 7.4684 - acc: 0.5366
+ 6/18 [=========>....................] - ETA: 3:13 - loss: 7.3045 - acc: 0.5468
+ 7/18 [==========>...................] - ETA: 3:00 - loss: 7.2684 - acc: 0.5491
+ 8/18 [============>.................] - ETA: 2:47 - loss: 7.2806 - acc: 0.5483
+ 9/18 [==============>...............] - ETA: 2:31 - loss: 7.3112 - acc: 0.5464
+10/18 [===============>..............] - ETA: 2:14 - loss: 7.3167 - acc: 0.5461
+11/18 [=================>............] - ETA: 1:58 - loss: 7.3441 - acc: 0.5444
+12/18 [===================>..........] - ETA: 1:43 - loss: 7.3722 - acc: 0.5426
+13/18 [====================>.........] - ETA: 1:27 - loss: 7.4202 - acc: 0.5396
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.3399 - acc: 0.5446
+15/18 [========================>.....] - ETA: 53s - loss: 7.3207 - acc: 0.5458 
+16/18 [=========================>....] - ETA: 35s - loss: 7.3432 - acc: 0.5444
+17/18 [===========================>..] - ETA: 18s - loss: 7.3002 - acc: 0.5471
+18/18 [==============================] - 372s 21s/step - loss: 7.2924 - acc: 0.5476 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 14/100
+
+ 1/18 [>.............................] - ETA: 5:23 - loss: 6.9887 - acc: 0.5664
+ 2/18 [==>...........................] - ETA: 4:04 - loss: 6.6380 - acc: 0.5882
+ 3/18 [====>.........................] - ETA: 4:02 - loss: 7.1326 - acc: 0.5575
+ 4/18 [=====>........................] - ETA: 3:55 - loss: 7.2541 - acc: 0.5499
+ 5/18 [=======>......................] - ETA: 3:41 - loss: 7.2262 - acc: 0.5517
+ 6/18 [=========>....................] - ETA: 3:22 - loss: 7.1236 - acc: 0.5580
+ 7/18 [==========>...................] - ETA: 3:05 - loss: 7.0864 - acc: 0.5603
+ 8/18 [============>.................] - ETA: 2:47 - loss: 7.0899 - acc: 0.5601
+ 9/18 [==============>...............] - ETA: 2:29 - loss: 7.1416 - acc: 0.5569
+10/18 [===============>..............] - ETA: 2:13 - loss: 7.2082 - acc: 0.5528
+11/18 [=================>............] - ETA: 2:02 - loss: 7.1768 - acc: 0.5547
+12/18 [===================>..........] - ETA: 1:44 - loss: 7.2083 - acc: 0.5528
+13/18 [====================>.........] - ETA: 1:28 - loss: 7.1963 - acc: 0.5535
+14/18 [======================>.......] - ETA: 1:11 - loss: 7.2489 - acc: 0.5503
+15/18 [========================>.....] - ETA: 54s - loss: 7.2316 - acc: 0.5513 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1888 - acc: 0.5540
+17/18 [===========================>..] - ETA: 18s - loss: 7.1956 - acc: 0.5536
+18/18 [==============================] - 379s 21s/step - loss: 7.2028 - acc: 0.5531 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 15/100
+
+ 1/18 [>.............................] - ETA: 5:31 - loss: 6.7369 - acc: 0.5820
+ 2/18 [==>...........................] - ETA: 4:54 - loss: 6.5165 - acc: 0.5957
+ 3/18 [====>.........................] - ETA: 4:49 - loss: 6.4640 - acc: 0.5990
+ 4/18 [=====>........................] - ETA: 4:23 - loss: 6.7841 - acc: 0.5791
+ 5/18 [=======>......................] - ETA: 3:43 - loss: 6.8905 - acc: 0.5725
+ 6/18 [=========>....................] - ETA: 3:26 - loss: 6.9908 - acc: 0.5663
+ 7/18 [==========>...................] - ETA: 3:09 - loss: 7.0804 - acc: 0.5607
+ 8/18 [============>.................] - ETA: 2:51 - loss: 7.0847 - acc: 0.5604
+ 9/18 [==============>...............] - ETA: 2:35 - loss: 7.0950 - acc: 0.5598
+10/18 [===============>..............] - ETA: 2:17 - loss: 7.1159 - acc: 0.5585
+11/18 [=================>............] - ETA: 2:01 - loss: 7.1616 - acc: 0.5557
+12/18 [===================>..........] - ETA: 1:44 - loss: 7.1891 - acc: 0.5540
+13/18 [====================>.........] - ETA: 1:27 - loss: 7.2125 - acc: 0.5525
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.1965 - acc: 0.5535
+15/18 [========================>.....] - ETA: 53s - loss: 7.1994 - acc: 0.5533 
+16/18 [=========================>....] - ETA: 36s - loss: 7.2020 - acc: 0.5532
+17/18 [===========================>..] - ETA: 18s - loss: 7.2228 - acc: 0.5519
+18/18 [==============================] - 377s 21s/step - loss: 7.2061 - acc: 0.5529 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 16/100
+
+ 1/18 [>.............................] - ETA: 4:57 - loss: 8.8775 - acc: 0.4492
+ 2/18 [==>...........................] - ETA: 4:47 - loss: 7.9016 - acc: 0.5098
+ 3/18 [====>.........................] - ETA: 4:28 - loss: 7.7233 - acc: 0.5208
+ 4/18 [=====>........................] - ETA: 4:10 - loss: 7.4609 - acc: 0.5371
+ 5/18 [=======>......................] - ETA: 3:49 - loss: 7.4043 - acc: 0.5406
+ 6/18 [=========>....................] - ETA: 3:16 - loss: 7.1228 - acc: 0.5581
+ 7/18 [==========>...................] - ETA: 3:00 - loss: 7.0407 - acc: 0.5632
+ 8/18 [============>.................] - ETA: 2:46 - loss: 7.0735 - acc: 0.5611
+ 9/18 [==============>...............] - ETA: 2:30 - loss: 7.1271 - acc: 0.5578
+10/18 [===============>..............] - ETA: 2:14 - loss: 7.1447 - acc: 0.5567
+11/18 [=================>............] - ETA: 1:57 - loss: 7.2336 - acc: 0.5512
+12/18 [===================>..........] - ETA: 1:41 - loss: 7.2184 - acc: 0.5522
+13/18 [====================>.........] - ETA: 1:24 - loss: 7.2250 - acc: 0.5517
+14/18 [======================>.......] - ETA: 1:08 - loss: 7.1901 - acc: 0.5539
+15/18 [========================>.....] - ETA: 51s - loss: 7.1431 - acc: 0.5568 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1531 - acc: 0.5562
+17/18 [===========================>..] - ETA: 17s - loss: 7.1323 - acc: 0.5575
+18/18 [==============================] - 366s 20s/step - loss: 7.1629 - acc: 0.5556 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 17/100
+
+ 1/18 [>.............................] - ETA: 5:36 - loss: 7.5554 - acc: 0.5312
+ 2/18 [==>...........................] - ETA: 5:09 - loss: 7.2406 - acc: 0.5508
+ 3/18 [====>.........................] - ETA: 4:54 - loss: 7.2196 - acc: 0.5521
+ 4/18 [=====>........................] - ETA: 4:31 - loss: 7.1461 - acc: 0.5566
+ 5/18 [=======>......................] - ETA: 4:10 - loss: 7.2783 - acc: 0.5484
+ 6/18 [=========>....................] - ETA: 3:45 - loss: 7.2301 - acc: 0.5514
+ 7/18 [==========>...................] - ETA: 3:25 - loss: 7.2406 - acc: 0.5508
+ 8/18 [============>.................] - ETA: 3:05 - loss: 7.2248 - acc: 0.5518
+ 9/18 [==============>...............] - ETA: 2:44 - loss: 7.2266 - acc: 0.5516
+10/18 [===============>..............] - ETA: 2:24 - loss: 7.1713 - acc: 0.5551
+11/18 [=================>............] - ETA: 2:06 - loss: 7.2005 - acc: 0.5533
+12/18 [===================>..........] - ETA: 1:48 - loss: 7.1619 - acc: 0.5557
+13/18 [====================>.........] - ETA: 1:30 - loss: 7.2066 - acc: 0.5529
+14/18 [======================>.......] - ETA: 1:12 - loss: 7.2181 - acc: 0.5522
+15/18 [========================>.....] - ETA: 54s - loss: 7.2154 - acc: 0.5523 
+16/18 [=========================>....] - ETA: 36s - loss: 7.2012 - acc: 0.5532
+17/18 [===========================>..] - ETA: 18s - loss: 7.1924 - acc: 0.5538
+18/18 [==============================] - 377s 21s/step - loss: 7.1681 - acc: 0.5553 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 18/100
+
+ 1/18 [>.............................] - ETA: 5:52 - loss: 7.6183 - acc: 0.5273
+ 2/18 [==>...........................] - ETA: 5:20 - loss: 7.8702 - acc: 0.5117
+ 3/18 [====>.........................] - ETA: 4:51 - loss: 7.6183 - acc: 0.5273
+ 4/18 [=====>........................] - ETA: 4:30 - loss: 7.1933 - acc: 0.5537
+ 5/18 [=======>......................] - ETA: 4:09 - loss: 7.1524 - acc: 0.5563
+ 6/18 [=========>....................] - ETA: 3:51 - loss: 7.2301 - acc: 0.5514
+ 7/18 [==========>...................] - ETA: 3:30 - loss: 7.2675 - acc: 0.5491
+ 8/18 [============>.................] - ETA: 3:10 - loss: 7.2956 - acc: 0.5474
+ 9/18 [==============>...............] - ETA: 2:49 - loss: 7.2336 - acc: 0.5512
+10/18 [===============>..............] - ETA: 2:29 - loss: 7.2028 - acc: 0.5531
+11/18 [=================>............] - ETA: 2:10 - loss: 7.2463 - acc: 0.5504
+12/18 [===================>..........] - ETA: 1:51 - loss: 7.2091 - acc: 0.5527
+13/18 [====================>.........] - ETA: 1:32 - loss: 7.2018 - acc: 0.5532
+14/18 [======================>.......] - ETA: 1:13 - loss: 7.2495 - acc: 0.5502
+15/18 [========================>.....] - ETA: 54s - loss: 7.2406 - acc: 0.5508 
+16/18 [=========================>....] - ETA: 36s - loss: 7.2287 - acc: 0.5515
+17/18 [===========================>..] - ETA: 18s - loss: 7.2220 - acc: 0.5519
+18/18 [==============================] - 378s 21s/step - loss: 7.2147 - acc: 0.5524 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 19/100
+
+ 1/18 [>.............................] - ETA: 5:44 - loss: 7.7442 - acc: 0.5195
+ 2/18 [==>...........................] - ETA: 5:33 - loss: 7.0202 - acc: 0.5645
+ 3/18 [====>.........................] - ETA: 5:00 - loss: 7.0307 - acc: 0.5638
+ 4/18 [=====>........................] - ETA: 4:33 - loss: 6.9415 - acc: 0.5693
+ 5/18 [=======>......................] - ETA: 4:13 - loss: 6.9761 - acc: 0.5672
+ 6/18 [=========>....................] - ETA: 3:52 - loss: 7.1146 - acc: 0.5586
+ 7/18 [==========>...................] - ETA: 3:32 - loss: 7.1056 - acc: 0.5592
+ 8/18 [============>.................] - ETA: 3:11 - loss: 7.1461 - acc: 0.5566
+ 9/18 [==============>...............] - ETA: 2:50 - loss: 7.1566 - acc: 0.5560
+10/18 [===============>..............] - ETA: 2:30 - loss: 7.1713 - acc: 0.5551
+11/18 [=================>............] - ETA: 2:10 - loss: 7.1261 - acc: 0.5579
+12/18 [===================>..........] - ETA: 1:52 - loss: 7.1041 - acc: 0.5592
+13/18 [====================>.........] - ETA: 1:33 - loss: 7.1340 - acc: 0.5574
+14/18 [======================>.......] - ETA: 1:13 - loss: 7.2046 - acc: 0.5530
+15/18 [========================>.....] - ETA: 55s - loss: 7.1944 - acc: 0.5536 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1973 - acc: 0.5535
+17/18 [===========================>..] - ETA: 18s - loss: 7.2035 - acc: 0.5531
+18/18 [==============================] - 381s 21s/step - loss: 7.2021 - acc: 0.5532 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 20/100
+
+ 1/18 [>.............................] - ETA: 5:30 - loss: 7.1146 - acc: 0.5586
+ 2/18 [==>...........................] - ETA: 5:18 - loss: 6.6739 - acc: 0.5859
+ 3/18 [====>.........................] - ETA: 4:54 - loss: 7.0307 - acc: 0.5638
+ 4/18 [=====>........................] - ETA: 4:32 - loss: 6.9415 - acc: 0.5693
+ 5/18 [=======>......................] - ETA: 4:13 - loss: 6.9257 - acc: 0.5703
+ 6/18 [=========>....................] - ETA: 3:53 - loss: 6.8943 - acc: 0.5723
+ 7/18 [==========>...................] - ETA: 3:22 - loss: 6.9382 - acc: 0.5695
+ 8/18 [============>.................] - ETA: 3:05 - loss: 7.0232 - acc: 0.5643
+ 9/18 [==============>...............] - ETA: 2:46 - loss: 6.9844 - acc: 0.5667
+10/18 [===============>..............] - ETA: 2:27 - loss: 7.0730 - acc: 0.5612
+11/18 [=================>............] - ETA: 2:09 - loss: 7.0882 - acc: 0.5602
+12/18 [===================>..........] - ETA: 1:49 - loss: 7.0747 - acc: 0.5611
+13/18 [====================>.........] - ETA: 1:31 - loss: 7.1165 - acc: 0.5585
+14/18 [======================>.......] - ETA: 1:13 - loss: 7.1478 - acc: 0.5565
+15/18 [========================>.....] - ETA: 55s - loss: 7.1372 - acc: 0.5572 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1161 - acc: 0.5585
+17/18 [===========================>..] - ETA: 18s - loss: 7.1605 - acc: 0.5557
+18/18 [==============================] - 365s 20s/step - loss: 7.1684 - acc: 0.5553 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 21/100
+
+ 1/18 [>.............................] - ETA: 5:47 - loss: 7.7442 - acc: 0.5195
+ 2/18 [==>...........................] - ETA: 5:23 - loss: 7.5868 - acc: 0.5293
+ 3/18 [====>.........................] - ETA: 5:03 - loss: 7.1776 - acc: 0.5547
+ 4/18 [=====>........................] - ETA: 4:44 - loss: 7.2091 - acc: 0.5527
+ 5/18 [=======>......................] - ETA: 4:03 - loss: 7.2076 - acc: 0.5528
+ 6/18 [=========>....................] - ETA: 3:51 - loss: 7.2551 - acc: 0.5499
+ 7/18 [==========>...................] - ETA: 3:34 - loss: 7.2440 - acc: 0.5506
+ 8/18 [============>.................] - ETA: 3:15 - loss: 7.1806 - acc: 0.5545
+ 9/18 [==============>...............] - ETA: 2:57 - loss: 7.1733 - acc: 0.5550
+10/18 [===============>..............] - ETA: 2:38 - loss: 7.2367 - acc: 0.5510
+11/18 [=================>............] - ETA: 2:17 - loss: 7.2828 - acc: 0.5482
+12/18 [===================>..........] - ETA: 1:57 - loss: 7.3318 - acc: 0.5451
+13/18 [====================>.........] - ETA: 1:36 - loss: 7.3199 - acc: 0.5459
+14/18 [======================>.......] - ETA: 1:17 - loss: 7.2827 - acc: 0.5482
+15/18 [========================>.....] - ETA: 57s - loss: 7.2589 - acc: 0.5496 
+16/18 [=========================>....] - ETA: 38s - loss: 7.3129 - acc: 0.5463
+17/18 [===========================>..] - ETA: 18s - loss: 7.2642 - acc: 0.5493
+18/18 [==============================] - 378s 21s/step - loss: 7.2595 - acc: 0.5496 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 22/100
+
+ 1/18 [>.............................] - ETA: 5:16 - loss: 7.1776 - acc: 0.5547
+ 2/18 [==>...........................] - ETA: 5:07 - loss: 6.9257 - acc: 0.5703
+ 3/18 [====>.........................] - ETA: 4:55 - loss: 6.9048 - acc: 0.5716
+ 4/18 [=====>........................] - ETA: 4:37 - loss: 7.0359 - acc: 0.5635
+ 5/18 [=======>......................] - ETA: 4:19 - loss: 7.1020 - acc: 0.5594
+ 6/18 [=========>....................] - ETA: 4:01 - loss: 7.1881 - acc: 0.5540
+ 7/18 [==========>...................] - ETA: 3:40 - loss: 7.2495 - acc: 0.5502
+ 8/18 [============>.................] - ETA: 3:22 - loss: 7.3114 - acc: 0.5464
+ 9/18 [==============>...............] - ETA: 3:01 - loss: 7.3175 - acc: 0.5460
+10/18 [===============>..............] - ETA: 2:41 - loss: 7.2972 - acc: 0.5473
+11/18 [=================>............] - ETA: 2:20 - loss: 7.3493 - acc: 0.5440
+12/18 [===================>..........] - ETA: 1:59 - loss: 7.2668 - acc: 0.5492
+13/18 [====================>.........] - ETA: 1:35 - loss: 7.2530 - acc: 0.5500
+14/18 [======================>.......] - ETA: 1:16 - loss: 7.1981 - acc: 0.5534
+15/18 [========================>.....] - ETA: 56s - loss: 7.1968 - acc: 0.5535 
+16/18 [=========================>....] - ETA: 37s - loss: 7.1601 - acc: 0.5558
+17/18 [===========================>..] - ETA: 18s - loss: 7.1797 - acc: 0.5546
+18/18 [==============================] - 385s 21s/step - loss: 7.1727 - acc: 0.5550 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 23/100
+
+ 1/18 [>.............................] - ETA: 4:56 - loss: 7.3035 - acc: 0.5469
+ 2/18 [==>...........................] - ETA: 4:50 - loss: 7.2091 - acc: 0.5527
+ 3/18 [====>.........................] - ETA: 5:37 - loss: 7.1566 - acc: 0.5560
+ 4/18 [=====>........................] - ETA: 4:37 - loss: 7.0536 - acc: 0.5624
+ 5/18 [=======>......................] - ETA: 4:18 - loss: 7.0154 - acc: 0.5647
+ 6/18 [=========>....................] - ETA: 3:57 - loss: 7.0319 - acc: 0.5637
+ 7/18 [==========>...................] - ETA: 3:39 - loss: 7.0438 - acc: 0.5630
+ 8/18 [============>.................] - ETA: 3:18 - loss: 7.0369 - acc: 0.5634
+ 9/18 [==============>...............] - ETA: 2:58 - loss: 7.0805 - acc: 0.5607
+10/18 [===============>..............] - ETA: 2:39 - loss: 7.1154 - acc: 0.5585
+11/18 [=================>............] - ETA: 2:19 - loss: 7.1439 - acc: 0.5568
+12/18 [===================>..........] - ETA: 1:59 - loss: 7.1310 - acc: 0.5576
+13/18 [====================>.........] - ETA: 1:39 - loss: 7.1685 - acc: 0.5553
+14/18 [======================>.......] - ETA: 1:18 - loss: 7.1826 - acc: 0.5544
+15/18 [========================>.....] - ETA: 58s - loss: 7.2117 - acc: 0.5526 
+16/18 [=========================>....] - ETA: 38s - loss: 7.1977 - acc: 0.5534
+17/18 [===========================>..] - ETA: 19s - loss: 7.1521 - acc: 0.5563
+18/18 [==============================] - 383s 21s/step - loss: 7.1436 - acc: 0.5568 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 24/100
+
+ 1/18 [>.............................] - ETA: 5:13 - loss: 7.9331 - acc: 0.5078
+ 2/18 [==>...........................] - ETA: 4:58 - loss: 7.4294 - acc: 0.5391
+ 3/18 [====>.........................] - ETA: 4:28 - loss: 7.1146 - acc: 0.5586
+ 4/18 [=====>........................] - ETA: 4:16 - loss: 7.3665 - acc: 0.5430
+ 5/18 [=======>......................] - ETA: 4:01 - loss: 7.4546 - acc: 0.5375
+ 6/18 [=========>....................] - ETA: 3:44 - loss: 7.4609 - acc: 0.5371
+ 7/18 [==========>...................] - ETA: 3:28 - loss: 7.4204 - acc: 0.5396
+ 8/18 [============>.................] - ETA: 3:10 - loss: 7.3665 - acc: 0.5430
+ 9/18 [==============>...............] - ETA: 2:51 - loss: 7.3175 - acc: 0.5460
+10/18 [===============>..............] - ETA: 2:34 - loss: 7.3413 - acc: 0.5445
+11/18 [=================>............] - ETA: 2:15 - loss: 7.2749 - acc: 0.5487
+12/18 [===================>..........] - ETA: 1:55 - loss: 7.2930 - acc: 0.5475
+13/18 [====================>.........] - ETA: 1:36 - loss: 7.2454 - acc: 0.5505
+14/18 [======================>.......] - ETA: 1:16 - loss: 7.2316 - acc: 0.5513
+15/18 [========================>.....] - ETA: 56s - loss: 7.2322 - acc: 0.5513 
+16/18 [=========================>....] - ETA: 36s - loss: 7.3017 - acc: 0.5470
+17/18 [===========================>..] - ETA: 18s - loss: 7.2648 - acc: 0.5493
+18/18 [==============================] - 365s 20s/step - loss: 7.2760 - acc: 0.5486 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 25/100
+
+ 1/18 [>.............................] - ETA: 5:10 - loss: 7.4294 - acc: 0.5391
+ 2/18 [==>...........................] - ETA: 4:41 - loss: 7.3350 - acc: 0.5449
+ 3/18 [====>.........................] - ETA: 4:19 - loss: 7.2406 - acc: 0.5508
+ 4/18 [=====>........................] - ETA: 3:57 - loss: 7.3035 - acc: 0.5469
+ 5/18 [=======>......................] - ETA: 3:46 - loss: 7.1524 - acc: 0.5563
+ 6/18 [=========>....................] - ETA: 3:32 - loss: 7.1881 - acc: 0.5540
+ 7/18 [==========>...................] - ETA: 3:17 - loss: 7.1776 - acc: 0.5547
+ 8/18 [============>.................] - ETA: 2:59 - loss: 7.0674 - acc: 0.5615
+ 9/18 [==============>...............] - ETA: 2:43 - loss: 7.0727 - acc: 0.5612
+10/18 [===============>..............] - ETA: 2:28 - loss: 7.1902 - acc: 0.5539
+11/18 [=================>............] - ETA: 2:10 - loss: 7.1833 - acc: 0.5543
+12/18 [===================>..........] - ETA: 1:53 - loss: 7.1723 - acc: 0.5550
+13/18 [====================>.........] - ETA: 1:34 - loss: 7.2357 - acc: 0.5511
+14/18 [======================>.......] - ETA: 1:16 - loss: 7.2720 - acc: 0.5488
+15/18 [========================>.....] - ETA: 56s - loss: 7.2447 - acc: 0.5505 
+16/18 [=========================>....] - ETA: 37s - loss: 7.2406 - acc: 0.5508
+17/18 [===========================>..] - ETA: 18s - loss: 7.2294 - acc: 0.5515
+18/18 [==============================] - 373s 21s/step - loss: 7.2091 - acc: 0.5527 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 26/100
+
+ 1/18 [>.............................] - ETA: 4:41 - loss: 7.0517 - acc: 0.5625
+ 2/18 [==>...........................] - ETA: 4:24 - loss: 6.9887 - acc: 0.5664
+ 3/18 [====>.........................] - ETA: 4:04 - loss: 6.9257 - acc: 0.5703
+ 4/18 [=====>........................] - ETA: 3:24 - loss: 7.1662 - acc: 0.5554
+ 5/18 [=======>......................] - ETA: 3:16 - loss: 7.2818 - acc: 0.5482
+ 6/18 [=========>....................] - ETA: 3:12 - loss: 7.1805 - acc: 0.5545
+ 7/18 [==========>...................] - ETA: 3:02 - loss: 7.2071 - acc: 0.5529
+ 8/18 [============>.................] - ETA: 2:50 - loss: 7.2663 - acc: 0.5492
+ 9/18 [==============>...............] - ETA: 2:37 - loss: 7.2705 - acc: 0.5489
+10/18 [===============>..............] - ETA: 2:22 - loss: 7.2675 - acc: 0.5491
+11/18 [=================>............] - ETA: 2:05 - loss: 7.1792 - acc: 0.5546
+12/18 [===================>..........] - ETA: 1:48 - loss: 7.1843 - acc: 0.5543
+13/18 [====================>.........] - ETA: 1:31 - loss: 7.2516 - acc: 0.5501
+14/18 [======================>.......] - ETA: 1:13 - loss: 7.2733 - acc: 0.5488
+15/18 [========================>.....] - ETA: 55s - loss: 7.2375 - acc: 0.5510 
+16/18 [=========================>....] - ETA: 35s - loss: 7.2353 - acc: 0.5511
+17/18 [===========================>..] - ETA: 17s - loss: 7.2319 - acc: 0.5513
+18/18 [==============================] - 360s 20s/step - loss: 7.2350 - acc: 0.5511 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 27/100
+
+ 1/18 [>.............................] - ETA: 4:58 - loss: 6.2332 - acc: 0.6133
+ 2/18 [==>...........................] - ETA: 4:45 - loss: 6.4535 - acc: 0.5996
+ 3/18 [====>.........................] - ETA: 4:24 - loss: 6.5060 - acc: 0.5964
+ 4/18 [=====>........................] - ETA: 4:01 - loss: 6.7526 - acc: 0.5811
+ 5/18 [=======>......................] - ETA: 3:40 - loss: 6.9006 - acc: 0.5719
+ 6/18 [=========>....................] - ETA: 3:23 - loss: 7.0202 - acc: 0.5645
+ 7/18 [==========>...................] - ETA: 3:09 - loss: 7.0876 - acc: 0.5603
+ 8/18 [============>.................] - ETA: 2:55 - loss: 7.0674 - acc: 0.5615
+ 9/18 [==============>...............] - ETA: 2:40 - loss: 7.0447 - acc: 0.5629
+10/18 [===============>..............] - ETA: 2:24 - loss: 7.0957 - acc: 0.5598
+11/18 [=================>............] - ETA: 2:08 - loss: 7.1432 - acc: 0.5568
+12/18 [===================>..........] - ETA: 1:51 - loss: 7.1671 - acc: 0.5553
+13/18 [====================>.........] - ETA: 1:33 - loss: 7.1824 - acc: 0.5544
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.1821 - acc: 0.5544
+15/18 [========================>.....] - ETA: 56s - loss: 7.1944 - acc: 0.5536 
+16/18 [=========================>....] - ETA: 38s - loss: 7.1737 - acc: 0.5549
+17/18 [===========================>..] - ETA: 18s - loss: 7.1665 - acc: 0.5554
+18/18 [==============================] - 376s 21s/step - loss: 7.1846 - acc: 0.5543 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 28/100
+
+ 1/18 [>.............................] - ETA: 4:36 - loss: 7.6813 - acc: 0.5234
+ 2/18 [==>...........................] - ETA: 4:22 - loss: 7.2720 - acc: 0.5488
+ 3/18 [====>.........................] - ETA: 4:07 - loss: 7.1776 - acc: 0.5547
+ 4/18 [=====>........................] - ETA: 3:49 - loss: 7.1933 - acc: 0.5537
+ 5/18 [=======>......................] - ETA: 3:15 - loss: 7.0350 - acc: 0.5635
+ 6/18 [=========>....................] - ETA: 3:04 - loss: 7.2056 - acc: 0.5529
+ 7/18 [==========>...................] - ETA: 2:54 - loss: 7.1117 - acc: 0.5588
+ 8/18 [============>.................] - ETA: 2:43 - loss: 7.0885 - acc: 0.5602
+ 9/18 [==============>...............] - ETA: 2:30 - loss: 7.0284 - acc: 0.5639
+10/18 [===============>..............] - ETA: 2:17 - loss: 7.1000 - acc: 0.5595
+11/18 [=================>............] - ETA: 2:02 - loss: 7.1070 - acc: 0.5591
+12/18 [===================>..........] - ETA: 1:46 - loss: 7.0814 - acc: 0.5607
+13/18 [====================>.........] - ETA: 1:29 - loss: 7.1373 - acc: 0.5572
+14/18 [======================>.......] - ETA: 1:12 - loss: 7.1222 - acc: 0.5581
+15/18 [========================>.....] - ETA: 52s - loss: 7.1122 - acc: 0.5587 
+16/18 [=========================>....] - ETA: 35s - loss: 7.1438 - acc: 0.5568
+17/18 [===========================>..] - ETA: 17s - loss: 7.1458 - acc: 0.5567
+18/18 [==============================] - 359s 20s/step - loss: 7.1348 - acc: 0.5573 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 29/100
+
+ 1/18 [>.............................] - ETA: 4:54 - loss: 6.6739 - acc: 0.5859
+ 2/18 [==>...........................] - ETA: 4:28 - loss: 6.7054 - acc: 0.5840
+ 3/18 [====>.........................] - ETA: 4:17 - loss: 6.7788 - acc: 0.5794
+ 4/18 [=====>........................] - ETA: 4:00 - loss: 6.9572 - acc: 0.5684
+ 5/18 [=======>......................] - ETA: 3:40 - loss: 7.0517 - acc: 0.5625
+ 6/18 [=========>....................] - ETA: 3:22 - loss: 7.2301 - acc: 0.5514
+ 7/18 [==========>...................] - ETA: 3:05 - loss: 7.2226 - acc: 0.5519
+ 8/18 [============>.................] - ETA: 2:49 - loss: 7.3350 - acc: 0.5449
+ 9/18 [==============>...............] - ETA: 2:35 - loss: 7.2196 - acc: 0.5521
+10/18 [===============>..............] - ETA: 2:20 - loss: 7.2594 - acc: 0.5496
+11/18 [=================>............] - ETA: 2:05 - loss: 7.2005 - acc: 0.5533
+12/18 [===================>..........] - ETA: 1:48 - loss: 7.1619 - acc: 0.5557
+13/18 [====================>.........] - ETA: 1:27 - loss: 7.2704 - acc: 0.5489
+14/18 [======================>.......] - ETA: 1:11 - loss: 7.2413 - acc: 0.5507
+15/18 [========================>.....] - ETA: 53s - loss: 7.2539 - acc: 0.5500 
+16/18 [=========================>....] - ETA: 36s - loss: 7.2609 - acc: 0.5495
+17/18 [===========================>..] - ETA: 18s - loss: 7.2523 - acc: 0.5501
+18/18 [==============================] - 368s 20s/step - loss: 7.2359 - acc: 0.5511 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 30/100
+
+ 1/18 [>.............................] - ETA: 4:37 - loss: 6.7369 - acc: 0.5820
+ 2/18 [==>...........................] - ETA: 4:21 - loss: 6.8313 - acc: 0.5762
+ 3/18 [====>.........................] - ETA: 4:06 - loss: 7.1356 - acc: 0.5573
+ 4/18 [=====>........................] - ETA: 3:53 - loss: 7.3350 - acc: 0.5449
+ 5/18 [=======>......................] - ETA: 3:34 - loss: 7.2154 - acc: 0.5523
+ 6/18 [=========>....................] - ETA: 3:17 - loss: 7.1776 - acc: 0.5547
+ 7/18 [==========>...................] - ETA: 2:59 - loss: 7.1596 - acc: 0.5558
+ 8/18 [============>.................] - ETA: 2:43 - loss: 7.1382 - acc: 0.5571
+ 9/18 [==============>...............] - ETA: 2:28 - loss: 7.2196 - acc: 0.5521
+10/18 [===============>..............] - ETA: 2:15 - loss: 7.2091 - acc: 0.5527
+11/18 [=================>............] - ETA: 2:00 - loss: 7.2577 - acc: 0.5497
+12/18 [===================>..........] - ETA: 1:43 - loss: 7.2720 - acc: 0.5488
+13/18 [====================>.........] - ETA: 1:27 - loss: 7.2163 - acc: 0.5523
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.1776 - acc: 0.5547
+15/18 [========================>.....] - ETA: 53s - loss: 7.2322 - acc: 0.5513 
+16/18 [=========================>....] - ETA: 35s - loss: 7.2406 - acc: 0.5508
+17/18 [===========================>..] - ETA: 18s - loss: 7.2183 - acc: 0.5522
+18/18 [==============================] - 370s 21s/step - loss: 7.2091 - acc: 0.5527 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 31/100
+
+ 1/18 [>.............................] - ETA: 5:06 - loss: 6.9887 - acc: 0.5664
+ 2/18 [==>...........................] - ETA: 4:51 - loss: 6.7998 - acc: 0.5781
+ 3/18 [====>.........................] - ETA: 4:34 - loss: 7.0727 - acc: 0.5612
+ 4/18 [=====>........................] - ETA: 4:11 - loss: 7.0989 - acc: 0.5596
+ 5/18 [=======>......................] - ETA: 3:47 - loss: 7.1776 - acc: 0.5547
+ 6/18 [=========>....................] - ETA: 3:32 - loss: 7.0831 - acc: 0.5605
+ 7/18 [==========>...................] - ETA: 3:16 - loss: 7.0337 - acc: 0.5636
+ 8/18 [============>.................] - ETA: 2:49 - loss: 7.0975 - acc: 0.5597
+ 9/18 [==============>...............] - ETA: 2:32 - loss: 7.1274 - acc: 0.5578
+10/18 [===============>..............] - ETA: 2:16 - loss: 7.1639 - acc: 0.5555
+11/18 [=================>............] - ETA: 2:01 - loss: 7.2052 - acc: 0.5530
+12/18 [===================>..........] - ETA: 1:45 - loss: 7.1924 - acc: 0.5538
+13/18 [====================>.........] - ETA: 1:28 - loss: 7.1283 - acc: 0.5577
+14/18 [======================>.......] - ETA: 1:11 - loss: 7.1408 - acc: 0.5570
+15/18 [========================>.....] - ETA: 52s - loss: 7.1830 - acc: 0.5544 
+16/18 [=========================>....] - ETA: 35s - loss: 7.1709 - acc: 0.5551
+17/18 [===========================>..] - ETA: 17s - loss: 7.2564 - acc: 0.5498
+18/18 [==============================] - 368s 20s/step - loss: 7.2580 - acc: 0.5497 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 32/100
+
+ 1/18 [>.............................] - ETA: 5:36 - loss: 6.3591 - acc: 0.6055
+ 2/18 [==>...........................] - ETA: 4:47 - loss: 6.9257 - acc: 0.5703
+ 3/18 [====>.........................] - ETA: 4:20 - loss: 7.1356 - acc: 0.5573
+ 4/18 [=====>........................] - ETA: 3:59 - loss: 7.2091 - acc: 0.5527
+ 5/18 [=======>......................] - ETA: 3:41 - loss: 7.2028 - acc: 0.5531
+ 6/18 [=========>....................] - ETA: 3:23 - loss: 7.2510 - acc: 0.5501
+ 7/18 [==========>...................] - ETA: 3:04 - loss: 7.2585 - acc: 0.5497
+ 8/18 [============>.................] - ETA: 2:48 - loss: 7.1068 - acc: 0.5591
+ 9/18 [==============>...............] - ETA: 2:32 - loss: 7.1636 - acc: 0.5556
+10/18 [===============>..............] - ETA: 2:14 - loss: 7.1461 - acc: 0.5566
+11/18 [=================>............] - ETA: 1:57 - loss: 7.1375 - acc: 0.5572
+12/18 [===================>..........] - ETA: 1:42 - loss: 7.1356 - acc: 0.5573
+13/18 [====================>.........] - ETA: 1:27 - loss: 7.1437 - acc: 0.5568
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.1821 - acc: 0.5544
+15/18 [========================>.....] - ETA: 53s - loss: 7.1650 - acc: 0.5555 
+16/18 [=========================>....] - ETA: 35s - loss: 7.1737 - acc: 0.5549
+17/18 [===========================>..] - ETA: 18s - loss: 7.1628 - acc: 0.5556
+18/18 [==============================] - 372s 21s/step - loss: 7.1531 - acc: 0.5562 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 33/100
+
+ 1/18 [>.............................] - ETA: 5:39 - loss: 7.8072 - acc: 0.5156
+ 2/18 [==>...........................] - ETA: 5:08 - loss: 7.6498 - acc: 0.5254
+ 3/18 [====>.........................] - ETA: 4:42 - loss: 7.4924 - acc: 0.5352
+ 4/18 [=====>........................] - ETA: 4:13 - loss: 7.4294 - acc: 0.5391
+ 5/18 [=======>......................] - ETA: 3:33 - loss: 7.3153 - acc: 0.5461
+ 6/18 [=========>....................] - ETA: 3:15 - loss: 7.2609 - acc: 0.5495
+ 7/18 [==========>...................] - ETA: 2:59 - loss: 7.1950 - acc: 0.5536
+ 8/18 [============>.................] - ETA: 2:42 - loss: 7.2873 - acc: 0.5479
+ 9/18 [==============>...............] - ETA: 2:28 - loss: 7.2961 - acc: 0.5473
+10/18 [===============>..............] - ETA: 2:11 - loss: 7.2402 - acc: 0.5508
+11/18 [=================>............] - ETA: 1:56 - loss: 7.1944 - acc: 0.5536
+12/18 [===================>..........] - ETA: 1:39 - loss: 7.2297 - acc: 0.5515
+13/18 [====================>.........] - ETA: 1:24 - loss: 7.1918 - acc: 0.5538
+14/18 [======================>.......] - ETA: 1:08 - loss: 7.1863 - acc: 0.5541
+15/18 [========================>.....] - ETA: 51s - loss: 7.1647 - acc: 0.5555 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1380 - acc: 0.5571
+17/18 [===========================>..] - ETA: 17s - loss: 7.1107 - acc: 0.5588
+18/18 [==============================] - 365s 20s/step - loss: 7.1463 - acc: 0.5566 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 34/100
+
+ 1/18 [>.............................] - ETA: 5:17 - loss: 7.4294 - acc: 0.5391
+ 2/18 [==>...........................] - ETA: 4:00 - loss: 7.2013 - acc: 0.5532
+ 3/18 [====>.........................] - ETA: 4:03 - loss: 7.4452 - acc: 0.5381
+ 4/18 [=====>........................] - ETA: 3:54 - loss: 7.3468 - acc: 0.5442
+ 5/18 [=======>......................] - ETA: 3:36 - loss: 7.4389 - acc: 0.5385
+ 6/18 [=========>....................] - ETA: 3:18 - loss: 7.4688 - acc: 0.5366
+ 7/18 [==========>...................] - ETA: 3:00 - loss: 7.3912 - acc: 0.5414
+ 8/18 [============>.................] - ETA: 2:43 - loss: 7.3567 - acc: 0.5436
+ 9/18 [==============>...............] - ETA: 2:27 - loss: 7.2738 - acc: 0.5487
+10/18 [===============>..............] - ETA: 2:12 - loss: 7.3586 - acc: 0.5435
+11/18 [=================>............] - ETA: 1:56 - loss: 7.3078 - acc: 0.5466
+12/18 [===================>..........] - ETA: 1:39 - loss: 7.2392 - acc: 0.5509
+13/18 [====================>.........] - ETA: 1:22 - loss: 7.2490 - acc: 0.5503
+14/18 [======================>.......] - ETA: 1:06 - loss: 7.2529 - acc: 0.5500
+15/18 [========================>.....] - ETA: 50s - loss: 7.3109 - acc: 0.5464 
+16/18 [=========================>....] - ETA: 34s - loss: 7.3065 - acc: 0.5467
+17/18 [===========================>..] - ETA: 16s - loss: 7.2667 - acc: 0.5492
+18/18 [==============================] - 358s 20s/step - loss: 7.2630 - acc: 0.5494 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 35/100
+
+ 1/18 [>.............................] - ETA: 5:06 - loss: 7.9961 - acc: 0.5039
+ 2/18 [==>...........................] - ETA: 4:56 - loss: 7.3980 - acc: 0.5410
+ 3/18 [====>.........................] - ETA: 4:34 - loss: 7.3665 - acc: 0.5430
+ 4/18 [=====>........................] - ETA: 4:16 - loss: 7.3035 - acc: 0.5469
+ 5/18 [=======>......................] - ETA: 3:50 - loss: 7.2531 - acc: 0.5500
+ 6/18 [=========>....................] - ETA: 3:30 - loss: 7.1356 - acc: 0.5573
+ 7/18 [==========>...................] - ETA: 3:12 - loss: 7.1776 - acc: 0.5547
+ 8/18 [============>.................] - ETA: 2:54 - loss: 7.1225 - acc: 0.5581
+ 9/18 [==============>...............] - ETA: 2:35 - loss: 7.1356 - acc: 0.5573
+10/18 [===============>..............] - ETA: 2:17 - loss: 7.0769 - acc: 0.5609
+11/18 [=================>............] - ETA: 1:59 - loss: 7.0517 - acc: 0.5625
+12/18 [===================>..........] - ETA: 1:42 - loss: 7.1041 - acc: 0.5592
+13/18 [====================>.........] - ETA: 1:26 - loss: 7.1049 - acc: 0.5592
+14/18 [======================>.......] - ETA: 1:08 - loss: 7.1911 - acc: 0.5539
+15/18 [========================>.....] - ETA: 52s - loss: 7.1566 - acc: 0.5560 
+16/18 [=========================>....] - ETA: 35s - loss: 7.1697 - acc: 0.5552
+17/18 [===========================>..] - ETA: 17s - loss: 7.1813 - acc: 0.5545
+18/18 [==============================] - 372s 21s/step - loss: 7.2126 - acc: 0.5525 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 36/100
+
+ 1/18 [>.............................] - ETA: 5:35 - loss: 7.6813 - acc: 0.5234
+ 2/18 [==>...........................] - ETA: 4:09 - loss: 7.7273 - acc: 0.5206
+ 3/18 [====>.........................] - ETA: 4:11 - loss: 7.3971 - acc: 0.5411
+ 4/18 [=====>........................] - ETA: 3:58 - loss: 7.2478 - acc: 0.5503
+ 5/18 [=======>......................] - ETA: 3:46 - loss: 7.1582 - acc: 0.5559
+ 6/18 [=========>....................] - ETA: 3:27 - loss: 7.1719 - acc: 0.5550
+ 7/18 [==========>...................] - ETA: 3:09 - loss: 7.0378 - acc: 0.5634
+ 8/18 [============>.................] - ETA: 2:53 - loss: 7.1340 - acc: 0.5574
+ 9/18 [==============>...............] - ETA: 2:36 - loss: 7.0339 - acc: 0.5636
+10/18 [===============>..............] - ETA: 2:19 - loss: 7.0168 - acc: 0.5647
+11/18 [=================>............] - ETA: 2:01 - loss: 7.0142 - acc: 0.5648
+12/18 [===================>..........] - ETA: 1:44 - loss: 7.1013 - acc: 0.5594
+13/18 [====================>.........] - ETA: 1:26 - loss: 7.1459 - acc: 0.5567
+14/18 [======================>.......] - ETA: 1:09 - loss: 7.1302 - acc: 0.5576
+15/18 [========================>.....] - ETA: 51s - loss: 7.1250 - acc: 0.5580 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1597 - acc: 0.5558
+17/18 [===========================>..] - ETA: 17s - loss: 7.1756 - acc: 0.5548
+18/18 [==============================] - 369s 21s/step - loss: 7.1434 - acc: 0.5568 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 37/100
+
+ 1/18 [>.............................] - ETA: 5:39 - loss: 7.0517 - acc: 0.5625
+ 2/18 [==>...........................] - ETA: 5:23 - loss: 7.2720 - acc: 0.5488
+ 3/18 [====>.........................] - ETA: 5:01 - loss: 7.4924 - acc: 0.5352
+ 4/18 [=====>........................] - ETA: 4:38 - loss: 7.2563 - acc: 0.5498
+ 5/18 [=======>......................] - ETA: 4:15 - loss: 7.2783 - acc: 0.5484
+ 6/18 [=========>....................] - ETA: 3:56 - loss: 7.1986 - acc: 0.5534
+ 7/18 [==========>...................] - ETA: 3:32 - loss: 7.2316 - acc: 0.5513
+ 8/18 [============>.................] - ETA: 3:11 - loss: 7.2956 - acc: 0.5474
+ 9/18 [==============>...............] - ETA: 2:51 - loss: 7.3245 - acc: 0.5456
+10/18 [===============>..............] - ETA: 2:25 - loss: 7.2894 - acc: 0.5478
+11/18 [=================>............] - ETA: 2:06 - loss: 7.2620 - acc: 0.5494
+12/18 [===================>..........] - ETA: 1:47 - loss: 7.3075 - acc: 0.5466
+13/18 [====================>.........] - ETA: 1:29 - loss: 7.2636 - acc: 0.5494
+14/18 [======================>.......] - ETA: 1:11 - loss: 7.2799 - acc: 0.5483
+15/18 [========================>.....] - ETA: 53s - loss: 7.2479 - acc: 0.5503 
+16/18 [=========================>....] - ETA: 35s - loss: 7.2160 - acc: 0.5523
+17/18 [===========================>..] - ETA: 17s - loss: 7.2137 - acc: 0.5524
+18/18 [==============================] - 378s 21s/step - loss: 7.2225 - acc: 0.5519 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 38/100
+
+ 1/18 [>.............................] - ETA: 5:55 - loss: 7.2406 - acc: 0.5508
+ 2/18 [==>...........................] - ETA: 5:14 - loss: 7.7128 - acc: 0.5215
+ 3/18 [====>.........................] - ETA: 4:50 - loss: 7.6603 - acc: 0.5247
+ 4/18 [=====>........................] - ETA: 4:23 - loss: 7.4452 - acc: 0.5381
+ 5/18 [=======>......................] - ETA: 4:05 - loss: 7.5302 - acc: 0.5328
+ 6/18 [=========>....................] - ETA: 3:46 - loss: 7.4294 - acc: 0.5391
+ 7/18 [==========>...................] - ETA: 3:28 - loss: 7.3035 - acc: 0.5469
+ 8/18 [============>.................] - ETA: 3:07 - loss: 7.3586 - acc: 0.5435
+ 9/18 [==============>...............] - ETA: 2:46 - loss: 7.3245 - acc: 0.5456
+10/18 [===============>..............] - ETA: 2:28 - loss: 7.3728 - acc: 0.5426
+11/18 [=================>............] - ETA: 2:08 - loss: 7.3665 - acc: 0.5430
+12/18 [===================>..........] - ETA: 1:49 - loss: 7.3245 - acc: 0.5456
+13/18 [====================>.........] - ETA: 1:28 - loss: 7.2711 - acc: 0.5489
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.2419 - acc: 0.5507
+15/18 [========================>.....] - ETA: 52s - loss: 7.2292 - acc: 0.5515 
+16/18 [=========================>....] - ETA: 35s - loss: 7.2024 - acc: 0.5531
+17/18 [===========================>..] - ETA: 17s - loss: 7.2046 - acc: 0.5530
+18/18 [==============================] - 372s 21s/step - loss: 7.1759 - acc: 0.5548 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 39/100
+
+ 1/18 [>.............................] - ETA: 5:43 - loss: 7.4294 - acc: 0.5391
+ 2/18 [==>...........................] - ETA: 5:20 - loss: 7.2091 - acc: 0.5527
+ 3/18 [====>.........................] - ETA: 5:00 - loss: 7.2406 - acc: 0.5508
+ 4/18 [=====>........................] - ETA: 4:33 - loss: 7.1461 - acc: 0.5566
+ 5/18 [=======>......................] - ETA: 4:13 - loss: 7.1524 - acc: 0.5563
+ 6/18 [=========>....................] - ETA: 3:52 - loss: 7.1881 - acc: 0.5540
+ 7/18 [==========>...................] - ETA: 3:32 - loss: 7.1776 - acc: 0.5547
+ 8/18 [============>.................] - ETA: 3:12 - loss: 7.1225 - acc: 0.5581
+ 9/18 [==============>...............] - ETA: 2:51 - loss: 7.1286 - acc: 0.5577
+10/18 [===============>..............] - ETA: 2:25 - loss: 7.1588 - acc: 0.5559
+11/18 [=================>............] - ETA: 2:05 - loss: 7.0517 - acc: 0.5625
+12/18 [===================>..........] - ETA: 1:47 - loss: 7.0832 - acc: 0.5605
+13/18 [====================>.........] - ETA: 1:29 - loss: 7.0517 - acc: 0.5625
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.0967 - acc: 0.5597
+15/18 [========================>.....] - ETA: 53s - loss: 7.1483 - acc: 0.5565 
+16/18 [=========================>....] - ETA: 35s - loss: 7.1934 - acc: 0.5537
+17/18 [===========================>..] - ETA: 17s - loss: 7.2184 - acc: 0.5522
+18/18 [==============================] - 353s 20s/step - loss: 7.2053 - acc: 0.5530 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 40/100
+
+ 1/18 [>.............................] - ETA: 5:50 - loss: 7.1776 - acc: 0.5547
+ 2/18 [==>...........................] - ETA: 5:27 - loss: 7.3980 - acc: 0.5410
+ 3/18 [====>.........................] - ETA: 5:07 - loss: 7.0307 - acc: 0.5638
+ 4/18 [=====>........................] - ETA: 4:43 - loss: 7.1461 - acc: 0.5566
+ 5/18 [=======>......................] - ETA: 4:22 - loss: 7.1902 - acc: 0.5539
+ 6/18 [=========>....................] - ETA: 4:05 - loss: 7.2406 - acc: 0.5508
+ 7/18 [==========>...................] - ETA: 3:45 - loss: 7.2046 - acc: 0.5530
+ 8/18 [============>.................] - ETA: 3:24 - loss: 7.1382 - acc: 0.5571
+ 9/18 [==============>...............] - ETA: 3:03 - loss: 7.2056 - acc: 0.5530
+10/18 [===============>..............] - ETA: 2:43 - loss: 7.1587 - acc: 0.5559
+11/18 [=================>............] - ETA: 2:20 - loss: 7.1547 - acc: 0.5561
+12/18 [===================>..........] - ETA: 1:59 - loss: 7.1566 - acc: 0.5560
+13/18 [====================>.........] - ETA: 1:42 - loss: 7.1631 - acc: 0.5556
+14/18 [======================>.......] - ETA: 1:21 - loss: 7.1686 - acc: 0.5552
+15/18 [========================>.....] - ETA: 1:00 - loss: 7.2196 - acc: 0.5521
+16/18 [=========================>....] - ETA: 39s - loss: 7.2760 - acc: 0.5486 
+17/18 [===========================>..] - ETA: 20s - loss: 7.2406 - acc: 0.5508
+18/18 [==============================] - 396s 22s/step - loss: 7.2266 - acc: 0.5516 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 41/100
+
+ 1/18 [>.............................] - ETA: 4:36 - loss: 6.6109 - acc: 0.5898
+ 2/18 [==>...........................] - ETA: 3:45 - loss: 6.9635 - acc: 0.5680
+ 3/18 [====>.........................] - ETA: 3:59 - loss: 7.2447 - acc: 0.5505
+ 4/18 [=====>........................] - ETA: 3:56 - loss: 7.1020 - acc: 0.5594
+ 5/18 [=======>......................] - ETA: 3:46 - loss: 7.1549 - acc: 0.5561
+ 6/18 [=========>....................] - ETA: 3:33 - loss: 7.1797 - acc: 0.5546
+ 7/18 [==========>...................] - ETA: 3:07 - loss: 7.1502 - acc: 0.5564
+ 8/18 [============>.................] - ETA: 2:54 - loss: 7.1536 - acc: 0.5562
+ 9/18 [==============>...............] - ETA: 2:38 - loss: 7.1563 - acc: 0.5560
+10/18 [===============>..............] - ETA: 2:23 - loss: 7.1395 - acc: 0.5571
+11/18 [=================>............] - ETA: 2:05 - loss: 7.0743 - acc: 0.5611
+12/18 [===================>..........] - ETA: 1:50 - loss: 7.1196 - acc: 0.5583
+13/18 [====================>.........] - ETA: 1:31 - loss: 7.1047 - acc: 0.5592
+14/18 [======================>.......] - ETA: 1:12 - loss: 7.1639 - acc: 0.5555
+15/18 [========================>.....] - ETA: 54s - loss: 7.1270 - acc: 0.5578 
+16/18 [=========================>....] - ETA: 36s - loss: 7.2010 - acc: 0.5532
+17/18 [===========================>..] - ETA: 18s - loss: 7.1663 - acc: 0.5554
+18/18 [==============================] - 365s 20s/step - loss: 7.1775 - acc: 0.5547 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 42/100
+
+ 1/18 [>.............................] - ETA: 4:52 - loss: 7.8702 - acc: 0.5117
+ 2/18 [==>...........................] - ETA: 4:28 - loss: 7.2091 - acc: 0.5527
+ 3/18 [====>.........................] - ETA: 4:27 - loss: 7.1356 - acc: 0.5573
+ 4/18 [=====>........................] - ETA: 4:17 - loss: 7.0989 - acc: 0.5596
+ 5/18 [=======>......................] - ETA: 3:41 - loss: 7.2795 - acc: 0.5484
+ 6/18 [=========>....................] - ETA: 3:30 - loss: 7.2625 - acc: 0.5494
+ 7/18 [==========>...................] - ETA: 3:16 - loss: 7.2054 - acc: 0.5530
+ 8/18 [============>.................] - ETA: 3:01 - loss: 7.1154 - acc: 0.5585
+ 9/18 [==============>...............] - ETA: 2:48 - loss: 7.2132 - acc: 0.5525
+10/18 [===============>..............] - ETA: 2:30 - loss: 7.1908 - acc: 0.5539
+11/18 [=================>............] - ETA: 2:12 - loss: 7.0923 - acc: 0.5600
+12/18 [===================>..........] - ETA: 1:54 - loss: 7.1518 - acc: 0.5563
+13/18 [====================>.........] - ETA: 1:34 - loss: 7.1877 - acc: 0.5541
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.1555 - acc: 0.5561
+15/18 [========================>.....] - ETA: 56s - loss: 7.1318 - acc: 0.5575 
+16/18 [=========================>....] - ETA: 37s - loss: 7.1543 - acc: 0.5561
+17/18 [===========================>..] - ETA: 18s - loss: 7.1594 - acc: 0.5558
+18/18 [==============================] - 372s 21s/step - loss: 7.2153 - acc: 0.5523 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 43/100
+
+ 1/18 [>.............................] - ETA: 4:28 - loss: 7.6183 - acc: 0.5273
+ 2/18 [==>...........................] - ETA: 4:24 - loss: 6.9887 - acc: 0.5664
+ 3/18 [====>.........................] - ETA: 4:08 - loss: 7.0517 - acc: 0.5625
+ 4/18 [=====>........................] - ETA: 4:03 - loss: 7.1619 - acc: 0.5557
+ 5/18 [=======>......................] - ETA: 3:52 - loss: 7.1776 - acc: 0.5547
+ 6/18 [=========>....................] - ETA: 3:37 - loss: 7.2930 - acc: 0.5475
+ 7/18 [==========>...................] - ETA: 3:22 - loss: 7.1686 - acc: 0.5552
+ 8/18 [============>.................] - ETA: 3:06 - loss: 7.2327 - acc: 0.5513
+ 9/18 [==============>...............] - ETA: 2:49 - loss: 7.2126 - acc: 0.5525
+10/18 [===============>..............] - ETA: 2:30 - loss: 7.1839 - acc: 0.5543
+11/18 [=================>............] - ETA: 2:11 - loss: 7.1490 - acc: 0.5565
+12/18 [===================>..........] - ETA: 1:53 - loss: 7.1566 - acc: 0.5560
+13/18 [====================>.........] - ETA: 1:35 - loss: 7.1437 - acc: 0.5568
+14/18 [======================>.......] - ETA: 1:16 - loss: 7.1371 - acc: 0.5572
+15/18 [========================>.....] - ETA: 56s - loss: 7.1272 - acc: 0.5578 
+16/18 [=========================>....] - ETA: 37s - loss: 7.0989 - acc: 0.5596
+17/18 [===========================>..] - ETA: 18s - loss: 7.0665 - acc: 0.5616
+18/18 [==============================] - 367s 20s/step - loss: 7.0676 - acc: 0.5615 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 44/100
+
+ 1/18 [>.............................] - ETA: 5:06 - loss: 8.1220 - acc: 0.4961
+ 2/18 [==>...........................] - ETA: 4:48 - loss: 7.7757 - acc: 0.5176
+ 3/18 [====>.........................] - ETA: 4:20 - loss: 7.7652 - acc: 0.5182
+ 4/18 [=====>........................] - ETA: 3:58 - loss: 7.5711 - acc: 0.5303
+ 5/18 [=======>......................] - ETA: 3:51 - loss: 7.6309 - acc: 0.5266
+ 6/18 [=========>....................] - ETA: 3:38 - loss: 7.5239 - acc: 0.5332
+ 7/18 [==========>...................] - ETA: 3:22 - loss: 7.5644 - acc: 0.5307
+ 8/18 [============>.................] - ETA: 3:06 - loss: 7.5396 - acc: 0.5322
+ 9/18 [==============>...............] - ETA: 2:48 - loss: 7.4504 - acc: 0.5378
+10/18 [===============>..............] - ETA: 2:31 - loss: 7.2972 - acc: 0.5473
+11/18 [=================>............] - ETA: 2:13 - loss: 7.2921 - acc: 0.5476
+12/18 [===================>..........] - ETA: 1:55 - loss: 7.2510 - acc: 0.5501
+13/18 [====================>.........] - ETA: 1:36 - loss: 7.2163 - acc: 0.5523
+14/18 [======================>.......] - ETA: 1:17 - loss: 7.2585 - acc: 0.5497
+15/18 [========================>.....] - ETA: 57s - loss: 7.2489 - acc: 0.5503 
+16/18 [=========================>....] - ETA: 37s - loss: 7.2760 - acc: 0.5486
+17/18 [===========================>..] - ETA: 18s - loss: 7.2183 - acc: 0.5522
+18/18 [==============================] - 372s 21s/step - loss: 7.2301 - acc: 0.5514 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 45/100
+
+ 1/18 [>.............................] - ETA: 5:15 - loss: 7.3035 - acc: 0.5469
+ 2/18 [==>...........................] - ETA: 4:47 - loss: 7.3665 - acc: 0.5430
+ 3/18 [====>.........................] - ETA: 3:46 - loss: 7.1591 - acc: 0.5558
+ 4/18 [=====>........................] - ETA: 3:37 - loss: 7.1165 - acc: 0.5585
+ 5/18 [=======>......................] - ETA: 3:27 - loss: 7.3302 - acc: 0.5452
+ 6/18 [=========>....................] - ETA: 3:19 - loss: 7.4307 - acc: 0.5390
+ 7/18 [==========>...................] - ETA: 3:08 - loss: 7.2506 - acc: 0.5502
+ 8/18 [============>.................] - ETA: 2:54 - loss: 7.2887 - acc: 0.5478
+ 9/18 [==============>...............] - ETA: 2:39 - loss: 7.2204 - acc: 0.5520
+10/18 [===============>..............] - ETA: 2:23 - loss: 7.1846 - acc: 0.5542
+11/18 [=================>............] - ETA: 2:06 - loss: 7.2126 - acc: 0.5525
+12/18 [===================>..........] - ETA: 1:49 - loss: 7.2674 - acc: 0.5491
+13/18 [====================>.........] - ETA: 1:31 - loss: 7.2218 - acc: 0.5519
+14/18 [======================>.......] - ETA: 1:13 - loss: 7.2636 - acc: 0.5494
+15/18 [========================>.....] - ETA: 55s - loss: 7.2914 - acc: 0.5476 
+16/18 [=========================>....] - ETA: 37s - loss: 7.3001 - acc: 0.5471
+17/18 [===========================>..] - ETA: 18s - loss: 7.3225 - acc: 0.5457
+18/18 [==============================] - 370s 21s/step - loss: 7.3362 - acc: 0.5448 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 46/100
+
+ 1/18 [>.............................] - ETA: 4:33 - loss: 6.7369 - acc: 0.5820
+ 2/18 [==>...........................] - ETA: 4:23 - loss: 6.8628 - acc: 0.5742
+ 3/18 [====>.........................] - ETA: 4:06 - loss: 6.9257 - acc: 0.5703
+ 4/18 [=====>........................] - ETA: 3:55 - loss: 7.0517 - acc: 0.5625
+ 5/18 [=======>......................] - ETA: 3:36 - loss: 7.0013 - acc: 0.5656
+ 6/18 [=========>....................] - ETA: 3:18 - loss: 6.9677 - acc: 0.5677
+ 7/18 [==========>...................] - ETA: 3:03 - loss: 7.0828 - acc: 0.5606
+ 8/18 [============>.................] - ETA: 2:40 - loss: 7.0834 - acc: 0.5605
+ 9/18 [==============>...............] - ETA: 2:27 - loss: 7.0868 - acc: 0.5603
+10/18 [===============>..............] - ETA: 2:14 - loss: 7.0393 - acc: 0.5633
+11/18 [=================>............] - ETA: 1:59 - loss: 6.9889 - acc: 0.5664
+12/18 [===================>..........] - ETA: 1:43 - loss: 7.0676 - acc: 0.5615
+13/18 [====================>.........] - ETA: 1:27 - loss: 7.0227 - acc: 0.5643
+14/18 [======================>.......] - ETA: 1:11 - loss: 7.0833 - acc: 0.5605
+15/18 [========================>.....] - ETA: 53s - loss: 7.0770 - acc: 0.5609 
+16/18 [=========================>....] - ETA: 36s - loss: 7.0990 - acc: 0.5596
+17/18 [===========================>..] - ETA: 18s - loss: 7.1258 - acc: 0.5579
+18/18 [==============================] - 366s 20s/step - loss: 7.1454 - acc: 0.5567 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 47/100
+
+ 1/18 [>.............................] - ETA: 4:34 - loss: 8.1850 - acc: 0.4922
+ 2/18 [==>...........................] - ETA: 4:24 - loss: 7.9331 - acc: 0.5078
+ 3/18 [====>.........................] - ETA: 4:09 - loss: 7.6603 - acc: 0.5247
+ 4/18 [=====>........................] - ETA: 3:56 - loss: 7.4609 - acc: 0.5371
+ 5/18 [=======>......................] - ETA: 3:39 - loss: 7.5428 - acc: 0.5320
+ 6/18 [=========>....................] - ETA: 3:23 - loss: 7.3035 - acc: 0.5469
+ 7/18 [==========>...................] - ETA: 3:05 - loss: 7.3215 - acc: 0.5458
+ 8/18 [============>.................] - ETA: 2:52 - loss: 7.2091 - acc: 0.5527
+ 9/18 [==============>...............] - ETA: 2:37 - loss: 7.2755 - acc: 0.5486
+10/18 [===============>..............] - ETA: 2:22 - loss: 7.1902 - acc: 0.5539
+11/18 [=================>............] - ETA: 2:05 - loss: 7.2177 - acc: 0.5522
+12/18 [===================>..........] - ETA: 1:48 - loss: 7.2353 - acc: 0.5511
+13/18 [====================>.........] - ETA: 1:30 - loss: 7.2309 - acc: 0.5514
+14/18 [======================>.......] - ETA: 1:13 - loss: 7.1866 - acc: 0.5541
+15/18 [========================>.....] - ETA: 55s - loss: 7.2489 - acc: 0.5503 
+16/18 [=========================>....] - ETA: 37s - loss: 7.2406 - acc: 0.5508
+17/18 [===========================>..] - ETA: 18s - loss: 7.2220 - acc: 0.5519
+18/18 [==============================] - 374s 21s/step - loss: 7.1916 - acc: 0.5538 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 48/100
+
+ 1/18 [>.............................] - ETA: 2:31 - loss: 7.8876 - acc: 0.5106
+ 2/18 [==>...........................] - ETA: 3:22 - loss: 7.2178 - acc: 0.5522
+ 3/18 [====>.........................] - ETA: 3:37 - loss: 7.4143 - acc: 0.5400
+ 4/18 [=====>........................] - ETA: 3:37 - loss: 7.1190 - acc: 0.5583
+ 5/18 [=======>......................] - ETA: 3:27 - loss: 7.2189 - acc: 0.5521
+ 6/18 [=========>....................] - ETA: 3:11 - loss: 7.1910 - acc: 0.5539
+ 7/18 [==========>...................] - ETA: 2:55 - loss: 7.2251 - acc: 0.5517
+ 8/18 [============>.................] - ETA: 2:56 - loss: 7.2270 - acc: 0.5516
+ 9/18 [==============>...............] - ETA: 2:42 - loss: 7.2565 - acc: 0.5498
+10/18 [===============>..............] - ETA: 2:25 - loss: 7.2234 - acc: 0.5518
+11/18 [=================>............] - ETA: 2:08 - loss: 7.2593 - acc: 0.5496
+12/18 [===================>..........] - ETA: 1:51 - loss: 7.2892 - acc: 0.5478
+13/18 [====================>.........] - ETA: 1:33 - loss: 7.2903 - acc: 0.5477
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.2463 - acc: 0.5504
+15/18 [========================>.....] - ETA: 56s - loss: 7.2249 - acc: 0.5518 
+16/18 [=========================>....] - ETA: 37s - loss: 7.2338 - acc: 0.5512
+17/18 [===========================>..] - ETA: 19s - loss: 7.2416 - acc: 0.5507
+18/18 [==============================] - 380s 21s/step - loss: 7.2687 - acc: 0.5490 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 49/100
+
+ 1/18 [>.............................] - ETA: 4:39 - loss: 7.6183 - acc: 0.5273
+ 2/18 [==>...........................] - ETA: 4:24 - loss: 7.6498 - acc: 0.5254
+ 3/18 [====>.........................] - ETA: 4:07 - loss: 7.2825 - acc: 0.5482
+ 4/18 [=====>........................] - ETA: 3:52 - loss: 7.2091 - acc: 0.5527
+ 5/18 [=======>......................] - ETA: 3:38 - loss: 7.1020 - acc: 0.5594
+ 6/18 [=========>....................] - ETA: 3:23 - loss: 7.1146 - acc: 0.5586
+ 7/18 [==========>...................] - ETA: 3:17 - loss: 7.0966 - acc: 0.5597
+ 8/18 [============>.................] - ETA: 2:58 - loss: 7.0438 - acc: 0.5630
+ 9/18 [==============>...............] - ETA: 2:33 - loss: 7.1884 - acc: 0.5540
+10/18 [===============>..............] - ETA: 2:18 - loss: 7.1747 - acc: 0.5549
+11/18 [=================>............] - ETA: 2:01 - loss: 7.2551 - acc: 0.5499
+12/18 [===================>..........] - ETA: 1:45 - loss: 7.3011 - acc: 0.5470
+13/18 [====================>.........] - ETA: 1:25 - loss: 7.3902 - acc: 0.5415
+14/18 [======================>.......] - ETA: 1:09 - loss: 7.3660 - acc: 0.5430
+15/18 [========================>.....] - ETA: 52s - loss: 7.3031 - acc: 0.5469 
+16/18 [=========================>....] - ETA: 35s - loss: 7.3267 - acc: 0.5454
+17/18 [===========================>..] - ETA: 17s - loss: 7.3142 - acc: 0.5462
+18/18 [==============================] - 369s 20s/step - loss: 7.3176 - acc: 0.5460 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 50/100
+
+ 1/18 [>.............................] - ETA: 5:01 - loss: 6.4850 - acc: 0.5977
+ 2/18 [==>...........................] - ETA: 4:26 - loss: 6.6109 - acc: 0.5898
+ 3/18 [====>.........................] - ETA: 4:14 - loss: 6.6739 - acc: 0.5859
+ 4/18 [=====>........................] - ETA: 3:54 - loss: 7.0989 - acc: 0.5596
+ 5/18 [=======>......................] - ETA: 3:34 - loss: 7.1146 - acc: 0.5586
+ 6/18 [=========>....................] - ETA: 3:19 - loss: 7.0517 - acc: 0.5625
+ 7/18 [==========>...................] - ETA: 3:08 - loss: 7.1326 - acc: 0.5575
+ 8/18 [============>.................] - ETA: 2:52 - loss: 7.1461 - acc: 0.5566
+ 9/18 [==============>...............] - ETA: 2:40 - loss: 7.0727 - acc: 0.5612
+10/18 [===============>..............] - ETA: 2:21 - loss: 7.1209 - acc: 0.5582
+11/18 [=================>............] - ETA: 2:05 - loss: 7.0288 - acc: 0.5639
+12/18 [===================>..........] - ETA: 1:48 - loss: 7.0097 - acc: 0.5651
+13/18 [====================>.........] - ETA: 1:28 - loss: 6.9981 - acc: 0.5658
+14/18 [======================>.......] - ETA: 1:11 - loss: 6.9704 - acc: 0.5675
+15/18 [========================>.....] - ETA: 53s - loss: 7.0052 - acc: 0.5654 
+16/18 [=========================>....] - ETA: 36s - loss: 7.0199 - acc: 0.5645
+17/18 [===========================>..] - ETA: 18s - loss: 7.0181 - acc: 0.5646
+18/18 [==============================] - 374s 21s/step - loss: 7.0167 - acc: 0.5647 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 51/100
+
+ 1/18 [>.............................] - ETA: 5:18 - loss: 7.5554 - acc: 0.5312
+ 2/18 [==>...........................] - ETA: 4:35 - loss: 7.5554 - acc: 0.5312
+ 3/18 [====>.........................] - ETA: 4:14 - loss: 7.4504 - acc: 0.5378
+ 4/18 [=====>........................] - ETA: 3:56 - loss: 7.2720 - acc: 0.5488
+ 5/18 [=======>......................] - ETA: 3:39 - loss: 7.3413 - acc: 0.5445
+ 6/18 [=========>....................] - ETA: 3:24 - loss: 7.2720 - acc: 0.5488
+ 7/18 [==========>...................] - ETA: 3:06 - loss: 7.3215 - acc: 0.5458
+ 8/18 [============>.................] - ETA: 2:51 - loss: 7.2956 - acc: 0.5474
+ 9/18 [==============>...............] - ETA: 2:34 - loss: 7.2895 - acc: 0.5477
+10/18 [===============>..............] - ETA: 2:15 - loss: 7.2720 - acc: 0.5488
+11/18 [=================>............] - ETA: 1:58 - loss: 7.2863 - acc: 0.5479
+12/18 [===================>..........] - ETA: 1:43 - loss: 7.3035 - acc: 0.5469
+13/18 [====================>.........] - ETA: 1:26 - loss: 7.2793 - acc: 0.5484
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.3170 - acc: 0.5460
+15/18 [========================>.....] - ETA: 52s - loss: 7.2699 - acc: 0.5490 
+16/18 [=========================>....] - ETA: 35s - loss: 7.2287 - acc: 0.5515
+17/18 [===========================>..] - ETA: 17s - loss: 7.2517 - acc: 0.5501
+18/18 [==============================] - 369s 21s/step - loss: 7.2231 - acc: 0.5519 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 52/100
+
+ 1/18 [>.............................] - ETA: 5:21 - loss: 7.3665 - acc: 0.5430
+ 2/18 [==>...........................] - ETA: 4:09 - loss: 7.0555 - acc: 0.5623
+ 3/18 [====>.........................] - ETA: 4:02 - loss: 7.0752 - acc: 0.5610
+ 4/18 [=====>........................] - ETA: 3:53 - loss: 7.1008 - acc: 0.5595
+ 5/18 [=======>......................] - ETA: 3:42 - loss: 7.1791 - acc: 0.5546
+ 6/18 [=========>....................] - ETA: 3:27 - loss: 7.1054 - acc: 0.5592
+ 7/18 [==========>...................] - ETA: 3:10 - loss: 7.2326 - acc: 0.5513
+ 8/18 [============>.................] - ETA: 2:52 - loss: 7.3202 - acc: 0.5458
+ 9/18 [==============>...............] - ETA: 2:33 - loss: 7.2834 - acc: 0.5481
+10/18 [===============>..............] - ETA: 2:16 - loss: 7.2728 - acc: 0.5488
+11/18 [=================>............] - ETA: 1:58 - loss: 7.2470 - acc: 0.5504
+12/18 [===================>..........] - ETA: 1:41 - loss: 7.1992 - acc: 0.5533
+13/18 [====================>.........] - ETA: 1:25 - loss: 7.2460 - acc: 0.5504
+14/18 [======================>.......] - ETA: 1:09 - loss: 7.2771 - acc: 0.5485
+15/18 [========================>.....] - ETA: 52s - loss: 7.2201 - acc: 0.5521 
+16/18 [=========================>....] - ETA: 35s - loss: 7.1545 - acc: 0.5561
+17/18 [===========================>..] - ETA: 17s - loss: 7.1632 - acc: 0.5556
+18/18 [==============================] - 368s 20s/step - loss: 7.1786 - acc: 0.5546 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 53/100
+
+ 1/18 [>.............................] - ETA: 5:30 - loss: 7.1146 - acc: 0.5586
+ 2/18 [==>...........................] - ETA: 5:10 - loss: 7.5239 - acc: 0.5332
+ 3/18 [====>.........................] - ETA: 4:42 - loss: 7.2196 - acc: 0.5521
+ 4/18 [=====>........................] - ETA: 3:51 - loss: 7.0151 - acc: 0.5648
+ 5/18 [=======>......................] - ETA: 3:34 - loss: 7.1105 - acc: 0.5588
+ 6/18 [=========>....................] - ETA: 3:17 - loss: 7.1427 - acc: 0.5569
+ 7/18 [==========>...................] - ETA: 3:02 - loss: 7.1926 - acc: 0.5538
+ 8/18 [============>.................] - ETA: 2:46 - loss: 7.2616 - acc: 0.5495
+ 9/18 [==============>...............] - ETA: 2:30 - loss: 7.2872 - acc: 0.5479
+10/18 [===============>..............] - ETA: 2:14 - loss: 7.2700 - acc: 0.5490
+11/18 [=================>............] - ETA: 1:57 - loss: 7.2673 - acc: 0.5491
+12/18 [===================>..........] - ETA: 1:41 - loss: 7.2598 - acc: 0.5496
+13/18 [====================>.........] - ETA: 1:24 - loss: 7.2390 - acc: 0.5509
+14/18 [======================>.......] - ETA: 1:08 - loss: 7.2436 - acc: 0.5506
+15/18 [========================>.....] - ETA: 51s - loss: 7.2140 - acc: 0.5524 
+16/18 [=========================>....] - ETA: 34s - loss: 7.2629 - acc: 0.5494
+17/18 [===========================>..] - ETA: 17s - loss: 7.2579 - acc: 0.5497
+18/18 [==============================] - 367s 20s/step - loss: 7.2791 - acc: 0.5484 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 54/100
+
+ 1/18 [>.............................] - ETA: 5:10 - loss: 6.4221 - acc: 0.6016
+ 2/18 [==>...........................] - ETA: 5:12 - loss: 6.9887 - acc: 0.5664
+ 3/18 [====>.........................] - ETA: 4:11 - loss: 7.0216 - acc: 0.5644
+ 4/18 [=====>........................] - ETA: 4:03 - loss: 7.0606 - acc: 0.5619
+ 5/18 [=======>......................] - ETA: 3:43 - loss: 7.1092 - acc: 0.5589
+ 6/18 [=========>....................] - ETA: 3:26 - loss: 7.1101 - acc: 0.5589
+ 7/18 [==========>...................] - ETA: 3:09 - loss: 7.1107 - acc: 0.5588
+ 8/18 [============>.................] - ETA: 2:51 - loss: 7.0797 - acc: 0.5608
+ 9/18 [==============>...............] - ETA: 2:34 - loss: 7.1606 - acc: 0.5557
+10/18 [===============>..............] - ETA: 2:16 - loss: 7.1938 - acc: 0.5537
+11/18 [=================>............] - ETA: 1:58 - loss: 7.1350 - acc: 0.5573
+12/18 [===================>..........] - ETA: 1:41 - loss: 7.1543 - acc: 0.5561
+13/18 [====================>.........] - ETA: 1:24 - loss: 7.1464 - acc: 0.5566
+14/18 [======================>.......] - ETA: 1:07 - loss: 7.1667 - acc: 0.5554
+15/18 [========================>.....] - ETA: 50s - loss: 7.1422 - acc: 0.5569 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1720 - acc: 0.5550
+17/18 [===========================>..] - ETA: 17s - loss: 7.1575 - acc: 0.5559
+18/18 [==============================] - 362s 20s/step - loss: 7.1517 - acc: 0.5563 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 55/100
+
+ 1/18 [>.............................] - ETA: 5:30 - loss: 7.1776 - acc: 0.5547
+ 2/18 [==>...........................] - ETA: 5:05 - loss: 7.4924 - acc: 0.5352
+ 3/18 [====>.........................] - ETA: 4:43 - loss: 7.3455 - acc: 0.5443
+ 4/18 [=====>........................] - ETA: 4:25 - loss: 7.3980 - acc: 0.5410
+ 5/18 [=======>......................] - ETA: 3:46 - loss: 7.3130 - acc: 0.5463
+ 6/18 [=========>....................] - ETA: 3:30 - loss: 7.3009 - acc: 0.5470
+ 7/18 [==========>...................] - ETA: 3:10 - loss: 7.3822 - acc: 0.5420
+ 8/18 [============>.................] - ETA: 2:51 - loss: 7.2622 - acc: 0.5494
+ 9/18 [==============>...............] - ETA: 2:35 - loss: 7.2668 - acc: 0.5492
+10/18 [===============>..............] - ETA: 2:16 - loss: 7.2705 - acc: 0.5489
+11/18 [=================>............] - ETA: 1:59 - loss: 7.2506 - acc: 0.5502
+12/18 [===================>..........] - ETA: 1:42 - loss: 7.2445 - acc: 0.5505
+13/18 [====================>.........] - ETA: 1:25 - loss: 7.2442 - acc: 0.5506
+14/18 [======================>.......] - ETA: 1:08 - loss: 7.2394 - acc: 0.5509
+15/18 [========================>.....] - ETA: 51s - loss: 7.2353 - acc: 0.5511 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1924 - acc: 0.5538
+17/18 [===========================>..] - ETA: 17s - loss: 7.1878 - acc: 0.5541
+18/18 [==============================] - 368s 20s/step - loss: 7.1910 - acc: 0.5539 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 56/100
+
+ 1/18 [>.............................] - ETA: 5:18 - loss: 7.3665 - acc: 0.5430
+ 2/18 [==>...........................] - ETA: 5:01 - loss: 7.0517 - acc: 0.5625
+ 3/18 [====>.........................] - ETA: 4:40 - loss: 7.2825 - acc: 0.5482
+ 4/18 [=====>........................] - ETA: 4:20 - loss: 7.0674 - acc: 0.5615
+ 5/18 [=======>......................] - ETA: 4:02 - loss: 6.9383 - acc: 0.5695
+ 6/18 [=========>....................] - ETA: 3:46 - loss: 6.9257 - acc: 0.5703
+ 7/18 [==========>...................] - ETA: 3:28 - loss: 6.9437 - acc: 0.5692
+ 8/18 [============>.................] - ETA: 3:05 - loss: 7.0595 - acc: 0.5620
+ 9/18 [==============>...............] - ETA: 2:45 - loss: 7.0377 - acc: 0.5634
+10/18 [===============>..............] - ETA: 2:26 - loss: 7.1209 - acc: 0.5582
+11/18 [=================>............] - ETA: 2:07 - loss: 7.1146 - acc: 0.5586
+12/18 [===================>..........] - ETA: 1:45 - loss: 7.1219 - acc: 0.5581
+13/18 [====================>.........] - ETA: 1:27 - loss: 7.0971 - acc: 0.5597
+14/18 [======================>.......] - ETA: 1:09 - loss: 7.1658 - acc: 0.5554
+15/18 [========================>.....] - ETA: 52s - loss: 7.2212 - acc: 0.5520 
+16/18 [=========================>....] - ETA: 34s - loss: 7.2145 - acc: 0.5524
+17/18 [===========================>..] - ETA: 17s - loss: 7.2012 - acc: 0.5532
+18/18 [==============================] - 368s 20s/step - loss: 7.1754 - acc: 0.5548 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 57/100
+
+ 1/18 [>.............................] - ETA: 5:45 - loss: 7.9961 - acc: 0.5039
+ 2/18 [==>...........................] - ETA: 5:10 - loss: 7.7442 - acc: 0.5195
+ 3/18 [====>.........................] - ETA: 4:52 - loss: 7.3875 - acc: 0.5417
+ 4/18 [=====>........................] - ETA: 4:29 - loss: 7.4137 - acc: 0.5400
+ 5/18 [=======>......................] - ETA: 4:08 - loss: 7.5176 - acc: 0.5336
+ 6/18 [=========>....................] - ETA: 3:46 - loss: 7.4294 - acc: 0.5391
+ 7/18 [==========>...................] - ETA: 3:31 - loss: 7.3035 - acc: 0.5469
+ 8/18 [============>.................] - ETA: 3:08 - loss: 7.3665 - acc: 0.5430
+ 9/18 [==============>...............] - ETA: 2:48 - loss: 7.3455 - acc: 0.5443
+10/18 [===============>..............] - ETA: 2:27 - loss: 7.4105 - acc: 0.5402
+11/18 [=================>............] - ETA: 2:08 - loss: 7.4695 - acc: 0.5366
+12/18 [===================>..........] - ETA: 1:50 - loss: 7.4662 - acc: 0.5368
+13/18 [====================>.........] - ETA: 1:29 - loss: 7.4634 - acc: 0.5370
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.3620 - acc: 0.5432
+15/18 [========================>.....] - ETA: 53s - loss: 7.2616 - acc: 0.5495 
+16/18 [=========================>....] - ETA: 35s - loss: 7.2406 - acc: 0.5508
+17/18 [===========================>..] - ETA: 17s - loss: 7.2480 - acc: 0.5503
+18/18 [==============================] - 372s 21s/step - loss: 7.2298 - acc: 0.5514 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 58/100
+
+ 1/18 [>.............................] - ETA: 5:45 - loss: 6.7369 - acc: 0.5820
+ 2/18 [==>...........................] - ETA: 5:25 - loss: 7.0517 - acc: 0.5625
+ 3/18 [====>.........................] - ETA: 5:00 - loss: 7.0307 - acc: 0.5638
+ 4/18 [=====>........................] - ETA: 4:36 - loss: 7.1776 - acc: 0.5547
+ 5/18 [=======>......................] - ETA: 4:14 - loss: 7.2028 - acc: 0.5531
+ 6/18 [=========>....................] - ETA: 3:54 - loss: 7.2615 - acc: 0.5495
+ 7/18 [==========>...................] - ETA: 3:36 - loss: 7.1866 - acc: 0.5541
+ 8/18 [============>.................] - ETA: 3:17 - loss: 7.0595 - acc: 0.5620
+ 9/18 [==============>...............] - ETA: 2:47 - loss: 7.1134 - acc: 0.5587
+10/18 [===============>..............] - ETA: 2:28 - loss: 7.1891 - acc: 0.5540
+11/18 [=================>............] - ETA: 2:08 - loss: 7.1881 - acc: 0.5540
+12/18 [===================>..........] - ETA: 1:49 - loss: 7.1872 - acc: 0.5541
+13/18 [====================>.........] - ETA: 1:31 - loss: 7.2204 - acc: 0.5520
+14/18 [======================>.......] - ETA: 1:12 - loss: 7.1993 - acc: 0.5533
+15/18 [========================>.....] - ETA: 54s - loss: 7.1643 - acc: 0.5555 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1691 - acc: 0.5552
+17/18 [===========================>..] - ETA: 17s - loss: 7.2288 - acc: 0.5515
+18/18 [==============================] - 358s 20s/step - loss: 7.2255 - acc: 0.5517 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 59/100
+
+ 1/18 [>.............................] - ETA: 6:00 - loss: 6.8628 - acc: 0.5742
+ 2/18 [==>...........................] - ETA: 5:32 - loss: 7.2720 - acc: 0.5488
+ 3/18 [====>.........................] - ETA: 5:12 - loss: 7.4084 - acc: 0.5404
+ 4/18 [=====>........................] - ETA: 4:47 - loss: 7.3507 - acc: 0.5439
+ 5/18 [=======>......................] - ETA: 4:25 - loss: 7.4294 - acc: 0.5391
+ 6/18 [=========>....................] - ETA: 3:49 - loss: 7.5058 - acc: 0.5343
+ 7/18 [==========>...................] - ETA: 3:30 - loss: 7.5938 - acc: 0.5289
+ 8/18 [============>.................] - ETA: 3:11 - loss: 7.5339 - acc: 0.5326
+ 9/18 [==============>...............] - ETA: 2:53 - loss: 7.4803 - acc: 0.5359
+10/18 [===============>..............] - ETA: 2:34 - loss: 7.5067 - acc: 0.5343
+11/18 [=================>............] - ETA: 2:15 - loss: 7.5283 - acc: 0.5329
+12/18 [===================>..........] - ETA: 1:54 - loss: 7.4729 - acc: 0.5364
+13/18 [====================>.........] - ETA: 1:34 - loss: 7.4598 - acc: 0.5372
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.4262 - acc: 0.5393
+15/18 [========================>.....] - ETA: 56s - loss: 7.3718 - acc: 0.5426 
+16/18 [=========================>....] - ETA: 37s - loss: 7.3085 - acc: 0.5466
+17/18 [===========================>..] - ETA: 18s - loss: 7.2564 - acc: 0.5498
+18/18 [==============================] - 369s 20s/step - loss: 7.2617 - acc: 0.5495 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 60/100
+
+ 1/18 [>.............................] - ETA: 5:04 - loss: 6.4850 - acc: 0.5977
+ 2/18 [==>...........................] - ETA: 4:55 - loss: 6.6109 - acc: 0.5898
+ 3/18 [====>.........................] - ETA: 4:47 - loss: 6.7578 - acc: 0.5807
+ 4/18 [=====>........................] - ETA: 4:32 - loss: 7.0989 - acc: 0.5596
+ 5/18 [=======>......................] - ETA: 4:13 - loss: 7.1776 - acc: 0.5547
+ 6/18 [=========>....................] - ETA: 3:55 - loss: 7.0936 - acc: 0.5599
+ 7/18 [==========>...................] - ETA: 3:36 - loss: 7.1686 - acc: 0.5552
+ 8/18 [============>.................] - ETA: 3:17 - loss: 7.0123 - acc: 0.5649
+ 9/18 [==============>...............] - ETA: 2:57 - loss: 7.0027 - acc: 0.5655
+10/18 [===============>..............] - ETA: 2:37 - loss: 7.0328 - acc: 0.5637
+11/18 [=================>............] - ETA: 2:17 - loss: 7.0574 - acc: 0.5621
+12/18 [===================>..........] - ETA: 1:57 - loss: 7.0936 - acc: 0.5599
+13/18 [====================>.........] - ETA: 1:36 - loss: 7.1243 - acc: 0.5580
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.1011 - acc: 0.5594
+15/18 [========================>.....] - ETA: 56s - loss: 7.1440 - acc: 0.5568 
+16/18 [=========================>....] - ETA: 37s - loss: 7.1107 - acc: 0.5588
+17/18 [===========================>..] - ETA: 18s - loss: 7.0776 - acc: 0.5609
+18/18 [==============================] - 364s 20s/step - loss: 7.1154 - acc: 0.5585 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 61/100
+
+ 1/18 [>.............................] - ETA: 4:27 - loss: 8.3109 - acc: 0.4844
+ 2/18 [==>...........................] - ETA: 4:28 - loss: 7.4609 - acc: 0.5371
+ 3/18 [====>.........................] - ETA: 4:24 - loss: 7.3875 - acc: 0.5417
+ 4/18 [=====>........................] - ETA: 4:11 - loss: 7.1146 - acc: 0.5586
+ 5/18 [=======>......................] - ETA: 3:58 - loss: 7.1776 - acc: 0.5547
+ 6/18 [=========>....................] - ETA: 3:43 - loss: 7.2196 - acc: 0.5521
+ 7/18 [==========>...................] - ETA: 3:26 - loss: 7.3125 - acc: 0.5463
+ 8/18 [============>.................] - ETA: 3:08 - loss: 7.3271 - acc: 0.5454
+ 9/18 [==============>...............] - ETA: 2:50 - loss: 7.3385 - acc: 0.5447
+10/18 [===============>..............] - ETA: 2:33 - loss: 7.3539 - acc: 0.5437
+11/18 [=================>............] - ETA: 2:14 - loss: 7.3264 - acc: 0.5455
+12/18 [===================>..........] - ETA: 1:55 - loss: 7.3245 - acc: 0.5456
+13/18 [====================>.........] - ETA: 1:35 - loss: 7.2793 - acc: 0.5484
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.2810 - acc: 0.5483
+15/18 [========================>.....] - ETA: 56s - loss: 7.2741 - acc: 0.5487 
+16/18 [=========================>....] - ETA: 37s - loss: 7.2760 - acc: 0.5486
+17/18 [===========================>..] - ETA: 18s - loss: 7.2628 - acc: 0.5494
+18/18 [==============================] - 369s 20s/step - loss: 7.2440 - acc: 0.5506 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 62/100
+
+ 1/18 [>.............................] - ETA: 2:44 - loss: 6.1729 - acc: 0.6170
+ 2/18 [==>...........................] - ETA: 3:36 - loss: 6.6438 - acc: 0.5878
+ 3/18 [====>.........................] - ETA: 3:41 - loss: 6.8637 - acc: 0.5742
+ 4/18 [=====>........................] - ETA: 3:44 - loss: 7.0209 - acc: 0.5644
+ 5/18 [=======>......................] - ETA: 3:38 - loss: 6.9389 - acc: 0.5695
+ 6/18 [=========>....................] - ETA: 3:28 - loss: 7.0836 - acc: 0.5605
+ 7/18 [==========>...................] - ETA: 3:14 - loss: 7.2499 - acc: 0.5502
+ 8/18 [============>.................] - ETA: 2:50 - loss: 7.0439 - acc: 0.5630
+ 9/18 [==============>...............] - ETA: 2:36 - loss: 7.0097 - acc: 0.5651
+10/18 [===============>..............] - ETA: 2:23 - loss: 6.9384 - acc: 0.5695
+11/18 [=================>............] - ETA: 2:06 - loss: 6.9659 - acc: 0.5678
+12/18 [===================>..........] - ETA: 1:49 - loss: 7.0570 - acc: 0.5622
+13/18 [====================>.........] - ETA: 1:31 - loss: 7.0372 - acc: 0.5634
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.0337 - acc: 0.5636
+15/18 [========================>.....] - ETA: 55s - loss: 7.0517 - acc: 0.5625 
+16/18 [=========================>....] - ETA: 37s - loss: 7.0871 - acc: 0.5603
+17/18 [===========================>..] - ETA: 18s - loss: 7.0591 - acc: 0.5620
+18/18 [==============================] - 369s 20s/step - loss: 7.0830 - acc: 0.5606 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 63/100
+
+ 1/18 [>.............................] - ETA: 4:40 - loss: 7.3035 - acc: 0.5469
+ 2/18 [==>...........................] - ETA: 4:26 - loss: 7.3665 - acc: 0.5430
+ 3/18 [====>.........................] - ETA: 4:12 - loss: 7.2615 - acc: 0.5495
+ 4/18 [=====>........................] - ETA: 3:53 - loss: 7.1933 - acc: 0.5537
+ 5/18 [=======>......................] - ETA: 3:42 - loss: 7.3413 - acc: 0.5445
+ 6/18 [=========>....................] - ETA: 3:32 - loss: 7.4399 - acc: 0.5384
+ 7/18 [==========>...................] - ETA: 3:17 - loss: 7.3665 - acc: 0.5430
+ 8/18 [============>.................] - ETA: 3:01 - loss: 7.2956 - acc: 0.5474
+ 9/18 [==============>...............] - ETA: 2:44 - loss: 7.3525 - acc: 0.5438
+10/18 [===============>..............] - ETA: 2:27 - loss: 7.3602 - acc: 0.5434
+11/18 [=================>............] - ETA: 2:09 - loss: 7.3894 - acc: 0.5415
+12/18 [===================>..........] - ETA: 1:52 - loss: 7.3350 - acc: 0.5449
+13/18 [====================>.........] - ETA: 1:33 - loss: 7.3132 - acc: 0.5463
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.3215 - acc: 0.5458
+15/18 [========================>.....] - ETA: 54s - loss: 7.3821 - acc: 0.5420 
+16/18 [=========================>....] - ETA: 36s - loss: 7.3890 - acc: 0.5416
+17/18 [===========================>..] - ETA: 18s - loss: 7.4136 - acc: 0.5400
+18/18 [==============================] - 367s 20s/step - loss: 7.3643 - acc: 0.5431 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 64/100
+
+ 1/18 [>.............................] - ETA: 5:11 - loss: 7.0517 - acc: 0.5625
+ 2/18 [==>...........................] - ETA: 4:46 - loss: 7.0831 - acc: 0.5605
+ 3/18 [====>.........................] - ETA: 4:20 - loss: 7.1146 - acc: 0.5586
+ 4/18 [=====>........................] - ETA: 3:56 - loss: 6.8628 - acc: 0.5742
+ 5/18 [=======>......................] - ETA: 3:38 - loss: 6.8880 - acc: 0.5727
+ 6/18 [=========>....................] - ETA: 3:26 - loss: 6.8943 - acc: 0.5723
+ 7/18 [==========>...................] - ETA: 3:14 - loss: 6.9887 - acc: 0.5664
+ 8/18 [============>.................] - ETA: 2:58 - loss: 6.9730 - acc: 0.5674
+ 9/18 [==============>...............] - ETA: 2:41 - loss: 6.9048 - acc: 0.5716
+10/18 [===============>..............] - ETA: 2:25 - loss: 6.8628 - acc: 0.5742
+11/18 [=================>............] - ETA: 2:09 - loss: 6.9486 - acc: 0.5689
+12/18 [===================>..........] - ETA: 1:51 - loss: 7.0464 - acc: 0.5628
+13/18 [====================>.........] - ETA: 1:30 - loss: 7.1375 - acc: 0.5572
+14/18 [======================>.......] - ETA: 1:13 - loss: 7.1404 - acc: 0.5570
+15/18 [========================>.....] - ETA: 54s - loss: 7.1638 - acc: 0.5555 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1647 - acc: 0.5555
+17/18 [===========================>..] - ETA: 18s - loss: 7.2062 - acc: 0.5529
+18/18 [==============================] - 366s 20s/step - loss: 7.2102 - acc: 0.5527 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 65/100
+
+ 1/18 [>.............................] - ETA: 4:48 - loss: 7.5554 - acc: 0.5312
+ 2/18 [==>...........................] - ETA: 4:33 - loss: 7.1146 - acc: 0.5586
+ 3/18 [====>.........................] - ETA: 4:16 - loss: 7.0727 - acc: 0.5612
+ 4/18 [=====>........................] - ETA: 4:02 - loss: 7.0674 - acc: 0.5615
+ 5/18 [=======>......................] - ETA: 3:46 - loss: 7.0265 - acc: 0.5641
+ 6/18 [=========>....................] - ETA: 3:30 - loss: 7.0622 - acc: 0.5618
+ 7/18 [==========>...................] - ETA: 3:15 - loss: 6.9707 - acc: 0.5675
+ 8/18 [============>.................] - ETA: 3:01 - loss: 7.0359 - acc: 0.5635
+ 9/18 [==============>...............] - ETA: 2:44 - loss: 7.0727 - acc: 0.5612
+10/18 [===============>..............] - ETA: 2:27 - loss: 7.0643 - acc: 0.5617
+11/18 [=================>............] - ETA: 2:10 - loss: 7.0688 - acc: 0.5614
+12/18 [===================>..........] - ETA: 1:52 - loss: 7.0097 - acc: 0.5651
+13/18 [====================>.........] - ETA: 1:33 - loss: 7.0468 - acc: 0.5628
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.1011 - acc: 0.5594
+15/18 [========================>.....] - ETA: 56s - loss: 7.1482 - acc: 0.5565 
+16/18 [=========================>....] - ETA: 37s - loss: 7.1304 - acc: 0.5576
+17/18 [===========================>..] - ETA: 18s - loss: 7.1406 - acc: 0.5570
+18/18 [==============================] - 373s 21s/step - loss: 7.1706 - acc: 0.5551 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 66/100
+
+ 1/18 [>.............................] - ETA: 4:39 - loss: 6.7369 - acc: 0.5820
+ 2/18 [==>...........................] - ETA: 4:25 - loss: 6.6424 - acc: 0.5879
+ 3/18 [====>.........................] - ETA: 4:16 - loss: 6.8628 - acc: 0.5742
+ 4/18 [=====>........................] - ETA: 3:57 - loss: 6.8628 - acc: 0.5742
+ 5/18 [=======>......................] - ETA: 3:43 - loss: 6.8502 - acc: 0.5750
+ 6/18 [=========>....................] - ETA: 3:24 - loss: 7.0307 - acc: 0.5638
+ 7/18 [==========>...................] - ETA: 3:05 - loss: 7.0876 - acc: 0.5603
+ 8/18 [============>.................] - ETA: 2:42 - loss: 7.0305 - acc: 0.5638
+ 9/18 [==============>...............] - ETA: 2:29 - loss: 7.0888 - acc: 0.5602
+10/18 [===============>..............] - ETA: 2:15 - loss: 7.0977 - acc: 0.5596
+11/18 [=================>............] - ETA: 2:00 - loss: 7.0763 - acc: 0.5610
+12/18 [===================>..........] - ETA: 1:44 - loss: 7.0847 - acc: 0.5604
+13/18 [====================>.........] - ETA: 1:28 - loss: 7.0919 - acc: 0.5600
+14/18 [======================>.......] - ETA: 1:11 - loss: 7.0980 - acc: 0.5596
+15/18 [========================>.....] - ETA: 53s - loss: 7.0991 - acc: 0.5596 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1119 - acc: 0.5588
+17/18 [===========================>..] - ETA: 18s - loss: 7.1009 - acc: 0.5594
+18/18 [==============================] - 367s 20s/step - loss: 7.1269 - acc: 0.5578 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 67/100
+
+ 1/18 [>.............................] - ETA: 4:38 - loss: 7.8702 - acc: 0.5117
+ 2/18 [==>...........................] - ETA: 4:16 - loss: 7.8387 - acc: 0.5137
+ 3/18 [====>.........................] - ETA: 4:11 - loss: 7.4714 - acc: 0.5365
+ 4/18 [=====>........................] - ETA: 3:52 - loss: 7.3665 - acc: 0.5430
+ 5/18 [=======>......................] - ETA: 3:33 - loss: 7.2783 - acc: 0.5484
+ 6/18 [=========>....................] - ETA: 3:21 - loss: 7.2406 - acc: 0.5508
+ 7/18 [==========>...................] - ETA: 3:04 - loss: 7.2316 - acc: 0.5513
+ 8/18 [============>.................] - ETA: 2:39 - loss: 7.1850 - acc: 0.5542
+ 9/18 [==============>...............] - ETA: 2:27 - loss: 7.1771 - acc: 0.5547
+10/18 [===============>..............] - ETA: 2:14 - loss: 7.0702 - acc: 0.5614
+11/18 [=================>............] - ETA: 1:59 - loss: 7.0685 - acc: 0.5615
+12/18 [===================>..........] - ETA: 1:43 - loss: 7.0828 - acc: 0.5606
+13/18 [====================>.........] - ETA: 1:27 - loss: 7.0853 - acc: 0.5604
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.1593 - acc: 0.5558
+15/18 [========================>.....] - ETA: 53s - loss: 7.1941 - acc: 0.5537 
+16/18 [=========================>....] - ETA: 35s - loss: 7.1577 - acc: 0.5559
+17/18 [===========================>..] - ETA: 18s - loss: 7.1811 - acc: 0.5545
+18/18 [==============================] - 358s 20s/step - loss: 7.2013 - acc: 0.5532 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 68/100
+
+ 1/18 [>.............................] - ETA: 5:11 - loss: 7.0517 - acc: 0.5625
+ 2/18 [==>...........................] - ETA: 4:37 - loss: 7.5239 - acc: 0.5332
+ 3/18 [====>.........................] - ETA: 4:14 - loss: 7.3665 - acc: 0.5430
+ 4/18 [=====>........................] - ETA: 4:00 - loss: 7.2248 - acc: 0.5518
+ 5/18 [=======>......................] - ETA: 3:44 - loss: 7.1398 - acc: 0.5570
+ 6/18 [=========>....................] - ETA: 3:28 - loss: 7.0936 - acc: 0.5599
+ 7/18 [==========>...................] - ETA: 3:10 - loss: 7.1146 - acc: 0.5586
+ 8/18 [============>.................] - ETA: 2:51 - loss: 7.0989 - acc: 0.5596
+ 9/18 [==============>...............] - ETA: 2:35 - loss: 7.1006 - acc: 0.5595
+10/18 [===============>..............] - ETA: 2:20 - loss: 7.1902 - acc: 0.5539
+11/18 [=================>............] - ETA: 2:04 - loss: 7.2119 - acc: 0.5526
+12/18 [===================>..........] - ETA: 1:47 - loss: 7.1828 - acc: 0.5544
+13/18 [====================>.........] - ETA: 1:30 - loss: 7.1195 - acc: 0.5583
+14/18 [======================>.......] - ETA: 1:12 - loss: 7.1191 - acc: 0.5583
+15/18 [========================>.....] - ETA: 54s - loss: 7.1146 - acc: 0.5586 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1619 - acc: 0.5557
+17/18 [===========================>..] - ETA: 18s - loss: 7.1924 - acc: 0.5538
+18/18 [==============================] - 378s 21s/step - loss: 7.2161 - acc: 0.5523 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 69/100
+
+ 1/18 [>.............................] - ETA: 4:25 - loss: 7.7442 - acc: 0.5195
+ 2/18 [==>...........................] - ETA: 4:14 - loss: 7.5239 - acc: 0.5332
+ 3/18 [====>.........................] - ETA: 3:58 - loss: 7.3035 - acc: 0.5469
+ 4/18 [=====>........................] - ETA: 3:41 - loss: 7.4137 - acc: 0.5400
+ 5/18 [=======>......................] - ETA: 3:13 - loss: 7.1884 - acc: 0.5540
+ 6/18 [=========>....................] - ETA: 3:01 - loss: 7.1761 - acc: 0.5548
+ 7/18 [==========>...................] - ETA: 2:48 - loss: 7.0504 - acc: 0.5626
+ 8/18 [============>.................] - ETA: 2:33 - loss: 7.0112 - acc: 0.5650
+ 9/18 [==============>...............] - ETA: 2:18 - loss: 7.0647 - acc: 0.5617
+10/18 [===============>..............] - ETA: 2:03 - loss: 7.1011 - acc: 0.5594
+11/18 [=================>............] - ETA: 1:50 - loss: 7.1253 - acc: 0.5579
+12/18 [===================>..........] - ETA: 1:37 - loss: 7.1559 - acc: 0.5560
+13/18 [====================>.........] - ETA: 1:22 - loss: 7.1527 - acc: 0.5562
+14/18 [======================>.......] - ETA: 1:07 - loss: 7.1635 - acc: 0.5556
+15/18 [========================>.....] - ETA: 50s - loss: 7.2190 - acc: 0.5521 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1967 - acc: 0.5535
+17/18 [===========================>..] - ETA: 17s - loss: 7.2215 - acc: 0.5520
+18/18 [==============================] - 358s 20s/step - loss: 7.2799 - acc: 0.5483 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 70/100
+
+ 1/18 [>.............................] - ETA: 5:07 - loss: 6.6109 - acc: 0.5898
+ 2/18 [==>...........................] - ETA: 4:32 - loss: 6.5480 - acc: 0.5938
+ 3/18 [====>.........................] - ETA: 4:18 - loss: 6.8838 - acc: 0.5729
+ 4/18 [=====>........................] - ETA: 4:03 - loss: 6.9572 - acc: 0.5684
+ 5/18 [=======>......................] - ETA: 3:28 - loss: 6.9147 - acc: 0.5710
+ 6/18 [=========>....................] - ETA: 3:15 - loss: 6.8850 - acc: 0.5728
+ 7/18 [==========>...................] - ETA: 3:01 - loss: 6.9448 - acc: 0.5691
+ 8/18 [============>.................] - ETA: 2:44 - loss: 7.0211 - acc: 0.5644
+ 9/18 [==============>...............] - ETA: 2:29 - loss: 7.0315 - acc: 0.5637
+10/18 [===============>..............] - ETA: 2:14 - loss: 7.0713 - acc: 0.5613
+11/18 [=================>............] - ETA: 1:58 - loss: 7.0123 - acc: 0.5649
+12/18 [===================>..........] - ETA: 1:42 - loss: 6.9946 - acc: 0.5660
+13/18 [====================>.........] - ETA: 1:26 - loss: 6.9941 - acc: 0.5661
+14/18 [======================>.......] - ETA: 1:07 - loss: 7.0335 - acc: 0.5636
+15/18 [========================>.....] - ETA: 51s - loss: 7.0808 - acc: 0.5607 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1105 - acc: 0.5589
+17/18 [===========================>..] - ETA: 17s - loss: 7.1404 - acc: 0.5570
+18/18 [==============================] - 363s 20s/step - loss: 7.1354 - acc: 0.5573 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 71/100
+
+ 1/18 [>.............................] - ETA: 5:16 - loss: 8.0590 - acc: 0.5000
+ 2/18 [==>...........................] - ETA: 5:11 - loss: 7.2406 - acc: 0.5508
+ 3/18 [====>.........................] - ETA: 4:33 - loss: 7.2825 - acc: 0.5482
+ 4/18 [=====>........................] - ETA: 4:13 - loss: 7.2720 - acc: 0.5488
+ 5/18 [=======>......................] - ETA: 3:55 - loss: 7.3287 - acc: 0.5453
+ 6/18 [=========>....................] - ETA: 3:37 - loss: 7.2301 - acc: 0.5514
+ 7/18 [==========>...................] - ETA: 3:17 - loss: 7.2316 - acc: 0.5513
+ 8/18 [============>.................] - ETA: 3:00 - loss: 7.1776 - acc: 0.5547
+ 9/18 [==============>...............] - ETA: 2:40 - loss: 7.1426 - acc: 0.5569
+10/18 [===============>..............] - ETA: 2:21 - loss: 7.0957 - acc: 0.5598
+11/18 [=================>............] - ETA: 2:02 - loss: 7.1661 - acc: 0.5554
+12/18 [===================>..........] - ETA: 1:44 - loss: 7.1671 - acc: 0.5553
+13/18 [====================>.........] - ETA: 1:27 - loss: 7.1098 - acc: 0.5589
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.1281 - acc: 0.5578
+15/18 [========================>.....] - ETA: 53s - loss: 7.1398 - acc: 0.5570 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1461 - acc: 0.5566
+17/18 [===========================>..] - ETA: 18s - loss: 7.1183 - acc: 0.5584
+18/18 [==============================] - 375s 21s/step - loss: 7.1321 - acc: 0.5575 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 72/100
+
+ 1/18 [>.............................] - ETA: 5:25 - loss: 6.7998 - acc: 0.5781
+ 2/18 [==>...........................] - ETA: 5:04 - loss: 6.9887 - acc: 0.5664
+ 3/18 [====>.........................] - ETA: 4:38 - loss: 7.0936 - acc: 0.5599
+ 4/18 [=====>........................] - ETA: 4:11 - loss: 7.1146 - acc: 0.5586
+ 5/18 [=======>......................] - ETA: 3:53 - loss: 7.1020 - acc: 0.5594
+ 6/18 [=========>....................] - ETA: 3:31 - loss: 7.0936 - acc: 0.5599
+ 7/18 [==========>...................] - ETA: 3:14 - loss: 7.1596 - acc: 0.5558
+ 8/18 [============>.................] - ETA: 2:55 - loss: 7.2484 - acc: 0.5503
+ 9/18 [==============>...............] - ETA: 2:37 - loss: 7.1986 - acc: 0.5534
+10/18 [===============>..............] - ETA: 2:18 - loss: 7.2028 - acc: 0.5531
+11/18 [=================>............] - ETA: 1:56 - loss: 7.2442 - acc: 0.5506
+12/18 [===================>..........] - ETA: 1:41 - loss: 7.2387 - acc: 0.5509
+13/18 [====================>.........] - ETA: 1:24 - loss: 7.2146 - acc: 0.5524
+14/18 [======================>.......] - ETA: 1:08 - loss: 7.2165 - acc: 0.5523
+15/18 [========================>.....] - ETA: 51s - loss: 7.2055 - acc: 0.5530 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1959 - acc: 0.5536
+17/18 [===========================>..] - ETA: 17s - loss: 7.2318 - acc: 0.5513
+18/18 [==============================] - 368s 20s/step - loss: 7.2142 - acc: 0.5524 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 73/100
+
+ 1/18 [>.............................] - ETA: 5:09 - loss: 6.8628 - acc: 0.5742
+ 2/18 [==>...........................] - ETA: 4:51 - loss: 6.6424 - acc: 0.5879
+ 3/18 [====>.........................] - ETA: 4:41 - loss: 6.9257 - acc: 0.5703
+ 4/18 [=====>........................] - ETA: 4:19 - loss: 7.2406 - acc: 0.5508
+ 5/18 [=======>......................] - ETA: 3:54 - loss: 7.2783 - acc: 0.5484
+ 6/18 [=========>....................] - ETA: 3:31 - loss: 7.3560 - acc: 0.5436
+ 7/18 [==========>...................] - ETA: 3:14 - loss: 7.3125 - acc: 0.5463
+ 8/18 [============>.................] - ETA: 2:54 - loss: 7.3193 - acc: 0.5459
+ 9/18 [==============>...............] - ETA: 2:28 - loss: 7.2808 - acc: 0.5483
+10/18 [===============>..............] - ETA: 2:12 - loss: 7.3208 - acc: 0.5458
+11/18 [=================>............] - ETA: 1:56 - loss: 7.3364 - acc: 0.5448
+12/18 [===================>..........] - ETA: 1:40 - loss: 7.3075 - acc: 0.5466
+13/18 [====================>.........] - ETA: 1:23 - loss: 7.3023 - acc: 0.5469
+14/18 [======================>.......] - ETA: 1:06 - loss: 7.2484 - acc: 0.5503
+15/18 [========================>.....] - ETA: 50s - loss: 7.1891 - acc: 0.5540 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1294 - acc: 0.5577
+17/18 [===========================>..] - ETA: 17s - loss: 7.1507 - acc: 0.5564
+18/18 [==============================] - 365s 20s/step - loss: 7.1315 - acc: 0.5575 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 74/100
+
+ 1/18 [>.............................] - ETA: 5:07 - loss: 7.2406 - acc: 0.5508
+ 2/18 [==>...........................] - ETA: 4:45 - loss: 7.3980 - acc: 0.5410
+ 3/18 [====>.........................] - ETA: 4:22 - loss: 7.2825 - acc: 0.5482
+ 4/18 [=====>........................] - ETA: 4:11 - loss: 7.3507 - acc: 0.5439
+ 5/18 [=======>......................] - ETA: 3:53 - loss: 7.2028 - acc: 0.5531
+ 6/18 [=========>....................] - ETA: 3:33 - loss: 7.3980 - acc: 0.5410
+ 7/18 [==========>...................] - ETA: 3:12 - loss: 7.3665 - acc: 0.5430
+ 8/18 [============>.................] - ETA: 2:53 - loss: 7.3586 - acc: 0.5435
+ 9/18 [==============>...............] - ETA: 2:34 - loss: 7.3105 - acc: 0.5464
+10/18 [===============>..............] - ETA: 2:16 - loss: 7.2846 - acc: 0.5480
+11/18 [=================>............] - ETA: 1:58 - loss: 7.3150 - acc: 0.5462
+12/18 [===================>..........] - ETA: 1:40 - loss: 7.2983 - acc: 0.5472
+13/18 [====================>.........] - ETA: 1:23 - loss: 7.3277 - acc: 0.5454
+14/18 [======================>.......] - ETA: 1:05 - loss: 7.2371 - acc: 0.5510
+15/18 [========================>.....] - ETA: 48s - loss: 7.2415 - acc: 0.5507 
+16/18 [=========================>....] - ETA: 33s - loss: 7.2336 - acc: 0.5512
+17/18 [===========================>..] - ETA: 16s - loss: 7.2118 - acc: 0.5526
+18/18 [==============================] - 355s 20s/step - loss: 7.2780 - acc: 0.5485 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 75/100
+
+ 1/18 [>.............................] - ETA: 5:40 - loss: 7.6183 - acc: 0.5273
+ 2/18 [==>...........................] - ETA: 5:08 - loss: 7.0517 - acc: 0.5625
+ 3/18 [====>.........................] - ETA: 4:48 - loss: 7.1356 - acc: 0.5573
+ 4/18 [=====>........................] - ETA: 4:29 - loss: 6.9572 - acc: 0.5684
+ 5/18 [=======>......................] - ETA: 4:08 - loss: 6.9509 - acc: 0.5687
+ 6/18 [=========>....................] - ETA: 3:48 - loss: 6.9467 - acc: 0.5690
+ 7/18 [==========>...................] - ETA: 3:26 - loss: 7.0697 - acc: 0.5614
+ 8/18 [============>.................] - ETA: 2:56 - loss: 7.2291 - acc: 0.5515
+ 9/18 [==============>...............] - ETA: 2:36 - loss: 7.2793 - acc: 0.5484
+10/18 [===============>..............] - ETA: 2:19 - loss: 7.3006 - acc: 0.5471
+11/18 [=================>............] - ETA: 2:01 - loss: 7.2150 - acc: 0.5524
+12/18 [===================>..........] - ETA: 1:43 - loss: 7.2434 - acc: 0.5506
+13/18 [====================>.........] - ETA: 1:25 - loss: 7.2674 - acc: 0.5491
+14/18 [======================>.......] - ETA: 1:08 - loss: 7.2520 - acc: 0.5501
+15/18 [========================>.....] - ETA: 51s - loss: 7.2218 - acc: 0.5519 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1915 - acc: 0.5538
+17/18 [===========================>..] - ETA: 17s - loss: 7.1796 - acc: 0.5546
+18/18 [==============================] - 365s 20s/step - loss: 7.1744 - acc: 0.5549 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 76/100
+
+ 1/18 [>.............................] - ETA: 6:05 - loss: 7.9331 - acc: 0.5078
+ 2/18 [==>...........................] - ETA: 5:36 - loss: 7.4609 - acc: 0.5371
+ 3/18 [====>.........................] - ETA: 5:01 - loss: 7.2825 - acc: 0.5482
+ 4/18 [=====>........................] - ETA: 4:35 - loss: 7.3822 - acc: 0.5420
+ 5/18 [=======>......................] - ETA: 4:09 - loss: 7.1776 - acc: 0.5547
+ 6/18 [=========>....................] - ETA: 3:49 - loss: 7.2301 - acc: 0.5514
+ 7/18 [==========>...................] - ETA: 3:29 - loss: 7.2675 - acc: 0.5491
+ 8/18 [============>.................] - ETA: 3:09 - loss: 7.2406 - acc: 0.5508
+ 9/18 [==============>...............] - ETA: 2:47 - loss: 7.2755 - acc: 0.5486
+10/18 [===============>..............] - ETA: 2:21 - loss: 7.2453 - acc: 0.5505
+11/18 [=================>............] - ETA: 2:03 - loss: 7.2449 - acc: 0.5505
+12/18 [===================>..........] - ETA: 1:44 - loss: 7.2812 - acc: 0.5483
+13/18 [====================>.........] - ETA: 1:27 - loss: 7.3217 - acc: 0.5457
+14/18 [======================>.......] - ETA: 1:09 - loss: 7.2754 - acc: 0.5486
+15/18 [========================>.....] - ETA: 51s - loss: 7.2059 - acc: 0.5529 
+16/18 [=========================>....] - ETA: 34s - loss: 7.2199 - acc: 0.5521
+17/18 [===========================>..] - ETA: 17s - loss: 7.2100 - acc: 0.5527
+18/18 [==============================] - 363s 20s/step - loss: 7.1980 - acc: 0.5534 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 77/100
+
+ 1/18 [>.............................] - ETA: 6:04 - loss: 6.9257 - acc: 0.5703
+ 2/18 [==>...........................] - ETA: 5:27 - loss: 6.7054 - acc: 0.5840
+ 3/18 [====>.........................] - ETA: 5:04 - loss: 6.8208 - acc: 0.5768
+ 4/18 [=====>........................] - ETA: 4:40 - loss: 6.7841 - acc: 0.5791
+ 5/18 [=======>......................] - ETA: 4:15 - loss: 6.9257 - acc: 0.5703
+ 6/18 [=========>....................] - ETA: 3:52 - loss: 7.0936 - acc: 0.5599
+ 7/18 [==========>...................] - ETA: 3:35 - loss: 7.0517 - acc: 0.5625
+ 8/18 [============>.................] - ETA: 3:16 - loss: 7.1146 - acc: 0.5586
+ 9/18 [==============>...............] - ETA: 2:54 - loss: 7.1916 - acc: 0.5538
+10/18 [===============>..............] - ETA: 2:33 - loss: 7.1524 - acc: 0.5563
+11/18 [=================>............] - ETA: 2:12 - loss: 7.0975 - acc: 0.5597
+12/18 [===================>..........] - ETA: 1:49 - loss: 7.0585 - acc: 0.5621
+13/18 [====================>.........] - ETA: 1:30 - loss: 7.0967 - acc: 0.5597
+14/18 [======================>.......] - ETA: 1:12 - loss: 7.0935 - acc: 0.5599
+15/18 [========================>.....] - ETA: 54s - loss: 7.1243 - acc: 0.5580 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1394 - acc: 0.5571
+17/18 [===========================>..] - ETA: 17s - loss: 7.1454 - acc: 0.5567
+18/18 [==============================] - 361s 20s/step - loss: 7.1689 - acc: 0.5552 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 78/100
+
+ 1/18 [>.............................] - ETA: 5:42 - loss: 7.4924 - acc: 0.5352
+ 2/18 [==>...........................] - ETA: 4:15 - loss: 7.0613 - acc: 0.5619
+ 3/18 [====>.........................] - ETA: 4:15 - loss: 7.2470 - acc: 0.5504
+ 4/18 [=====>........................] - ETA: 4:08 - loss: 7.2768 - acc: 0.5485
+ 5/18 [=======>......................] - ETA: 3:56 - loss: 7.3325 - acc: 0.5451
+ 6/18 [=========>....................] - ETA: 3:41 - loss: 7.3172 - acc: 0.5460
+ 7/18 [==========>...................] - ETA: 3:26 - loss: 7.2973 - acc: 0.5473
+ 8/18 [============>.................] - ETA: 3:09 - loss: 7.2508 - acc: 0.5501
+ 9/18 [==============>...............] - ETA: 2:51 - loss: 7.3056 - acc: 0.5467
+10/18 [===============>..............] - ETA: 2:33 - loss: 7.2928 - acc: 0.5475
+11/18 [=================>............] - ETA: 2:14 - loss: 7.2423 - acc: 0.5507
+12/18 [===================>..........] - ETA: 1:54 - loss: 7.2579 - acc: 0.5497
+13/18 [====================>.........] - ETA: 1:34 - loss: 7.2759 - acc: 0.5486
+14/18 [======================>.......] - ETA: 1:14 - loss: 7.2509 - acc: 0.5501
+15/18 [========================>.....] - ETA: 55s - loss: 7.1999 - acc: 0.5533 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1906 - acc: 0.5539
+17/18 [===========================>..] - ETA: 18s - loss: 7.1713 - acc: 0.5551
+18/18 [==============================] - 364s 20s/step - loss: 7.1724 - acc: 0.5550 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 79/100
+
+ 1/18 [>.............................] - ETA: 4:42 - loss: 7.2406 - acc: 0.5508
+ 2/18 [==>...........................] - ETA: 5:04 - loss: 7.4609 - acc: 0.5371
+ 3/18 [====>.........................] - ETA: 4:54 - loss: 7.2825 - acc: 0.5482
+ 4/18 [=====>........................] - ETA: 4:33 - loss: 7.2248 - acc: 0.5518
+ 5/18 [=======>......................] - ETA: 3:53 - loss: 7.2431 - acc: 0.5506
+ 6/18 [=========>....................] - ETA: 3:39 - loss: 7.2216 - acc: 0.5520
+ 7/18 [==========>...................] - ETA: 3:25 - loss: 7.2873 - acc: 0.5479
+ 8/18 [============>.................] - ETA: 3:07 - loss: 7.3759 - acc: 0.5424
+ 9/18 [==============>...............] - ETA: 2:51 - loss: 7.4308 - acc: 0.5390
+10/18 [===============>..............] - ETA: 2:33 - loss: 7.3929 - acc: 0.5413
+11/18 [=================>............] - ETA: 2:15 - loss: 7.4134 - acc: 0.5401
+12/18 [===================>..........] - ETA: 1:54 - loss: 7.4410 - acc: 0.5383
+13/18 [====================>.........] - ETA: 1:34 - loss: 7.3771 - acc: 0.5423
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.2639 - acc: 0.5493
+15/18 [========================>.....] - ETA: 56s - loss: 7.2918 - acc: 0.5476 
+16/18 [=========================>....] - ETA: 37s - loss: 7.2925 - acc: 0.5476
+17/18 [===========================>..] - ETA: 18s - loss: 7.2820 - acc: 0.5482
+18/18 [==============================] - 373s 21s/step - loss: 7.2902 - acc: 0.5477 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 80/100
+
+ 1/18 [>.............................] - ETA: 4:52 - loss: 6.3591 - acc: 0.6055
+ 2/18 [==>...........................] - ETA: 4:31 - loss: 6.8943 - acc: 0.5723
+ 3/18 [====>.........................] - ETA: 4:32 - loss: 6.8418 - acc: 0.5755
+ 4/18 [=====>........................] - ETA: 3:52 - loss: 7.0747 - acc: 0.5611
+ 5/18 [=======>......................] - ETA: 3:43 - loss: 7.1204 - acc: 0.5582
+ 6/18 [=========>....................] - ETA: 3:31 - loss: 7.1824 - acc: 0.5544
+ 7/18 [==========>...................] - ETA: 3:17 - loss: 7.1727 - acc: 0.5550
+ 8/18 [============>.................] - ETA: 3:03 - loss: 7.1261 - acc: 0.5579
+ 9/18 [==============>...............] - ETA: 2:47 - loss: 7.1109 - acc: 0.5588
+10/18 [===============>..............] - ETA: 2:30 - loss: 7.0923 - acc: 0.5600
+11/18 [=================>............] - ETA: 2:12 - loss: 7.0944 - acc: 0.5599
+12/18 [===================>..........] - ETA: 1:54 - loss: 7.0174 - acc: 0.5646
+13/18 [====================>.........] - ETA: 1:35 - loss: 7.0152 - acc: 0.5648
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.1032 - acc: 0.5593
+15/18 [========================>.....] - ETA: 55s - loss: 7.1417 - acc: 0.5569 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1558 - acc: 0.5560
+17/18 [===========================>..] - ETA: 18s - loss: 7.1312 - acc: 0.5576
+18/18 [==============================] - 365s 20s/step - loss: 7.1084 - acc: 0.5590 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 81/100
+
+ 1/18 [>.............................] - ETA: 4:42 - loss: 7.4924 - acc: 0.5352
+ 2/18 [==>...........................] - ETA: 4:35 - loss: 7.2406 - acc: 0.5508
+ 3/18 [====>.........................] - ETA: 4:42 - loss: 7.5134 - acc: 0.5339
+ 4/18 [=====>........................] - ETA: 4:30 - loss: 7.3980 - acc: 0.5410
+ 5/18 [=======>......................] - ETA: 4:10 - loss: 7.4168 - acc: 0.5398
+ 6/18 [=========>....................] - ETA: 3:52 - loss: 7.4819 - acc: 0.5358
+ 7/18 [==========>...................] - ETA: 3:34 - loss: 7.3665 - acc: 0.5430
+ 8/18 [============>.................] - ETA: 3:14 - loss: 7.4216 - acc: 0.5396
+ 9/18 [==============>...............] - ETA: 2:56 - loss: 7.3945 - acc: 0.5412
+10/18 [===============>..............] - ETA: 2:37 - loss: 7.4168 - acc: 0.5398
+11/18 [=================>............] - ETA: 2:13 - loss: 7.3557 - acc: 0.5436
+12/18 [===================>..........] - ETA: 1:55 - loss: 7.2937 - acc: 0.5475
+13/18 [====================>.........] - ETA: 1:36 - loss: 7.2944 - acc: 0.5474
+14/18 [======================>.......] - ETA: 1:17 - loss: 7.3041 - acc: 0.5468
+15/18 [========================>.....] - ETA: 57s - loss: 7.3250 - acc: 0.5455 
+16/18 [=========================>....] - ETA: 38s - loss: 7.3237 - acc: 0.5456
+17/18 [===========================>..] - ETA: 18s - loss: 7.2854 - acc: 0.5480
+18/18 [==============================] - 378s 21s/step - loss: 7.2767 - acc: 0.5485 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 82/100
+
+ 1/18 [>.............................] - ETA: 4:32 - loss: 7.3665 - acc: 0.5430
+ 2/18 [==>...........................] - ETA: 4:34 - loss: 7.3665 - acc: 0.5430
+ 3/18 [====>.........................] - ETA: 4:14 - loss: 7.0307 - acc: 0.5638
+ 4/18 [=====>........................] - ETA: 3:58 - loss: 7.1619 - acc: 0.5557
+ 5/18 [=======>......................] - ETA: 3:47 - loss: 7.0391 - acc: 0.5633
+ 6/18 [=========>....................] - ETA: 3:34 - loss: 7.0202 - acc: 0.5645
+ 7/18 [==========>...................] - ETA: 3:23 - loss: 7.0787 - acc: 0.5608
+ 8/18 [============>.................] - ETA: 3:05 - loss: 7.1225 - acc: 0.5581
+ 9/18 [==============>...............] - ETA: 2:40 - loss: 6.9662 - acc: 0.5678
+10/18 [===============>..............] - ETA: 2:23 - loss: 6.9999 - acc: 0.5657
+11/18 [=================>............] - ETA: 2:07 - loss: 7.0161 - acc: 0.5647
+12/18 [===================>..........] - ETA: 1:49 - loss: 6.9876 - acc: 0.5665
+13/18 [====================>.........] - ETA: 1:32 - loss: 7.0070 - acc: 0.5653
+14/18 [======================>.......] - ETA: 1:14 - loss: 7.0237 - acc: 0.5642
+15/18 [========================>.....] - ETA: 56s - loss: 7.0382 - acc: 0.5633 
+16/18 [=========================>....] - ETA: 37s - loss: 7.0587 - acc: 0.5621
+17/18 [===========================>..] - ETA: 18s - loss: 7.0805 - acc: 0.5607
+18/18 [==============================] - 371s 21s/step - loss: 7.0632 - acc: 0.5618 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 83/100
+
+ 1/18 [>.............................] - ETA: 4:47 - loss: 6.4850 - acc: 0.5977
+ 2/18 [==>...........................] - ETA: 4:23 - loss: 6.6739 - acc: 0.5859
+ 3/18 [====>.........................] - ETA: 4:05 - loss: 6.9467 - acc: 0.5690
+ 4/18 [=====>........................] - ETA: 3:54 - loss: 7.1146 - acc: 0.5586
+ 5/18 [=======>......................] - ETA: 3:38 - loss: 7.2909 - acc: 0.5477
+ 6/18 [=========>....................] - ETA: 3:26 - loss: 7.3665 - acc: 0.5430
+ 7/18 [==========>...................] - ETA: 3:12 - loss: 7.4564 - acc: 0.5374
+ 8/18 [============>.................] - ETA: 2:57 - loss: 7.5317 - acc: 0.5327
+ 9/18 [==============>...............] - ETA: 2:41 - loss: 7.4504 - acc: 0.5378
+10/18 [===============>..............] - ETA: 2:24 - loss: 7.3791 - acc: 0.5422
+11/18 [=================>............] - ETA: 2:07 - loss: 7.2806 - acc: 0.5483
+12/18 [===================>..........] - ETA: 1:50 - loss: 7.1881 - acc: 0.5540
+13/18 [====================>.........] - ETA: 1:32 - loss: 7.1388 - acc: 0.5571
+14/18 [======================>.......] - ETA: 1:14 - loss: 7.1551 - acc: 0.5561
+15/18 [========================>.....] - ETA: 56s - loss: 7.1902 - acc: 0.5539 
+16/18 [=========================>....] - ETA: 37s - loss: 7.2130 - acc: 0.5525
+17/18 [===========================>..] - ETA: 18s - loss: 7.1702 - acc: 0.5551
+18/18 [==============================] - 369s 21s/step - loss: 7.2056 - acc: 0.5530 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 84/100
+
+ 1/18 [>.............................] - ETA: 4:58 - loss: 6.7369 - acc: 0.5820
+ 2/18 [==>...........................] - ETA: 4:35 - loss: 6.8943 - acc: 0.5723
+ 3/18 [====>.........................] - ETA: 4:19 - loss: 7.2196 - acc: 0.5521
+ 4/18 [=====>........................] - ETA: 3:37 - loss: 7.1865 - acc: 0.5541
+ 5/18 [=======>......................] - ETA: 3:24 - loss: 7.0588 - acc: 0.5621
+ 6/18 [=========>....................] - ETA: 3:13 - loss: 7.1626 - acc: 0.5556
+ 7/18 [==========>...................] - ETA: 3:02 - loss: 7.3176 - acc: 0.5460
+ 8/18 [============>.................] - ETA: 2:51 - loss: 7.2214 - acc: 0.5520
+ 9/18 [==============>...............] - ETA: 2:37 - loss: 7.1886 - acc: 0.5540
+10/18 [===============>..............] - ETA: 2:21 - loss: 7.1623 - acc: 0.5556
+11/18 [=================>............] - ETA: 2:04 - loss: 7.2209 - acc: 0.5520
+12/18 [===================>..........] - ETA: 1:48 - loss: 7.1701 - acc: 0.5552
+13/18 [====================>.........] - ETA: 1:30 - loss: 7.1561 - acc: 0.5560
+14/18 [======================>.......] - ETA: 1:13 - loss: 7.1846 - acc: 0.5543
+15/18 [========================>.....] - ETA: 55s - loss: 7.2219 - acc: 0.5519 
+16/18 [=========================>....] - ETA: 37s - loss: 7.2113 - acc: 0.5526
+17/18 [===========================>..] - ETA: 18s - loss: 7.2019 - acc: 0.5532
+18/18 [==============================] - 370s 21s/step - loss: 7.2252 - acc: 0.5517 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 85/100
+
+ 1/18 [>.............................] - ETA: 4:36 - loss: 6.9257 - acc: 0.5703
+ 2/18 [==>...........................] - ETA: 4:17 - loss: 7.3350 - acc: 0.5449
+ 3/18 [====>.........................] - ETA: 4:44 - loss: 7.4294 - acc: 0.5391
+ 4/18 [=====>........................] - ETA: 4:16 - loss: 7.1461 - acc: 0.5566
+ 5/18 [=======>......................] - ETA: 3:37 - loss: 7.1572 - acc: 0.5560
+ 6/18 [=========>....................] - ETA: 3:23 - loss: 7.2026 - acc: 0.5531
+ 7/18 [==========>...................] - ETA: 3:07 - loss: 7.2170 - acc: 0.5522
+ 8/18 [============>.................] - ETA: 2:53 - loss: 7.2436 - acc: 0.5506
+ 9/18 [==============>...............] - ETA: 2:38 - loss: 7.2292 - acc: 0.5515
+10/18 [===============>..............] - ETA: 2:22 - loss: 7.2241 - acc: 0.5518
+11/18 [=================>............] - ETA: 2:07 - loss: 7.2313 - acc: 0.5514
+12/18 [===================>..........] - ETA: 1:50 - loss: 7.1953 - acc: 0.5536
+13/18 [====================>.........] - ETA: 1:32 - loss: 7.2133 - acc: 0.5525
+14/18 [======================>.......] - ETA: 1:14 - loss: 7.1703 - acc: 0.5551
+15/18 [========================>.....] - ETA: 55s - loss: 7.1624 - acc: 0.5556 
+16/18 [=========================>....] - ETA: 37s - loss: 7.1948 - acc: 0.5536
+17/18 [===========================>..] - ETA: 18s - loss: 7.1975 - acc: 0.5535
+18/18 [==============================] - 375s 21s/step - loss: 7.1754 - acc: 0.5548 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 86/100
+
+ 1/18 [>.............................] - ETA: 4:37 - loss: 6.9257 - acc: 0.5703
+ 2/18 [==>...........................] - ETA: 4:28 - loss: 7.2406 - acc: 0.5508
+ 3/18 [====>.........................] - ETA: 4:07 - loss: 7.6183 - acc: 0.5273
+ 4/18 [=====>........................] - ETA: 3:49 - loss: 7.3822 - acc: 0.5420
+ 5/18 [=======>......................] - ETA: 3:32 - loss: 7.1650 - acc: 0.5555
+ 6/18 [=========>....................] - ETA: 3:14 - loss: 7.2091 - acc: 0.5527
+ 7/18 [==========>...................] - ETA: 2:50 - loss: 7.3223 - acc: 0.5457
+ 8/18 [============>.................] - ETA: 2:36 - loss: 7.3829 - acc: 0.5419
+ 9/18 [==============>...............] - ETA: 2:25 - loss: 7.3251 - acc: 0.5455
+10/18 [===============>..............] - ETA: 2:12 - loss: 7.3293 - acc: 0.5453
+11/18 [=================>............] - ETA: 1:58 - loss: 7.3098 - acc: 0.5465
+12/18 [===================>..........] - ETA: 1:43 - loss: 7.3197 - acc: 0.5459
+13/18 [====================>.........] - ETA: 1:26 - loss: 7.3185 - acc: 0.5459
+14/18 [======================>.......] - ETA: 1:07 - loss: 7.3346 - acc: 0.5449
+15/18 [========================>.....] - ETA: 51s - loss: 7.2822 - acc: 0.5482 
+16/18 [=========================>....] - ETA: 34s - loss: 7.2521 - acc: 0.5501
+17/18 [===========================>..] - ETA: 17s - loss: 7.2588 - acc: 0.5497
+18/18 [==============================] - 354s 20s/step - loss: 7.2213 - acc: 0.5520 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 87/100
+
+ 1/18 [>.............................] - ETA: 4:34 - loss: 6.4221 - acc: 0.6016
+ 2/18 [==>...........................] - ETA: 4:27 - loss: 6.8628 - acc: 0.5742
+ 3/18 [====>.........................] - ETA: 4:13 - loss: 7.3665 - acc: 0.5430
+ 4/18 [=====>........................] - ETA: 4:01 - loss: 7.4924 - acc: 0.5352
+ 5/18 [=======>......................] - ETA: 3:45 - loss: 7.4043 - acc: 0.5406
+ 6/18 [=========>....................] - ETA: 3:26 - loss: 7.3665 - acc: 0.5430
+ 7/18 [==========>...................] - ETA: 3:07 - loss: 7.2675 - acc: 0.5491
+ 8/18 [============>.................] - ETA: 2:50 - loss: 7.2720 - acc: 0.5488
+ 9/18 [==============>...............] - ETA: 2:33 - loss: 7.2615 - acc: 0.5495
+10/18 [===============>..............] - ETA: 2:18 - loss: 7.2846 - acc: 0.5480
+11/18 [=================>............] - ETA: 2:03 - loss: 7.2692 - acc: 0.5490
+12/18 [===================>..........] - ETA: 1:47 - loss: 7.3297 - acc: 0.5452
+13/18 [====================>.........] - ETA: 1:30 - loss: 7.3374 - acc: 0.5448
+14/18 [======================>.......] - ETA: 1:12 - loss: 7.3125 - acc: 0.5463
+15/18 [========================>.....] - ETA: 55s - loss: 7.2909 - acc: 0.5477 
+16/18 [=========================>....] - ETA: 36s - loss: 7.2956 - acc: 0.5474
+17/18 [===========================>..] - ETA: 18s - loss: 7.2665 - acc: 0.5492
+18/18 [==============================] - 373s 21s/step - loss: 7.3002 - acc: 0.5471 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 88/100
+
+ 1/18 [>.............................] - ETA: 5:17 - loss: 7.0517 - acc: 0.5625
+ 2/18 [==>...........................] - ETA: 4:48 - loss: 6.7998 - acc: 0.5781
+ 3/18 [====>.........................] - ETA: 4:29 - loss: 6.7998 - acc: 0.5781
+ 4/18 [=====>........................] - ETA: 4:11 - loss: 6.8943 - acc: 0.5723
+ 5/18 [=======>......................] - ETA: 3:53 - loss: 7.0769 - acc: 0.5609
+ 6/18 [=========>....................] - ETA: 3:35 - loss: 7.0517 - acc: 0.5625
+ 7/18 [==========>...................] - ETA: 3:18 - loss: 7.1686 - acc: 0.5552
+ 8/18 [============>.................] - ETA: 2:59 - loss: 7.1068 - acc: 0.5591
+ 9/18 [==============>...............] - ETA: 2:41 - loss: 7.1776 - acc: 0.5547
+10/18 [===============>..............] - ETA: 2:23 - loss: 7.1524 - acc: 0.5563
+11/18 [=================>............] - ETA: 2:06 - loss: 7.1375 - acc: 0.5572
+12/18 [===================>..........] - ETA: 1:49 - loss: 7.2038 - acc: 0.5531
+13/18 [====================>.........] - ETA: 1:33 - loss: 7.1873 - acc: 0.5541
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.2046 - acc: 0.5530
+15/18 [========================>.....] - ETA: 56s - loss: 7.2573 - acc: 0.5497 
+16/18 [=========================>....] - ETA: 37s - loss: 7.2563 - acc: 0.5498
+17/18 [===========================>..] - ETA: 19s - loss: 7.2257 - acc: 0.5517
+18/18 [==============================] - 388s 22s/step - loss: 7.1811 - acc: 0.5545 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 89/100
+
+ 1/18 [>.............................] - ETA: 5:08 - loss: 6.7369 - acc: 0.5820
+ 2/18 [==>...........................] - ETA: 4:35 - loss: 7.0202 - acc: 0.5645
+ 3/18 [====>.........................] - ETA: 4:14 - loss: 7.0517 - acc: 0.5625
+ 4/18 [=====>........................] - ETA: 3:55 - loss: 7.2091 - acc: 0.5527
+ 5/18 [=======>......................] - ETA: 3:36 - loss: 7.2783 - acc: 0.5484
+ 6/18 [=========>....................] - ETA: 3:19 - loss: 7.3350 - acc: 0.5449
+ 7/18 [==========>...................] - ETA: 3:03 - loss: 7.2495 - acc: 0.5502
+ 8/18 [============>.................] - ETA: 2:47 - loss: 7.2484 - acc: 0.5503
+ 9/18 [==============>...............] - ETA: 2:30 - loss: 7.1916 - acc: 0.5538
+10/18 [===============>..............] - ETA: 2:13 - loss: 7.1083 - acc: 0.5590
+11/18 [=================>............] - ETA: 1:56 - loss: 7.1661 - acc: 0.5554
+12/18 [===================>..........] - ETA: 1:38 - loss: 7.1691 - acc: 0.5552
+13/18 [====================>.........] - ETA: 1:23 - loss: 7.2085 - acc: 0.5528
+14/18 [======================>.......] - ETA: 1:07 - loss: 7.1658 - acc: 0.5554
+15/18 [========================>.....] - ETA: 51s - loss: 7.2170 - acc: 0.5522 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1948 - acc: 0.5536
+17/18 [===========================>..] - ETA: 16s - loss: 7.1213 - acc: 0.5582
+18/18 [==============================] - 356s 20s/step - loss: 7.0873 - acc: 0.5603 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 90/100
+
+ 1/18 [>.............................] - ETA: 5:30 - loss: 8.3739 - acc: 0.4805
+ 2/18 [==>...........................] - ETA: 5:10 - loss: 7.2091 - acc: 0.5527
+ 3/18 [====>.........................] - ETA: 4:45 - loss: 7.3455 - acc: 0.5443
+ 4/18 [=====>........................] - ETA: 4:21 - loss: 7.3035 - acc: 0.5469
+ 5/18 [=======>......................] - ETA: 3:58 - loss: 7.3161 - acc: 0.5461
+ 6/18 [=========>....................] - ETA: 3:36 - loss: 7.2406 - acc: 0.5508
+ 7/18 [==========>...................] - ETA: 3:17 - loss: 7.3845 - acc: 0.5419
+ 8/18 [============>.................] - ETA: 2:58 - loss: 7.4058 - acc: 0.5405
+ 9/18 [==============>...............] - ETA: 2:40 - loss: 7.3665 - acc: 0.5430
+10/18 [===============>..............] - ETA: 2:22 - loss: 7.4105 - acc: 0.5402
+11/18 [=================>............] - ETA: 2:03 - loss: 7.4065 - acc: 0.5405
+12/18 [===================>..........] - ETA: 1:45 - loss: 7.3665 - acc: 0.5430
+13/18 [====================>.........] - ETA: 1:29 - loss: 7.2841 - acc: 0.5481
+14/18 [======================>.......] - ETA: 1:12 - loss: 7.2271 - acc: 0.5516
+15/18 [========================>.....] - ETA: 54s - loss: 7.1944 - acc: 0.5536 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1973 - acc: 0.5535
+17/18 [===========================>..] - ETA: 17s - loss: 7.2311 - acc: 0.5514
+18/18 [==============================] - 371s 21s/step - loss: 7.2625 - acc: 0.5494 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 91/100
+
+ 1/18 [>.............................] - ETA: 5:12 - loss: 7.0517 - acc: 0.5625
+ 2/18 [==>...........................] - ETA: 4:57 - loss: 7.2720 - acc: 0.5488
+ 3/18 [====>.........................] - ETA: 4:42 - loss: 7.4294 - acc: 0.5391
+ 4/18 [=====>........................] - ETA: 4:22 - loss: 7.3035 - acc: 0.5469
+ 5/18 [=======>......................] - ETA: 3:57 - loss: 7.4168 - acc: 0.5398
+ 6/18 [=========>....................] - ETA: 3:38 - loss: 7.4189 - acc: 0.5397
+ 7/18 [==========>...................] - ETA: 3:18 - loss: 7.3665 - acc: 0.5430
+ 8/18 [============>.................] - ETA: 3:00 - loss: 7.2484 - acc: 0.5503
+ 9/18 [==============>...............] - ETA: 2:41 - loss: 7.2475 - acc: 0.5503
+10/18 [===============>..............] - ETA: 2:22 - loss: 7.1965 - acc: 0.5535
+11/18 [=================>............] - ETA: 2:04 - loss: 7.1776 - acc: 0.5547
+12/18 [===================>..........] - ETA: 1:46 - loss: 7.1986 - acc: 0.5534
+13/18 [====================>.........] - ETA: 1:28 - loss: 7.2454 - acc: 0.5505
+14/18 [======================>.......] - ETA: 1:11 - loss: 7.2136 - acc: 0.5525
+15/18 [========================>.....] - ETA: 54s - loss: 7.1734 - acc: 0.5549 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1933 - acc: 0.5537
+17/18 [===========================>..] - ETA: 18s - loss: 7.2813 - acc: 0.5483
+18/18 [==============================] - 379s 21s/step - loss: 7.2545 - acc: 0.5499 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 92/100
+
+ 1/18 [>.............................] - ETA: 3:26 - loss: 8.1162 - acc: 0.4965
+ 2/18 [==>...........................] - ETA: 4:00 - loss: 7.5525 - acc: 0.5314
+ 3/18 [====>.........................] - ETA: 4:10 - loss: 7.4485 - acc: 0.5379
+ 4/18 [=====>........................] - ETA: 4:00 - loss: 7.4437 - acc: 0.5382
+ 5/18 [=======>......................] - ETA: 3:40 - loss: 7.3653 - acc: 0.5430
+ 6/18 [=========>....................] - ETA: 3:23 - loss: 7.2081 - acc: 0.5528
+ 7/18 [==========>...................] - ETA: 3:06 - loss: 7.1678 - acc: 0.5553
+ 8/18 [============>.................] - ETA: 2:49 - loss: 7.2713 - acc: 0.5489
+ 9/18 [==============>...............] - ETA: 2:40 - loss: 7.3658 - acc: 0.5430
+10/18 [===============>..............] - ETA: 2:22 - loss: 7.3344 - acc: 0.5450
+11/18 [=================>............] - ETA: 2:04 - loss: 7.2915 - acc: 0.5476
+12/18 [===================>..........] - ETA: 1:46 - loss: 7.1928 - acc: 0.5537
+13/18 [====================>.........] - ETA: 1:30 - loss: 7.2595 - acc: 0.5496
+14/18 [======================>.......] - ETA: 1:12 - loss: 7.2626 - acc: 0.5494
+15/18 [========================>.....] - ETA: 54s - loss: 7.1730 - acc: 0.5550 
+16/18 [=========================>....] - ETA: 36s - loss: 7.1851 - acc: 0.5542
+17/18 [===========================>..] - ETA: 18s - loss: 7.1513 - acc: 0.5563
+18/18 [==============================] - 384s 21s/step - loss: 7.2040 - acc: 0.5530 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 93/100
+
+ 1/18 [>.............................] - ETA: 5:32 - loss: 6.9887 - acc: 0.5664
+ 2/18 [==>...........................] - ETA: 5:03 - loss: 6.9257 - acc: 0.5703
+ 3/18 [====>.........................] - ETA: 4:39 - loss: 7.0307 - acc: 0.5638
+ 4/18 [=====>........................] - ETA: 4:18 - loss: 7.0202 - acc: 0.5645
+ 5/18 [=======>......................] - ETA: 4:01 - loss: 7.0894 - acc: 0.5602
+ 6/18 [=========>....................] - ETA: 3:39 - loss: 7.0412 - acc: 0.5632
+ 7/18 [==========>...................] - ETA: 3:20 - loss: 7.0517 - acc: 0.5625
+ 8/18 [============>.................] - ETA: 3:00 - loss: 7.1068 - acc: 0.5591
+ 9/18 [==============>...............] - ETA: 2:40 - loss: 7.0447 - acc: 0.5629
+10/18 [===============>..............] - ETA: 2:22 - loss: 7.0517 - acc: 0.5625
+11/18 [=================>............] - ETA: 2:04 - loss: 7.0746 - acc: 0.5611
+12/18 [===================>..........] - ETA: 1:47 - loss: 7.0779 - acc: 0.5609
+13/18 [====================>.........] - ETA: 1:29 - loss: 7.0614 - acc: 0.5619
+14/18 [======================>.......] - ETA: 1:11 - loss: 7.0607 - acc: 0.5619
+15/18 [========================>.....] - ETA: 51s - loss: 7.1158 - acc: 0.5585 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1865 - acc: 0.5541
+17/18 [===========================>..] - ETA: 17s - loss: 7.1675 - acc: 0.5553
+18/18 [==============================] - 359s 20s/step - loss: 7.1622 - acc: 0.5556 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 94/100
+
+ 1/18 [>.............................] - ETA: 5:27 - loss: 6.2332 - acc: 0.6133
+ 2/18 [==>...........................] - ETA: 5:10 - loss: 6.7054 - acc: 0.5840
+ 3/18 [====>.........................] - ETA: 4:42 - loss: 7.2406 - acc: 0.5508
+ 4/18 [=====>........................] - ETA: 4:22 - loss: 7.1933 - acc: 0.5537
+ 5/18 [=======>......................] - ETA: 4:04 - loss: 7.2783 - acc: 0.5484
+ 6/18 [=========>....................] - ETA: 3:47 - loss: 7.3035 - acc: 0.5469
+ 7/18 [==========>...................] - ETA: 3:27 - loss: 7.2406 - acc: 0.5508
+ 8/18 [============>.................] - ETA: 3:06 - loss: 7.1697 - acc: 0.5552
+ 9/18 [==============>...............] - ETA: 2:47 - loss: 7.1426 - acc: 0.5569
+10/18 [===============>..............] - ETA: 2:27 - loss: 7.1587 - acc: 0.5559
+11/18 [=================>............] - ETA: 2:07 - loss: 7.1661 - acc: 0.5554
+12/18 [===================>..........] - ETA: 1:48 - loss: 7.1776 - acc: 0.5547
+13/18 [====================>.........] - ETA: 1:30 - loss: 7.1727 - acc: 0.5550
+14/18 [======================>.......] - ETA: 1:12 - loss: 7.2406 - acc: 0.5508
+15/18 [========================>.....] - ETA: 53s - loss: 7.2364 - acc: 0.5510 
+16/18 [=========================>....] - ETA: 35s - loss: 7.2051 - acc: 0.5530
+17/18 [===========================>..] - ETA: 18s - loss: 7.2220 - acc: 0.5519
+18/18 [==============================] - 375s 21s/step - loss: 7.2336 - acc: 0.5512 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 95/100
+
+ 1/18 [>.............................] - ETA: 5:41 - loss: 6.4850 - acc: 0.5977
+ 2/18 [==>...........................] - ETA: 5:20 - loss: 6.4850 - acc: 0.5977
+ 3/18 [====>.........................] - ETA: 4:52 - loss: 6.6109 - acc: 0.5898
+ 4/18 [=====>........................] - ETA: 4:33 - loss: 6.9887 - acc: 0.5664
+ 5/18 [=======>......................] - ETA: 3:54 - loss: 7.3742 - acc: 0.5425
+ 6/18 [=========>....................] - ETA: 3:36 - loss: 7.4149 - acc: 0.5400
+ 7/18 [==========>...................] - ETA: 3:18 - loss: 7.2461 - acc: 0.5504
+ 8/18 [============>.................] - ETA: 2:58 - loss: 7.1903 - acc: 0.5539
+ 9/18 [==============>...............] - ETA: 2:39 - loss: 7.2239 - acc: 0.5518
+10/18 [===============>..............] - ETA: 2:21 - loss: 7.1941 - acc: 0.5537
+11/18 [=================>............] - ETA: 2:03 - loss: 7.2384 - acc: 0.5509
+12/18 [===================>..........] - ETA: 1:45 - loss: 7.2333 - acc: 0.5512
+13/18 [====================>.........] - ETA: 1:28 - loss: 7.2532 - acc: 0.5500
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.2568 - acc: 0.5498
+15/18 [========================>.....] - ETA: 52s - loss: 7.2641 - acc: 0.5493 
+16/18 [=========================>....] - ETA: 34s - loss: 7.1879 - acc: 0.5540
+17/18 [===========================>..] - ETA: 17s - loss: 7.2317 - acc: 0.5513
+18/18 [==============================] - 366s 20s/step - loss: 7.2264 - acc: 0.5517 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 96/100
+
+ 1/18 [>.............................] - ETA: 5:48 - loss: 7.1776 - acc: 0.5547
+ 2/18 [==>...........................] - ETA: 5:26 - loss: 7.3665 - acc: 0.5430
+ 3/18 [====>.........................] - ETA: 4:22 - loss: 7.1972 - acc: 0.5535
+ 4/18 [=====>........................] - ETA: 4:14 - loss: 7.2553 - acc: 0.5499
+ 5/18 [=======>......................] - ETA: 3:56 - loss: 7.2523 - acc: 0.5500
+ 6/18 [=========>....................] - ETA: 3:39 - loss: 7.3028 - acc: 0.5469
+ 7/18 [==========>...................] - ETA: 3:21 - loss: 7.2760 - acc: 0.5486
+ 8/18 [============>.................] - ETA: 3:04 - loss: 7.2637 - acc: 0.5493
+ 9/18 [==============>...............] - ETA: 2:45 - loss: 7.2401 - acc: 0.5508
+10/18 [===============>..............] - ETA: 2:26 - loss: 7.1961 - acc: 0.5535
+11/18 [=================>............] - ETA: 2:06 - loss: 7.2459 - acc: 0.5504
+12/18 [===================>..........] - ETA: 1:47 - loss: 7.2822 - acc: 0.5482
+13/18 [====================>.........] - ETA: 1:29 - loss: 7.3129 - acc: 0.5463
+14/18 [======================>.......] - ETA: 1:10 - loss: 7.2942 - acc: 0.5475
+15/18 [========================>.....] - ETA: 53s - loss: 7.2529 - acc: 0.5500 
+16/18 [=========================>....] - ETA: 35s - loss: 7.2324 - acc: 0.5513
+17/18 [===========================>..] - ETA: 17s - loss: 7.1699 - acc: 0.5552
+18/18 [==============================] - 356s 20s/step - loss: 7.2268 - acc: 0.5516 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 97/100
+
+ 1/18 [>.............................] - ETA: 5:47 - loss: 6.5480 - acc: 0.5938
+ 2/18 [==>...........................] - ETA: 5:19 - loss: 6.6109 - acc: 0.5898
+ 3/18 [====>.........................] - ETA: 4:59 - loss: 6.9257 - acc: 0.5703
+ 4/18 [=====>........................] - ETA: 4:40 - loss: 7.0202 - acc: 0.5645
+ 5/18 [=======>......................] - ETA: 3:58 - loss: 7.1251 - acc: 0.5579
+ 6/18 [=========>....................] - ETA: 3:43 - loss: 7.2388 - acc: 0.5509
+ 7/18 [==========>...................] - ETA: 3:26 - loss: 7.2570 - acc: 0.5498
+ 8/18 [============>.................] - ETA: 3:08 - loss: 7.2313 - acc: 0.5514
+ 9/18 [==============>...............] - ETA: 2:52 - loss: 7.2044 - acc: 0.5530
+10/18 [===============>..............] - ETA: 2:34 - loss: 7.2710 - acc: 0.5489
+11/18 [=================>............] - ETA: 2:15 - loss: 7.1823 - acc: 0.5544
+12/18 [===================>..........] - ETA: 1:55 - loss: 7.1715 - acc: 0.5551
+13/18 [====================>.........] - ETA: 1:34 - loss: 7.1768 - acc: 0.5547
+14/18 [======================>.......] - ETA: 1:15 - loss: 7.1858 - acc: 0.5542
+15/18 [========================>.....] - ETA: 55s - loss: 7.1853 - acc: 0.5542 
+16/18 [=========================>....] - ETA: 37s - loss: 7.1927 - acc: 0.5538
+17/18 [===========================>..] - ETA: 18s - loss: 7.2029 - acc: 0.5531
+18/18 [==============================] - 371s 21s/step - loss: 7.1940 - acc: 0.5537 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 98/100
+
+ 1/18 [>.............................] - ETA: 4:28 - loss: 6.4850 - acc: 0.5977
+ 2/18 [==>...........................] - ETA: 4:42 - loss: 6.9887 - acc: 0.5664
+ 3/18 [====>.........................] - ETA: 5:00 - loss: 7.0936 - acc: 0.5599
+ 4/18 [=====>........................] - ETA: 4:39 - loss: 7.1146 - acc: 0.5586
+ 5/18 [=======>......................] - ETA: 4:23 - loss: 7.1146 - acc: 0.5586
+ 6/18 [=========>....................] - ETA: 4:00 - loss: 7.0727 - acc: 0.5612
+ 7/18 [==========>...................] - ETA: 3:40 - loss: 7.0067 - acc: 0.5653
+ 8/18 [============>.................] - ETA: 3:21 - loss: 7.0595 - acc: 0.5620
+ 9/18 [==============>...............] - ETA: 3:00 - loss: 6.9677 - acc: 0.5677
+10/18 [===============>..............] - ETA: 2:40 - loss: 7.0013 - acc: 0.5656
+11/18 [=================>............] - ETA: 2:20 - loss: 6.9887 - acc: 0.5664
+12/18 [===================>..........] - ETA: 1:59 - loss: 6.9992 - acc: 0.5658
+13/18 [====================>.........] - ETA: 1:38 - loss: 7.0856 - acc: 0.5604
+14/18 [======================>.......] - ETA: 1:18 - loss: 7.1191 - acc: 0.5583
+15/18 [========================>.....] - ETA: 58s - loss: 7.0894 - acc: 0.5602 
+16/18 [=========================>....] - ETA: 38s - loss: 7.0950 - acc: 0.5598
+17/18 [===========================>..] - ETA: 19s - loss: 7.0850 - acc: 0.5604
+18/18 [==============================] - 380s 21s/step - loss: 7.0971 - acc: 0.5597 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 99/100
+
+ 1/18 [>.............................] - ETA: 4:37 - loss: 7.6183 - acc: 0.5273
+ 2/18 [==>...........................] - ETA: 4:17 - loss: 7.9016 - acc: 0.5098
+ 3/18 [====>.........................] - ETA: 3:35 - loss: 7.6683 - acc: 0.5242
+ 4/18 [=====>........................] - ETA: 3:09 - loss: 7.4659 - acc: 0.5368
+ 5/18 [=======>......................] - ETA: 3:15 - loss: 7.4964 - acc: 0.5349
+ 6/18 [=========>....................] - ETA: 3:10 - loss: 7.4538 - acc: 0.5376
+ 7/18 [==========>...................] - ETA: 3:01 - loss: 7.4323 - acc: 0.5389
+ 8/18 [============>.................] - ETA: 2:48 - loss: 7.4870 - acc: 0.5355
+ 9/18 [==============>...............] - ETA: 2:35 - loss: 7.3687 - acc: 0.5428
+10/18 [===============>..............] - ETA: 2:21 - loss: 7.3874 - acc: 0.5417
+11/18 [=================>............] - ETA: 2:04 - loss: 7.3111 - acc: 0.5464
+12/18 [===================>..........] - ETA: 1:48 - loss: 7.2947 - acc: 0.5474
+13/18 [====================>.........] - ETA: 1:30 - loss: 7.2808 - acc: 0.5483
+14/18 [======================>.......] - ETA: 1:12 - loss: 7.3184 - acc: 0.5459
+15/18 [========================>.....] - ETA: 54s - loss: 7.3132 - acc: 0.5463 
+16/18 [=========================>....] - ETA: 36s - loss: 7.2930 - acc: 0.5475
+17/18 [===========================>..] - ETA: 17s - loss: 7.2603 - acc: 0.5496
+18/18 [==============================] - 361s 20s/step - loss: 7.2142 - acc: 0.5524 - val_loss: 7.5503 - val_acc: 0.5316
+Epoch 100/100
+
+ 1/18 [>.............................] - ETA: 4:28 - loss: 7.1776 - acc: 0.5547
+ 2/18 [==>...........................] - ETA: 4:13 - loss: 7.2406 - acc: 0.5508
+ 3/18 [====>.........................] - ETA: 4:05 - loss: 7.3875 - acc: 0.5417
+ 4/18 [=====>........................] - ETA: 4:02 - loss: 7.4452 - acc: 0.5381
+ 5/18 [=======>......................] - ETA: 3:53 - loss: 7.3161 - acc: 0.5461
+ 6/18 [=========>....................] - ETA: 3:37 - loss: 7.2301 - acc: 0.5514
+ 7/18 [==========>...................] - ETA: 3:21 - loss: 7.2495 - acc: 0.5502
+ 8/18 [============>.................] - ETA: 3:05 - loss: 7.2878 - acc: 0.5479
+ 9/18 [==============>...............] - ETA: 2:48 - loss: 7.2755 - acc: 0.5486
+10/18 [===============>..............] - ETA: 2:23 - loss: 7.2681 - acc: 0.5491
+11/18 [=================>............] - ETA: 2:07 - loss: 7.2943 - acc: 0.5474
+12/18 [===================>..........] - ETA: 1:49 - loss: 7.2793 - acc: 0.5484
+13/18 [====================>.........] - ETA: 1:32 - loss: 7.2521 - acc: 0.5501
+14/18 [======================>.......] - ETA: 1:13 - loss: 7.2648 - acc: 0.5493
+15/18 [========================>.....] - ETA: 55s - loss: 7.3135 - acc: 0.5463 
+16/18 [=========================>....] - ETA: 36s - loss: 7.2814 - acc: 0.5482
+17/18 [===========================>..] - ETA: 18s - loss: 7.2716 - acc: 0.5489
+18/18 [==============================] - 368s 20s/step - loss: 7.2595 - acc: 0.5496 - val_loss: 7.5503 - val_acc: 0.5316
+[INFO] serializing network...
